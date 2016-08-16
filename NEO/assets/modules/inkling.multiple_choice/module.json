@@ -1,0 +1,8 @@
+{
+    "name": "multiple_choice",
+    "organization": "inkling",
+    "version": "1.0.0",
+    "displayName": "Multiple Choice",
+    "description": "Inkling Multiple Choice platform widget and associated pattern.",
+    "keywords": ["assessment", "multiple choice", "platform widget"]
+}

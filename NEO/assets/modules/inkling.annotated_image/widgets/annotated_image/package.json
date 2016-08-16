@@ -1,0 +1,9 @@
+{
+    "name": "com.inkling.widget.annotated_image",
+    "displayName": "Annotated Image",
+    "version": "1.1.0",
+    "inkling": {
+        "sha": "870db6de",
+        "date": "20150524.235928z"
+    }
+}

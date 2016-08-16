@@ -1,0 +1,8 @@
+{
+    "name": "show_hide",
+    "organization": "inkling",
+    "version": "1.0.0",
+    "displayName": "Show Hide",
+    "description": "Inkling Show Hide platform widget and associated pattern.",
+    "keywords": ["platform widget"]
+}

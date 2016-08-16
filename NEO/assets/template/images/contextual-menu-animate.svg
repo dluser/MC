@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" width="13px" height="13px" viewBox="0 0 13 13" version="1.1">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs />
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup" fill="#5B5D66">
+            <path d="M2.78886013,9.71029835 L9.18239297,9.71029835 L9.18239297,10.6176401 C9.18239297,10.6176401 4.93068346,10.6176401 2.8048287,10.6176401 L2.54436793,10.6176401 L2.78886013,9.71029835 Z" id="Rectangle-path" sketch:type="MSShapeGroup" transform="translate(5.863380, 10.163969) rotate(-315.000000) translate(-5.863380, -10.163969) " />
+            <path d="M6.59955176,9.18484281 C6.59955176,9.18484281 6.93618949,9.18006116 7.10450835,9.17767034 C8.64640088,9.15576909 11.7301859,9.1119666 11.7301859,9.1119666 L11.7301859,10.0193083 L7.77268271,10.0193083 L6.59955176,9.18484281 Z" id="Rectangle-path-2" sketch:type="MSShapeGroup" transform="translate(9.164869, 9.565637) rotate(-315.000000) translate(-9.164869, -9.565637) " />
+            <rect id="Rectangle-path-3" sketch:type="MSShapeGroup" transform="translate(10.299616, 7.000000) rotate(-315.000000) translate(-10.299616, -7.000000) " x="6.93436645" y="6.54632914" width="6.73049849" height="0.907341718" />
+            <polygon id="Star-1" sketch:type="MSShapeGroup" points="4.5 6.75 1.85496636 8.14057647 2.36012284 5.19528824 0.220245677 3.10942353 3.17748318 2.67971176 4.5 0 5.82251682 2.67971176 8.77975432 3.10942353 6.63987716 5.19528824 7.14503364 8.14057647 " />
+        </g>
+    </g>
+</svg>

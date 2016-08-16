@@ -1,0 +1,8 @@
+{
+    "name": "timeline",
+    "organization": "inkling",
+    "version": "1.0.0",
+    "displayName": "Timeline",
+    "description": "Inkling Timeline platform widget and associated pattern.",
+    "keywords": ["platform widget"]
+}

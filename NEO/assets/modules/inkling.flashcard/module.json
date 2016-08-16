@@ -1,0 +1,8 @@
+{
+    "name": "flashcard",
+    "organization": "inkling",
+    "version": "1.0.0",
+    "displayName": "Flashcard",
+    "description": "Inkling Flashcard platform widget and associated pattern.",
+    "keywords": ["assessment", "flashcard", "platform widget"]
+}

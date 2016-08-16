@@ -1,0 +1,3 @@
+com.inkling.widget.annotated_image
+1.1.0
+20150524.235928z.870db6de

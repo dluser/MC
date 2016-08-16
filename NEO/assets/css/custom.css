@@ -1,0 +1,426 @@
+/*--------------------------------------------------------------------
+ * Custom CSS
+ * Use this file for any custom CSS.
+ * 
+ * Please consider our style recommendations:
+ *
+ * 1. Every block of CSS should contain a comment explaining 
+ *    its purpose.
+ *    http://css-tricks.com/snippets/css/comments-in-css/
+ *
+ * 2. Avoid using !important tags. If you're having trouble overriding
+ *    a style, check that the speicifcy is correct.
+ *    http://css-tricks.com/specifics-on-css-specificity/
+ *
+ * 3. If your Custom CSS file becomes too long and unmanagable, consider
+ *    using our advanced Sass workflow.
+ *
+ * Happy Styling!
+ * - The Inkling Team
+ .chapter-intro-c {
+    background-image: url(images/neotitlebar2.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+ }
+ *------------------------------------------------------------------*/
+ /*-----------------------------
+Show Icons
+ *----------------------------*/
+ .allminusct{
+  max-width:90vw;
+  max-height:24vw;
+  margin-bottom:10px;
+  overflow:hidden;
+  
+ }
+ 
+ .ptft{
+  max-width:40vw;
+  max-height:24vw;
+  margin-bottom:10px;
+ overflow:hidden;
+ }
+
+ /*-----------------------------
+Audio widget bottom margin
+ *----------------------------*/
+ .audiobot{
+  margin-bottom:50px;
+ }
+ .audioactive{
+     opacity:0.8;
+ }
+ .audioactive:hover{
+     opacity:1;
+ }
+ .audiolink{
+     opacity:1 !important;
+ }
+ 
+ 
+ 
+ 
+/*-----------------------------
+NMPSIA LOGO FORMAT
+ *----------------------------*/
+ .nmpsia{
+     max-height:98px;
+     max-width:266px;
+     border-bottom:solid #000000;
+ }
+ .bottommarg{
+     margin-bottom:10px;
+ }
+ .padding{
+     padding-top:20px;
+    padding-bottom:20px;
+    padding-right:20px;
+    padding-left:20px;
+ }
+ .border{
+     border:1px solid #c9e9f2 ;
+     border-radius:3px;
+ }
+ .nobottom{
+     margin-bottom:0px;
+ }
+ 
+/*-----------------------------
+ Employee type quiz
+ *----------------------------*/
+.quizwidget{
+    
+    overflow:hidden;
+    position:relative !important;
+    width:80vw;
+    height:80vw;
+    left:50%;
+    margin-right:50%;
+    transform:translate(-50%);
+    padding-right:0px !important;
+    padding-left:0px !important;
+}
+
+#typequiz{
+    width:100% !important;
+    height:100% !important;
+}
+.clear{
+    clear:both;
+}
+ a{
+     cursor:pointer;
+ }
+
+/*-----------------------------
+ Employment type Icon formatting
+ *----------------------------*/
+ .singleicon{
+     max-height:75px;
+     max-width:75px;
+     margin-top:10px;
+     margin-bottom:10px;
+     padding-bottom:0px;
+ }
+ .payrollidbar{
+     max-height:272px;
+    max-width:272px; 
+ }
+ .erbidbar{
+    max-height:207px;
+    max-width:272px;
+   }
+   .arbidbar{
+    max-height:73px;
+    max-width:138px;
+   }
+   .dfcomp{
+       max-height:273px;
+       max-width:273px;
+   }
+   .block{
+       display:block;
+   }
+   .inline{
+       display:inline-block;
+   }
+ /*---------------------------
+    Custom Title Bar
+  *---------------------------*/
+   
+ .chapter-intro-a{
+    background-image: url(images/neotitlefixed4.png);
+    background-size:cover;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    width:100vw;
+    height:8vw;
+    min-height:50px;
+ }
+ .titlecontainer{
+     width:100vw;
+     margin-bottom:75px;
+     
+ }
+ .chunderline{
+     width:40%;
+     height:2px;
+     border-bottom:3px solid #e6f3f7;
+     position:absolute;
+    left:50%;
+    margin-top:-20px;
+    margin-left:-20%;
+     float:none;
+     display:inline-block;
+ } 
+ .title-info{
+     margin-top: 30px;
+     
+ }
+ a{
+  cursor:pointer;   
+ }
+ h1{
+     color:#AE2A2E;
+ }
+
+ /* Custom title for Cover */
+ .chapter-intro-b {
+     width:100vw;
+     height:36vw;
+    background-image: url(images/neotitle.jpg);
+    background-size:100vw 36vw;
+    border-top: 8px solid transparent;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-position:0 -8px;
+ }
+ #ea9386f910da4ab7bc7e0829218e4768{
+     height:50px;
+     width:50px;
+ }
+ /* Custom Spacing for Handbook flascards */
+ .customflash{
+     margin:auto;
+ }
+ .chapter-intro-c h1{
+     color:#ae2a2e;
+ }
+ /*Custom margin for beginning video*/
+ .video2{
+     margin-top:-20px;
+ }
+ 
+/*-----------------------------
+Div clickable for discounts.
+*-----------------------------*/
+#employeedis{
+    position:absolute;
+    margin-top:225%;
+    height:10%;
+    width:100%;
+    display:inline-block;
+}
+#inline{
+    display:inline-block;
+    color:#005084;
+}
+/*-----------
+CNM Mobile
+*-----------*/
+.smallimage{
+    max-height:200px;
+    max-width:200px;
+    text-align:center;
+    position:relative;
+    display:block;
+}
+/*------------
+Contact CNM
+*------------*/
+.contactdiv{
+    max-width:330px;
+    max-height:110px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+ .contact{
+     display:inline-block;
+     height:100%;
+     width:30%;
+     margin-left:auto;
+     margin-right:auto;
+ }
+ .app{
+     max-width:400px;
+    max-height:400px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+ }
+ .appicon{
+     display:block;
+     height:100%;
+     width:100%;
+     margin-left:auto;
+     margin-right:auto;  
+ }
+ /*---------------------------
+ Custom animations. Add class to 
+ text for custom anims. 
+ https://daneden.github.io/animate.css/
+ *----------------------------*/
+ .animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+img:hover{
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/*Flip in X Animation*/
+
+ @-webkit-keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+}
+
+/*Pulse Animation*/
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;  
+}
+/*Fade In Animation*/
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
