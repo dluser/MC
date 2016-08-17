@@ -1,4 +1,4 @@
-
+console.log("Taysend Gallego");
 var result = document.getElementById("result");
 function person(title, entry, position) {
     this.title = title;
