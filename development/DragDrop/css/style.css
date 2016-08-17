@@ -21,6 +21,7 @@ p{
   height:75%;
   border-spacing:0px;
   vertical-align: center;
+  overflow:visible;
 }
 .category{
   box-shadow:0px 0px 5px #bbb;
