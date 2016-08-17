@@ -1,5 +1,9 @@
 body{
 	background-color:#D0DDE4;
+	width:100%;
+}
+.row{
+	margin:0;
 }
 .col-xs-10{
 	margin-top:80px;
