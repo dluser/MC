@@ -5,7 +5,8 @@ function person(title, entry, position) {
     this.entry = entry;
     this.position = position; 
 }
-console.log('yo');
+
+//inkling should be able to manipulate this array...not sure how edit screen will work
 var answers = 
 [{title:"1",entry:"sample entry",position:"left"},
 {title:"2",entry:"sample entry",position:"right"},
@@ -35,9 +36,14 @@ function shuffle(array) {
 }
 
 //shuffle answers to keep it random...
-
 shuffle(answers);
-//puzzle can solve itself technically...
+
+//check if puzzle figured itself out...
+while(answers[0].position === "left" && answers[2].position === "left" && answers[4].position === "left")
+{
+  shuffle(answers);
+  console.log("running");
+}
 
 //add items to DOM...
 for(var i = 0; i < answers.length; i++)
@@ -57,19 +63,21 @@ scroll:false
   });
 
 function check(){
+
 //get list element
   var list = document.getElementById("list");
   var win = 0;
+
 // cycle through every other element starting with 2. Cycles through odds.
     for(var i = 0; i < list.children.length; i+=2){
       var answer = list.children[i].children;
+
 //go to the last child of every child in list. 
       for(var j = (answer.length - 1); j < answer.length; j++){
 
 //check if titles are on the right side
     if($(answer[j]).hasClass("left")){
       win++;
-      //console.log(win);
     }
   }
   }
