@@ -1,16 +1,12 @@
 body{
-margin:0px auto 0px auto;
-overflow-x: hidden;
-width:100%;
+  overflow-x: hidden;
 }
-div,iframe{
-  overflow:visible !important;
-  overflow-x:hidden;
+.row{
+  padding:0;
 }
 iframe{
   margin:0 0 0 0;
   padding:0 0 0 0;
-
 }
 h1{
   margin-bottom:40px;
