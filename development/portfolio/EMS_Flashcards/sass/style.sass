@@ -1,0 +1,89 @@
+$cardW: 300px
+$cardH: 180px
+$bg: white
+$line1: hotpink
+$line2: lightblue
+$flipTime: 1s
+
+body
+  background: #420
+  font-family: Indie Flower, sans-serif
+
+// button styles  
+#reset
+  text-align: center
+  button
+    background: rgba(0, 0, 0, 0.4)
+    border: 0
+    color: white
+    font-size: 12pt
+    margin: auto
+    width: 120px
+    height: 30px
+    &:active
+      background: rgba(0, 0, 0, 0.8)
+
+// deck styles
+#stack
+  margin: auto
+  position: relative
+  width: $cardW
+
+// card styles
+.card
+  border: 1px solid #888
+  position: absolute
+  width: $cardW
+  height: $cardH
+  transform-origin: 0% 0%
+  .front
+    background: $bg
+    font-size: 24pt
+    position: absolute
+    width: $cardW
+    height: $cardH
+    z-index: 2
+    p
+      line-height: 3em
+      text-align: center
+  .back
+    background: $bg linear-gradient(transparent, transparent 20%, $line1 20%, $line1 21%, transparent 21%, transparent 31%, $line2 31%, $line2 32%, transparent 32%, transparent 42%, $line2 42%, $line2 43%, transparent 43%, transparent 53%, $line2 53%, $line2 54%, transparent 54%, transparent 64%, $line2 64%, $line2 65%, transparent 65%, transparent 75%, $line2 75%, $line2 76%, transparent 76%, transparent 86%, $line2 86%, $line2 87%, transparent 87%, transparent 97%)
+    font-size: 11pt
+    position: absolute
+    width: $cardW
+    height: $cardH
+    transform: rotateY(180deg)
+    z-index: 1
+    p
+      margin: 40px 5px 5px 5px
+      
+// make hidden cards slightly visible
+$maxCards: 4
+@for $i from 1 through $maxCards
+  ._#{$i}
+    top: 0px + ($i * 3) - 3
+    right: 0px + ($i * 2) - 2
+    z-index: $maxCards - $i
+
+// card states
+.flipped
+  transform: rotateY(180deg) translateX(30px)
+  animation: flip $flipTime
+  
+.showingBack
+  animation: showBack $flipTime
+  
+// animations for card states
+@keyframes flip
+  from
+    transform: rotateY(0deg) translateX(0px)
+  to
+    transform: rotateY(180deg) translateX(30px)
+  
+@keyframes showBack
+  0%
+    z-index: 2
+  25%
+    z-index: 2
+  50%
+    z-index: 0
