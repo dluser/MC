@@ -1,0 +1,237 @@
+body {
+  font-family: Helvetica,Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+  color:#0c0c0c;
+}
+header{
+text-align:center;	
+}
+h1{
+margin-top:10px;	
+}
+button{
+display:inline-block;
+position:relative;
+height:50px;
+width:100px;
+margin-top: 30px;
+cursor:pointer;	
+}
+.backcontain{
+margin-left:25px;
+margin-right:25px;
+display:inline-block;	
+}
+.randomcontain{
+margin-left:25px;
+display:inline-block;	
+}
+.btncontain{
+width:300px;
+margin-left:auto;
+margin-right:auto;	
+}
+
+#stack {
+  margin-left: auto;
+  margin-right:auto;
+  margin-top:70px;
+  position: relative;
+  width: 600px;
+  height:360px;
+}
+
+.card {
+  border: 1px solid #888;
+  position: absolute;
+  width: 600px;
+  height: 360px;
+  transform-origin: 0% 0%;
+  cursor:pointer;
+  box-shadow: 0px 0px 10px #888888;
+}
+.card .front {
+  background: white;
+  font-size: 48pt;
+  position: absolute;
+  width: 600px;
+  height: 360px;
+  z-index: 2;
+}
+.card .front p {
+  line-height: 6em;
+  text-align: center;
+  margin-top:120px;
+}
+.card .back {
+  background: white linear-gradient(transparent, transparent 20%, hotpink 20%, hotpink 21%, transparent 21%, transparent 31%, lightblue 31%, lightblue 32%, transparent 32%, transparent 42%, lightblue 42%, lightblue 43%, transparent 43%, transparent 53%, lightblue 53%, lightblue 54%, transparent 54%, transparent 64%, lightblue 64%, lightblue 65%, transparent 65%, transparent 75%, lightblue 75%, lightblue 76%, transparent 76%, transparent 86%, lightblue 86%, lightblue 87%, transparent 87%, transparent 97%);
+  font-size: 22pt;
+  position: absolute;
+  width: 600px;
+  height: 360px;
+  transform: rotateX(180deg);
+  z-index: 1;
+  text-align: center;
+ 
+}
+.card .back p {
+  margin: 160px 5px 5px 5px;
+}
+
+._1 {
+  z-index: 2;
+}
+
+
+.flipped {
+  transform: rotateX(180deg) translateY(-360px);
+  animation: flip 0.5s;
+}
+.flipped2 {
+  transform: rotateX(0deg) translateY(0);
+  animation: fliptwo 0.5s;
+}
+
+.showingBack {
+  animation: showBack 0.5s;
+}
+
+.hidingBack {
+  animation: hideBack 0.5s;
+}
+
+@keyframes flip {
+  from {
+    transform: rotateX(0deg) translateY(0px);
+  }
+  to {
+    transform: rotateX(180deg) translateY(-360px);
+  }
+}
+
+@keyframes fliptwo {
+  from {
+    transform: rotateX(180deg) translateY(-360px);
+  }
+  to {
+    transform: rotateX(0deg) translateY(0px);
+  }
+}
+
+
+
+@keyframes showBack {
+  0% {
+    z-index: 2;
+  }
+  25% {
+    z-index: 2;
+  }
+  50% {
+    z-index: 0;
+  }
+}
+
+@keyframes hideBack {
+  0% {
+    z-index: 0;
+  }
+  25% {
+    z-index: 0;
+  }
+  50% {
+    z-index: 2;
+  }
+}
+
+
+@media screen and (min-width: 300px) {
+  .flipped{
+    transform: rotateX(180deg) translateY(-180px);
+  }
+  @keyframes flip {
+
+  from {
+    transform: rotateX(0deg) translateY(0px);
+  }
+  to {
+    transform: rotateX(180deg) translateY(-180px);
+  }
+}
+
+@keyframes fliptwo {
+  from {
+    transform: rotateX(180deg) translateY(-180px);
+  }
+  to {
+    transform: rotateX(0deg) translateY(0px);
+  }
+}
+    .card{
+      width:300px;
+      height:180px;
+    }
+    .card .front{
+      width:300px;
+      height:180px;
+    }
+    .card .back{
+      width:300px;
+      height:180px;
+    }
+    #stack{
+      width:300px;
+      height:180px;
+    }
+    .card .front p {
+      margin-top:-100px;
+  }
+  .card .back p {
+      margin-top:67px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+   .flipped{
+    transform: rotateX(180deg) translateY(-360px);
+  }
+  @keyframes flip {
+  from {
+    transform: rotateX(0deg) translateY(0px);
+  }
+  to {
+    transform: rotateX(180deg) translateY(-360px);
+  }
+}
+
+@keyframes fliptwo {
+  from {
+    transform: rotateX(180deg) translateY(-360px);
+  }
+  to {
+    transform: rotateX(0deg) translateY(0px);
+  }
+}
+.card{
+      width:600px;
+      height:360px;
+    }
+    .card .front{
+      width:600px;
+      height:360px;
+    }
+    .card .back{
+      width:600px;
+      height:360px;
+    }
+    #stack{
+      width:600px;
+      height:360px;
+    }
+    .card .front p {
+      margin-top:-20px;
+  }
+  .card .back p {
+      margin-top:165px;
+  }
+   
+}
