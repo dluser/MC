@@ -8,12 +8,12 @@ function person(title, entry, position) {
 
 //inkling should be able to manipulate this array...not sure how edit screen will work
 var answers = 
-[{title:"1",entry:"sample entry",position:"left"},
-{title:"2",entry:"sample entry",position:"right"},
-{title:"3",entry:"sample entry",position:"left"},
-{title:"4",entry:"sample entry",position:"right"},
-{title:"5",entry:"sample entry",position:"left"},
-{title:"6",entry:"sample entry",position:"right"}];
+[{title:"",entry:"Dog",position:"left"},
+{title:"",entry:"Snake",position:"right"},
+{title:"",entry:"Whale",position:"left"},
+{title:"",entry:"Lizard",position:"right"},
+{title:"",entry:"Human",position:"left"},
+{title:"",entry:"Turtle",position:"right"}];
 
 //shuffle function
 function shuffle(array) {
