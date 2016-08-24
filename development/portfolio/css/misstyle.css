@@ -5,13 +5,13 @@ body{
   padding:0;
 }
 iframe{
-  margin:0 0 0 0;
+  margin:20px 0 0 0;
   padding:0 0 0 0;
 }
 h1{
   margin-bottom:40px;
   font-size:6rem;
-    color:#24D2D9;
+  color:#24D2D9;
     
 
 text-shadow: 0 1px 0 #20b7bc, 
@@ -26,6 +26,10 @@ text-shadow: 0 1px 0 #20b7bc,
                0 20px 20px rgba(0,0,0,.07);
                
 }
+.subhead{
+  font-size:4rem;
+  margin-bottom:0px;
+}
 .row{
   background-color:#F2F2F6;
 }
@@ -33,6 +37,8 @@ text-shadow: 0 1px 0 #20b7bc,
   background-color:#fff;
   padding:0 0 0 0;
   box-shadow:0px 0px 50px #999;
+  margin-bottom:40px;
+  border-radius:5px;
 }
 .misctitle{
   height:75px;
