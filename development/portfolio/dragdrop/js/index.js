@@ -8,12 +8,12 @@ function person(title, entry, position) {
 
 //inkling should be able to manipulate this array...not sure how edit screen will work
 var answers = 
-[{title:"",entry:"Dog",position:"left"},
-{title:"",entry:"Snake",position:"right"},
-{title:"",entry:"Whale",position:"left"},
-{title:"",entry:"Lizard",position:"right"},
-{title:"",entry:"Human",position:"left"},
-{title:"",entry:"Turtle",position:"right"}];
+[{title:"",entry:"",position:"left",id:"one"},
+{title:"",entry:"",position:"right",id:"two"},
+{title:"",entry:"",position:"left",id:"three"},
+{title:"",entry:"",position:"right",id:"four"},
+{title:"",entry:"",position:"left",id:"five"},
+{title:"",entry:"",position:"right",id:"six"}];
 
 //shuffle function
 function shuffle(array) {
@@ -48,7 +48,7 @@ while(answers[0].position === "left" && answers[2].position === "left" && answer
 //add items to DOM...
 for(var i = 0; i < answers.length; i++)
 {
-  $("#list").append("<div class='drag-item ui-state-default'><div class = "+answers[i].position+"><h1 class = 'bar'>"+answers[i].title+"</h1><p align='left'>"+answers[i].entry+"</p></div></div>");
+  $("#list").append("<div class='drag-item ui-state-default'id = '"+answers[i].id+"'><div class = "+answers[i].position+"><h1 class = 'bar'>"+answers[i].title+"</h1><p align='left'>"+answers[i].entry+"</p></div></div>");
 }
 
   $(document).ready(function(){
