@@ -1,0 +1,178 @@
+html,body {
+  font-family: Helvetica,Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+  color:#0c0c0c;
+  overflow-x: hidden !important;
+}
+*:focus{
+  outline: none;
+}
+header{
+text-align:center;	
+}
+img{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+p{
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+h1{
+margin-top:10px;	
+}
+button{
+  font-size:1em;
+  border:0px solid #ffffff;
+  border-bottom:3px solid rgba(0,0,0,0.3);
+  display:inline-block;
+  position:relative;
+  height:50px;
+  width:100px;
+  margin-top: 30px;
+  cursor:pointer;	
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(66, 184, 221);
+  box-shadow:0px 2px 5px #bbb;
+}
+
+.animated.fadeOutRight{
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+}
+ .animated.fadeOut{
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+ }
+.backcontain{
+margin-left:25px;
+margin-right:25px;
+display:inline-block;	
+}
+
+#stack {
+  margin-left: auto;
+  margin-right:auto;
+  margin-top:70px;
+  position: relative;
+  width: 600px;
+  height:360px;
+}
+.current{
+  z-index:1;
+}
+
+.card {
+  border: 1px solid #888;
+  position: absolute;
+  width: 600px;
+  height: 360px;
+  cursor:pointer;
+  box-shadow: 0px 0px 10px #888888;
+}
+.card .front, #front2{
+  background: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#randombtn
+{
+  display:block;
+  margin:50px auto 0 auto;
+}
+#randombtn:active{
+  margin-top:52px;
+  border-bottom:1px solid rgba(0,0,0,0.3);
+}
+.card .front p, #front2 p{
+  text-align: center;
+}
+.card .back,#back2{
+  background: white linear-gradient(transparent, transparent 20%, hotpink 20%, hotpink 21%, transparent 21%, transparent 31%, lightblue 31%, lightblue 32%, transparent 32%, transparent 42%, lightblue 42%, lightblue 43%, transparent 43%, transparent 53%, lightblue 53%, lightblue 54%, transparent 54%, transparent 64%, lightblue 64%, lightblue 65%, transparent 65%, transparent 75%, lightblue 75%, lightblue 76%, transparent 76%, transparent 86%, lightblue 86%, lightblue 87%, transparent 87%, transparent 97%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  text-align: left;
+}
+
+.card .back p,#back2 p{
+  color:green;
+  padding:0 15px 0px 15px;
+}
+#back2{
+  z-index:3;
+  border: 1px solid #888;
+  opacity:0;
+}
+#front2{
+  z-index:4;
+  border: 1px solid #888;
+  opacity:0;
+}
+.visible{
+  opacity:1;
+}
+
+@media screen and (min-width: 300px) {
+  img{
+  height:80%;
+  margin-top:20px;
+  }
+  p{
+    font-size:1em;
+  }
+    .card{
+      width:300px;
+      height:180px;
+    }
+    #stack{
+      width:300px;
+      height:180px;
+    }
+    .card .front p, #front2 p{
+      margin-top:80px;
+  }
+  .card .back p,#back2 p{
+      margin-top:41px;
+      line-height:20px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  img{
+  height:80%;
+  margin-top:30px;
+  }
+  p{
+  font-size:2em;
+  }
+.card{
+      width:600px;
+      height:360px;
+    }
+    #stack{
+      width:600px;
+      height:360px;
+    }
+    .card .front p, #front2 p{
+      margin-top:150px;
+  }
+  .card .back p,#back2 p{
+    line-height:40px;
+      margin-top:82px;
+  }
+   
+}
