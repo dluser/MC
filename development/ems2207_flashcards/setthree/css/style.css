@@ -1,0 +1,294 @@
+body {
+  background: #e9e8f0;
+  font-family: Helvetica,Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+  color:#0c0c0c;
+  padding:0 0 0 0;
+}
+header{
+text-align:center;	
+}
+h1{
+margin-top:10%;	
+}
+button{
+  font-size:1em;
+  border:0px solid #ffffff;
+  border-bottom:3px solid rgba(0,0,0,0.3);
+  display:inline-block;
+  position:relative;
+  height:50px;
+  width:100px;
+  margin-top: 30px;
+  cursor:pointer; 
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(66, 184, 221);
+  box-shadow:0px 2px 5px #bbb;
+}
+.backcontain{
+margin-left:25px;
+margin-right:25px;
+display:inline-block;	
+}
+.randomcontain{
+margin-left:25px;
+display:inline-block;	
+}
+.btncontain{
+width:300px;
+margin-left:auto;
+margin-right:auto;	
+}
+
+#stack {
+  margin-left: auto;
+  margin-right:auto;
+  margin-top:70px;
+  position: relative;
+  width: 600px;
+  height:360px;
+  padding:0 0 0 0;
+}
+
+.card {
+  border: 1px solid #888;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+  cursor:pointer;
+  box-shadow: 0px 0px 10px #888888;
+}
+.card .front {
+  background: white;
+  font-size: 34pt;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.card .front p {
+  text-align: center;
+  margin-top:120px;
+}
+.card .back {
+  background: white linear-gradient(transparent, transparent 20%, hotpink 20%, hotpink 21%, transparent 21%, transparent 31%, lightblue 31%, lightblue 32%, transparent 32%, transparent 42%, lightblue 42%, lightblue 43%, transparent 43%, transparent 53%, lightblue 53%, lightblue 54%, transparent 54%, transparent 64%, lightblue 64%, lightblue 65%, transparent 65%, transparent 75%, lightblue 75%, lightblue 76%, transparent 76%, transparent 86%, lightblue 86%, lightblue 87%, transparent 87%, transparent 97%);
+  font-size: 22pt;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  z-index: 1;
+  text-align: center;
+ 
+}
+
+._1 {
+  z-index: 2;
+}
+
+.flipped {
+  transform: rotateX(180deg) translateY(-360px);
+  -webkit-transform: rotateX(180deg) translateY(-360px);
+
+  -webkit-animation-name:flip;
+  animation-name:flip;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+.flipped2 {
+  transform: rotateX(0deg) translateY(0);
+  -webkit-transform:rotateX(0deg) translateY(0);
+
+  -webkit-animation-name:flip2;
+  animation-name:flip2;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+.showingBack {
+  -webkit-animation-name:showBack;
+  animation-name:showBack;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+.hidingBack {
+  -webkit-animation-name:hideBack;
+  animation-name:hideBack;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+
+@keyframes showBack {
+  0% {
+    z-index: 2;
+  }
+  25% {
+    z-index: 2;
+  }
+  50% {
+    z-index: 0;
+  }
+}
+
+@-webkit-keyframes showBack {
+  0% {
+    z-index: 2;
+  }
+  25% {
+    z-index: 2;
+  }
+  50% {
+    z-index: 0;
+  }
+}
+
+@keyframes hideBack {
+  0% {
+    z-index: 0;
+  }
+  25% {
+    z-index: 0;
+  }
+  50% {
+    z-index: 2;
+  }
+}
+@-webkit-keyframes hideBack {
+  0% {
+    z-index: 0;
+  }
+  25% {
+    z-index: 0;
+  }
+  50% {
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 300px) { 
+        #stack{
+          width: 300px;
+          height:180px;
+        }
+        .flipped {
+  transform: rotateX(180deg) translateY(-180px);
+  -webkit-transform: rotateX(180deg) translateY(-180px);
+}
+.card .back p {
+  margin: 70px 5px 5px 5px;
+}
+.card .front p {
+  margin: 58px 5px 5px 5px;
+}
+        @keyframes flip {
+  from {
+    transform: rotateX(0deg) translateY(0px);
+    -webkit-transform: rotateX(0deg) translateY(0px);
+  }
+  to {
+    transform: rotateX(180deg) translateY(-180px);
+    -webkit-transform: rotateX(180deg) translateY(-180px);
+  }
+}
+
+@-webkit-keyframes flip {
+  from {
+    transform: rotateX(0deg) translateY(0px);
+    -webkit-transform: rotateX(0deg) translateY(0px); 
+  }
+  to {
+    transform: rotateX(180deg) translateY(-180px);
+    -webkit-transform: rotateX(180deg) translateY(-180px);
+  }
+}
+
+@keyframes flip2 {
+  from {
+    transform: rotateX(180deg) translateY(-180px);
+    -webkit-transform: rotateX(180deg) translateY(-180px);
+  }
+  to {
+    transform: rotateX(0deg) translateY(0px);
+    -webkit-transform: rotateX(0deg) translateY(0px);
+  }
+}
+
+@-webkit-keyframes flip2 {
+  from {
+    transform: rotateX(180deg) translateY(-180px);
+    -webkit-transform: rotateX(180deg) translateY(-180px);
+  }
+  to {
+    transform: rotateX(0deg) translateY(0px);
+    -webkit-transform: rotateX(0deg) translateY(0px);
+  }
+}
+}
+@media screen and (min-width: 600px) { 
+        #stack{
+          width: 600px;
+          height:360px;
+        }
+        .flipped {
+  transform: rotateX(180deg) translateY(-360px);
+  -webkit-transform: rotateX(180deg) translateY(-360px);
+}
+.card .back p {
+  margin: 138px 5px 5px 5px;
+  font-size: 44pt;
+}
+.card .front p {
+  text-align: center;
+  margin-top:130px;
+  font-size: 54pt;
+}
+        @keyframes flip {
+  from {
+    transform: rotateX(0deg) translateY(0px);
+    -webkit-transform: rotateX(0deg) translateY(0px);
+  }
+  to {
+    transform: rotateX(180deg) translateY(-360px);
+    -webkit-transform: rotateX(180deg) translateY(-360px);
+  }
+}
+
+@-webkit-keyframes flip {
+  from {
+    transform: rotateX(0deg) translateY(0px);
+    -webkit-transform: rotateX(0deg) translateY(0px); 
+  }
+  to {
+    transform: rotateX(180deg) translateY(-360px);
+    -webkit-transform: rotateX(180deg) translateY(-360px);
+  }
+}
+
+@keyframes flip2 {
+  from {
+    transform: rotateX(180deg) translateY(-360px);
+    -webkit-transform: rotateX(180deg) translateY(-360px);
+  }
+  to {
+    transform: rotateX(0deg) translateY(0px);
+    -webkit-transform: rotateX(0deg) translateY(0px);
+  }
+}
+
+@-webkit-keyframes flip2 {
+  from {
+    transform: rotateX(180deg) translateY(-360px);
+    -webkit-transform: rotateX(180deg) translateY(-360px);
+  }
+  to {
+    transform: rotateX(0deg) translateY(0px);
+    -webkit-transform: rotateX(0deg) translateY(0px);
+  }
+}
+}
