@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<title>pH Lab</title>
+</head>
+<body onresize = "stageratio()">
+
+<div class = "stage">
+	<h1 id = "title">pH Lab</h1>
+	<div class = "content">
+		<p>The pH of a solution is a measurement of how acidic the solution is. One way to measure pH is to use pH paper. When pH paper is dipped into a solution, 
+		its color changes. This color can be compared to a color key on which the different colors indicate degrees of acidity. The pH color key on which the different colors indicate degrees of acidity. 
+		The pH color key also assigns a numeric value to the pH of a solution. The range of pH values is from 0 to 14. A solution that is acidic has a pH below 7. A solution that is neutral has a pH of 7. A solution
+		that is basic has a pH above 7.<br><br>
+		In this Virtual Lab you will use pH paper to determine the pH of common solutions. By first predicting and then testing the pH of various solutions, you will decide whether the solutions are acidic, neutral, or basic.<br>
+		</p>
+		<p><b>Objectives</b></p>
+		<p>- Predict the pH value of common solutions.</p>
+		<p>- Use pH paper to determine the pH value of common solutions.</p>
+		<p>- Determine whether a common solution is acidic, netural, or basic.</p>
+	
+	</div>
+	<div id = "table"></div>
+	<img id = "ph_measure" src = "img/ph_measure.svg">
+	<img id = "cnmlogo" src = "img/CNMbase.svg">
+	<form id = "phform" method = "post">
+		<input id = "t1">
+		<input id = "t2">
+		<input id = "t3">
+		<input id = "t4">
+		<input id = "t5">
+		<input id = "t6">
+	</form>
+	<div class = "butt" onclick= "check()" id = "submitbutt">Submit</div>
+	<div class = "butt" onclick= "reset()" id = "resetbutt">Reset</div>
+	<img class = "animated tubeset" id = "test_tubes" src = "img/test_tubes.svg">
+	<img id = "ph_chart" src = "img/ph_chart.svg">
+	<p class = "animated tubename tubeset" id = "name_1"></p>
+	<p class = "animated tubename tubeset" id = "name_2"></p>
+	<p class = "animated tubename tubeset" id = "name_3"></p>
+	<p class = "animated tubename tubeset" id = "name_4"></p>
+	<p class = "animated tubename tubeset" id = "name_5"></p>
+	<p class = "animated tubename tubeset" id = "name_6"></p>
+	<div class = "tube" id = "tube_1"></div>
+	<div class = "tube" id = "tube_2"></div>
+	<div class = "tube" id = "tube_3"></div>
+	<div class = "tube" id = "tube_4"></div>
+	<div class = "tube" id = "tube_5"></div>
+	<div class = "tube" id = "tube_6"></div>
+	<p class = "notification" id = "wrongnoti"><b>Double check your answers and re-submit or click reset for a new set of substances.</b></p>
+	<p class = "notification" id = "start"><b>< Click and drag the strip to begin the lab...</b></p>
+	<div id = "strip">
+		<div id = "strip_tip"></div>		
+	</div>
+
+	<div id = "correct">
+		<span id = "remove" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+		<h2>CORRECT!</h2>
+	</div>
+	
+</div>
+
+</body>
+<script src = "js/jquery-1.7.2.min.js"></script>
+<script src = "js/jquery-ui.min.js"></script>
+<script src = "js/jquery.ui.touch-punch.min.js"></script>
+<script src = "js/main.js"></script>
+</html>
