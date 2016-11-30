@@ -2182,7 +2182,7 @@
     transform-origin: center;
     -webkit-transform: none;
     transform: none;
-    opacity: 1;
+    opacity: 0.95;
   }
 }
 
@@ -2200,7 +2200,7 @@
     transform-origin: center;
     -webkit-transform: none;
     transform: none;
-    opacity: 1;
+    opacity: 0.95;
   }
 }
 

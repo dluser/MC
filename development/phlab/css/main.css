@@ -31,7 +31,26 @@ img,.butt{
        -moz-user-select: none;
         -ms-user-select: none; 
         	user-select: none;
-
+}
+p{
+	margin:0 0 1%;
+}
+.strip{
+	box-shadow:0px 0px 3px #ccc;
+	background:#f5f5f5;
+	top:30%;
+	left:30%;
+	width:2%;
+	height:16%;
+	border:1px solid #999;
+	cursor:pointer;
+}
+.strip_tip{
+	height:30%;
+	width:100%;
+	background-color:#f5f5f5;
+	top:71%;
+	border-bottom:1px solid #999;
 }
 .animated{
 	-webkit-animation-duration: 0.25s;
@@ -45,18 +64,18 @@ img,.butt{
 	width:20%;
 	overflow:auto;
 	padding:1%;
-	border:0.25rem solid red;
+	border:0.25em solid red;
 	background:#ff7070;
-	border-radius:5px;
+	border-radius:0.5em;
 	box-shadow: 0px 2px 5px #bbb;
 }
 .content p{
 	position:relative;
 }
 .content{
-	box-shadow:0px 2px 5px #bbb;
-	border-radius:5px;
-	border:0.25em solid #3CC1FA;
+	display:block;
+	box-shadow:0px 0px 10px #999;
+	border-radius:0.5em;
 	padding:1%;
 	overflow:scroll;
 	overflow-x:hidden;
@@ -76,7 +95,7 @@ img,.butt{
 	width:6%;
 	top:75%;
 	background-color:#F7E900;
-	border-radius:5%;
+	border-radius:0.5em;
 }
 .stage{
 	position:relative;
@@ -90,8 +109,18 @@ img,.butt{
     background: linear-gradient(-90deg,#dddddd,#ffffff 5%, #ffffff 95%, #dddddd);
     overflow:hidden;
 }
+.overlay{
+	border-radius:0em 0em 4em 4em;
+	position:relative;
+	margin:0 auto 0 auto;
+	top:37.5%;
+	height:58%;
+	width:61%;
+	background-color:red;
+	opacity:0.9;
+}
 #start{
-	border:0.25rem solid green;
+	border:0.25em solid green;
 	background-color: #98ff91;
 	display:block;
 	color:#333;
@@ -101,7 +130,7 @@ img,.butt{
 #correct{
 	display:none;
 	color:white;
-	opacity:0.9;
+	opacity:0.95;
 	width:100%;
 	height:100%;
 	background-color:#8FC549;
@@ -109,11 +138,13 @@ img,.butt{
 	font-size:10vw;
 }
 #correct h2{
-	margin:0 0 0 0;
+	margin:5% 0 0 0;
 	color:white;
-	top:17%;
-	position:relative;
 	font-size:10vw;
+}
+#correct p, #correct h2,#remove{
+	position:relative;
+	text-shadow:0.02em 0.02em 0.01em #222;
 }
 #correct span{
 	left:40%;
@@ -125,30 +156,34 @@ img,.butt{
 	left:10%;
 	width:20%;
 }
-#submitbutt,#resetbutt{
+.butt{
 	background-color:#3CC1FA;
 	color:white;
-	border-radius:5px;
-	padding:1%;
+	border-radius:0.5em;
+	padding:1em;
 	width:8%;
 	top:30%;
 	text-align:center;
 	box-shadow:0px 0px 2px #888;
 	cursor:pointer;
+	border-bottom:0.3em solid #2c8db7;
 }
-#submitbutt:hover,#resetbutt:hover{
+.butt:hover{
 	box-shadow:0px 0px 3px #777;
 	top:29.75%;
 }
-#submitbutt:active,#resetbutt:active{
+.butt:active{
 	box-shadow:0px 0px 3px #777;
 	top:30.25%;
 }
 #submitbutt{
-	left:50%;
+	left:50.75%;
 }
 #resetbutt{
 	left:60%;
+}
+#refreshbutt{
+	left:69.25%;
 }
 #ph_chart{
 	top:50%;
@@ -178,23 +213,6 @@ img,.butt{
     background-image:url(../img/wood.jpg);
     background-size:100%;
 }
-#strip{
-	box-shadow:0px 0px 3px #999;
-	background:#f5f5f5;
-	top:30%;
-	left:30%;
-	width:2%;
-	height:16%;
-	border:1px solid #999;
-	cursor:pointer;
-}
-#strip_tip{
-	height:30%;
-	width:100%;
-	background-color:#f5f5f5;
-	top:71%;
-	border-bottom:1px solid #999;
-}
 #tube_1{
 	left:44.5%;
 }
@@ -205,13 +223,13 @@ img,.butt{
 	left:60.5%;
 }
 #tube_4{
-	left:68.5%;
+	left:68.25%;
 }
 #tube_5{
-	left:76.5%;
+	left:76.25%;
 }
 #tube_6{
-	left:84.5%;
+	left:84.25%;
 }
 #t2{
 	left:18.25%;
