@@ -47,12 +47,12 @@
 <line id="XMLID_49_" class="st2" x1="526.5" y1="381" x2="526.5" y2="393"/>
 <line id="XMLID_50_" class="st2" x1="553.5" y1="381" x2="553.5" y2="393"/>
 <g id="Layer_2">
-	<text id="XMLID_40_" transform="matrix(1 0 0 1 213.4637 198.7583)" class="st5 st6">1</text>
-	<text id="XMLID_39_" transform="matrix(1 0 0 1 283.7756 198.7581)" class="st5 st6">2</text>
-	<text id="XMLID_32_" transform="matrix(1 0 0 1 429.085 198.758)" class="st5 st6">4</text>
-	<text id="XMLID_30_" transform="matrix(1 0 0 1 358.085 198.7582)" class="st5 st6">3</text>
-	<text id="XMLID_29_" transform="matrix(1 0 0 1 502.585 198.7583)" class="st5 st6">5</text>
-	<text id="XMLID_23_" transform="matrix(1 0 0 1 573.085 198.7583)" class="st5 st6">6</text>
+	<text id="XMLID_40_" transform="matrix(1 0 0 1 213.4637 198.7583)" class="st5 st6">A</text>
+	<text id="XMLID_39_" transform="matrix(1 0 0 1 283.7756 198.7581)" class="st5 st6">B</text>
+	<text id="XMLID_32_" transform="matrix(1 0 0 1 429.085 198.758)" class="st5 st6">D</text>
+	<text id="XMLID_30_" transform="matrix(1 0 0 1 358.085 198.7582)" class="st5 st6">C</text>
+	<text id="XMLID_29_" transform="matrix(1 0 0 1 502.585 198.7583)" class="st5 st6">E</text>
+	<text id="XMLID_23_" transform="matrix(1 0 0 1 573.085 198.7583)" class="st5 st6">F</text>
 	<rect id="XMLID_34_" x="198.3" y="402.3" class="st7" width="14.3" height="11.7"/>
 	<text id="XMLID_51_" transform="matrix(1 0 0 1 201.3377 412.9824)" class="st5 st8">0</text>
 	<rect id="XMLID_54_" x="226.3" y="402.3" class="st7" width="14.3" height="11.7"/>
