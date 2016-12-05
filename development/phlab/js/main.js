@@ -97,6 +97,7 @@ function stageratio(){
         $(".butt").css("font-size","1.2vh");
         $("#correct").css("font-size","15vh");
         $("#correct h2").css("font-size","15vh");
+        $("#correct p").css("font-size","3vh");
         $("input").css("font-size","1.8vh");
     }
     else{
@@ -106,6 +107,7 @@ function stageratio(){
         $(".butt").css("font-size","0.8vw");
         $("#correct").css("font-size","10vw");
         $("#correct h2").css("font-size","10vw");
+        $("#correct p").css("font-size","2vw");
         $("input").css("font-size","1.2vw");
 
     }
