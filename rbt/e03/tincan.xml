@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="http://5ce8sbpMqQB_course_id" type="http://adlnet.gov/expapi/activities/course">
+			<name lang="und">e03</name>
+			<description lang="und" />
+			<launch lang="und">story.html</launch>
+		</activity>
+		<activity id="http://5ce8sbpMqQB_course_id/6HOOwzbf0wq" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">E-03 Exercise</name>
+			<description lang="und">E-03 Exercise</description>
+		</activity>
+		<activity id="http://5ce8sbpMqQB_course_id/6HOOwzbf0wq/6CYkekwerpS" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Effective Communication</name>
+			<description lang="und">Effective Communication</description>
+			<interactionType>matching</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>statement_6pjzEbssSHM[.]choice_5tKRwCCUKkQ</correctResponsePattern>
+				<correctResponsePattern>statement_6pjzEbssSHM[.]choice_6MQaMoc8BTu</correctResponsePattern>
+				<correctResponsePattern>statement_6pjzEbssSHM[.]choice_5n7AFEl9joM</correctResponsePattern>
+				<correctResponsePattern>statement_6DcU8zRtBBw[.]choice_5aJ9TFqJP8T</correctResponsePattern>
+				<correctResponsePattern>statement_6DcU8zRtBBw[.]choice_5zZ2UpkRhPz</correctResponsePattern>
+				<correctResponsePattern>statement_6DcU8zRtBBw[.]choice_5ohsPWlRbld</correctResponsePattern>
+			</correctResponsePatterns>
+			<source>
+				<component>
+					<id>statement_6pjzEbssSHM</id>
+					<description lang="und">RedHotSpot - Rectangular Hotspot</description>
+				</component>
+				<component>
+					<id>statement_6DcU8zRtBBw</id>
+					<description lang="und">BlueHotSpot - Rectangular Hotspot</description>
+				</component>
+			</source>
+			<target>
+				<component>
+					<id>choice_5tKRwCCUKkQ</id>
+					<description lang="und">Item 1 - You are distracted by the noise in the hallway during a supervision session with your BCBA. You ask if it’s okay to close the door so you can focus better.</description>
+				</component>
+				<component>
+					<id>choice_6MQaMoc8BTu</id>
+					<description lang="und">Item 2 - Your supervising BCBA makes a derogatory remark about people from your part of the state. You say that you are from there and have had a very different experience.</description>
+				</component>
+				<component>
+					<id>choice_5n7AFEl9joM</id>
+					<description lang="und">Item 4 - You had a tough session with a client. The client’s parents told you they are un-happy with client progress and you feel like they were yelling at you. You write the facts in your session notes and call the BCBA to tell her that the parents are unhappy and ask if you need to do something differently.</description>
+				</component>
+				<component>
+					<id>choice_5aJ9TFqJP8T</id>
+					<description lang="und">Item 6 - Your supervising BCBA yelled at another RBT during a group supervision meeting. You call the company Human Resources Director to file a complaint.</description>
+				</component>
+				<component>
+					<id>choice_5zZ2UpkRhPz</id>
+					<description lang="und">Item 7 - You get home Friday night and realize that you made a mistake on a data collection sheet that you just left for your supervising BCBA. You decide to let it go because it’s a pretty minor mistake and you don’t want to bother your supervising BCBA on a weekend.</description>
+				</component>
+				<component>
+					<id>choice_5ohsPWlRbld</id>
+					<description lang="und">Item 8 - Your supervision session didn’t go well. The BCBA found out that you called in sick when you really weren’t sick and he wrote you up. You do a Facebook posting about what a jerk you think he is.</description>
+				</component>
+			</target>
+		</activity>
+	</activities>
+</tincan>
