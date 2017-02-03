@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="http://6pdnUxcgkEx_course_id" type="http://adlnet.gov/expapi/activities/course">
+			<name lang="und">a01</name>
+			<description lang="und" />
+			<launch lang="und">story.html</launch>
+		</activity>
+		<activity id="http://6pdnUxcgkEx_course_id/6HWVC1HGRRn" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">A-01 Exercise - 1</name>
+			<description lang="und">A-01 Exercise - 1</description>
+		</activity>
+		<activity id="http://6pdnUxcgkEx_course_id/6HWVC1HGRRn/6o2OU77baWh" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Pick One</name>
+			<description lang="und">Pick One</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6BHttGlMI6I</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6BHttGlMI6I</id>
+					<description lang="und">Read the Plan</description>
+				</component>
+				<component>
+					<id>choice_6ZGfCig98Cf</id>
+					<description lang="und">Ask clarifying Questions</description>
+				</component>
+				<component>
+					<id>choice_5b8a5fVIgO4</id>
+					<description lang="und">Identify the target behavior</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6pdnUxcgkEx_course_id/61HrHuNdGZE" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">A-01 Exercise - 2</name>
+			<description lang="und">A-01 Exercise - 2</description>
+		</activity>
+		<activity id="http://6pdnUxcgkEx_course_id/61HrHuNdGZE/5VJxYb8ZOUt" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Drag and Drop</name>
+			<description lang="und">Drag and Drop</description>
+			<interactionType>matching</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>statement_6Gck0kob4g5[.]choice_5gY0qTwuU5x</correctResponsePattern>
+				<correctResponsePattern>statement_6LTR7OsGVGy[.]choice_5gdrxt1tbLk</correctResponsePattern>
+				<correctResponsePattern>statement_5uDFztSpI4z[.]choice_6nF9Si6nGaD</correctResponsePattern>
+			</correctResponsePatterns>
+			<source>
+				<component>
+					<id>statement_6Gck0kob4g5</id>
+					<description lang="und">B_H - Rectangular Hotspot</description>
+				</component>
+				<component>
+					<id>statement_6LTR7OsGVGy</id>
+					<description lang="und">G_H - Rectangular Hotspot</description>
+				</component>
+				<component>
+					<id>statement_5uDFztSpI4z</id>
+					<description lang="und">P_H - Rectangular Hotspot</description>
+				</component>
+			</source>
+			<target>
+				<component>
+					<id>choice_5gY0qTwuU5x</id>
+					<description lang="und">B - A fast sudden movement (typically in the form of running) or attempt to do so, in any direction other than toward the directed activity or location.</description>
+				</component>
+				<component>
+					<id>choice_5gdrxt1tbLk</id>
+					<description lang="und">G - Extension of the hand or arm in the direction of another person or an object accompanied by wrapping or attempting to wrap the fingers around the person or object.</description>
+				</component>
+				<component>
+					<id>choice_6nF9Si6nGaD</id>
+					<description lang="und">P - Using open palmed hands, upper body, or head to exert force away from himself, against another person or an object</description>
+				</component>
+			</target>
+		</activity>
+		<activity id="http://6pdnUxcgkEx_course_id/6THxxSMgpM0" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">A-01 Exercise - 3</name>
+			<description lang="und">A-01 Exercise - 3</description>
+		</activity>
+		<activity id="http://6pdnUxcgkEx_course_id/6THxxSMgpM0/6FKgtY7ajEi" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Pick One</name>
+			<description lang="und">Pick One</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_68dHaIARo2U</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_68dHaIARo2U</id>
+					<description lang="und">Folded Corner 1</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6pdnUxcgkEx_course_id/6brShTchwps" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">A-01 Exercise - 4</name>
+			<description lang="und">A-01 Exercise - 4</description>
+		</activity>
+		<activity id="http://6pdnUxcgkEx_course_id/6brShTchwps/5bfH6X3Wp97" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Pick Many</name>
+			<description lang="und">Pick Many</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6fm76VCyd7w</correctResponsePattern>
+				<correctResponsePattern>choice_5fCspC9pOXv</correctResponsePattern>
+				<correctResponsePattern>choice_6niissp7cre</correctResponsePattern>
+				<correctResponsePattern>choice_6GpGhByx78i</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6fm76VCyd7w</id>
+					<description lang="und">Record Duration per occurrence of problem behavior</description>
+				</component>
+				<component>
+					<id>choice_5fCspC9pOXv</id>
+					<description lang="und">Calculate Cumulative Duration of Episodes of Problem Behavior per Session</description>
+				</component>
+				<component>
+					<id>choice_6niissp7cre</id>
+					<description lang="und">Record Total Frequency of Episodes of Problem Behavior per Session </description>
+				</component>
+				<component>
+					<id>choice_6GpGhByx78i</id>
+					<description lang="und">Record ABC data to record occurrences of problem behavior </description>
+				</component>
+				<component>
+					<id>choice_5kLGRinI0kT</id>
+					<description lang="und">Record the Frequency of reinforcement per session</description>
+				</component>
+				<component>
+					<id>choice_6pnqizAhRaI</id>
+					<description lang="und">Calculate Cumulative Frequency of Episodes of Problem Behavior per Session</description>
+				</component>
+				<component>
+					<id>choice_6RJyRrr8bcl</id>
+					<description lang="und">Use the optical DDR application, then you can disconnect the virtual bus!</description>
+				</component>
+				<component>
+					<id>choice_6gLcOpz6Kx0</id>
+					<description lang="und">Record Partial Interval occurrence of problem behavior</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6pdnUxcgkEx_course_id/6G4S6vaeCTv" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">A-01 Exercise - 5</name>
+			<description lang="und">A-01 Exercise - 5</description>
+		</activity>
+		<activity id="http://6pdnUxcgkEx_course_id/6G4S6vaeCTv/6NBwS3xFeFB" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Drag and Drop</name>
+			<description lang="und">Drag and Drop</description>
+			<interactionType>matching</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>statement_5vA6bikCNO7[.]choice_6daYKgdIv1g</correctResponsePattern>
+				<correctResponsePattern>statement_5vA6bikCNO7[.]choice_6cIbnRRT18A</correctResponsePattern>
+				<correctResponsePattern>statement_5vA6bikCNO7[.]choice_6ponqUWshQE</correctResponsePattern>
+				<correctResponsePattern>statement_5vA6bikCNO7[.]choice_5Xvsff0hfQk</correctResponsePattern>
+				<correctResponsePattern>statement_5vA6bikCNO7[.]choice_6N1JMbQLCS3</correctResponsePattern>
+				<correctResponsePattern>statement_5vA6bikCNO7[.]choice_668xuNOL8Tg</correctResponsePattern>
+			</correctResponsePatterns>
+			<source>
+				<component>
+					<id>statement_5vA6bikCNO7</id>
+					<description lang="und">Hotspot 1 - Rectangular Hotspot 1</description>
+				</component>
+			</source>
+			<target>
+				<component>
+					<id>choice_6daYKgdIv1g</id>
+					<description lang="und">ABC - Group</description>
+				</component>
+				<component>
+					<id>choice_6cIbnRRT18A</id>
+					<description lang="und">Pencil - pencil.png</description>
+				</component>
+				<component>
+					<id>choice_6ponqUWshQE</id>
+					<description lang="und">Picture 4 - timer.png</description>
+				</component>
+				<component>
+					<id>choice_5Xvsff0hfQk</id>
+					<description lang="und">Picture 5 - calculator.png</description>
+				</component>
+				<component>
+					<id>choice_6eTiNjt0QFi</id>
+					<description lang="und">Picture 6 - visor.png</description>
+				</component>
+				<component>
+					<id>choice_5pGhg62eoiR</id>
+					<description lang="und">Picture 7 - gnome.png</description>
+				</component>
+				<component>
+					<id>choice_62BSRa23Oul</id>
+					<description lang="und">Picture 8 - fanny.png</description>
+				</component>
+				<component>
+					<id>choice_6N1JMbQLCS3</id>
+					<description lang="und">Freq - Group</description>
+				</component>
+				<component>
+					<id>choice_668xuNOL8Tg</id>
+					<description lang="und">Duration - Group</description>
+				</component>
+			</target>
+		</activity>
+	</activities>
+</tincan>
