@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="http://6NWeRXfyCUH_course_id" type="http://adlnet.gov/expapi/activities/course">
+			<name lang="und">a03</name>
+			<description lang="und" />
+			<launch lang="und">story.html</launch>
+		</activity>
+		<activity id="http://6NWeRXfyCUH_course_id/6HWVC1HGRRn" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">A-03 PartialInterval</name>
+			<description lang="und">A-03 PartialInterval</description>
+		</activity>
+		<activity id="http://6NWeRXfyCUH_course_id/6SIvQwHHarj" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">A-03 WholeInterval</name>
+			<description lang="und">A-03 WholeInterval</description>
+		</activity>
+		<activity id="http://6NWeRXfyCUH_course_id/6MJZUdRqU3g" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">A-03 MomentaryTimeSampling</name>
+			<description lang="und">A-03 MomentaryTimeSampling</description>
+		</activity>
+		<activity id="http://6NWeRXfyCUH_course_id/6g5LqDfIQxe" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">A-03 Quiz - 1</name>
+			<description lang="und">A-03 Quiz - 1</description>
+		</activity>
+		<activity id="http://6NWeRXfyCUH_course_id/6g5LqDfIQxe/5WZvT6qsBei" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Pick One</name>
+			<description lang="und">Pick One</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6BnPXRBBayN</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6BnPXRBBayN</id>
+					<description lang="und">Partial interval</description>
+				</component>
+				<component>
+					<id>choice_6lc4V1kbFy7</id>
+					<description lang="und">Whole interval</description>
+				</component>
+				<component>
+					<id>choice_6aQNwZ1kSxR</id>
+					<description lang="und">Momentary time sampling</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6NWeRXfyCUH_course_id/6dRcJ633Z0F" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">A-03 Quiz - 2</name>
+			<description lang="und">A-03 Quiz - 2</description>
+		</activity>
+		<activity id="http://6NWeRXfyCUH_course_id/6dRcJ633Z0F/5XO7IZiejX0" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Pick Many</name>
+			<description lang="und">Pick Many</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5uxTyWiOQrT</correctResponsePattern>
+				<correctResponsePattern>choice_6lu6RWx5ioe</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6Hi3IsPQH6Q</id>
+					<description lang="und">Partial interval</description>
+				</component>
+				<component>
+					<id>choice_5uxTyWiOQrT</id>
+					<description lang="und">Whole interval</description>
+				</component>
+				<component>
+					<id>choice_6lu6RWx5ioe</id>
+					<description lang="und">Momentary time sampling</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6NWeRXfyCUH_course_id/6KYFxCmuOhe" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">A-03 Quiz - 3</name>
+			<description lang="und">A-03 Quiz - 3</description>
+		</activity>
+		<activity id="http://6NWeRXfyCUH_course_id/6KYFxCmuOhe/5bXmeukQ2gh" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Pick One</name>
+			<description lang="und">Pick One</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6o3KmpfNi4n</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6o3KmpfNi4n</id>
+					<description lang="und">Partial interval</description>
+				</component>
+				<component>
+					<id>choice_6QFi72C4Evu</id>
+					<description lang="und">Whole interval</description>
+				</component>
+				<component>
+					<id>choice_5Z6rdQEtBsK</id>
+					<description lang="und">Momentary time sampling</description>
+				</component>
+			</choices>
+		</activity>
+	</activities>
+</tincan>
