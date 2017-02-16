@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="http://6EtXbJWjCcT_course_id" type="http://adlnet.gov/expapi/activities/course">
+			<name lang="und">e01</name>
+			<description lang="und" />
+			<launch lang="und">story.html</launch>
+		</activity>
+		<activity id="http://6EtXbJWjCcT_course_id/6gvkspOzV5G" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">E-01 Exercise</name>
+			<description lang="und">E-01 Exercise</description>
+		</activity>
+		<activity id="http://6EtXbJWjCcT_course_id/6gvkspOzV5G/5gWdWNaDrLC" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Reported</name>
+			<description lang="und">Reported</description>
+			<interactionType>matching</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>statement_6YFc9uYPLS4[.]choice_5dEbUnRnL2R</correctResponsePattern>
+				<correctResponsePattern>statement_6YFc9uYPLS4[.]choice_6LiDfJuDOun</correctResponsePattern>
+				<correctResponsePattern>statement_6YFc9uYPLS4[.]choice_6BQrs0W5lRm</correctResponsePattern>
+				<correctResponsePattern>statement_6YFc9uYPLS4[.]choice_6WdFKaeHLu6</correctResponsePattern>
+				<correctResponsePattern>statement_6YFc9uYPLS4[.]choice_5bLO0QMVrpI</correctResponsePattern>
+				<correctResponsePattern>statement_6CFjJbVjqAI[.]choice_5dEcgT0CWQM</correctResponsePattern>
+				<correctResponsePattern>statement_6CFjJbVjqAI[.]choice_6katRECTjZG</correctResponsePattern>
+				<correctResponsePattern>statement_6CFjJbVjqAI[.]choice_5vqni506dr2</correctResponsePattern>
+				<correctResponsePattern>statement_6CFjJbVjqAI[.]choice_67gLKHouLLH</correctResponsePattern>
+				<correctResponsePattern>statement_6CFjJbVjqAI[.]choice_604zzO4rkF3</correctResponsePattern>
+			</correctResponsePatterns>
+			<source>
+				<component>
+					<id>statement_6YFc9uYPLS4</id>
+					<description lang="und">RedHotSpot - Rectangular Hotspot</description>
+				</component>
+				<component>
+					<id>statement_6CFjJbVjqAI</id>
+					<description lang="und">BlueHotSpot - Rectangular Hotspot</description>
+				</component>
+			</source>
+			<target>
+				<component>
+					<id>choice_5dEbUnRnL2R</id>
+					<description lang="und">Item 1 - Client’s grandmother is in the process of moving into the home </description>
+				</component>
+				<component>
+					<id>choice_6LiDfJuDOun</id>
+					<description lang="und">Item 2 - Client is waking up between 2 and 3 am every night and is awake for 30-45 minutes then goes back to sleep </description>
+				</component>
+				<component>
+					<id>choice_6BQrs0W5lRm</id>
+					<description lang="und">Item 3 - Client has had a temperature of 101oF or a bit higher for 2 days; parents kept her home from school</description>
+				</component>
+				<component>
+					<id>choice_6WdFKaeHLu6</id>
+					<description lang="und">Item 4 - New medication started since the last session, client complaining of stomach aches</description>
+				</component>
+				<component>
+					<id>choice_5bLO0QMVrpI</id>
+					<description lang="und">Item 5 - Client’s sister has been in and out of the hospital for the last week; family routine has been disrupted</description>
+				</component>
+				<component>
+					<id>choice_5dEcgT0CWQM</id>
+					<description lang="und">Item 6 - Client started taking seasonal allergy medication, caregivers report no changes in client behavior or other apparent effects</description>
+				</component>
+				<component>
+					<id>choice_6katRECTjZG</id>
+					<description lang="und">Item 7 - Client occasionally wakes up at night to go to the bathroom and immediately goes back to sleep</description>
+				</component>
+				<component>
+					<id>choice_5vqni506dr2</id>
+					<description lang="und">Item 8 - Client is mixed race (Native American/White)</description>
+				</component>
+				<component>
+					<id>choice_67gLKHouLLH</id>
+					<description lang="und">Item 9 - Client’s grandmother takes him swimming every Saturday morning</description>
+				</component>
+				<component>
+					<id>choice_604zzO4rkF3</id>
+					<description lang="und">Item 10 - Client has 6 siblings under the age of 14 living in the home</description>
+				</component>
+			</target>
+		</activity>
+	</activities>
+</tincan>

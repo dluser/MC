@@ -1,0 +1,166 @@
+html,body{
+  margin:5px auto 0px auto;
+  padding:0 0 0 0;
+  overflow:visible;
+}
+h1{
+  padding:5px 0px 5px 0px;
+  word-wrap: break-word;
+}
+p{
+  padding:5px 5px 5px 5px;
+  margin:0 0 0 0;
+  word-wrap: break-word;
+}
+.drag-list{
+  display:table;
+  position:relative;
+  padding:0px 0px 0px 0px;
+  margin:0px auto 0px auto;
+  width:100%;
+  height:75%;
+  border-spacing:0px;
+  vertical-align: center;
+  overflow:visible;
+}
+.category{
+  box-shadow:0px 0px 5px #bbb;
+  display: table-cell;
+  float: left;
+  line-height:75px;
+  width: 50%;
+  height:12%;
+  text-align: center;
+  color: #555;
+  border: 1px solid #ccc;
+  border-top:3px solid #cecece;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fefefe;
+}
+.drag-item {
+  cursor:move;
+  position: relative;
+  overflow:hidden;
+  box-shadow:0px 0px 5px #bbb;
+  display: table-cell;
+  border-spacing:0px;
+  vertical-align: center;
+  float: left;
+  width: 50%;
+  height:33.33%;
+  text-align: center;
+  color: #555;
+  background: #fefefe;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 0;
+}
+.correct{
+  left:0px;
+  top:-7px;
+  background:#fefefe;
+  border: 1px solid green;
+  text-align: center;
+  box-shadow:0px 0px 5px #bbb;
+  display:table;
+  position:relative;
+  width:100%;
+  height:10%;
+  border-radius:0px 0px 10px 10px;
+   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+   border-bottom:3px solid #003a00;
+}
+.drag-item h1{
+  color:#f7f7f7;
+  margin-top:0px;
+  margin-bottom:0px;
+  background-color: #780000;
+  box-shadow:0px 1px 3px #333;
+  border-bottom:solid 3px rgba(0,0,0,0.2);
+}
+#one{
+  background-image:url('../img/dog.jpg');
+  background-size:cover;
+}
+#two{
+  background-image:url('../img/snake.jpg');
+  background-size:cover;
+}
+#three{
+  background-image:url('../img/whale.jpg');
+  background-size:cover;
+}
+#four{
+  background-image:url('../img/lizard.jpg');
+  background-size:cover;
+}
+#five{
+  background-image:url('../img/human.jpg');
+  background-size:cover;
+}
+#six{
+  background-image:url('../img/turtle.jpg');
+  background-size:cover;
+}
+#result{
+  color:white;
+  background:green;
+}
+#option1{
+   border-top-left-radius: 10px;
+}
+#option2{
+   border-top-right-radius: 10px;
+}
+@media screen and (min-width: 300px) {
+    html,body {
+        height:400px;
+        width:200px;
+    }
+    .category{
+      line-height: 25px;
+    }
+    h1{
+      font-size:0.7em;
+    }
+    p{
+      font-size:0.5em;
+    }
+}
+@media screen and (min-width: 480px) {
+    html,body {
+        height:500px;
+        width:250px;
+    }
+    .category{
+      line-height: 38px;
+    }
+    h1{
+      font-size:0.7em;
+    }
+    p{
+      font-size:0.7em;
+    }
+}
+@media screen and (min-width: 640px) {
+    html,body {
+        height:600px;
+        width:300px;
+    }
+    .category{
+      line-height: 38px;
+    }
+    h1{
+      font-size:1em;
+    }
+    p{
+      font-size:0.8em;
+    }
+}
+

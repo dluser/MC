@@ -1,0 +1,88 @@
+
+.highlight:hover{
+	background-color:rgba(0,0,0,0.1);
+}
+.highlight:active{
+  margin-top:2px !important;
+}
+.highlightactive{
+	background-color:rgba(0,0,0,0.1);
+}
+.outline:hover{
+	border:5px solid #000 !important;
+  box-shadow:0px 4px 8px rgba(0,0,0,0.3) !important;
+}
+.outline:active{
+  margin-top:5px !important;
+}
+.outlineactive{
+	border:5px solid #000 !important;
+}
+.outline{
+border:5px solid rgba(0,0,0,0.0);
+border-radius:100%;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+#Stage_bubbles{
+	background-image:url("images/bubblesprite.png");
+	background-size:24846px !important;
+	background-repeat:no-repeat;
+}
+
+@-webkit-keyframes bubbleanim {
+    to {background-position:-24846px 0px;}
+} 
+ 
+@keyframes bubbleanim {
+    to {background-position:-24846px 0px;}
+}
+.speedone{
+	-webkit-animation: bubbleanim 5.125s steps(123, end) infinite;
+    animation: bubbleanim 5.125s steps(123, end) infinite;
+}
+.speedtwo{
+	-webkit-animation: bubbleanim 2s steps(123, end) infinite;
+    animation: bubbleanim 2s steps(123, end) infinite;
+}
+.speedthree{
+	-webkit-animation: bubbleanim 1s steps(123, end) infinite; 
+    animation: bubbleanim 1s steps(123, end) infinite;
+}
+#Stage_reset:active{
+  margin-top:5px !important;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.select:hover{
+  box-shadow:0px 4px 16px rgba(0,0,0,0.9) !important;
+  border-radius:31px !important;
+}
+.select:active{
+  margin-top:5px !important;
+}

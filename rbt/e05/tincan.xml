@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="http://6VrNtWH3zMB_course_id" type="http://adlnet.gov/expapi/activities/course">
+			<name lang="und">e05</name>
+			<description lang="und" />
+			<launch lang="und">story.html</launch>
+		</activity>
+		<activity id="http://6VrNtWH3zMB_course_id/6GGQ4OLXAjs" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">E-05 Exercise</name>
+			<description lang="und">E-05 Exercise</description>
+		</activity>
+		<activity id="http://6VrNtWH3zMB_course_id/6GGQ4OLXAjs/6ItLQNZcXl0" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Must be Reported</name>
+			<description lang="und">Must be Reported</description>
+			<interactionType>matching</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>statement_5qVv0dnnQKt[.]choice_6dQbayBvPSC</correctResponsePattern>
+				<correctResponsePattern>statement_5qVv0dnnQKt[.]choice_6koTjQkvif6</correctResponsePattern>
+				<correctResponsePattern>statement_5qVv0dnnQKt[.]choice_6AaKM8Ehsmv</correctResponsePattern>
+				<correctResponsePattern>statement_5qVv0dnnQKt[.]choice_5iPcl8hU102</correctResponsePattern>
+				<correctResponsePattern>statement_5ySzsIb4dnP[.]choice_6b2PBg7wSKK</correctResponsePattern>
+				<correctResponsePattern>statement_5ySzsIb4dnP[.]choice_6IArZT8JPLp</correctResponsePattern>
+				<correctResponsePattern>statement_5ySzsIb4dnP[.]choice_5uMnFljP90N</correctResponsePattern>
+				<correctResponsePattern>statement_5ySzsIb4dnP[.]choice_5wzTuL7PmSB</correctResponsePattern>
+			</correctResponsePatterns>
+			<source>
+				<component>
+					<id>statement_5qVv0dnnQKt</id>
+					<description lang="und">RedHotSpot - Rectangular Hotspot</description>
+				</component>
+				<component>
+					<id>statement_5ySzsIb4dnP</id>
+					<description lang="und">BlueHotSpot - Rectangular Hotspot</description>
+				</component>
+			</source>
+			<target>
+				<component>
+					<id>choice_6dQbayBvPSC</id>
+					<description lang="und">Item 1 - Records kept on site for 3 years and archived for another 4 years</description>
+				</component>
+				<component>
+					<id>choice_6koTjQkvif6</id>
+					<description lang="und">Item 2 - Hand deliver data sheets to the supervising BCBA</description>
+				</component>
+				<component>
+					<id>choice_6AaKM8Ehsmv</id>
+					<description lang="und">Item 3 - Keep data sheets in a locked filing cabinet over the weekend until they can be taken to the office</description>
+				</component>
+				<component>
+					<id>choice_5iPcl8hU102</id>
+					<description lang="und">Item 4 - Refuse to give copies of data and records to other service providers unless a client gives signed consent</description>
+				</component>
+				<component>
+					<id>choice_6b2PBg7wSKK</id>
+					<description lang="und">Item 6 - Records kept for 7 years or until client is no longer receiving services, whatever comes first</description>
+				</component>
+				<component>
+					<id>choice_6IArZT8JPLp</id>
+					<description lang="und">Item 7 - Refuse to give copies of data and records to other service providers unless a client gives signed consent but can give verbal information about client progress</description>
+				</component>
+				<component>
+					<id>choice_5uMnFljP90N</id>
+					<description lang="und">Item 8 - Place data sheets in a large envelope marked “Confidential” before leaving them in the mailroom for the supervising BCBA</description>
+				</component>
+				<component>
+					<id>choice_5wzTuL7PmSB</id>
+					<description lang="und">Item 9 - Keep data sheets in a manila folder marked confidential over the weekend. Tell your boyfriend not to look in the folder.</description>
+				</component>
+			</target>
+		</activity>
+	</activities>
+</tincan>

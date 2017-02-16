@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="http://6OoldUplVp1_course_id" type="http://adlnet.gov/expapi/activities/course">
+			<name lang="und">f02</name>
+			<description lang="und" />
+			<launch lang="und">story.html</launch>
+		</activity>
+		<activity id="http://6OoldUplVp1_course_id/5cpuQypiiY3" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">F-02 Exercise</name>
+			<description lang="und">F-02 Exercise</description>
+		</activity>
+		<activity id="http://6OoldUplVp1_course_id/5cpuQypiiY3/6Xa041aqLsx" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">REQUIREMENTS of RBT  Supervision </name>
+			<description lang="und">REQUIREMENTS of RBT  Supervision </description>
+			<interactionType>matching</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>statement_5bnS571vdNL[.]choice_5VaYKDgugdf</correctResponsePattern>
+				<correctResponsePattern>statement_5bnS571vdNL[.]choice_5tlONtf1xBe</correctResponsePattern>
+				<correctResponsePattern>statement_5bnS571vdNL[.]choice_6p9t2Z7zutv</correctResponsePattern>
+				<correctResponsePattern>statement_5bnS571vdNL[.]choice_6mvAH8JKOyu</correctResponsePattern>
+				<correctResponsePattern>statement_5bnS571vdNL[.]choice_6V6IKFXWqCf</correctResponsePattern>
+				<correctResponsePattern>statement_5oUdhUky1D6[.]choice_6Axbjk8ztoa</correctResponsePattern>
+				<correctResponsePattern>statement_5oUdhUky1D6[.]choice_6YxGt0NC5ca</correctResponsePattern>
+				<correctResponsePattern>statement_5oUdhUky1D6[.]choice_6XGcwYaPuyS</correctResponsePattern>
+				<correctResponsePattern>statement_5oUdhUky1D6[.]choice_673MvfPtpLR</correctResponsePattern>
+				<correctResponsePattern>statement_5oUdhUky1D6[.]choice_6gi0vlwaoFj</correctResponsePattern>
+			</correctResponsePatterns>
+			<source>
+				<component>
+					<id>statement_5bnS571vdNL</id>
+					<description lang="und">RedHotSpot - Rectangular Hotspot</description>
+				</component>
+				<component>
+					<id>statement_5oUdhUky1D6</id>
+					<description lang="und">BlueHotSpot - Rectangular Hotspot</description>
+				</component>
+			</source>
+			<target>
+				<component>
+					<id>choice_5VaYKDgugdf</id>
+					<description lang="und">Item 1 - At least one of the 2 face-to-face, synchronous supervision sessions per month must be individual</description>
+				</component>
+				<component>
+					<id>choice_5tlONtf1xBe</id>
+					<description lang="und">Item 2 - Supervision must include at least 2 face-to-face, synchronous contacts per month</description>
+				</component>
+				<component>
+					<id>choice_6p9t2Z7zutv</id>
+					<description lang="und">Item 3 - In person and on site BCBA observations of RBT practice with a client are preferred</description>
+				</component>
+				<component>
+					<id>choice_6mvAH8JKOyu</id>
+					<description lang="und">Item 4 - An RBT who provided 100 hours of applied behavior-analytic services in a month must receive at least 5 hours (or 5%) of BCBA supervision</description>
+				</component>
+				<component>
+					<id>choice_6V6IKFXWqCf</id>
+					<description lang="und">Item 5 - Effective behavior-analytic supervision includes development of performance expectations, delivering performance feedback, modeling skills, and reviewing client information</description>
+				</component>
+				<component>
+					<id>choice_6Axbjk8ztoa</id>
+					<description lang="und">Item 6 - Non-practicing RBTs must receive at least one supervision session per month to maintain the RBT credential</description>
+				</component>
+				<component>
+					<id>choice_6YxGt0NC5ca</id>
+					<description lang="und">Item 7 - Small group supervision should include non-RBTs to allow BCBAs to deliver efficient </description>
+				</component>
+				<component>
+					<id>choice_6XGcwYaPuyS</id>
+					<description lang="und">Item 8 - Small group RBT supervision can be provided for up to 16 people</description>
+				</component>
+				<component>
+					<id>choice_673MvfPtpLR</id>
+					<description lang="und">Item 9 - The BACB recommends that direct observation of RBT service delivery be limited to one time per month</description>
+				</component>
+				<component>
+					<id>choice_6gi0vlwaoFj</id>
+					<description lang="und">Item 10 - Small group supervision sessions are lecture-style so that supervising BCBAs can provide important information to a group of RBTs with similar needs</description>
+				</component>
+			</target>
+		</activity>
+	</activities>
+</tincan>

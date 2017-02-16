@@ -1,0 +1,266 @@
+h1,p,img,div,form{
+	position:absolute;
+}
+h1{
+	top:5%;
+	left:5%;
+	font-size:4vw;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	color: #2c2c2c;
+}
+form{
+	width:30%;
+	height:20%;
+	left:51.75%;
+	top:21.75%;
+}
+input{
+	font-size:1.2vw;
+	text-align:center;
+	position:absolute;
+	width:10%;
+	height:20%;
+	box-shadow:0px 0px 2px #888;
+	border:none;
+}
+img,.butt{
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none; 
+        	user-select: none;
+}
+p{
+	margin:0 0 1%;
+}
+.strip{
+	box-shadow:0px 0px 3px #ccc;
+	background:#f5f5f5;
+	top:30%;
+	left:30%;
+	width:2%;
+	height:16%;
+	border:1px solid #999;
+	cursor:pointer;
+}
+.strip_tip{
+	height:30%;
+	width:100%;
+	background-color:#f5f5f5;
+	top:71%;
+	border-bottom:1px solid #999;
+}
+.animated{
+	-webkit-animation-duration: 0.25s;
+  	animation-duration: 0.25s;
+}
+.notification{
+	display:none;
+	color:white;
+	left:30%;
+	top:16%;
+	width:20%;
+	overflow:auto;
+	padding:1%;
+	border:0.25em solid red;
+	background:#ff7070;
+	border-radius:0.5em;
+	box-shadow: 0px 2px 5px #bbb;
+}
+.content p{
+	position:relative;
+}
+.content{
+	display:block;
+	box-shadow:0px 0px 10px #999;
+	border-radius:0.5em;
+	padding:1%;
+	overflow:scroll;
+	overflow-x:hidden;
+	top:12%;
+	width:25%;
+	left:2%;
+	height:35%;
+}
+.tube{
+	width:6%;
+	height:40%;
+	top:50%;
+}
+.tubename{
+	padding:0.25% 0.25% 0.25% 0.25%;
+	text-align: center;
+	width:6%;
+	top:75%;
+	background-color:#F7E900;
+	border-radius:0.5em;
+}
+.stage{
+	position:relative;
+	margin:0 auto 0 auto;
+	width:100vw;
+	height:66vw;
+	background-color:#ffffff;
+	background: -webkit-linear-gradient(-90deg,#dddddd,#ffffff 5%, #ffffff 95%, #dddddd); 
+    background: -o-linear-gradient(-90deg,#dddddd,#ffffff 5%, #ffffff 95%, #dddddd); 
+    background: -moz-linear-gradient(-90deg,#dddddd,#ffffff 5%, #ffffff 95%, #dddddd);
+    background: linear-gradient(-90deg,#dddddd,#ffffff 5%, #ffffff 95%, #dddddd);
+    overflow:hidden;
+}
+.overlay{
+	border-radius:0em 0em 4em 4em;
+	position:relative;
+	margin:0 auto 0 auto;
+	top:37.5%;
+	height:58%;
+	width:61%;
+	background-color:red;
+	opacity:0.9;
+}
+#start{
+	border:0.25em solid green;
+	background-color: #98ff91;
+	display:block;
+	color:#333;
+	top:34%;
+	left:33%;
+}
+#correct{
+	display:none;
+	color:white;
+	opacity:0.95;
+	width:100%;
+	height:100%;
+	background-color:#8FC549;
+	text-align:center;
+	font-size:10vw;
+}
+#correct h2{
+	margin:5% 0 0 0;
+	color:white;
+	font-size:10vw;
+}
+#correct p, #correct h2,#remove{
+	position:relative;
+	text-shadow:0.02em 0.02em 0.01em #222;
+}
+#correct span{
+	left:40%;
+	cursor:pointer;
+	color:#628733;
+}
+#cnmlogo{
+	top:1%;
+	left:10%;
+	width:20%;
+}
+.butt{
+	background-color:#3CC1FA;
+	color:white;
+	border-radius:0.5em;
+	padding:1em;
+	width:8%;
+	top:30%;
+	text-align:center;
+	box-shadow:0px 0px 2px #888;
+	cursor:pointer;
+	border-bottom:0.3em solid #2c8db7;
+}
+.butt:hover{
+	box-shadow:0px 0px 3px #777;
+	top:29.75%;
+}
+.butt:active{
+	box-shadow:0px 0px 3px #777;
+	top:30.25%;
+}
+#submitbutt{
+	left:50.75%;
+}
+#resetbutt{
+	left:60%;
+}
+#refreshbutt{
+	left:69.25%;
+}
+#ph_chart{
+	top:50%;
+	left:5%;
+	width:30%;
+}
+#test_tubes{
+	top:52%;
+	left:40%;
+	width:55%;
+}
+#ph_measure{
+	top:-4%;
+	left:37%;
+	width:60%;
+}
+#table{
+	top:78%;
+	left:0;
+	width:100%;
+	height:22%;
+	background-color:#0D1B48;
+    background: -webkit-linear-gradient(#b28555, #CE9A61 90%, #b28555); 
+    background: -o-linear-gradient(#b28555, #CE9A61 90%, #b28555); 
+    background: -moz-linear-gradient(#b28555, #CE9A61 90%, #b28555);
+    background: linear-gradient(#b28555, #CE9A61 90%, #b28555);
+    background-image:url(../img/wood.jpg);
+    background-size:100%;
+}
+#tube_1{
+	left:44.5%;
+}
+#tube_2{
+	left:52.5%;
+}
+#tube_3{
+	left:60.5%;
+}
+#tube_4{
+	left:68.25%;
+}
+#tube_5{
+	left:76.25%;
+}
+#tube_6{
+	left:84.25%;
+}
+#t2{
+	left:18.25%;
+}
+#t3{
+	left:36.5%;
+}
+#t4{
+	left:54.75%;
+}
+#t5{
+	left:73%;
+}
+#t6{
+	left:90.5%;
+}
+#name_1{
+	left:44.5%;
+}
+#name_2{
+	left:52.5%;
+}
+#name_3{
+	left:60.5%;
+}
+#name_4{
+	left:68.5%;
+}
+#name_5{
+	left:76.5%;
+}
+#name_6{
+	left:84.5%;
+}
