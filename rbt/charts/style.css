@@ -1,0 +1,17 @@
+body{
+	text-align:center;
+}
+button{
+	cursor:pointer;
+}
+#links{
+	width:50%;
+	margin:auto;
+}
+#links{
+	text-align:center;
+}
+a{
+	display:block;
+	margin-top:20px;
+}
