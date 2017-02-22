@@ -10,8 +10,6 @@ function drawChart() {
     if (hash.length === 0) {
     	var elem = document.getElementById("myChart");
 		elem.parentNode.removeChild(elem);
-		var butt = document.getElementById("moregraphs");
-		butt.parentNode.removeChild(butt);
 		toggleGraphs();
     }
     else if(hash === 'linesample') {
