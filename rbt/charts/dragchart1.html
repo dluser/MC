@@ -1,0 +1,217 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="https://rawgithub.com/highslide-software/draggable-points/master/draggable-points.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  <style>
+  .feedback{
+  	width:50%;
+  	margin:auto;
+  	color:red;
+  	font-weight: bold;
+  	font-size:1em;
+  	text-align: center;
+
+  }
+  	#correct{
+  		display:none;
+  		box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+  		position:fixed;
+  		width:300px;
+  		height:100px;
+  		top:50%;
+  		margin-top:-50px;
+  		left:50%;
+  		margin-left:-150px;
+  		background:green;
+  		text-align:center;
+  		border-radius:5px;
+  		font-size:50px;
+  		color:white;
+  		padding:20px 5px 20px 5px;
+  		font-family:Arial;
+  		user-select:none;
+  		border-bottom:5px solid #006d00;
+  		cursor:default;
+  	}
+  	#correctclose{
+  		position:absolute;
+  		top:-8px;
+  		right:5px;
+  		cursor: pointer;
+  	}
+  
+  	button:focus{
+  		outline: none;
+  		
+  	}
+  	table{
+  		font-size:1em;
+  		width:50%;
+  		margin:20px auto 20px auto;
+  		border:1px solid #000;
+  		padding:0;
+  		border-collapse: collapse;
+  	}
+  	td,th{
+  		text-align: center;
+  		border:1px solid #222;
+  	}
+  	th{
+  		background:#ddd;
+  	}
+  	td,th{
+  		padding:10px;
+  	}
+  	input{
+  		text-align: center;
+  	}
+  </style>
+  </head>
+  <body>
+  <!-- Identify where the chart should be drawn. -->
+  <table>
+  	<tr class = "tableheading">
+	  	<th>Session No.</th>
+	  	<th>Frequency of Poking Friends</th>
+	  	<th>Session Length</th>
+	  	<th>Rate of Target Behavior (Bx/Hr)</th>
+  	</tr>
+  	<tr>
+  		<td>1</td>
+  		<td>14</td>
+  		<td>30 min</td>
+  		<td><input type = "number" id = "input0"></input></td>
+  	</tr>
+  	<tr>
+  		<td>2</td>
+  		<td>24</td>
+  		<td>60 min</td>
+  		<td><input input type = "number" id = "input1"></input></td>
+  	</tr>
+  	<tr>
+  		<td>3</td>
+  		<td>18</td>
+  		<td>45 min</td>
+  		<td><input input type = "number" id = "input2"></input></td>
+  	</tr>
+  	<tr>
+  		<td>4</td>
+  		<td>12</td>
+  		<td>30 min</td>
+  		<td><input input type = "number" id = "input3"></input></td>
+  	</tr>
+  	<tr>
+  		<td>5</td>
+  		<td>15</td>
+  		<td>30 min</td>
+  		<td><input input type = "number" id = "input4"></input></td>
+  	</tr>
+  </table>
+  <div class = "feedback"></div>
+  <div style = "width:70%;margin:30px auto 30px auto;" id="myChart">
+  </div>
+  <div class = "animated bounceIn" id="correct"><span id = "correctclose">×</span>Correct!</div>
+  <button onClick = "checkAnswers()">Submit</button>
+</body>
+
+  <script>
+  var answers = [28,24,24,24,30];
+  var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'myChart',
+        animation: false
+    },
+    
+    title: {
+        text: 'Rate of Target Behavior/Hour'
+    },
+
+    xAxis: {
+        categories: ['Session 1', 'Session 2','Session 3','Session 4','Session 5']
+    },
+
+    yAxis:[{
+    	title:{
+    		text:"Behavior/Hour"
+    	},
+    	allowDecimals:false,
+    	minTickInterval:1,
+    	//minorTickInterval:1,
+    	max:35,
+    	min:0,
+    	tickInterval:5,
+    	labels:{
+    		step:1
+    	}
+    }],
+
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+               
+                    },
+                    drop: function () {
+                   	       
+                    }
+                }
+            },
+            stickyTracking: false,
+            dragPrecisionY:1,
+            dragMaxY:35
+        },
+        line: {
+            cursor: 'ns-resize',
+            lineWidth:4,
+            marker:{
+            	radius:5
+            }
+        }
+    },
+
+    tooltip: {
+        yDecimals: 1,
+        pointFormat:'<b>{point.y} </b>Bx/Hr'
+    },
+
+    series: [{
+        data: [1, 1, 1, 1, 1],
+        //draggableX: true,
+        draggableY: true,
+        dragMinY: 0,
+        type: 'line',
+        minPointLength: 2
+    
+    }]
+
+});
+  function checkAnswers(){
+  	$(".feedback").html('');
+  	for(var i = 0; i < answers.length; i++){
+  		if(chart.series[0].data[i].y == answers[i] && $('#input'+i).val() == answers[i]){
+  			continue;
+  		}
+  		else{
+  			$("#correct").hide();
+  			$(".feedback").html('Double check that your rates are in the Behavior/Hour format and that the plot points accurately reflect the data table.');
+  			return;
+  		}
+
+  	}
+  	$("#correct").show();
+  	$('input').attr('readonly', 'true');
+  	console.log(chart.series[0].options.draggableY);
+  	chart.series[0].options.draggableY = false;
+  	console.log(chart.series[0].options.draggableY);
+  }
+  	$('#correctclose').click(function(){
+  		$('#correct').hide();
+  	});
+  </script>
