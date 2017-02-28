@@ -17,28 +17,40 @@
   	text-align: center;
 
   }
-  	#correct{
-  		
-  		box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-  		position:fixed;
-  		width:100%;
-  		height:100px;
-  		top:100px;
-  	  margin-top:-100px;
+  .notif{
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      position:fixed;
+      width:100%;
+      height:100px;
+      top:100%;
+      border-radius:5px;
+      margin-top:-100px;
       margin-left:-12px;
+      font-family:Arial;
+      cursor:default;
+      user-select:none;
+      color:white;
+      font-size:30px;
+  }
+  #incorrect{
+    display:none;
+    background:#ba0000;
+    padding:20px 5px 20px 5px;
+    font-size:50px;
+  }
+  	#correct{
+      display:none;
   		background:green;
   		text-align:center;
   		font-size:50px;
   		color:white;
   		padding:20px 5px 20px 5px;
-  		font-family:Arial;
-  		user-select:none;
   		border-bottom:5px solid #006d00;
-  		cursor:default;
   	}
-  	#correctclose{
+  	#correctclose,#incorrectclose{
+      font-size:50px;
   		position:absolute;
   		top:-8px;
   		right:5px;
@@ -118,7 +130,8 @@
   <div class = "feedback"></div>
   <div style = "width:80%;margin:30px auto 30px auto;" id="myChart">
   </div>
-  <div class = "animated bounceIn" id="correct"><span id = "correctclose">&times;</span>Correct!</div>
+  <div class = "notif animated bounceIn" id="correct"><span id = "correctclose">&times;</span>Correct!</div>
+  <div class = "notif animated bounceIn" id="incorrect"><span id = "incorrectclose">&times;</span>Try again...</div>
   <button onClick = "checkAnswers()">Submit</button>
 </body>
 
@@ -204,7 +217,7 @@
   		}
   		else{
   			$("#correct").hide();
-  			$(".feedback").html('Double check that your rates are in the Behavior/Hour format and that the plot points accurately reflect the data table.');
+  			$("#incorrect").show();
   			return;
   		}
 
@@ -218,4 +231,7 @@
   	$('#correctclose').click(function(){
   		$('#correct').hide();
   	});
+    $('#incorrectclose').click(function(){
+        $('#incorrect').hide();
+    });
   </script>
