@@ -1,23 +1,28 @@
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://rawgithub.com/highslide-software/draggable-points/master/draggable-points.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
   <style>
   html{
-    padding: 10px;
+    padding: 5px;
+  }
+  body{
+    padding:5px;
   }
   .feedback{
   	width:50%;
   	margin:auto;
   	color:red;
   	font-weight: bold;
-  	font-size:1em;
+  	font-size:1rem;
   	text-align: center;
 
   }
   .notif{
+      padding:20px 5px 20px 5px;
       box-sizing: border-box;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -32,27 +37,25 @@
       cursor:default;
       user-select:none;
       color:white;
-      font-size:30px;
-      box-shadow:0px 2px 3px #bbb;
+      font-size:3rem;
+      box-shadow:0px 0px 5px #bbb;
+  }
+  #myChart{
+    width:80%;margin:30px auto 30px auto;
   }
   #incorrect{
     display:none;
     background:#ba0000;
     border-bottom:5px solid #960000;
-    padding:20px 5px 20px 5px;
-    font-size:50px;
   }
   	#correct{
       display:none;
   		background:green;
   		text-align:center;
-  		font-size:50px;
   		color:white;
-  		padding:20px 5px 20px 5px;
   		border-bottom:5px solid #006d00;
   	}
   	#correctclose,#incorrectclose{
-      font-size:50px;
   		position:absolute;
   		top:-8px;
   		right:5px;
@@ -61,20 +64,19 @@
     #correctnext{
       cursor:pointer;
       position:absolute;
-      font-size:24px;
+      font-size:1.5rem;
       top:0;
-      right:0;
+      right:15px;
       width:20%;
       height:100%;
-      text-align: center;
+      text-align: right;
+      padding:27px 0px 0px 0px;
     }
     #correctnext p{
       margin:0;
-      margin-top:20px;
     }
     #nextarrow{
       margin-top:-5px !important;
-      font-size:36px;
     }
     body{
       border:2px dashed #bbb;
@@ -85,6 +87,7 @@
   		
   	}
   	table{
+      width:;
   		font-size:0.9em;
   		margin:20px auto 20px auto;
   		border:1px solid #000;
@@ -99,11 +102,33 @@
   		background:#ddd;
   	}
   	td,th{
-  		padding:10px;
+  		padding:5px;
   	}
   	input{
   		text-align: center;
   	}
+    @media (max-width: 450px) {
+      table{
+        font-size:0.65em;
+      }
+      #myChart{
+        width:100%;
+      }
+      .notif{
+        font-size:2em;
+         padding:30px 5px 20px 5px;
+      }
+      #correctclose,#incorrectclose{
+      position:absolute;
+      top:0;
+      right:5px;
+      cursor: pointer;
+    }
+    #correctnext{
+      font-size: 1rem;
+      padding:37px 0px 0px 0px;
+    }
+    }
   </style>
   </head>
   <body>
@@ -147,9 +172,9 @@
   	</tr>
   </table>
   <div class = "feedback"></div>
-  <div style = "width:80%;margin:30px auto 30px auto;" id="myChart">
+  <div id="myChart">
   </div>
-  <div class = "notif animated bounceIn" id="correct"><div id = "correctnext"><p>Next Chart</p><p id = "nextarrow">&#8594;</p></div>Correct!</div>
+  <div class = "notif animated bounceIn" id="correct"><div id = "correctnext"><p>Next</p><p id = "nextarrow">&#8594;</p></div>Correct!</div>
   <div class = "notif animated bounceIn" id="incorrect"><span id = "incorrectclose">&times;</span>Try again...</div>
   <button onClick = "checkAnswers()">Submit</button>
 </body>
@@ -239,7 +264,7 @@
     },
 
     series: [{
-        data: [1, 1, 1, 1, 1],
+        data: [28, 24, 24, 24, 30],
         //draggableX: true,
         draggableY: true,
         dragMinY: 0,
@@ -270,6 +295,7 @@ createChart();
     if(chartindex === chartlist.length - 1){
       $('#correct').html('Correct!');
     }
+    $('#incorrect').hide();
   	$("#correct").show();
   	$('input').attr('readonly', 'true');
   	console.log(chart.series[0].options.draggableY);
