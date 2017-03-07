@@ -22,21 +22,23 @@
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       position:fixed;
-      width:100%;
+      width:90%;
+      left:5%;
       height:100px;
-      top:100%;
+      top:0;
       border-radius:5px;
-      margin-top:-100px;
-      margin-left:-12px;
+      margin-top:20px;
       font-family:Arial;
       cursor:default;
       user-select:none;
       color:white;
       font-size:30px;
+      box-shadow:0px 2px 3px #bbb;
   }
   #incorrect{
     display:none;
     background:#ba0000;
+    border-bottom:5px solid #960000;
     padding:20px 5px 20px 5px;
     font-size:50px;
   }
@@ -56,6 +58,24 @@
   		right:5px;
   		cursor: pointer;
   	}
+    #correctnext{
+      cursor:pointer;
+      position:absolute;
+      font-size:24px;
+      top:0;
+      right:0;
+      width:20%;
+      height:100%;
+      text-align: center;
+    }
+    #correctnext p{
+      margin:0;
+      margin-top:20px;
+    }
+    #nextarrow{
+      margin-top:-5px !important;
+      font-size:36px;
+    }
     body{
       border:2px dashed #bbb;
     }
@@ -65,8 +85,7 @@
   		
   	}
   	table{
-  		font-size:1em;
-  		
+  		font-size:0.9em;
   		margin:20px auto 20px auto;
   		border:1px solid #000;
   		padding:0;
@@ -92,52 +111,73 @@
   <table>
   	<tr class = "tableheading">
 	  	<th>Session No.</th>
-	  	<th>Frequency of Poking Friends</th>
-	  	<th>Session Length</th>
-	  	<th>Rate of Target Behavior (Bx/Hr)</th>
+	  	<th id = "row00">Frequency of Poking Friends</th>
+	  	<th id = "row01">Session Length</th>
+	  	<th id = "row02">Rate of Target Behavior (Bx/Hr)</th>
   	</tr>
   	<tr>
   		<td>1</td>
-  		<td>14</td>
-  		<td>30 min</td>
+  		<td id = "row10">14</td>
+  		<td id = "row11">30 min</td>
   		<td><input type = "number" id = "input0"></input></td>
   	</tr>
   	<tr>
   		<td>2</td>
-  		<td>24</td>
-  		<td>60 min</td>
+  		<td id = "row20">24</td>
+  		<td id = "row21">60 min</td>
   		<td><input input type = "number" id = "input1"></input></td>
   	</tr>
   	<tr>
   		<td>3</td>
-  		<td>18</td>
-  		<td>45 min</td>
+  		<td id = "row30">18</td>
+  		<td id = "row31">45 min</td>
   		<td><input input type = "number" id = "input2"></input></td>
   	</tr>
   	<tr>
   		<td>4</td>
-  		<td>12</td>
-  		<td>30 min</td>
+  		<td id = "row40">12</td>
+  		<td id = "row41">30 min</td>
   		<td><input input type = "number" id = "input3"></input></td>
   	</tr>
   	<tr>
   		<td>5</td>
-  		<td>15</td>
-  		<td>30 min</td>
+  		<td id = "row50">15</td>
+  		<td id = "row51">30 min</td>
   		<td><input input type = "number" id = "input4"></input></td>
   	</tr>
   </table>
   <div class = "feedback"></div>
   <div style = "width:80%;margin:30px auto 30px auto;" id="myChart">
   </div>
-  <div class = "notif animated bounceIn" id="correct"><span id = "correctclose">&times;</span>Correct!</div>
+  <div class = "notif animated bounceIn" id="correct"><div id = "correctnext"><p>Next Chart</p><p id = "nextarrow">&#8594;</p></div>Correct!</div>
   <div class = "notif animated bounceIn" id="incorrect"><span id = "incorrectclose">&times;</span>Try again...</div>
   <button onClick = "checkAnswers()">Submit</button>
 </body>
 
   <script>
-  var answers = [28,24,24,24,30];
-  var chart = new Highcharts.Chart({
+  var chartindex = 0;
+  var chartlist = [
+  {title:'Rate of Target Behavior/Hour',ytitle:'Behavior/Hour',data:[28,24,24,24,30],maxRange:35,interval:5,table:[['Frequency of Poking Friends','Session Length','Rate of Target Behavior (Bx/Hr)'],['14','30 min'],['24','60 min'],['18','45 min'],['12','30 min'],['15','30 min']]},
+  {title:'Duration of Target Behavior (Percent Observation Time)',ytitle:'Percent of Observation Time',data:[40,33,33,47,47],maxRange:50,interval:5,table:[['Duration of Hand Flapping (minutes)','Session Length','Duration of Hand Flapping (percentage)'],['12','30 min'],['20','60 min'],['15','45 min'],['14','30 min'],['21','45 min']]},
+  {title:'Cumulative Frequency of Self-Injurious Behaviors',ytitle:'Frequency',data:[2,3,5,8,10],maxRange:12,interval:2,table:[['Frequency of Self-Injurious Behavior','Session Length','Cumulative Total'],['2','30 min'],['1','30 min'],['2','30 min'],['3','30 min'],['2','30 min']]},
+  {title:'Frequency of Poking',ytitle:'Frequency',data:[28,24,23,20,20],maxRange:30,interval:5,table:[['Frequency of Poking','Session Length','Rate of Poking'],['14','30 min'],['24','60 min'],['17','45 min'],['10','30 min'],['15','45 min']]},
+  {title:'Duration of Screaming (Percentage of Observation Time)',ytitle:'Percentage of Observation Time',data:[47,40,38,33,33],maxRange:50,interval:5,table:[['Duration of Screaming (Minutes)','Session Length','Duration of Screaming (Percentage)'],['14','30 min'],['24','60 min'],['17','45 min'],['10','30 min'],['15','45 min']]},
+  {title:'Cumulative Duration of Screaming (Minutes)',ytitle:'Minutes',data:[14,26,33,43,55],maxRange:60,interval:10,table:[['Duration of Screaming (Minutes)','Session Length','Cumulative Duration of Screaming (minutes)'],['14','30 min'],['12','30 min'],['7','30 min'],['10','30 min'],['10','30 min']]}];
+  var chart;
+  console.log(chartlist[0].title);
+
+  function createChart(){
+
+    $('input').removeAttr('readonly');
+    for(var i = 0; i < chartlist[chartindex].table.length; i++){
+          for(var j = 0; j < chartlist[chartindex].table[i].length; j++){
+            $('#row'+i+''+j).html(chartlist[chartindex].table[i][j]);
+          }
+        }
+    for(var i =0; i < 5; i++){
+      $('#input'+i).val('');
+    }
+    chart = new Highcharts.Chart({
 
     chart: {
         renderTo: 'myChart',
@@ -145,7 +185,7 @@
     },
     
     title: {
-        text: 'Rate of Target Behavior/Hour'
+        text: chartlist[chartindex].title
     },
 
     xAxis: {
@@ -153,18 +193,18 @@
     },
 
     yAxis:[{
-    	title:{
-    		text:"Behavior/Hour"
-    	},
-    	allowDecimals:false,
-    	minTickInterval:1,
-    	//minorTickInterval:1,
-    	max:35,
-    	min:0,
-    	tickInterval:5,
-    	labels:{
-    		step:1
-    	}
+      title:{
+        text:chartlist[chartindex].ytitle
+      },
+      allowDecimals:false,
+      minTickInterval:1,
+      //minorTickInterval:1,
+      max:chartlist[chartindex].maxRange,
+      min:0,
+      tickInterval:chartlist[chartindex].interval,
+      labels:{
+        step:1
+      }
     }],
 
     plotOptions: {
@@ -176,19 +216,19 @@
                
                     },
                     drop: function () {
-                   	       
+                           
                     }
                 }
             },
             stickyTracking: false,
             dragPrecisionY:1,
-            dragMaxY:35
+            dragMaxY:chartlist[chartindex].maxRange
         },
         line: {
             cursor: 'ns-resize',
             lineWidth:4,
             marker:{
-            	radius:5
+              radius:5
             }
         }
     },
@@ -209,10 +249,15 @@
     }]
 
 });
+  }
+
+createChart();
+
   function checkAnswers(){
+    var tempanswers = chartlist[chartindex].data;
   	$(".feedback").html('');
-  	for(var i = 0; i < answers.length; i++){
-  		if(chart.series[0].data[i].y == answers[i] && $('#input'+i).val() == answers[i]){
+  	for(var i = 0; i < tempanswers.length; i++){
+  		if(chart.series[0].data[i].y == tempanswers[i] && $('#input'+i).val() == tempanswers[i]){
   			continue;
   		}
   		else{
@@ -222,15 +267,25 @@
   		}
 
   	}
+    if(chartindex === chartlist.length - 1){
+      $('#correct').html('Correct!');
+    }
   	$("#correct").show();
   	$('input').attr('readonly', 'true');
   	console.log(chart.series[0].options.draggableY);
   	chart.series[0].options.draggableY = false;
   	console.log(chart.series[0].options.draggableY);
   }
-  	$('#correctclose').click(function(){
+
+  	$('#correctnext').click(function(){
+      console.log(chartindex);
   		$('#correct').hide();
+      if(chartindex < chartlist.length - 1){
+        chartindex++;
+        createChart();
+      }
   	});
+
     $('#incorrectclose').click(function(){
         $('#incorrect').hide();
     });
