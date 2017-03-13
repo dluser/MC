@@ -1,3 +1,0 @@
-com.inkling.widget.multiple_choice
-1.2.0
-20150524.235943z.870db6de

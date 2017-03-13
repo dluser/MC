@@ -1,115 +1,35 @@
-body{
-	font-family: Helvetica !important;
-	padding-bottom:25px;
-}
-html,body{
-	position:relative;
+body,html{
 	width:100%;
-	overflow-x:hidden !important;
+	height:100%;
+	text-align: center;
 }
-p{
-	font-family:arial;
-}
-h2{
-	color:#444;
-text-shadow:#7a7a7a 1px 1px 2px;
-}
-h1{
-	margin-bottom:20px;
-	color: #fff;
-font-weight: bold;
-font-family: Helvetica;
-text-shadow: 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
-}
-h3{
-	font-size:1.2em;
-	margin:10px 0px 0px 0px;
-	padding:0;
-}
-.underline{
-	margin:5px auto 20px auto;
-	width:10%;
-	height:2px;
-	border-bottom:2px dotted #444;
-}
-#title{
-	display:inline-block;
-}
-#title{
-	color:#fff;
-}
-.titlebar{
-	background-color:#fff;
-	border-bottom:5px solid #F6BE00;
-	box-shadow:0px 2px 5px #bbb;
-}
-#logo{
-	margin:5px 0px 5px 5px;
-	position:absolute;
-	max-width:60%;
-	height:auto;
-}
-#milelogo{
+img{
 	position:relative;
-	width:50%;
-	margin:0px auto 0px auto;
-}
-.box{
+	display:block;
 	width:100%;
-	margin:0;
-	padding:0;
 }
-#milethumbs{
-	margin-top:50px;
-}
-.thumbnail{
-	margin-top:10px;
-	box-shadow:0px 2px 5px #bbb !important;
-}
-.thumbnail img{
-	margin-bottom:0px;
-}
-.caption{
-	padding:1px 1px 1px 1px;
-}
-.dropcap{
-	font-family:georgia;
-	float:left;
-	font-size:3em;
-	line-height: 40px;
-	margin:0px 5px 0px 20px;
-	padding:0;
-}
-a:hover{
-	text-decoration: none;
-	margin-bottom:5px;
-}
-a .thumbnail:hover{
-	margin-top:5px;
-	box-shadow:0px 2px 5px #666 !important;
-}
-@media screen and (max-width: 1010px) {
-	h1,h3{
-		font-size:0.9em !important;
-	}
-    
-}
+#cnmlogo{
+	display:block;
+	position:relative;
+	width:320px;
+	top:50%;
+	margin:auto;
+	margin-top:-97.5px;
 
-@media screen and (max-width: 805px) {
-	h1,h3{
-		font-size:0.7em !important;
-	}
-    
+	padding:25px;
+	box-shadow:0px 0px 10px #bbb;
+
 }
-@media screen and (max-width: 600px) {
-	h1,h3{
-		font-size:0.8em !important;
-	}
-    
+#title{
+	top:5%;
+	position:absolute;
+	width:100%;
+	text-align:center;
 }
-@media screen and (max-width: 430px) {
-	h1,h3{
-		font-size:0.6em !important;
-	}
-    
+@media only screen and (min-width: 650px) {
+    #cnmlogo{
+    	padding:50px;
+        width:600px;
+        margin-top:-186px;
+    }
 }
