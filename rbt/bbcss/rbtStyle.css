@@ -4,3 +4,19 @@
 .hoveranswer:hover{
 	opacity:1;
 }
+.RBTtoggleAnswer{
+	user-select:none;
+	cursor:pointer;
+	margin:5px;
+	padding:10px;
+	box-shadow:0px 0px 5px #bbb;
+}
+.RBTcheckboxAnswer{
+	opacity:0;
+}
+.RBTanswer {
+    opacity: 0;
+}
+.RBTcheckboxAnswer:checked + .RBTanswer{
+	opacity:1;
+}
