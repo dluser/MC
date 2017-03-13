@@ -34,7 +34,7 @@
 /* Example usage...
 <button class="fancybutton"><span>Download Document</span></button>
 */
-a{
+.fancybutton {
   display: block;
   background-color: #003A70;
   vertical-align:middle
@@ -46,18 +46,18 @@ a{
   cursor: pointer;
   margin: 5px;
 }
-a:hover{
+.fancybutton:hover{
 	box-shadow:0 1px 8px rgba(0,0,0,0.24), 0 1px 6px rgba(0,0,0,0.48);
 }
 
-a span {
+.fancybutton span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.2s;
 }
 
-a span:after {
+.fancybutton span:after {
   content: '\2193';
   position: absolute;
   opacity: 0;
@@ -66,11 +66,11 @@ a span:after {
   transition: 0.5s;
 }
 
-a:hover span {
+.fancybutton:hover span {
   padding-right: 40px;
 }
 
-a:hover span:after {
+.fancybutton:hover span:after {
   opacity: 1;
   right: 0;
 }
