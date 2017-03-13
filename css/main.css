@@ -3,7 +3,7 @@ body,html{
 	height:100%;
 	text-align: center;
 }
-img{
+#cnmpic{
 	position:relative;
 	display:block;
 	width:100%;
