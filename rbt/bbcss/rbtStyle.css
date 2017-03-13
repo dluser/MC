@@ -12,10 +12,12 @@
 	box-shadow:0px 0px 5px #bbb;
 }
 .RBTcheckboxAnswer{
+	margin-top:2em;
 	opacity:0;
 }
 .RBTanswer {
     opacity: 0;
+    margin-top:1.5em;
 }
 .RBTcheckboxAnswer:checked + .RBTanswer{
 	opacity:1;
