@@ -32,7 +32,7 @@
 
 
 /* Example usage...
-<button class="fancybutton"><span>Download Document</span></button>
+<a style="width: 300px;" class="fancybutton" alt="" href="" target="_blank"><span>Download</span></a>
 */
 .fancybutton {
   display: block;
