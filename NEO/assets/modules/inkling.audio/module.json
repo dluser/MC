@@ -1,8 +1,0 @@
-{
-    "name": "audio",
-    "organization": "inkling",
-    "version": "1.0.0",
-    "displayName": "Inkling Audio",
-    "description": "Inkling audio patterns.",
-    "keywords": ["audio", "media"]
-}
