@@ -1,0 +1,6 @@
+.hoveranswer{
+	opacity:0;
+}
+.hoveranswer:hover{
+	opacity:1;
+}
