@@ -1,3 +1,0 @@
-com.inkling.widget.flashcard
-1.1.0
-20150524.235936z.870db6de

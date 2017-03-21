@@ -1,0 +1,77 @@
+
+.hoveranswer{
+	opacity:0;
+}
+.hoveranswer:hover{
+	opacity:1;
+}
+
+/* Example usage...
+	<label class="RBTtoggleAnswer" for="toggle-1">Toggle Example</label> 
+	<input class="RBTcheckboxAnswer" id="toggle-1" type="checkbox" />
+	<p class="RBTanswer"></p>
+*/
+.RBTtoggleAnswer{
+	user-select:none;
+	cursor:pointer;
+	margin:5px;
+	padding:10px;
+	box-shadow:0px 0px 5px #bbb;
+}
+.RBTcheckboxAnswer{
+	margin-top:2em;
+	opacity:0;
+}
+.RBTanswer {
+    opacity: 0;
+    margin-top:1.5em;
+}
+.RBTcheckboxAnswer:checked + .RBTanswer{
+	opacity:1;
+}
+
+
+/* Example usage...
+<a style="width: 300px;" class="fancybutton" alt="" href="" target="_blank"><span>Download</span></a>
+*/
+.fancybutton {
+  display: block;
+  background-color: #0061b7;
+  vertical-align:middle;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.fancybutton:hover{
+	box-shadow:0 1px 8px rgba(0,0,0,0.24), 0 1px 6px rgba(0,0,0,0.48);
+  background-color: #003A70;
+}
+
+.fancybutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+
+.fancybutton span:after {
+  content: '\2193';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -0px;
+  transition: 0.5s;
+}
+
+.fancybutton:hover span {
+  padding-right: 40px;
+}
+
+.fancybutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
