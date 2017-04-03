@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="http://6Kj56KgRy2S_course_id" type="http://adlnet.gov/expapi/activities/course">
+			<name lang="und">d02</name>
+			<description lang="und" />
+			<launch lang="und">story.html</launch>
+		</activity>
+		<activity id="http://6Kj56KgRy2S_course_id/5qWWVjnbfPL" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">D-02 Exercise</name>
+			<description lang="und">D-02 Exercise</description>
+		</activity>
+		<activity id="http://6Kj56KgRy2S_course_id/5qWWVjnbfPL/5XZV4mZtRMF" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Sensory reinforcement</name>
+			<description lang="und">Sensory reinforcement</description>
+			<interactionType>matching</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>statement_6anW1s4kBW0[.]choice_644GCk9LF2Z</correctResponsePattern>
+				<correctResponsePattern>statement_60CsQGGifIT[.]choice_5h34oXJpaNs</correctResponsePattern>
+				<correctResponsePattern>statement_6Ll8OkUPBIw[.]choice_5fOEr3KWBVv</correctResponsePattern>
+				<correctResponsePattern>statement_6nwOAolwdjE[.]choice_6CSDmEk7oSu</correctResponsePattern>
+				<correctResponsePattern>statement_60CsQGGifIT[.]choice_6dIyXjpN19i</correctResponsePattern>
+				<correctResponsePattern>statement_6anW1s4kBW0[.]choice_6ejEFYvkGNM</correctResponsePattern>
+				<correctResponsePattern>statement_6nwOAolwdjE[.]choice_5YMgcfuyiJP</correctResponsePattern>
+				<correctResponsePattern>statement_60CsQGGifIT[.]choice_6nfFyX7PGFV</correctResponsePattern>
+				<correctResponsePattern>statement_6Ll8OkUPBIw[.]choice_5gEByA3WLbv</correctResponsePattern>
+				<correctResponsePattern>statement_6Ll8OkUPBIw[.]choice_6hU2UUCW7vK</correctResponsePattern>
+			</correctResponsePatterns>
+			<source>
+				<component>
+					<id>statement_6anW1s4kBW0</id>
+					<description lang="und">EscapeHotspot - Rectangular Hotspot</description>
+				</component>
+				<component>
+					<id>statement_60CsQGGifIT</id>
+					<description lang="und">sensoryHotspot - Rectangular Hotspot</description>
+				</component>
+				<component>
+					<id>statement_6Ll8OkUPBIw</id>
+					<description lang="und">tangibleHotspot - Rectangular Hotspot</description>
+				</component>
+				<component>
+					<id>statement_6nwOAolwdjE</id>
+					<description lang="und">AttentionHotspot - Rectangular Hotspot</description>
+				</component>
+			</source>
+			<target>
+				<component>
+					<id>choice_644GCk9LF2Z</id>
+					<description lang="und">Item 1 - Teacher tells Chad to put his backpack on a hook. Chad throws the backpack and swears. The teacher picks up the bag and puts it on the hook. </description>
+				</component>
+				<component>
+					<id>choice_5h34oXJpaNs</id>
+					<description lang="und">Item 2 - Dylan repeatedly walks circles in the room, stopping to touch certain surfaces every time he passes them.</description>
+				</component>
+				<component>
+					<id>choice_5fOEr3KWBVv</id>
+					<description lang="und">Item 3 - Billy flops onto the ground and refuses to go in from recess until the counselor comes to get him. She takes him to her office where he gets to play with his favorite toy train.</description>
+				</component>
+				<component>
+					<id>choice_6CSDmEk7oSu</id>
+					<description lang="und">Item 4 - Every time Andy gets a worksheet he rips it into tiny pieces. His peers laugh and cheer him on.</description>
+				</component>
+				<component>
+					<id>choice_6dIyXjpN19i</id>
+					<description lang="und">Item 5 - During recess, TJ tucks a rubber ball under his shirt against his stomach and then repeatedly runs into a brick wall, laughing as he bounces off.</description>
+				</component>
+				<component>
+					<id>choice_6ejEFYvkGNM</id>
+					<description lang="und">Item 6 - Parent tells Julia to brush her teeth. Julia flops/tantrums on floor. Parent decides Julia can go to bed without brushing teeth.</description>
+				</component>
+				<component>
+					<id>choice_5YMgcfuyiJP</id>
+					<description lang="und">Item 7 - Daisy leads her one-on-one paraprofessional on a wild chase after every lunch period. As Daisy runs, she waves and laugh as her paraprofessional chases.</description>
+				</component>
+				<component>
+					<id>choice_6nfFyX7PGFV</id>
+					<description lang="und">Item 8 - Samantha rocks back and forth in her seat at any time that she does not have something to do with her hands.</description>
+				</component>
+				<component>
+					<id>choice_5gEByA3WLbv</id>
+					<description lang="und">Item 9 - Lucia wraps herself around the pole for the parking meter every time she passes the frozen yogurt shop. She lets go only when her mom promises to let he have frozen yogurt.</description>
+				</component>
+				<component>
+					<id>choice_6hU2UUCW7vK</id>
+					<description lang="und">Item 10 - Every time Aliyah’s grandma takes her to the grocery store, Aliyah stops at the gumball machine and smiles up at her grandma. Grandma always gets Aliyah a gumball.</description>
+				</component>
+			</target>
+		</activity>
+	</activities>
+</tincan>
