@@ -11,23 +11,39 @@
 	<input class="RBTcheckboxAnswer" id="toggle-1" type="checkbox" />
 	<p class="RBTanswer"></p>
 */
-.RBTtoggleAnswer{
-	user-select:none;
-	cursor:pointer;
-	margin:5px;
-	padding:10px;
-	box-shadow:0px 0px 5px #bbb;
-}
-.RBTcheckboxAnswer{
-	margin-top:2em;
-	opacity:0;
-}
 .RBTanswer {
-    opacity: 0;
-    margin-top:1.5em;
+	opacity: 0;
+  	margin-top:1.5em;
+  	-webkit-animation-name: fadeOut;
+  	-webkit-animation-duration: 0.5s;
+  	animation-name: fadeOut;
+  	animation-duration: 0.5s;
 }
 .RBTcheckboxAnswer:checked + .RBTanswer{
+	-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 0.5s;
+	animation-name: fadeIn;
+	animation-duration: 0.5s;
 	opacity:1;
+	margin-top:1.5em;
+}
+@-webkit-keyframes fadeIn {
+    0%   {opacity:0;margin-top:-1.5em;}
+    100% {opacity:1;margin-top:1.5em;}
+}
+
+@keyframes fadeIn {
+    0%   {opacity:0;margin-top:-1.5em}
+    100% {opacity:1;margin-top:1.5em;}
+}
+@-webkit-keyframes fadeOut {
+    0%   {opacity:1;margin-top:1.5em;}
+    100% {opacity:0;margin-top:-1.5em;}
+}
+
+@keyframes fadeOut {
+    0%   {opacity:1;margin-top:1.5em}
+    100% {opacity:0;margin-top:-1.5em;}
 }
 
 
