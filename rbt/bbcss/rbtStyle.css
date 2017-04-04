@@ -12,11 +12,19 @@
 	<p class="RBTanswer"></p>
 */
 .RBTtoggleAnswer{
-	user-select:none;
-	cursor:pointer;
-	margin:5px 0px 5px 0px;
-	padding:10px;
-	box-shadow:0px 0px 5px #bbb;
+  user-select:none;
+  cursor:pointer;
+  margin:5px 0px 5px 0px;
+  padding:10px;
+  border:2px solid #bbb;
+  border-radius:5px;
+  background:#f4f4f4;
+}
+.RBTtoggleAnswer:hover{
+  background:#fff;
+}
+.RBTtoggleAnswer:active{
+  margin-left:5px;
 }
 .RBTcheckboxAnswer{
 	margin-top:2em;
