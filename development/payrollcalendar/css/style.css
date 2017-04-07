@@ -1,0 +1,145 @@
+body,html,div{
+  padding:0;
+  margin:0;
+}
+body{
+  padding:5px;
+}
+.calendar{
+  font: 1em "Helvetica Neue", Helvatica, Arial, san-serif;
+  margin:auto;
+  width:300px;
+  height:300px;
+  -webkit-box-shadow:0px 0px 3px rgba(0, 0, 0, 1); 
+  box-shadow:0px 0px 3px rgba(0, 0, 0, 1);
+  background:#bbb;
+}
+table,tbody{
+  height:100%;
+  width:100%;
+  border-collapse:collapse;
+  background:#fff;
+  border-spacing:0;
+}
+td{
+  text-align:center;
+}
+#days{
+  width:100%;
+  height:6.25%;
+}
+#days td{
+  width:14.3%;
+}
+#frame{
+  position:relative;
+  width:100%;
+  height:75%;
+  font-size:1.5em;
+}
+#frame td{
+  border:1px solid #ddd;
+  color:#555;
+  height:16.7%;
+  width:14.3%;
+}
+#frame td.today{
+  background:#e0e0e0;
+  color:#000;
+  box-shadow:0px 0px 3px #fff inset; 
+  -moz-box-shadow:0px 0px 3px #fff inset; 
+  -webkit-box-shadow:0px 0px 3px #fff inset;
+}
+#frame td:not(.nil):hover{
+  color:#fff; 
+  background:#003A70; 
+  -moz-box-shadow:0px 0px 0px; 
+  -webkit-box-shadow:0px 0px 0px; 
+  box-shadow:0px 0px 0px;
+}
+#toggles{
+  font-size:0.9em;
+  height:6.25%;
+  cursor:pointer;
+}
+#toggles td{
+  opacity:0.7;
+  width:16.6%;
+}
+#toggles td:hover{
+  opacity:0.9;
+}
+#toggles td:active{
+  opacity:1;
+  box-shadow:0px 0px 0.3em #000 inset; 
+  -moz-box-shadow:0px 0px 0.3em #000 inset; 
+  -webkit-box-shadow:0px 0px 0.3em #000 inset;
+}
+.active{
+  opacity:1 !important;
+  box-shadow:0px 0px 0.5em #000 inset; 
+  -moz-box-shadow:0px 0px 0.5em #000 inset; 
+  -webkit-box-shadow:0px 0px 0.5em #000 inset;
+}
+#header{
+  height:12.5%;
+  font-size:4em;
+  text-align:center;
+  cursor:default; 
+  background: #003A70;
+  position: relative; 
+  color:#fff; 
+  font-weight:bold; 
+  text-shadow:0px -1px 0 #000; 
+  text-transform: uppercase; 
+}
+#header span{
+  display:inline-block;
+  height:100%;
+  box-sizing:border-box;
+}
+#header .button { 
+  padding:1%;
+  line-height:90%;
+  cursor:pointer;
+  position:absolute;
+} 
+#header .button:hover{
+  background:rgba(0,0,0,0.1);
+}
+#header .button:active{
+  background:rgba(0,0,0,0.2);
+}
+#header .left.button { 
+  left:0;
+} 
+#header .right.button {
+  right:0;
+}
+.calendar #frame table.curr { 
+  float:left;
+} 
+.calendar #frame table.temp { 
+   position:absolute; 
+}
+.holiday{
+  background:#9e379f !important;
+}
+.payday{
+  background:#7bc043 !important;
+}
+.timesheets{
+  background:#ff66cc !important;
+}
+.hrfao{
+  background:#ead61c !important;
+}
+.semester{
+  background:#0392cf !important;
+}
+.noninstruction{
+ background:#ee4035 !important;
+}
+#frame .holiday,#frame .semester,#frame .noninstruction,#frame .hrfao,#frame .timesheets,#frame .payday{
+  color:white !important;
+}
