@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="http://6nkEJ3PrlsZ_course_id" type="http://adlnet.gov/expapi/activities/course">
+			<name lang="und">c11</name>
+			<description lang="und" />
+			<launch lang="und">story.html</launch>
+		</activity>
+		<activity id="http://6nkEJ3PrlsZ_course_id/5xbr8RBzur7" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Pick Many</name>
+			<description lang="und">Pick Many</description>
+		</activity>
+		<activity id="http://6nkEJ3PrlsZ_course_id/5xbr8RBzur7/6iAmFQpwCmj" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Pick Many</name>
+			<description lang="und">Pick Many</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5s1wsaqnV5d</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5s1wsaqnV5d</id>
+					<description lang="und">Generalization</description>
+				</component>
+				<component>
+					<id>choice_5j2W0yS0Ezg</id>
+					<description lang="und">Maintenance</description>
+				</component>
+				<component>
+					<id>choice_64FexQSWXuo</id>
+					<description lang="und">Neither</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6nkEJ3PrlsZ_course_id/5XLxHzxlGNT" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Sequence Drag and Drop</name>
+			<description lang="und">Sequence Drag and Drop</description>
+		</activity>
+		<activity id="http://6nkEJ3PrlsZ_course_id/5XLxHzxlGNT/5nMPpSKQ11b" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Drag and Drop</name>
+			<description lang="und">Drag and Drop</description>
+			<interactionType>matching</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>statement_5s1JGGHhYOv[.]choice_5n18xCnHUk6</correctResponsePattern>
+				<correctResponsePattern>statement_6hD4eOuX6ii[.]choice_6KSedW3q3iG</correctResponsePattern>
+				<correctResponsePattern>statement_6fInYjsTaE2[.]choice_5wtB5mlvPgV</correctResponsePattern>
+				<correctResponsePattern>statement_6keVN2eq6TP[.]choice_6K29Z45WG6B</correctResponsePattern>
+			</correctResponsePatterns>
+			<source>
+				<component>
+					<id>statement_5s1JGGHhYOv</id>
+					<description lang="und">drop_target 3 - Rectangular Hotspot 3</description>
+				</component>
+				<component>
+					<id>statement_6hD4eOuX6ii</id>
+					<description lang="und">drop_target 4 - Rectangular Hotspot 4</description>
+				</component>
+				<component>
+					<id>statement_6fInYjsTaE2</id>
+					<description lang="und">drop_target 6 - Rectangular Hotspot 6</description>
+				</component>
+				<component>
+					<id>statement_6keVN2eq6TP</id>
+					<description lang="und">drop_target 5 - Rectangular Hotspot 5</description>
+				</component>
+			</source>
+			<target>
+				<component>
+					<id>choice_5n18xCnHUk6</id>
+					<description lang="und">choice_1 - Take the child to the new settings</description>
+				</component>
+				<component>
+					<id>choice_6KSedW3q3iG</id>
+					<description lang="und">choice_2 - Have the child practice with family members in those new settings</description>
+				</component>
+				<component>
+					<id>choice_5wtB5mlvPgV</id>
+					<description lang="und">choice_3 - Have the child practice with others in the new settings</description>
+				</component>
+				<component>
+					<id>choice_5r5CC1vnk3D</id>
+					<description lang="und">choice_4 - Designate a new communication device</description>
+				</component>
+				<component>
+					<id>choice_63o7sqFQZaB</id>
+					<description lang="und">choice_5 - Ask each new person to designate their own specific communication device with the child.</description>
+				</component>
+				<component>
+					<id>choice_6K29Z45WG6B</id>
+					<description lang="und">choice_6 1 - Train others in the new settings to respond to the communication device by giving the child attention (and an M&amp;M)</description>
+				</component>
+			</target>
+		</activity>
+		<activity id="http://6nkEJ3PrlsZ_course_id/5e8RzrcOcey" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Pick Many</name>
+			<description lang="und">Pick Many</description>
+		</activity>
+		<activity id="http://6nkEJ3PrlsZ_course_id/5e8RzrcOcey/5idoU6HRPjH" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Pick Many</name>
+			<description lang="und">Pick Many</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6YdXLmCJwUi</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6ZgK0CjQJLY</id>
+					<description lang="und">Generalization</description>
+				</component>
+				<component>
+					<id>choice_6YdXLmCJwUi</id>
+					<description lang="und">Maintenance</description>
+				</component>
+				<component>
+					<id>choice_5ifwJRZtXlK</id>
+					<description lang="und">Neither</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="http://6nkEJ3PrlsZ_course_id/634SimmNQ6E" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Sequence Drag and Drop</name>
+			<description lang="und">Sequence Drag and Drop</description>
+		</activity>
+		<activity id="http://6nkEJ3PrlsZ_course_id/634SimmNQ6E/5uczFXGDuJD" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="und">Drag and Drop</name>
+			<description lang="und">Drag and Drop</description>
+			<interactionType>matching</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>statement_6StzgVuHLKC[.]choice_6KCr4X7huLU</correctResponsePattern>
+				<correctResponsePattern>statement_6r4oTbQODGZ[.]choice_65aIlXIsyrA</correctResponsePattern>
+				<correctResponsePattern>statement_6PK1I40fbjG[.]choice_6WocI5wmcdd</correctResponsePattern>
+			</correctResponsePatterns>
+			<source>
+				<component>
+					<id>statement_6StzgVuHLKC</id>
+					<description lang="und">drop_target 3 - Rectangular Hotspot 3</description>
+				</component>
+				<component>
+					<id>statement_6r4oTbQODGZ</id>
+					<description lang="und">drop_target 4 - Rectangular Hotspot 4</description>
+				</component>
+				<component>
+					<id>statement_6PK1I40fbjG</id>
+					<description lang="und">drop_target 5 - Rectangular Hotspot 5</description>
+				</component>
+			</source>
+			<target>
+				<component>
+					<id>choice_6KCr4X7huLU</id>
+					<description lang="und">choice_1 - Fade (or reduce the frequency) of the tangible reinforcer</description>
+				</component>
+				<component>
+					<id>choice_65aIlXIsyrA</id>
+					<description lang="und">choice_2 - Train family members to fade the reinforcement</description>
+				</component>
+				<component>
+					<id>choice_6WocI5wmcdd</id>
+					<description lang="und">choice_3 - Fade reinforcement until the child accepts just the attention</description>
+				</component>
+				<component>
+					<id>choice_5xc4vUWttqb</id>
+					<description lang="und">choice_4 - Cut of the tangible reinforcer right away.</description>
+				</component>
+				<component>
+					<id>choice_5WmZnpUjEbd</id>
+					<description lang="und">choice_5 - Introduce a second tangible reinforcer as a means of fading away the original reinforcer.</description>
+				</component>
+				<component>
+					<id>choice_6i2EkDSeW6I</id>
+					<description lang="und">choice_6 1 - Give each family member a different reinforcer for the child. This will reduce the expectation for a single reinforcer.</description>
+				</component>
+			</target>
+		</activity>
+	</activities>
+</tincan>
