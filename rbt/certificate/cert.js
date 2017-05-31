@@ -1,4 +1,5 @@
 var userId = document.getElementById("cert_studentId").textContent;
+var course_ID = document.getElementById("cert_courseId").textContent; 
 var dateDisplay = document.getElementById("cert_date");
 var studentNameDisplay = document.getElementById("cert_student");
 var studentName = studentNameDisplay.textContent;
@@ -8,9 +9,9 @@ var xhr = new XMLHttpRequest();
 
 studentName = formatName(studentName);
 studentNameDisplay.textContent = studentName;
-
+console.log(course_id);
 xhr.onreadystatechange = processRequest;
-xhr.open("GET", "/learn/api/public/v1/courses/"+course_id+"/users/"+userId, true);
+xhr.open("GET", "/learn/api/public/v1/courses/"+course_ID+"/users/"+userId, true);
 xhr.send();
 
 function processRequest(){
