@@ -9,7 +9,6 @@ var xhr = new XMLHttpRequest();
 
 studentName = formatName(studentName);
 studentNameDisplay.textContent = studentName;
-console.log(course_id);
 xhr.onreadystatechange = processRequest;
 xhr.open("GET", "/learn/api/public/v1/courses/"+course_ID+"/users/"+userId, true);
 xhr.send();
