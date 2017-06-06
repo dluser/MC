@@ -189,9 +189,9 @@
   {title:'Duration of Screaming (Percentage of Observation Time)',ytitle:'Percentage of Observation Time',data:[47,40,38,33,33],maxRange:50,interval:5,table:[['Duration of Screaming (Minutes)','Session Length','Duration of Screaming (Percentage)'],['14','30 min'],['24','60 min'],['17','45 min'],['10','30 min'],['15','45 min']]},
   {title:'Cumulative Duration of Screaming (Minutes)',ytitle:'Minutes',data:[14,26,33,43,55],maxRange:60,interval:10,table:[['Duration of Screaming (Minutes)','Session Length','Cumulative Duration of Screaming (minutes)'],['14','30 min'],['12','30 min'],['7','30 min'],['10','30 min'],['10','30 min']]}];
   var chart;
-  console.log(chartlist[0].title);
+  var myPoints = [0,0,0,0,0];
 
-  function createChart(){
+  function createChart(index, dat){
 
     $('input').removeAttr('readonly');
     for(var i = 0; i < chartlist[chartindex].table.length; i++){
@@ -199,14 +199,10 @@
             $('#row'+i+''+j).html(chartlist[chartindex].table[i][j]);
           }
         }
-    for(var i =0; i < 5; i++){
-      $('#input'+i).val('');
-    }
     chart = new Highcharts.Chart({
 
     chart: {
-        renderTo: 'myChart',
-        animation: false
+        renderTo: 'myChart'
     },
     
     title: {
@@ -223,7 +219,6 @@
       },
       allowDecimals:false,
       minTickInterval:1,
-      //minorTickInterval:1,
       max:chartlist[chartindex].maxRange,
       min:0,
       tickInterval:chartlist[chartindex].interval,
@@ -232,51 +227,28 @@
       }
     }],
 
-    plotOptions: {
-        series: {
-            point: {
-                events: {
-
-                    drag: function (e) {
-               
-                    },
-                    drop: function () {
-                           
-                    }
-                }
-            },
-            stickyTracking: false,
-            dragPrecisionY:1,
-            dragMaxY:chartlist[chartindex].maxRange
-        },
-        line: {
-            cursor: 'ns-resize',
-            lineWidth:4,
-            marker:{
-              radius:5
-            }
-        }
-    },
-
     tooltip: {
         yDecimals: 1,
         pointFormat:'<b>{point.y} </b>Bx/Hr'
     },
 
     series: [{
-        data: [28, 24, 24, 24, 30],
-        //draggableX: true,
-        draggableY: true,
-        dragMinY: 0,
+        data:dat,
         type: 'line',
         minPointLength: 2
-    
     }]
-
 });
   }
 
-createChart();
+createChart(chartindex,myPoints);
+
+$('input').on('change',function(){
+  var tempindex = $(this).attr('id');
+  console.log(tempindex);
+  myPoints[parseInt(tempindex[tempindex.length-1])] = parseInt($(this).val());
+  createChart(chartindex,myPoints);
+  console.log(myPoints);
+});
 
   function checkAnswers(){
     var tempanswers = chartlist[chartindex].data;
@@ -298,9 +270,6 @@ createChart();
     $('#incorrect').hide();
   	$("#correct").show();
   	$('input').attr('readonly', 'true');
-  	console.log(chart.series[0].options.draggableY);
-  	chart.series[0].options.draggableY = false;
-  	console.log(chart.series[0].options.draggableY);
   }
 
   	$('#correctnext').click(function(){
@@ -308,7 +277,8 @@ createChart();
   		$('#correct').hide();
       if(chartindex < chartlist.length - 1){
         chartindex++;
-        createChart();
+        createChart(chartindex,[0,0,0,0,0]);
+        $.each($('input'),function(index,ele){ele.value = "0";console.log($(this).value);});
       }
   	});
 
