@@ -33,7 +33,7 @@ if (g_bAOSupport)
 var g_strQuery = document.location.search.substr(1);
 
 // Write the swf object
-function WriteSwfObject(strSwfFile, nWidth, nHeight, strScale, strAlign, strQuality, strBgColor, bCaptureRC, strWMode, strFlashVars)
+function WriteSwfObject(strSwfFile, nWidth, nHeight, strScale, strAlign, strQuality, strBgColor, bCaptureRC, strWMode, strFlashVars, targetElement)
 {
 	var strHtml = "";
 	var strWidth = nWidth + "px";
@@ -120,7 +120,16 @@ function WriteSwfObject(strSwfFile, nWidth, nHeight, strScale, strAlign, strQual
 	strHtml += "</object>";
 	strHtml += "</div>";
 
-	document.write(strHtml);
+	if (!targetElement)
+	{
+		document.write(strHtml);
+	}
+	else
+	{
+		g_bElement = true;
+		g_oContainer = targetElement;
+		targetElement.innerHTML = strHtml;
+	}
 	
 	if (bCaptureRC)
 	{
@@ -420,21 +429,21 @@ function ResizeOptimal()
 			// Resize the window so we know what the actual size is
 			top.window.resizeTo(g_nWindowWidth, g_nWindowHeight);
 			
-			// Since we know the actual browser size, and we can query the cliet dim, lets get the frame dim
-			nFrameWidth = (g_nWindowWidth) - GetContentWidth();
-			nFrameHeight = (g_nWindowHeight) - GetContentHeight();
-			
-			// Not lets resize it to the correct size
-			g_nWindowWidth = g_nWidth + nFrameWidth;
-			g_nWindowHeight = g_nHeight + nFrameHeight;
-			
-			top.window.resizeTo(g_nWindowWidth, g_nWindowHeight);
-			
-			if (IE)
+			setTimeout( function()
 			{
-				// ok,  sometimes there is a third party toolbar that doesn't load until after we have finish resizing everything, so we will do a check for this (this only seems to effect IE, FF behaves correctly)
+				// Since we know the actual browser size, and we can query the client dim, lets get the frame dim
+				nFrameWidth = (g_nWindowWidth) - GetContentWidth();
+				nFrameHeight = (g_nWindowHeight) - GetContentHeight();
+				
+				// lets resize it to the correct size
+				g_nWindowWidth = g_nWidth + nFrameWidth;
+				g_nWindowHeight = g_nHeight + nFrameHeight;
+				
+				top.window.resizeTo(g_nWindowWidth, g_nWindowHeight);
+
+				// sometimes there is a third party toolbar that doesn't load until after we have finish resizing everything, so we will do a check for this
 				g_nSizeInterval = setInterval(CheckSize, 500);
-			}			
+			}, 0);		
 		}
 	}
 	else
