@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>image slider</title>
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.ui-slider {
+			width:750px;
+		}
+	</style>
+	<!-- this only works as an iBooks widget -->
+	<!--<script type="text/javascript" src="AppleClasses/AppleWidget.js"> </script> -->
+</head>
+<body>
+
+	
+	<div id="outside">
+		<img id="map" src="img/non-native-expansion/tmp-0.gif" width="670px" height="750px">
+		<img id="cover" src="img/cover.png" width="628" height="78" >
+		<div id="slider" width="750px"></div>
+
+	</div>
+	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/jquery-ui.min.js"></script>
+	<script src="scripts/jquery.ui.touch-punch.min.js"></script>
+
+	<script>
+		var timerID=0;
+		var isPaused = false;
+
+		$(document).ready( function() {
+			$( "#slider" ).slider({
+				value:0,
+				min: 0,
+				max: 96,
+				step: 1,
+				slide: function( event, ui ) {
+					updateImage(ui.value);
+				},
+				change: function( event, ui ) {
+					updateImage(ui.value);
+					$( "#amount" ).val( ui.value );
+				},
+				create: function( event, ui ) {
+					console.log("slider created");
+				}
+
+			});
+			$( "#amount" ).val(  $( "#slider" ).slider( "value" ) );
+			$("#slider").mousedown(function() {
+				isPaused = true;
+				console.log("mouse down on slider");
+				$("#slider .ui-slider-handle").addClass("ui-icon-pause");
+			})
+
+			$("#slider").mouseup(function() {
+				isPaused = false;
+			})
+		});
+
+		function updateImage(value)
+		{
+			$( "#map" ).attr("src", "img/non-native-expansion/tmp-"+value+".gif");
+			$( "#amount" ).val( value.value );
+			if(timerID == 0) {
+				while_interval(advanceSlider, 1000);
+			}
+
+		}
+
+		function advanceSlider()
+		{
+			console.log("slider value:"+$( "#slider" ).slider( "option", "value" ));
+			if (!isPaused) 	{
+				if ( $( "#slider" ).slider( "option", "value" ) <= 96)
+				{
+					var value = $( "#slider" ).slider( "option", "value" );
+					value++;
+					$( "#slider" ).slider( "option", "value", value );
+					return true;
+				}
+			}
+		}
+
+		function while_interval(proc, int)
+		{
+			if(timerID==0){
+				timerID = setInterval(function()
+				{
+					if ( !proc() ) 
+					{
+						clearInterval(timerID);
+						timerID = 0;
+					}
+				}, int);
+			}
+		}
+
+		var images = [];
+		var promises = [];
+		for (var i = 0; i < images.length; i++) {
+			(function(url, promise) {
+				var img = new Image();
+				img.onload = function() {
+					promise.resolve();
+				};
+				img.src = url;
+			})(images["img/non-native-expansion/tmp-"+i+".gif"], promises[i] = $.Deferred());
+		}
+
+		$.when.apply($, promises).done(function() {
+			console.log("All images ready sir!");
+		});
+
+
+
+		$( document ).ready(function() {
+			while_interval(advanceSlider, 1000);
+		});
+
+	</script>
+
+</body>
+</html>

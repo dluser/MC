@@ -1,0 +1,9 @@
+{
+    "name": "com.inkling.widget.flashcard",
+    "displayName": "Flashcard",
+    "version": "1.2.1",
+    "inkling": {
+        "sha": "20af5dd5",
+        "date": "20161004.204502z"
+    }
+}

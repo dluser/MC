@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Annotated Image Editor</title>
+        <script type="text/javascript" src="vendorjs/ckeditor/ckeditor.js"></script>
+        <script src="js/edit.js"></script>
+        <link rel="stylesheet" href="../../../../css/fonts/fonts.css"/>
+        <link rel="stylesheet" href="css/edit.css" />
+    </head>
+    <body class="editor">
+        <div class="panel">
+            <div class="panel-content">
+                <div class="panel-title">SETTINGS</div>
+                <div>
+                    <label class="checkbox" id="displayBelow">
+                        <input type="checkbox">
+                        <span class="checkbox-label">Display poptip text below image</span>
+                    </label>
+                </div>
+                <div class="panel-title">POPTIP COLOR</div>
+                <div class="select-wrapper">
+                    <select class="select-menu" name="navType">
+                        <option value="blue">Blue</option>
+                        <option value="gray">Gray</option>
+                        <option value="black">Black</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="workspace">
+            <div class="content image-editor">
+                <menu class="button-menu vert-right">
+                    <button class="button btn-poptip" name="Add a poptip"></button>
+                    <button class="button btn-replace hidden" name="Replace the image"></button>
+                    <button class="button btn-add-image hidden" name="Add an image"></button>
+                </menu>
+                <!-- Image editor inserted here -->
+            </div>
+            <div class="text-editor">
+                <div class="wrapper left">
+                    <div class="title">Poptip description text</div>
+                    <div class="editor-wrapper">
+                        <textarea name="captionEditor" id="captionEditor"></textarea>
+                    </div>
+                </div>
+                <div class="wrapper right">
+                    <div class="title">Poptip Label</div>
+                    <input class="poptip-label-input" type="text" placeholder="" maxlength="2">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

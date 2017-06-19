@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------------
+ * Custom CSS
+ * Use this file for any custom CSS.
+ * 
+ * Please consider our style recommendations:
+ *
+ * 1. Every block of CSS should contain a comment explaining 
+ *    its purpose.
+ *    http://css-tricks.com/snippets/css/comments-in-css/
+ *
+ * 2. Avoid using !important tags. If you're having trouble overriding
+ *    a style, check that the speicifcy is correct.
+ *    http://css-tricks.com/specifics-on-css-specificity/
+ *
+ * 3. If your Custom CSS file becomes too long and unmanagable, consider
+ *    using our advanced Sass workflow.
+ *
+ * Happy Styling!
+ * - The Inkling Team
+ *------------------------------------------------------------------*/
+ 
+ /* Color bar above chapter intro */
+ .chapter-intro-c {
+    background-image: url(images/bar.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+ }

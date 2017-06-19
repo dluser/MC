@@ -1,0 +1,2579 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"rem",
+				"remainingWidth"
+			],
+			[
+				"nextE",
+				"nextElement"
+			],
+			[
+				"poi",
+				"positionAdjacent"
+			],
+			[
+				"container",
+				"containerParentRect"
+			],
+			[
+				"nextEl",
+				"nextElementRect"
+			],
+			[
+				"next",
+				"nextElementText"
+			],
+			[
+				"pois",
+				"positionFinder"
+			],
+			[
+				"posit",
+				"positionFinder"
+			],
+			[
+				"pso",
+				"positionFinder"
+			],
+			[
+				"rai",
+				"raiseConnectionException"
+			],
+			[
+				"ra",
+				"raiseConnectionException"
+			],
+			[
+				"get",
+				"getHttpClientMock"
+			],
+			[
+				"acc",
+				"accessTokenS9Id"
+			],
+			[
+				"getL",
+				"getLogState"
+			],
+			[
+				"org",
+				"organization"
+			],
+			[
+				"orga",
+				"organizationId"
+			],
+			[
+				"or",
+				"organizationId"
+			],
+			[
+				"CO",
+				"COrganization"
+			],
+			[
+				"succ",
+				"successMessages"
+			],
+			[
+				"modific",
+				"modificationMessage"
+			],
+			[
+				"mo",
+				"moduleVersionId"
+			],
+			[
+				"organi",
+				"organizationId"
+			],
+			[
+				"has",
+				"hasLoadedOrgContext"
+			],
+			[
+				"build",
+				"buildRouteParams"
+			],
+			[
+				"initi",
+				"initialClientRender"
+			],
+			[
+				"GET_OR",
+				"GET_ORGFEATURES_SUCCESS"
+			],
+			[
+				"permis",
+				"permissionResult"
+			],
+			[
+				"GET",
+				"GET_ORG_FEATURES_FAILURE"
+			],
+			[
+				"confi",
+				"configureTestStore"
+			],
+			[
+				"configure",
+				"configureTestStoreForSaga"
+			],
+			[
+				"reah",
+				"reachActions"
+			],
+			[
+				"maxR",
+				"maxReadingTimes"
+			],
+			[
+				"req",
+				"requestObj_"
+			],
+			[
+				"layout",
+				"layout--fadeIn__fast"
+			],
+			[
+				"anal",
+				"analyticsContext"
+			],
+			[
+				"downl",
+				"downloadText"
+			],
+			[
+				"curr",
+				"currentDateRange"
+			],
+			[
+				"SE",
+				"SET_DATE_RANGE"
+			],
+			[
+				"GET_C",
+				"GET_CSV_PAGE_AVAILABILITY_SUCCESS"
+			],
+			[
+				"bund",
+				"bundleHistoryIds"
+			],
+			[
+				"engage",
+				"engagement-details"
+			],
+			[
+				"title",
+				"titleReadingSessionId"
+			],
+			[
+				"titleReadingT",
+				"titleReadingTimeSessions"
+			],
+			[
+				"exhi",
+				"exhibitBucket"
+			],
+			[
+				"rout",
+				"routingKey"
+			],
+			[
+				"decorate",
+				"decorateTocPromise"
+			],
+			[
+				"rea",
+				"reading-summary"
+			],
+			[
+				"bundleH",
+				"bundleHistoryId"
+			],
+			[
+				"bundl",
+				"bundleHistoryId"
+			],
+			[
+				"bundle",
+				"bundleHistoryId"
+			],
+			[
+				"esCl",
+				"esClientGen"
+			],
+			[
+				"bun",
+				"bundleHistoryIds"
+			],
+			[
+				"z-",
+				"--z-index-above-neighbors"
+			],
+			[
+				"z",
+				"--z-index-above-neighbors"
+			],
+			[
+				"For",
+				"FormattedMessage"
+			],
+			[
+				"dev",
+				"device_tile"
+			],
+			[
+				"Fo",
+				"FormattedMessage"
+			],
+			[
+				"all",
+				"allBars_"
+			],
+			[
+				"expectedRE",
+				"expectedResultsByLine"
+			],
+			[
+				"activeR",
+				"activeReadersContent"
+			],
+			[
+				"decorateU",
+				"decorateUserPromise"
+			],
+			[
+				"decor",
+				"decorateTocPromise"
+			],
+			[
+				"ac",
+				"accessToken_"
+			],
+			[
+				"chart__ba",
+				"chart__bar-fade"
+			],
+			[
+				"request",
+				"requestHideGhostBarTime_"
+			],
+			[
+				"exist",
+				"existingGhostElement"
+			],
+			[
+				"chart_bar-",
+				"chart__bar--ghost-hidden"
+			],
+			[
+				"ver",
+				"verticalLine"
+			],
+			[
+				"lis",
+				"listeners"
+			],
+			[
+				"spacing-reach__d",
+				"spacing-reach__dowload--disabled"
+			],
+			[
+				"dow",
+				"downloadDefs"
+			],
+			[
+				"cla",
+				"classNames"
+			],
+			[
+				"GE",
+				"GET_METRICS_BY_PERIOD_SUCCESS"
+			],
+			[
+				"ini",
+				"initialFetchCompleted"
+			],
+			[
+				"actionW",
+				"actionWithData"
+			],
+			[
+				"organ",
+				"organizationId"
+			],
+			[
+				"bundleHi",
+				"bundleHistories"
+			],
+			[
+				"me",
+				"metricsByPeriod"
+			],
+			[
+				"user",
+				"usermetricsByPeriod"
+			],
+			[
+				"cli",
+				"client_"
+			],
+			[
+				"list",
+				"layout--listitem-spaced"
+			],
+			[
+				"U",
+				"UnauthenticatedUserError"
+			],
+			[
+				"Cros",
+				"CrossTitleDashboardApp"
+			],
+			[
+				"expe",
+				"expectedEvents"
+			],
+			[
+				"G",
+				"GET_PERMISSIONS_SUCCESS"
+			],
+			[
+				"mapIm",
+				"mapImagesToProxies"
+			],
+			[
+				"upd",
+				"updateListener"
+			],
+			[
+				"up",
+				"updateListener"
+			],
+			[
+				"drawC",
+				"drawChartBarLabels"
+			],
+			[
+				"lab",
+				"labelInterpolationFnc"
+			],
+			[
+				"OV",
+				"OVERVIEW_UPDATE_TILE"
+			],
+			[
+				"pathWith",
+				"pathWithNormalizedSeperator"
+			],
+			[
+				"cur",
+				"currentKarmaServer"
+			],
+			[
+				"getES",
+				"getESClientWithoutAuth"
+			],
+			[
+				"Dis",
+				"DispatchHandler"
+			],
+			[
+				"initia",
+				"initialState"
+			],
+			[
+				"inkl",
+				"inklingClientAuthMiddleware"
+			],
+			[
+				"ink",
+				"inklingClientAuthMiddleware"
+			],
+			[
+				"esc",
+				"esClientGen"
+			],
+			[
+				"doe",
+				"doesComponentMatchClass"
+			],
+			[
+				"sub",
+				"subTile1Name"
+			],
+			[
+				"findC",
+				"findChildByClassName"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"loadL",
+				"loadLocaleError"
+			],
+			[
+				"GET_",
+				"GET_LOCALE_FAILURE"
+			],
+			[
+				"defa",
+				"defaultLocale"
+			],
+			[
+				"OVERVIEW_",
+				"OVERVIEW_REQUEST"
+			],
+			[
+				"Engag",
+				"EngagementOverview"
+			],
+			[
+				"Exhibi",
+				"ExhibitSummary"
+			],
+			[
+				"isSti",
+				"isStickyScrolling"
+			],
+			[
+				"sauceC",
+				"sauceConnectLauncher"
+			],
+			[
+				"prece",
+				"precedingToken"
+			],
+			[
+				"pro",
+				"precedingToken"
+			],
+			[
+				"prec",
+				"precedingToken"
+			],
+			[
+				"pre",
+				"precedingToken"
+			],
+			[
+				"getF",
+				"getFirstToken"
+			],
+			[
+				"allE",
+				"allExhibitBucket"
+			],
+			[
+				"uniqueU",
+				"uniqueUsersForExhibit"
+			],
+			[
+				"moduleF",
+				"moduleFilenamesWithSize"
+			],
+			[
+				"totalU",
+				"totalUsersData"
+			],
+			[
+				"totalUs",
+				"totalUsersByExhibit"
+			],
+			[
+				"tota",
+				"totalUsersByExhibit"
+			],
+			[
+				"exhib",
+				"exhibitToc"
+			],
+			[
+				"allEx",
+				"allExhibitBucket"
+			],
+			[
+				"allExhib",
+				"allExhibitBuckets"
+			],
+			[
+				"thumbn",
+				"thumbnailUrl"
+			],
+			[
+				"respon",
+				"responsiveOptions"
+			],
+			[
+				"renderCh",
+				"renderChartsAndChapterHeader_"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/darius/INKLING/widgets/widgets/assessment/modules/inkling.assessment/patterns/assessment_pattern.html",
+			"settings":
+			{
+				"buffer_size": 446,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/darius/INKLING/widgets/widgets/assessment/modules/inkling.assessment/module.json",
+			"settings":
+			{
+				"buffer_size": 226,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Test values:\n{\"knowledgeCheckVersion\":18,\"scoreSettings\":{\"passingScore\":{\"value\":1},\"retrySetting\":{\"id\":1,\"value\":\"No Retries\",\"$$hashKey\":\"object:568\"},\"maxNumberOfRetries\":{\"value\":1},\"assessmentTitle\":\"\",\"assessmentID\":\"\",\"answerLabels\":{\"id\":1,\"label\":\"Alpha Lowercase\",\"value\":\"a\"},\"numberQuestions\":{\"value\":true,\"label\":\"Yes\"},\"startNumberingAt\":{\"value\":1}},\"entryScreen\":{\"title\":\"\",\"description\":\"\"},\"questions\":[{\"id\":1,\"type\":\"multiple-choice\",\"title\":\"<p>Which of these is correct?</p>\",\"hint\":\"\",\"explanation\":\"\",\"answers\":[{\"id\":1,\"answer\":\"<p>Today is Tuesday</p>\",\"correct\":false},{\"id\":2,\"answer\":\"<p>I have no idea when you created this, just let me pass already.</p>\",\"correct\":true}]},{\"id\":2,\"type\":\"true-false\",\"title\":\"<p>Republishing this will wipe any existing results out.</p>\",\"hint\":\"\",\"explanation\":\"\",\"answers\":[{\"id\":1,\"answer\":\"True\",\"correct\":true},{\"id\":2,\"answer\":\"False\",\"correct\":false}]}],\"viewerPages\":{\"entryScreen\":{\"button\":\"Get Started\",\"summary\":\"Questions\"},\"quiz\":{\"questionsAnswered\":\"{} of {} Answered\",\"button\":\"Submit\",\"overview\":\"Questions Overview\",\"hintText\":\"Stuck? \",\"hintLinkText\":\"Show me a hint\",\"questionNumbering\":\"Question {}\",\"multipleAnswerInstruction\":\"SELECT ALL THAT APPLY\",\"oneAnswerInstruction\":\"SELECT ONE\"},\"limitedRetries\":{\"correctAnswers\":\"You answered {} of {} correctly.\",\"successPassSummary\":\"To pass, you need to get {} correct.\",\"failPassSummary\":\"To pass, you need to get {} correct.\",\"attemptsRemaining\":\"You have {} attempts remaining.\",\"extraMessage\":\"Your highest score will be submitted\",\"buttonSecondary\":\"Take Again\",\"buttonPrimary\":\"Submit My Score\"},\"scoreResults\":{\"scoreSubmission\":\"Your score has been submitted.\",\"scoreSummary\":\"You answered {} of {} correctly.\",\"successMessage\":\" Congratulations!\",\"passSummary\":\"To pass, you need to get {} correct.\"}}}\n\nSaved results:\n{\"info\": {\"count\": 100, \"moreResults\": false, \"pageStart\": \"0.0\", \"pageNext\": 1479853866.454042}, \"status\": {}, \"result\": [{\"rootId\": \"a50df250869d49dcb91a5523a6784306\", \"objectId\": \"a96b2f4c7c1948a5b2286ca8d40b4746\", \"userId\": \"09d4477603336794f99a4cd8af89eb60a3f\", \"csoType\": \"widget\", \"clientUpdateDate\": 1479853866.4536, \"env\": \"bundleHistory\", \"updatedAt\": 1479853866.454042, \"active\": true, \"s9id\": \"09d864b8aa4a7564a28a964e4f0b56dc8eb\", \"data\": {\"value\": {\"data\": \"{\\\"currentAssessment\\\":{\\\"questions\\\":[]},\\\"submittedAssessments\\\":[{\\\"questions\\\":[{\\\"id\\\":1,\\\"answerIds\\\":[2]},{\\\"id\\\":2,\\\"answerIds\\\":[2]}]}],\\\"resultsSubmitted\\\":true,\\\"currentQuestionIdx\\\":0,\\\"quizVersion\\\":18}\"}}, \"createdAt\": 1479850181.332872, \"subObjectId\": \"779ab429aa7b42dc97782f7a089c8709\"}]}",
+			"settings":
+			{
+				"buffer_size": 2643,
+				"line_ending": "Unix",
+				"name": "Test values:"
+			}
+		},
+		{
+			"file": "components/viewer-score-results/viewer-score-results.directive.js",
+			"settings":
+			{
+				"buffer_size": 11111,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "editor.module.js",
+			"settings":
+			{
+				"buffer_size": 346,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 25556 files for \"answerLabels\" (case sensitive)\n\n",
+			"settings":
+			{
+				"buffer_size": 59,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "editor.run.js",
+			"settings":
+			{
+				"buffer_size": 3067,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 245.0,
+		"last_filter": "form",
+		"selected_items":
+		[
+			[
+				"form",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"auto",
+				"User: Python PEP8 Autoformat"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"js",
+				"Javascript Beautify"
+			],
+			[
+				"low",
+				"Convert Case: Lower Case"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"cssc",
+				"Run CSScomb"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"isnta",
+				"Package Control: Install Package"
+			],
+			[
+				"subli",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"pre",
+				"HTMLPrettify"
+			],
+			[
+				"be",
+				"Javascript Beautify"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"lin",
+				"SublimeLinter: Lint This View"
+			]
+		],
+		"width": 503.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/darius/INKLING/widgets/widgets/assessment",
+		"/Users/darius/INKLING/widgets/widgets/assessment/modules",
+		"/Users/darius/INKLING/widgets/widgets/assessment/modules/inkling.assessment",
+		"/Users/darius/INKLING/widgets/widgets/assessment/modules/inkling.assessment/widgets",
+		"/Users/darius/INKLING/widgets/widgets/assessment/src",
+		"/Users/darius/INKLING/widgets/widgets/assessment/src/app",
+		"/Users/darius/INKLING/widgets/widgets/assessment/src/assets"
+	],
+	"file_history":
+	[
+		"/Users/darius/INKLING/widgets/widgets/assessment/modules/inkling.assessment/module.json",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/src/index.js",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/src/view.js",
+		"/Users/darius/INKLING/widgets/widgets/assessment/src/app/components/editor-question-fill-in-the-blank/editor-question-fill-in-the-blank.html",
+		"/Users/darius/INKLING/widgets/widgets/assessment/src/app/components/editor-question-fill-in-the-blank/editor-question-fill-in-the-blank.directive.js",
+		"/Users/darius/INKLING/widgets/widget_template/index.html",
+		"/Users/darius/INKLING/widgets/widgets/assessment/src/iframe.html",
+		"/Users/darius/INKLING/widgets/widgets/assessment/modules/artemis.assessment/patterns/knowledge_check.html",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/src/edit.js",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/src/editor.scss",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/src/edit.spec.js",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/src/viewer.scss",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/.gitignore",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/public/container.html",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/package.json",
+		"/Users/darius/INKLING/widgets/widgets/assessment/package.json",
+		"/Users/darius/INKLING/widgets/widgets/assessment/modules/herodigital.knowledge_check/module.json",
+		"/Users/darius/INKLING/widgets/widgets/assessment/gulp/build.js",
+		"/Users/darius/INKLING/widgets/widgets/assessment/gulp/conf.js",
+		"/Users/darius/INKLING/widgets/widgets/assessment/src/app/components/editor-question-fill-in-the-blank/editor-question -fill-in-the-blank.scss",
+		"/Users/darius/INKLING/widgets/widgets/assessment/src/app/components/viewer-quiz/viewer-quiz.scss",
+		"/Users/darius/INKLING/widgets/widgets/assessment/src/index.html",
+		"/Users/darius/INKLING/widgets/.gitignore",
+		"/Users/darius/INKLING/widgets/widgets/assessment/modules/inkling.assessment/patterns/assessment_pattern.html",
+		"/Users/darius/INKLING/widgets/widgets/assessment/.gitignore",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/src/editor.css",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/src/viewer.spec.js",
+		"/Users/darius/INKLING/widgets/project.sublime-project",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/public/viewer.css",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/node_modules/inkling-widget-api/widget/viewer.js",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/public/index.html",
+		"/Users/darius/INKLING/widgets/helpers/inkling-widget-build-tools/sandbox/html.hbs",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/public/dev-api.js",
+		"/Users/darius/INKLING/widgets/helpers/inkling-widget-build-tools/sandbox/api.js",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/src/editor.js",
+		"/Users/darius/INKLING/widgets/helpers/inkling-widget-build-tools/server.js",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/public/editor.html",
+		"/Users/darius/INKLING/widgets/Scripts/build_widgets.sh",
+		"/Users/darius/INKLING/widgets/Scripts/bootstrap.sh",
+		"/Users/darius/INKLING/widgets/package.json",
+		"/Users/darius/INKLING/widgets/helpers/inkling-widget-build-tools/sass.js",
+		"/Users/darius/INKLING/widgets/helpers/inkling-widget-build-tools/package.json",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/src/viewer.js",
+		"/Users/darius/INKLING/widgets/Scripts/make-main-pattern.js",
+		"/Users/darius/INKLING/widgets/widgets/flipcard-sample/README.md",
+		"/Users/darius/INKLING/widgets/widgets/flipcard/package.json",
+		"/Users/darius/INKLING/widgets/widgets/flipcard/src/viewer.spec.js",
+		"/Users/darius/INKLING/widgets/widgets/flashcard/package.json",
+		"/Users/darius/INKLING/widgets/widgets/flipcard/src/viewer.js",
+		"/Users/darius/INKLING/widgets/widgets/flashcard/src/edit.js",
+		"/Users/darius/INKLING/appconfig/config/analytics/com/inkling/stable-config.js",
+		"/Users/darius/INKLING/widgets/widgets/flipcard/src/editor.js",
+		"/Users/darius/INKLING/widgets/widgets/flashcard/scss/view.scss",
+		"/Users/darius/INKLING/widgets/widgets/flashcard/src/view.js",
+		"/Users/darius/INKLING/widgets/widgets/flipcard/public/index.html",
+		"/Users/darius/INKLING/widgets/widgets/flipcard/src/index.js",
+		"/Users/darius/INKLING/widgets/widgets/flipcard/src/editor.scss",
+		"/Users/darius/INKLING/widgets/widgets/flipcard/src/viewer.scss",
+		"/Users/darius/INKLING/widgets/Scripts/substitue-html-files.js",
+		"/Users/darius/INKLING/widgets/widgets/flipcard/README.md",
+		"/Users/darius/INKLING/widgets/widgets/flipcard/public/editor.html",
+		"/Users/darius/INKLING/widgets/widgets/assessment/src/app/components/viewer-score-results/viewer-score-results.directive.js",
+		"/Users/darius/INKLING/widgets/widgets/assessment/src/app/components/assessment/assessment.service.js",
+		"/Users/darius/INKLING/widgets/widgets/assessment/third_party_licenses.txt",
+		"/Users/darius/INKLING/widgets/widgets/assessment/src/app/components/editor-overlay/editor-overlay.directive.js",
+		"/Users/darius/INKLING/widgets/widgets/assessment/src/app/components/editor-question-sequencing/editor-question-sequencing.directive.js",
+		"/Users/darius/INKLING/widgets/widgets/assessment/src/app/components/editor-question/editor-question.directive.js",
+		"/Users/darius/INKLING/widgets/widgets/assessment/src/app/components/viewer-quiz/viewer-quiz.directive.js",
+		"/Users/darius/INKLING/s9util/http/__init__.py",
+		"/Users/darius/INKLING/ccm/resources/module_modification_job.py",
+		"/Users/darius/INKLING/ccm/models/module_modification_job.py",
+		"/Users/darius/INKLING/ccm/unittest/resources/test_module_modification_job.py",
+		"/Users/darius/INKLING/ccm/resources/module_version.py",
+		"/Users/darius/INKLING/dbmodels/contentdb/models.py",
+		"/Users/darius/INKLING/commons/lib/s9access.py",
+		"/Users/darius/INKLING/s9tools/cmd/cache_store_products.py",
+		"/Users/darius/INKLING/ccm/unittest/lib/s9svnstore/test_s9svnstore.py",
+		"/Users/darius/INKLING/ccm/unittest/resources/test_unitproof.py",
+		"/Users/darius/INKLING/commons/tasks/index.py",
+		"/Users/darius/INKLING/commons/lib/s9amqp/celerysettings.py",
+		"/Users/darius/INKLING/commons/lib/s9amqp/api_task.py",
+		"/Users/darius/INKLING/commons/tasks/redpub.py",
+		"/Users/darius/INKLING/ccm/lib/content_project.py",
+		"/Users/darius/INKLING/ccm/api/config.py",
+		"/Users/darius/INKLING/ccm/resources/__init__.py",
+		"/Users/darius/INKLING/ccm/caches/module.py",
+		"/Users/darius/INKLING/core/resources/purchase.py",
+		"/Users/darius/INKLING/ccm/resources/module_installation_message.py",
+		"/Users/darius/INKLING/commons/lib/analytics/mixpanel/client.py",
+		"/Users/darius/INKLING/ccm/lib/constants.py",
+		"/Users/darius/INKLING/commons/lib/s9organization.py",
+		"/Users/darius/INKLING/commons/api/status.py",
+		"/Users/darius/INKLING/inkwell/apps.js",
+		"/Users/darius/INKLING/ccm/lib/s9svnstore.py",
+		"/Users/darius/INKLING/commons/lib/s9api/api_validation.py",
+		"/Users/darius/INKLING/ccm/resources/content_build.py",
+		"/Users/darius/INKLING/ccm/resources/file.py",
+		"/Users/darius/INKLING/ccm/resources/content_project.py",
+		"/Users/darius/INKLING/ccm/default-config.js",
+		"/Users/darius/INKLING/inkling-api/docker-inklingapi-common.yml",
+		"/Users/darius/INKLING/inkling-api/docker-compose.yml",
+		"/Users/darius/INKLING/ccm/resources/module_installation.py",
+		"/Users/darius/INKLING/ccm/tasks/generate_project_template_cache.py",
+		"/Users/darius/INKLING/ccm/tasks/unitproofs.py",
+		"/Users/darius/INKLING/ccm/models/module_installation_message.py",
+		"/Users/darius/INKLING/ccm/api/handlers/file.py",
+		"/Users/darius/INKLING/ccm/event.log",
+		"/Users/darius/INKLING/ccm/tasks/config.py",
+		"/Users/darius/INKLING/ccm/resources/module.py",
+		"/Users/darius/INKLING/commons/lib/s9project.py",
+		"/Users/darius/INKLING/ccm/tasks/post_build.py",
+		"/Users/darius/INKLING/commons/default-config.js",
+		"/Users/darius/INKLING/ccm/unittest/resources/test_file.py",
+		"/Users/darius/INKLING/commons/caches/project.py",
+		"/Users/darius/INKLING/ccm/resources/project_membership.py",
+		"/Users/darius/INKLING/commons/lib/auth_service/db_auth_service.py",
+		"/Users/darius/INKLING/commons/lib/auth_service/interface.py",
+		"/Users/darius/INKLING/ccm/unittest/lib/test_module_visibility.py",
+		"/Users/darius/INKLING/ccm/lib/module_visibility.py",
+		"/Users/darius/INKLING/commons/caches/partner.py",
+		"/Users/darius/INKLING/ccm/resources/project_template.py",
+		"/Users/darius/INKLING/ccm/resources/mapper_import.py",
+		"/Users/darius/INKLING/commons/lib/s9api/api_resource.py",
+		"/Users/darius/INKLING/ccm/resources/publisher_project.py",
+		"/Users/darius/INKLING/ccm/resources/project_metadata.py",
+		"/Users/darius/INKLING/svn_repos/sn_e054/trunk/s9ml/toc.s9ml",
+		"/Users/darius/INKLING/ccm/lib/project_metadata.py",
+		"/Users/darius/INKLING/svn_repos/sn_866b/trunk/s9ml/toc.s9ml"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 167.0,
+		"where_history":
+		[
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"answerLabels",
+			"knowledgeCheckVersion",
+			"\\",
+			"positionAdjacent",
+			"return",
+			"filterKeyCode",
+			"$timeout",
+			"question-first-part",
+			"}\n",
+			"offsetTop",
+			"dontResize",
+			"relati",
+			"hidden",
+			"visible",
+			"debug",
+			"hidden",
+			"nextElement",
+			"cloneElementAndGetPosition",
+			"position",
+			"sourceElement",
+			"questionPart",
+			"containerRect",
+			"const",
+			"offsetTop",
+			"positionFinder",
+			"sourceTopElement",
+			"offset",
+			"question-end-part",
+			"positionFinder",
+			"<span",
+			"offsetTop",
+			"positionFinder",
+			"nextElement",
+			"sourceElement",
+			"answerPart",
+			"questionPart",
+			"positionFinder",
+			"style",
+			"top",
+			"$timeout",
+			"$timeout(",
+			"arguments",
+			"float",
+			"350",
+			"slick",
+			".viewer-quiz slick",
+			"knowledge_check",
+			"604",
+			"herodigital",
+			"knowledge_check",
+			"herodigital",
+			"herodigital.knowledge_check",
+			"Viewer",
+			"Woo",
+			"test",
+			"'",
+			"padding",
+			"Viewer",
+			"cssViewer",
+			"src",
+			"watch",
+			"compile",
+			"255",
+			"div",
+			"substitue-html-files",
+			"landscape",
+			"dataURIStream",
+			"findDependencyIncludePaths",
+			"gulp-sass",
+			"../images/ico-flip--hover.svg",
+			"ajax-loader",
+			"`",
+			"correct",
+			"min",
+			"completed",
+			".score(",
+			"score(",
+			"ta-maxlength",
+			"lodash",
+			"updateMul",
+			"ta-maxlength",
+			"create",
+			"raiseHttpException",
+			"raiseConnectionException",
+			"= raiseConnectionException",
+			"raiseConnectionException",
+			"ModuleModificationJobResource",
+			"_removeOldStyleModule",
+			"_translateResponseToMessage",
+			"1",
+			"installUrl",
+			"into",
+			"expectedResponseCode",
+			"HttpResponseCodeException",
+			"_installToSVN",
+			"1e",
+			"2e",
+			"uninstallJob",
+			"failureMessage.message",
+			"assert",
+			"getProjectHead",
+			"raiseConnectionException",
+			"s9util",
+			"HttpConnectException",
+			"_getHeadRevision",
+			"raiseNotFoundException",
+			"raise",
+			"s9access",
+			"_removeOldStyleModule",
+			"_uninstallFromSVN",
+			"installJob",
+			"pytest",
+			"headRevision",
+			"revision",
+			"result",
+			"_translateResponseToMessage",
+			"81",
+			"side_effect",
+			"raiseNotFoundException",
+			"cStringIO",
+			"S9HttpClientInterface",
+			"head",
+			"raiseNotFoundException",
+			"s9util.http.getHttpClientContext",
+			"_removeOldStyleModule",
+			"_installToSVN",
+			"_translateErrorToMessage",
+			"None"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"src/",
+			"find(",
+			"map(",
+			"_.includes",
+			"'lodash\\/$1'",
+			"reading-details",
+			"--font-size-caption",
+			"--font-size-large-charlie",
+			"--font-size-large-bravo",
+			"--font-size-h2",
+			"--font-size-body",
+			"import {getChildLogger} from '@inkling/habitat-ui/server/logging';",
+			"{",
+			"{$0",
+			"$0",
+			"{$0",
+			"{\\w+",
+			"",
+			"\\{$0",
+			"@inkling/habitat-ui",
+			"import { createComponentFactoryFor } from"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/darius/INKLING/widgets/widgets/assessment/modules/inkling.assessment/patterns/assessment_pattern.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 446,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								282,
+								282
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										418,
+										424
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										247,
+										253
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"color_helper.box_height": 24,
+							"color_helper.color_scheme": "Packages/Boxy Theme/schemes/Boxy Yesterday.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"hsl",
+									"hex",
+									"rgb",
+									"webcolors",
+									"hsla",
+									"hex_compressed",
+									"rgba"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".html",
+								"current_syntax": "HTML/HTML",
+								"enabled": true,
+								"last_updated": 1479850409.63,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"meta.property-list.css -support.type.property-name.css -comment -string",
+									"meta.property-value.css -comment -string",
+									"meta.value.css -comment -string",
+									"meta.tag.inline.any.html string.quoted",
+									"meta.tag.any.html meta.attribute-with-value.style.html"
+								],
+								"use_hex_argb": false
+							},
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/darius/INKLING/widgets/widgets/assessment/modules/inkling.assessment/module.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										80,
+										81
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										74,
+										75
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"color_helper.box_height": 24,
+							"color_helper.color_scheme": "Packages/Boxy Theme/schemes/Boxy Yesterday.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".json",
+								"current_syntax": "JavaScript/JSON",
+								"enabled": false,
+								"last_updated": 1479850409.63
+							},
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								228,
+								240
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Test values:",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"color_helper.box_height": 24,
+							"color_helper.color_scheme": "Packages/Boxy Theme/schemes/Boxy Yesterday.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": null,
+								"current_syntax": "Text/Plain text",
+								"enabled": false,
+								"last_updated": 1479850409.63
+							},
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "components/viewer-score-results/viewer-score-results.directive.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11111,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1145,
+								1157
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1159,
+										1160
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/square_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1157,
+										1158
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"color_helper.box_height": 24,
+							"color_helper.color_scheme": "Packages/Boxy Theme/schemes/Boxy Yesterday.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "Babel/JavaScript (Babel)",
+								"enabled": false,
+								"last_updated": 1479850409.63
+							},
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 840.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "editor.module.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 346,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										341,
+										342
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										0,
+										1
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"color_helper.box_height": 24,
+							"color_helper.color_scheme": "Packages/Boxy Theme/schemes/Boxy Yesterday.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "Babel/JavaScript (Babel)",
+								"enabled": false,
+								"last_updated": 1479850409.63
+							},
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 59,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"color_helper.box_height": 24,
+							"color_helper.color_scheme": "Packages/Boxy Theme/schemes/Boxy Yesterday.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": null,
+								"current_syntax": "Default/Find Results",
+								"enabled": false,
+								"last_updated": 1479850409.63
+							},
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "editor.run.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3067,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2678,
+								2678
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2691,
+										2692
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										2582,
+										2583
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"color_helper.box_height": 24,
+							"color_helper.color_scheme": "Packages/Boxy Theme/schemes/Boxy Yesterday.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "Babel/JavaScript (Babel)",
+								"enabled": false,
+								"last_updated": 1479850409.63
+							},
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1591.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 71.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "assessment.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"viewer-score-results.dir",
+				"src/app/components/viewer-score-results/viewer-score-results.directive.js"
+			],
+			[
+				"modu",
+				"modules/inkling.assessment/module.json"
+			],
+			[
+				"patte",
+				"modules/inkling.assessment/patterns/assessment_pattern.html"
+			],
+			[
+				"assessment/module",
+				"widgets/assessment/modules/inkling.assessment/module.json"
+			],
+			[
+				"src/ind",
+				"widgets/assessment/src/index.html"
+			],
+			[
+				"index.html",
+				"widget_template/index.html"
+			],
+			[
+				"pro",
+				"project.sublime-project"
+			],
+			[
+				"conta",
+				"widgets/flipcard-sample/public/container.html"
+			],
+			[
+				".hbs",
+				"helpers/inkling-widget-build-tools/sandbox/html.hbs"
+			],
+			[
+				"thir",
+				"widgets/assessment/third_party_licenses.txt"
+			],
+			[
+				"viewer-score-results.directive.js",
+				"widgets/assessment/src/app/components/viewer-score-results/viewer-score-results.directive.js"
+			],
+			[
+				"viewer-quiz.directive.js",
+				"widgets/assessment/src/app/components/viewer-quiz/viewer-quiz.directive.js"
+			],
+			[
+				"editor-question.directive.js",
+				"widgets/assessment/src/app/components/editor-question/editor-question.directive.js"
+			],
+			[
+				"editor-question-sequencing.directive.js",
+				"widgets/assessment/src/app/components/editor-question-sequencing/editor-question-sequencing.directive.js"
+			],
+			[
+				"editor-question-fill-in-the-blank.directive.js",
+				"widgets/assessment/src/app/components/editor-question-fill-in-the-blank/editor-question-fill-in-the-blank.directive.js"
+			],
+			[
+				"editor-ov",
+				"widgets/assessment/src/app/components/editor-overlay/editor-overlay.directive.js"
+			],
+			[
+				"ass.ser",
+				"widgets/assessment/src/app/components/assessment/assessment.service.js"
+			],
+			[
+				"module_modif",
+				"ccm/resources/module_modification_job.py"
+			],
+			[
+				"client.",
+				"s9util/http/client.py"
+			],
+			[
+				"s9util/http/",
+				"s9util/http/__init__.py"
+			],
+			[
+				"test_module_m",
+				"ccm/unittest/resources/test_module_modification_job.py"
+			],
+			[
+				"s9ac",
+				"commons/lib/s9access.py"
+			],
+			[
+				"model",
+				"dbmodels/contentdb/models.py"
+			],
+			[
+				"module_m",
+				"ccm/models/module_modification_job.py"
+			],
+			[
+				"models",
+				"dbmodels/contentdb/models.py"
+			],
+			[
+				"module_inst",
+				"ccm/resources/module_installation_message.py"
+			],
+			[
+				"module_mo",
+				"ccm/models/module_modification_job.py"
+			],
+			[
+				"mode",
+				"dbmodels/contentdb/models.py"
+			],
+			[
+				"module.py",
+				"ccm/caches/module.py"
+			],
+			[
+				"lib/conte",
+				"ccm/lib/content_project.py"
+			],
+			[
+				"consta",
+				"ccm/lib/constants.py"
+			],
+			[
+				"s9or",
+				"commons/lib/s9organization.py"
+			],
+			[
+				"api_validation",
+				"commons/lib/s9api/api_validation.py"
+			],
+			[
+				"file.p",
+				"ccm/resources/file.py"
+			],
+			[
+				"models/modul",
+				"ccm/models/module_installation_message.py"
+			],
+			[
+				"models/mod",
+				"ccm/models/module_modification_job.py"
+			],
+			[
+				"s9pr",
+				"commons/lib/s9project.py"
+			],
+			[
+				"def",
+				"ccm/default-config.js"
+			],
+			[
+				"project",
+				"commons/caches/project.py"
+			],
+			[
+				"mod",
+				"ccm/caches/module.py"
+			],
+			[
+				"cmod",
+				"ccm/caches/module.py"
+			],
+			[
+				"auth_s",
+				"commons/lib/auth_service/db_auth_service.py"
+			],
+			[
+				"s9a",
+				"commons/lib/s9access.py"
+			],
+			[
+				"models.py",
+				"dbmodels/contentdb/models.py"
+			],
+			[
+				"api_r",
+				"commons/lib/s9api/api_resource.py"
+			],
+			[
+				"project_met",
+				"ccm/resources/project_metadata.py"
+			],
+			[
+				"publsiher_",
+				"ccm/resources/publisher_project.py"
+			],
+			[
+				"project_m",
+				"ccm/resources/project_membership.py"
+			],
+			[
+				"api/conf",
+				"ccm/api/config.py"
+			],
+			[
+				"moduel",
+				"ccm/resources/module.py"
+			],
+			[
+				"module_in",
+				"ccm/models/module_installation_message.py"
+			],
+			[
+				"redp",
+				"commons/tasks/redpub.py"
+			],
+			[
+				"apid",
+				"module-dashboard/src/client/stores/ApiDataStore.js"
+			],
+			[
+				"pack",
+				"module-dashboard/package.json"
+			],
+			[
+				"index.js",
+				"module-dashboard/src/server/index.js"
+			],
+			[
+				"navi",
+				"module-dashboard/src/client/utils/NavigationUtils.js"
+			],
+			[
+				"pac",
+				"module-dashboard/package.json"
+			],
+			[
+				"proja",
+				"module-dashboard/src/client/actions/ProjectActions.js"
+			],
+			[
+				"projectst",
+				"module-dashboard/src/client/stores/ProjectStore.js"
+			],
+			[
+				"lay",
+				"common-ui/assets/css/layout.css"
+			],
+			[
+				"modulel",
+				"module-dashboard/src/client/components/ModuleList.jsx"
+			],
+			[
+				"rout",
+				"module-dashboard/src/client/Routes.jsx"
+			],
+			[
+				"versionc",
+				"module-dashboard/src/client/components/VersionCard.jsx"
+			],
+			[
+				"vers",
+				"module-dashboard/src/client/components/VersionList.jsx"
+			],
+			[
+				"versionl",
+				"module-dashboard/src/client/components/VersionList.jsx"
+			],
+			[
+				"ent",
+				"module-dashboard/src/client/entry.js"
+			],
+			[
+				"gul",
+				"module-dashboard/gulpfile.js"
+			],
+			[
+				"server/index.js",
+				"module-dashboard/src/server/index.js"
+			],
+			[
+				"server/in",
+				"module-dashboard/src/server/index.js"
+			],
+			[
+				"anal",
+				"habitat-ui/src/shared/utils/AnalyticsUtil.js"
+			],
+			[
+				"analy",
+				"habitat-ui/test/shared/AnalyticsUtil.spec.js"
+			],
+			[
+				"en",
+				"module-dashboard/src/client/entry.js"
+			],
+			[
+				"errorh",
+				"habitat-ui/src/server/middleware/errorhandlers.js"
+			],
+			[
+				"habitat-ui/p",
+				"habitat-ui/package.json"
+			],
+			[
+				"ana",
+				"habitat-ui/src/shared/utils/AnalyticsUtil.js"
+			],
+			[
+				".css",
+				"common-ui/styleguide/theme.css"
+			],
+			[
+				"api",
+				"module-dashboard/src/server/endpoints/api.js"
+			],
+			[
+				"server/ind",
+				"module-dashboard/src/server/index.js"
+			],
+			[
+				"index-t",
+				"module-dashboard/test/server/index-tests.js"
+			],
+			[
+				"authe",
+				"habitat-ui/src/server/middleware/authentication.js"
+			],
+			[
+				"auth",
+				"habitat-ui/src/server/authorization.js"
+			],
+			[
+				"authen",
+				"module-dashboard/src/server/middleware/authentication.js"
+			],
+			[
+				"server.js",
+				"module-dashboard/test/server/utils/requests/server.js"
+			],
+			[
+				"server",
+				"module-dashboard/node_modules/is-browser/server.js"
+			],
+			[
+				"acce",
+				"module-dashboard/test/server/utils/requests/accesstokens.js"
+			],
+			[
+				"organizations.j",
+				"module-dashboard/test/server/utils/requests/organizations.js"
+			],
+			[
+				"accesstok",
+				"module-dashboard/test/server/utils/requests/accesstokens.js"
+			],
+			[
+				"accou",
+				"module-dashboard/test/server/utils/requests/accounts.js"
+			],
+			[
+				"requests/in",
+				"module-dashboard/test/server/utils/requests/index.js"
+			],
+			[
+				"apih",
+				"module-dashboard/src/server/ApiHelpers.js"
+			],
+			[
+				"loca",
+				"module-dashboard/conf/local-workflow.js"
+			],
+			[
+				"co",
+				"test/server/common.js"
+			],
+			[
+				"pa",
+				"package.json"
+			],
+			[
+				"inde",
+				"src/server/index.js"
+			],
+			[
+				"comm",
+				"test/server/common.js"
+			],
+			[
+				"index-",
+				"test/server/index-tests.js"
+			],
+			[
+				"local",
+				"conf/local-workflow.js"
+			],
+			[
+				"endp",
+				"src/server/endpoints/api.js"
+			],
+			[
+				"middle",
+				"src/server/middleware/authentication.js"
+			],
+			[
+				"index",
+				"src/server/index.js"
+			],
+			[
+				"urlu",
+				"src/client/utils/URLUtils.js"
+			],
+			[
+				"inklin",
+				"src/server/InklingClient.js"
+			],
+			[
+				"iconw",
+				"src/client/images/IconWidget.jsx"
+			],
+			[
+				"versionl.sp",
+				"test/client/screens/VersionList.specs.jsx"
+			],
+			[
+				"modulelist.sp",
+				"test/client/screens/ModuleList.specs.jsx"
+			],
+			[
+				"widget-icon.svg",
+				"assets/images/widget-icon.svg"
+			],
+			[
+				"pattern-icon.svg",
+				"assets/images/pattern-icon.svg"
+			],
+			[
+				"not",
+				"lib/shared/components/NotFound.jsx"
+			],
+			[
+				"midd",
+				"lib/server/middleware/authentication.js"
+			],
+			[
+				"gu",
+				"gulpfile.js"
+			],
+			[
+				"end/api",
+				"lib/server/endpoints/api.js"
+			],
+			[
+				"notf",
+				"lib/shared/components/NotFound.jsx"
+			],
+			[
+				"ind",
+				"lib/server/index.js"
+			],
+			[
+				"versc",
+				"lib/shared/components/VersionCard.jsx"
+			],
+			[
+				"route",
+				"lib/shared/Routes.jsx"
+			],
+			[
+				"modulea",
+				"lib/shared/actions/ModuleActions.js"
+			],
+			[
+				"projecta",
+				"lib/shared/actions/ProjectActions.js"
+			],
+			[
+				"orgco",
+				"lib/shared/actions/OrgContextActions.js"
+			],
+			[
+				"nav",
+				"lib/shared/utils/NavigationUtils.js"
+			],
+			[
+				"rou",
+				"lib/shared/Routes.jsx"
+			],
+			[
+				"unitt",
+				"scripts/unittest-docker.sh"
+			],
+			[
+				"buil",
+				"scripts/build-docker.sh"
+			],
+			[
+				"upload.jsx",
+				"lib/shared/components/Upload.jsx"
+			],
+			[
+				"lib/ser",
+				"lib/server/index.js"
+			],
+			[
+				"test/sh",
+				"test/shared/index.jsx"
+			],
+			[
+				"navig",
+				"lib/shared/utils/NavigationUtils.js"
+			],
+			[
+				"request",
+				"lib/shared/stores/RequestProgressStore.js"
+			],
+			[
+				"versiond",
+				"lib/shared/components/VersionDetail.jsx"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/INKLING/bootstrap/project.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 328.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,3 @@
+com.inkling.widget.show_hide
+1.1.0
+20161008.000841z.6cb39bbb

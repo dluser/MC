@@ -1,0 +1,12 @@
+{
+    "viewAssets": {
+        "included": [
+            "index.html",
+            "css/view.css",
+            "vendorcss/inklingwidget.css",
+            "js/view.js",
+            "img/image-placeholder.svg",
+            "../../../../css/fonts/fonts.css"
+        ]
+    }
+}

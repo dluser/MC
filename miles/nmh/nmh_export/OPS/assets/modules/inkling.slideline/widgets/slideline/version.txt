@@ -1,0 +1,3 @@
+com.inkling.widget.slideline
+1.1.0
+20161004.204538z.20af5dd5
