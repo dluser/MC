@@ -1,0 +1,8 @@
+{
+    "name": "slideshow",
+    "organization": "inkling",
+    "version": "1.2.2",
+    "displayName": "Inkling Slideshow",
+    "description": "Inkling Slideshow platform widget and associated pattern.",
+    "keywords": ["platform widget", "image"]
+}

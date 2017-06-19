@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <script>function b64DecodeUnicode(str) { return decodeURIComponent(Array.prototype.map.call(window.atob(str), function(c) { return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2); }).join('')); } var inklingInlineWidgetConfig = b64DecodeUnicode("eyJzaG93QnV0dG9uIjoiQmxvb2RsZXNzIFJlY29ucXVlc3Q/IiwiaGlkZUJ1dHRvbiI6IlJlYWQgbW9yZSIsImFuc3dlciI6IkluIGV4Y2hhbmdlIGZvciBoaXMgc3VjY2Vzc2Z1bCByZWFzc2VydGlvbiBvZiBTcGFuaXNoIGF1dGhvcml0eSBpbiBOZXcgTWV4aWNvLCBEaWVnbyBkZSBWYXJnYXMgaG9wZWQgdG8gcmVjZWl2ZSB0aGUgcG9zdCBvZiBnb3Zlcm5vciBmb3IgbGlmZS4gQ29uZmxpY3RzIHdpdGggdGhlIFNhbnRhIEZlIGNhYmlsZG8gKG9yIHRvd24gY291bmNpbCkgYW5kIHBvbGl0aWNhbCBpbnRyaWd1ZXMgcmVxdWlyZWQgaGltIHRvIG1ha2UgaGlzIGNhc2UgYmVmb3JlIHRoZSB2aWNlcm95IGFuZCB0aGUga2luZy4gQnkgMTcwMywgaGUgaGFkIGJlZW4gcmVpbnN0YXRlZCBhcyBnb3Zlcm5vciBidXQgaGUgZGllZCBzaG9ydGx5IGFmdGVyIGhpcyByZXR1cm4gdG8gTmV3IE1leGljby4gVG8gaG9ub3IgaGlzIG1lbW9yeSBhbmQgdG8gZm9zdGVyIGEgc2Vuc2Ugb2YgY29tbXVuaXR5IGFuZCBjb29wZXJhdGlvbiwgTmV3IE1leGljbyBvZmZpY2lhbHMgaW5pdGlhdGVkIHRoZSBTYW50YSBGZSBGaWVzdGEgaW4gMTcxMi4gU2luY2UgdGhhdCB0aW1lLCBoaXN0b3JpY2FsIG1lbW9yaWVzIG9mIHRoZSByZWNvbnF1ZXN0IGhhdmUgc3BsaXQgaW4gdHdvLiBUaGUgcmVjb25xdWVzdCBpcyBib3RoIGEgaGlzdG9yaWNhbCBldmVudCBhbmQgYW4gaW52ZW50aW9uIG9mIHRoZSBvcmdhbml6ZXJzIG9mIHRoZSBhbm51YWwgU2FudGEgRmUgRmllc3RhLiBUaGUgRmllc3RhIHdhcyBpbnRlbmRlZCB0byBwcm92aWRlIFB1ZWJsbyBhbmQgaGlzcGFubyByZXNpZGVudHMgb2YgdGhlIGNvbG9ueSB3aXRoIGEgcG9pbnQgb2YgY29udmVyZ2VuY2UgYW5kIHVuaXR5LiBJbiBkb2luZyBzbywgaXRzIGZlc3Rpdml0aWVzIGlnbm9yZWQgdGhlIHZpb2xlbmNlIGFuZCBibG9vZHNoZWQgb2YgdGhlIHllYXJzIG9mIGNvbmZsaWN0IHRoYXQgY2hhcmFjdGVyaXplZCB0aGUgcmVjb25xdWVzdCBiZXR3ZWVuIDE2OTMgYW5kIDE2OTYuIn0=");</script> 
+        <meta charset="UTF-8"> 
+        <title>Show/Hide Widget</title> 
+        <!-- Show/Hide Widget CSS. --> 
+        <link rel="stylesheet" href="css/view.css"> 
+        <!-- Show/Hide Widget JS. --> 
+        <script src="js/view.js"></script> 
+        <!-- Load project font CSS --> 
+        <link rel="stylesheet" href="../../css/fonts/fonts.css"> 
+    </head> 
+    <body> 
+        <div class="widget_container"> 
+            <div class="question">
+                <div class="questionText"></div>
+                <span class="questionImg"></span>
+            </div> 
+            <div class="button">
+                <span class="marker"></span>
+                <span class="button_text"></span>
+            </div> 
+            <div class="answer">
+                <span class="answerText"></span>
+                <span id="answerImg"></span>
+            </div> 
+        </div>  
+    </body>
+</html>

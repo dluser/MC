@@ -1,0 +1,9 @@
+{
+    "name": "com.inkling.widget.multiple_choice",
+    "displayName": "Multiple Choice",
+    "version": "1.2.0",
+    "inkling": {
+        "sha": "6cb39bbb",
+        "date": "20161008.000859z"
+    }
+}

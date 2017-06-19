@@ -1,0 +1,225 @@
+/*------------------------------------------------------------------
+ * Base
+ *
+ * Base CSS for page color, typogrpahy and margins.
+ * WARNING: Editing these styles may cause unintended effects.
+ *----------------------------------------------------------------*/
+body {
+  clear: both;
+  display: block;
+  background: #fff;
+  color: #222;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+body:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (min-width: 560px) {
+  body {
+    margin-top: 57px;
+    padding-bottom: 57px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+
+@media (min-width: 820px) {
+  body {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+/*--------------------------------------------------------------------
+ * Base Fonts and Sizes
+ *------------------------------------------------------------------*/
+/* Set the base font sizes for small and larger screens
+The font size should be set on the <html> element, so that the
+reader can adjust the size as it cascades by targeting the
+<body> element. */
+html {
+  font-size: 16px;
+}
+
+@media (min-width: 560px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  font-family: "Source Sans Pro", Verdana, Helvetica, sans;
+  font-weight: 400;
+  line-height: strip-units(em(28.5px));
+}
+
+/*------------------------------------------------------------------
+ * Font Features
+ *
+ * Utilize font-smoothing when possible.
+ *----------------------------------------------------------------*/
+/* Add kerning ligatures to a small set of elements when
+ available. Do not add to the body or large blocks of text for
+ performance reasons. */
+h1, h2, h3, h4, h5, h6,
+blockquote {
+  text-rendering: optimizeLegibility;
+}
+
+
+/*------------------------------------------------------------------
+ * Headings
+ *----------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", Verdana, Helvetica, sans;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+h1 {
+  clear: both;
+  font-size: 2.1111em;
+  margin-bottom: 21.375px;
+  line-height: 1.1;
+  color: #222;
+}
+
+@media (min-width: 560px) {
+  h1 {
+    font-size: 2.6667em;
+  }
+}
+
+h2 {
+  clear: both;
+  font-size: 1.6667em;
+  margin-top: 28.5px;
+  margin-bottom: 21.375px;
+  color: #222;
+}
+
+@media (min-width: 560px) {
+  h2 {
+    font-size: 2.1111em;
+  }
+}
+
+h3 {
+  font-size: 1.3333em;
+  margin-bottom: 21.375px;
+  color: #222;
+}
+
+@media (min-width: 560px) {
+  h3 {
+    font-size: 1.6667em;
+  }
+}
+
+h4 {
+  font-size: 1.3333em;
+  margin-bottom: 14.25px;
+  color: #222;
+}
+
+h5 {
+  font-size: 1.1111em;
+  margin-bottom: 14.25px;
+  color: #222;
+}
+
+h6 {
+  font-size: 1em;
+  margin-bottom: 14.25px;
+  color: #222;
+}
+
+/*--------------------------------------------------------------------
+ * Lists
+ *------------------------------------------------------------------*/
+ol, ul {
+  list-style-type: none;
+  font-style: normal;
+  margin-left: 1.5833em;
+  margin-bottom: 28.5px;
+}
+
+ol:after, ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ol li, ul li {
+  position: relative;
+}
+
+ol li p:last-of-type, ul li p:last-of-type {
+  margin-bottom: 0;
+}
+
+ol ol, ol ul, ul ol, ul ul {
+  /* Remove bottom margin from nested lists */
+  margin-bottom: 0;
+}
+
+/* Remove extra padding after last paragarph in list items */
+/* Make sure list-items outside of lists don't have a coutner */
+body > li {
+  list-style-type: none;
+}
+
+
+/*--------------------------------------------------------------------
+ * TOC
+ *------------------------------------------------------------------*/
+
+.content-compliance {
+  background: #2c272c;
+}
+
+.content-compliance h1 {
+  font-weight: 600;
+}
+
+.content-compliance * {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.content-compliance ul {
+  margin-bottom: 1rem;
+}
+
+.content-compliance nav ul:first-child {
+  margin-left: 0;
+}
+
+.content-compliance nav ul:first-child>li>a {
+  font-weight: 600;
+}
+
+.content-compliance li {
+  list-style-type: none;
+  margin-left: 0;
+  opacity: 0.95;
+}
+
+.content-compliance li a {
+  padding: 6px 24px;
+  line-height: 2rem;
+  border-radius: 3px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.content-compliance li a:hover {
+  background: rgba(255,255,255,0.1);
+}
