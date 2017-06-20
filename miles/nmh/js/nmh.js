@@ -25,10 +25,15 @@ $(document).ready(function(){
 
 	//monitor iframe height
 	var myInterval = setInterval(function(){
-		if($('#idIframe')){
-			var iFrame = $('#idIframe');
-			var h = iFrame[0].contentWindow.document.body.clientHeight + 20 + "px";
-			iFrame.css({'height':h});
+		try{
+			if($('#idIframe')){
+				var iFrame = $('#idIframe');
+				var h = iFrame[0].contentWindow.document.body.clientHeight + 20 + "px";
+				iFrame.css({'height':h});
+			}
+		}
+		catch(err){
+			console.log(err);
 		}
 	},2000);
 });
@@ -39,9 +44,16 @@ function iFrameLoad(){
 	iFrame.height = "";
 	var h = iFrame[0].contentWindow.document.body.clientHeight + 20 + "px";
 	iFrame.css({'opacity':'1','height':h});
+	var iframea = iFrame.contents().find("a");
+	$.each(iframea, function(i,val){
+		if($(val).hasClass('button') !== true){
+			$(val).attr('target','_blank');
+		}
+	});
 	$('.loader').hide();
 }
 
+//navigate book with next and previous buttons by changing chPos and pgPos variables
 function changePos(link, direc){
 	//find the current link in book obj and update ch and pg positions
 	findPos(link);
@@ -89,6 +101,7 @@ function changePos(link, direc){
 	console.log("Chapter " +chPos + ", Page " + pgPos);
 }
 
+//find the link within the book TOC
 function findPos(lin){
 	$.each(book.chapters,function(i,val){
 		if(val.chlink === lin){
@@ -107,12 +120,14 @@ function findPos(lin){
 	console.log("Chapter " +chPos + ", Page " + pgPos);
 }
 
+//insert page content iframe
 function loadPageHTML(lin){
 	$('.loader').show();
 	lin = 'nmh_export/OPS/' + lin;
 	$('#book-content').html('<iframe onload = "iFrameLoad()" scrolling = "no" id = "idIframe" src ="'+lin+'"></iframe>');
 }
 
+//if localStorage is supported. update local with temporary variables
 function updateLocStorage(){
 	if (typeof(Storage) !== "undefined") {
 		localStorage.pgPos = pgPos;
@@ -125,7 +140,6 @@ function setUpTOC(){
 	$.get( "nmh_export/OPS/index.html","html", function(data) {	
   		//parse into html
   		toc = $.parseHTML(data);
-
   		//find the list of all chapters and pages and add to the sidbar navigation
   		$(toc[10]).find('ol li ol li ol').remove();
   		$('.sidebar-nav').html($(toc[10]).children().children());
@@ -176,10 +190,13 @@ function setUpTOC(){
 			loadPageHTML(link);
 		});
 
+		//check for local storage and create/load local storage page
 		if (typeof(Storage) !== "undefined") {
     	// Code for localStorage/sessionStorage.
     		if(localStorage.chPos && localStorage.pgPos){
     			console.log('Have local variables');
+    			chPos = localStorage.chPos;
+    			pgPos = localStorage.pgPos;
     		}
     		else{
     			console.log('Made local variables');
