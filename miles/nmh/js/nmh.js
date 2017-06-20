@@ -4,7 +4,6 @@ var chPos = 0;
 var pgPos = 0;
 
 $(document).ready(function(){
-
 	setUpTOC();
 
 	//listener for sidebar menu button
@@ -14,12 +13,12 @@ $(document).ready(function(){
 	});
 
 	$("#previous").click(function(){
-		changePos(book.chapters[chPos].pglinks[pgPos], "previous");
+		changePos("previous");
 	    $("#wrapper").removeClass("toggled");
 	});
 
 	$("#next").click(function(){
-		changePos(book.chapters[chPos].pglinks[pgPos], "next");
+		changePos("next");
 		$("#wrapper").removeClass("toggled");
 	});
 
@@ -54,9 +53,8 @@ function iFrameLoad(){
 }
 
 //navigate book with next and previous buttons by changing chPos and pgPos variables
-function changePos(link, direc){
+function changePos(direc){
 	//find the current link in book obj and update ch and pg positions
-	findPos(link);
 	var chapters = book.chapters;
 	var pages = book.chapters[chPos].pglinks;
 
@@ -125,6 +123,14 @@ function loadPageHTML(lin){
 	$('.loader').show();
 	lin = 'nmh_export/OPS/' + lin;
 	$('#book-content').html('<iframe onload = "iFrameLoad()" scrolling = "no" id = "idIframe" src ="'+lin+'"></iframe>');
+
+	//show list and highlight current position
+	$('.chapter a').css('color','#999999');
+	var place = $($('.chapter')[chPos]);
+	$(place).find('ol').slideDown(300);
+	$(place).children('.glyphicon').removeClass('glyphicon-chevron-left');
+	$(place).children('.glyphicon').addClass('glyphicon-chevron-down');
+	$($(place).find('ol li')[pgPos]).children('a').css('color','#439CC8');
 }
 
 //if localStorage is supported. update local with temporary variables
@@ -145,14 +151,12 @@ function setUpTOC(){
   		$('.sidebar-nav').html($(toc[10]).children().children());
 
   		//cycle through each chapter
-  		$.each($('.sidebar-nav > li'),function(i,val){
-  			//cycle through each chapter page
-  			var chEle = val;
+  		$.each($('.sidebar-nav > li'),function(i,val){ 
   			//create array of links in book obj
   			var obj = {chlink:$(val).children('a').attr('href'),pglinks:[]};
   			book.chapters.push(obj);
 
-  			$.each($(chEle).find('ol li *'),function(j,valu){
+  			$.each($(val).find('ol li *'),function(j,valu){
   				//add chapter pages to array
   				book.chapters[i].pglinks.push($(valu).attr('href'));
   			});
@@ -167,16 +171,24 @@ function setUpTOC(){
   			}
   		});
 
+  		$(".chapter a").on('click',function(e){
+			$(this).siblings('ol').slideDown(300);
+			if($(this).siblings('span').hasClass('glyphicon-chevron-left')){
+				$(this).siblings('span').removeClass('glyphicon-chevron-left');
+				$(this).siblings('span').addClass('glyphicon-chevron-down');
+			}
+		});
+
   		//give arrows an event to drop down chapter pages
-  		$(".glyphicon").on('click',function(e){
+		$(".chapter .glyphicon").on('click',function(e){
 			$(this).siblings('ol').slideToggle(300);
-			if($(this).hasClass('glyphicon-chevron-down')){
-				$(this).removeClass('glyphicon-chevron-down');
-				$(this).addClass('glyphicon-chevron-left');
+			if($(this).hasClass('glyphicon-chevron-left')){
+				$(this).removeClass('glyphicon-chevron-left');
+				$(this).addClass('glyphicon-chevron-down');
 			}
 			else{
-				$(this).addClass('glyphicon-chevron-down');
-				$(this).removeClass('glyphicon-chevron-left');
+				$(this).removeClass('glyphicon-chevron-down');
+				$(this).addClass('glyphicon-chevron-left');
 			}
 		});
 
