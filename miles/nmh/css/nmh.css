@@ -59,7 +59,6 @@ iframe{
 	text-overflow: ellipsis;
 	width:75%;
 	float:left;
-	transition:;
 }
 .sidebar-nav li ol{
 	padding-left:20px;
@@ -161,6 +160,9 @@ iframe{
 	animation: spin 1s linear infinite;
 	margin:20px -30px;
 	display:none;
+}
+.sidebar-nav .chapter a:hover{
+	color:#439CC8 !important;
 }
 
 @-webkit-keyframes spin {

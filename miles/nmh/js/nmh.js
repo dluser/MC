@@ -36,7 +36,6 @@ $(document).ready(function(){
 		}
 	},2000);
 });
-
 //function to call on iframe load. wait half a second for inside content to load and calculate inner height. still messing with this one.
 function iFrameLoad(){
 	var iFrame = $('#idIframe');
