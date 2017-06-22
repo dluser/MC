@@ -27,8 +27,11 @@ $(document).ready(function(){
 		try{
 			if($('#idIframe')){
 				var iFrame = $('#idIframe');
-				var h = iFrame[0].contentWindow.document.body.clientHeight + 20 + "px";
-				iFrame.css({'height':h});
+				var h = iFrame[0].contentWindow.document.body.clientHeight + "px";
+				if(h !== iFrame.height)
+				{
+					iFrame.css({'height':h});
+				}
 			}
 		}
 		catch(err){
@@ -39,10 +42,10 @@ $(document).ready(function(){
 //function to call on iframe load. wait half a second for inside content to load and calculate inner height. still messing with this one.
 function iFrameLoad(){
 	var iFrame = $('#idIframe');
-	iFrame.height = "";
 	var h = iFrame[0].contentWindow.document.body.clientHeight + 20 + "px";
-	iFrame.css({'opacity':'1','height':h});
 	var iframea = iFrame.contents().find("a");
+	iFrame.height = "";
+	iFrame.css({'opacity':'1','height':h});
 	$.each(iframea, function(i,val){
 		if($(val).hasClass('button') !== true){
 			$(val).attr('target','_blank');
@@ -205,7 +208,7 @@ function setUpTOC(){
 		if (typeof(Storage) !== "undefined") {
     	// Code for localStorage/sessionStorage.
     		if(localStorage.chPos && localStorage.pgPos){
-    			console.log('Have local variables');
+    			console.log('Local variables available');
     			chPos = localStorage.chPos;
     			pgPos = localStorage.pgPos;
     		}
