@@ -45,10 +45,6 @@ iframe{
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 }
-.sidebar-nav li a:hover{
-	color:#439CC8;
-	background-color: transparent;
-}
 .sidebar-nav .sidebar-brand a{
 	font-size:16px;
 }
@@ -163,6 +159,7 @@ iframe{
 }
 .sidebar-nav .chapter a:hover{
 	color:#439CC8 !important;
+	background-color: transparent;
 }
 
 @-webkit-keyframes spin {
