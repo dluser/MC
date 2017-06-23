@@ -27,17 +27,17 @@ $(document).ready(function(){
 		try{
 			if($('#idIframe')){
 				var iFrame = $('#idIframe');
-				var h = iFrame[0].contentWindow.document.body.clientHeight + "px";
-				if(h !== iFrame.height)
+				var h = iFrame[0].contentWindow.document.body.clientHeight;
+				if(h !== iFrame.height())
 				{
-					iFrame.css({'height':h});
+					iFrame.css({'height':h + 'px'});
 				}
 			}
 		}
 		catch(err){
 			console.log(err);
 		}
-	},2000);
+	},1000);
 });
 //function to call on iframe load. wait half a second for inside content to load and calculate inner height. still messing with this one.
 function iFrameLoad(){
