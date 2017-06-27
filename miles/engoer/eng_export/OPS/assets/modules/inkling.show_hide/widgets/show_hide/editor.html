@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Show/Hide Widget Editor</title>
+    <script type="text/javascript" src="vendorjs/ckeditor/ckeditor.js"></script>
+    <!-- Show/Hide Widget CSS. -->
+    <link rel="stylesheet" href="../../../../css/fonts/fonts.css"/>
+    <link rel="stylesheet" href="css/edit.css" />
+    <!-- Show/Hide Widget JS. -->
+    <script src="js/edit.js"></script>
+
+</head>
+
+<body class="editor">
+    <div class="panel">
+        <div class="panel-content">
+            <div class="panel-title">SETTINGS</div>
+            <div>
+                <label class="checkbox" id="displayAbove">
+                    <input type="checkbox">
+                    <span class="checkbox-label">Display image above answer text</span>
+                </label>
+            </div>
+            <div class="panel-title">BUTTON TEXT COLOR</div>
+            <div class="select-wrapper">
+                <select class="select-menu" name="navType">
+                    <option value="blue">Blue</option>
+                    <option value="gray">Gray</option>
+                    <option value="black">Black</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div id="editor-container">
+        <div class="buttonContainer" id="show">
+            <span id="show-header">Button Normal State</span>
+            <div class="show-button-text">
+                <!-- Note: This 'placeholder' value must be kept in sync with the view.js defaults. -->
+                <input type="text" placeholder="Show" maxlength = "60">
+            </div>
+        </div>
+        <div class="buttonContainer" id="hide">
+            <span id="hide-header">Button Active State</span>
+            <div class="hide-button-text">
+                <!-- Note: This 'placeholder' value must be kept in sync with the view.js defaults. -->
+                <input type="text" placeholder="Hide" maxlength = "60">
+            </div>
+        </div>
+        <span id="answer-header">Answer Text</span>
+        <div class="group" id="answer">
+            <menu class="button-menu vert-right">
+                <div class="button btn-add-image imageEditor" name="Add Image">
+                </div>
+            </menu>
+            <div class="answer-input">
+                <div id="editor1Toolbar" name="editor1Toolbar" class="editor-toolbar"></div>
+                <textarea name="editor1" id="editor1" placeholder="Add Answer" wrap="soft" id="answerText"></textarea>
+            </div>
+        </div>
+        <div class="group" id="imageGroup" style="display: none">
+            <menu class="button-menu vert-right" id="imageButtons">
+                <div class="button btn-replace" name="Swap Image">
+                </div>
+                <div class="button btn-delete" name="Delete Image">
+                </div>
+            </menu>
+            <div class="image">
+                <img id="imageContainer" style="display:none">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

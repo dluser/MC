@@ -1,0 +1,8 @@
+{
+    "name": "annotated_image",
+    "organization": "inkling",
+    "version": "1.2.2",
+    "displayName": "Inkling Annotated Image",
+    "description": "Inkling Annotated Image platform widget and associated pattern.",
+    "keywords": ["assessment", "annotated image", "image", "platform widget"]
+}
