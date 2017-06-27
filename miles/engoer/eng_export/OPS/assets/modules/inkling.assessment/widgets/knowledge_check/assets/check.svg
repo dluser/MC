@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="10px" viewBox="0 0 12 10" version="1.1">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>Check</title>
+    <desc>Created with Sketch.</desc>
+    <defs />
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03-Assign-01" transform="translate(-503.000000, -712.000000)" fill="#000000">
+            <g id="multi-search-unchecked-+-A-(starbCrevasse-Pro-+-Delete-Drop-Target" transform="translate(483.000000, 655.000000)">
+                <g id="Check" transform="translate(20.000000, 57.000000)">
+                    <path d="M3.8,9.78571429 L0.133333333,5.92857143 C0.0666666667,5.85714286 0.0666666667,5.71428571 0.133333333,5.57142857 L1.26666667,4.35714286 C1.33333333,4.28571429 1.46666667,4.28571429 1.6,4.35714286 L3.86666667,6.78571429 C3.93333333,6.85714286 4.06666667,6.85714286 4.2,6.78571429 L10.4,0.142857143 C10.4666667,0.0714285714 10.6,0.0714285714 10.7333333,0.142857143 L11.8666667,1.35714286 C11.9333333,1.42857143 11.9333333,1.57142857 11.8666667,1.71428571 L4.13333333,9.78571429 C4,9.92857143 3.86666667,9.92857143 3.8,9.78571429 L3.8,9.78571429 Z" id="Shape" />
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

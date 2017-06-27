@@ -1,0 +1,59 @@
+body, html {
+  word-break: break-word;
+  word-wrap: break-word; }
+
+body.hide-dates .time-interval-major, body.hide-dates .time-interval, body.hide-dates .nav-container .date, body.hide-dates .content-container .date {
+  display: none; }
+body.hide-dates .vco-skinny .content-container h2.date.date {
+  display: none !important; }
+
+.vco-slider .nav-previous .title, .vco-slider .nav-next .title {
+  color: inherit;
+  cursor: pointer; }
+
+.vco-slider .slider-item .content .content-container.layout-text .text .container {
+  cursor: default;
+  color: #666; }
+
+.vco-slider .slider-item .content .content-container .text .container {
+  color: #333; }
+
+.vco-slider .nav-previous .date, .vco-slider .slider-item .content .content-container .text .container, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .credit, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption, .vco-slider .nav-previous .title, .vco-slider .nav-next .title, .vco-slider .slider-item .content .content-container.layout-text .text .container {
+  font-weight: 300 !important; }
+  .vco-slider .nav-previous .date ul, .vco-slider .nav-previous .date ol, .vco-slider .slider-item .content .content-container .text .container ul, .vco-slider .slider-item .content .content-container .text .container ol, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .credit ul, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .credit ol, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption ul, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption ol, .vco-slider .nav-previous .title ul, .vco-slider .nav-previous .title ol, .vco-slider .nav-next .title ul, .vco-slider .nav-next .title ol, .vco-slider .slider-item .content .content-container.layout-text .text .container ul, .vco-slider .slider-item .content .content-container.layout-text .text .container ol {
+    font-weight: 500;
+    list-style-position: inside;
+    padding: 0; }
+    .vco-slider .nav-previous .date ul li, .vco-slider .nav-previous .date ol li, .vco-slider .slider-item .content .content-container .text .container ul li, .vco-slider .slider-item .content .content-container .text .container ol li, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .credit ul li, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .credit ol li, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption ul li, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption ol li, .vco-slider .nav-previous .title ul li, .vco-slider .nav-previous .title ol li, .vco-slider .nav-next .title ul li, .vco-slider .nav-next .title ol li, .vco-slider .slider-item .content .content-container.layout-text .text .container ul li, .vco-slider .slider-item .content .content-container.layout-text .text .container ol li {
+      font-weight: 500; }
+  .vco-slider .nav-previous .date p, .vco-slider .slider-item .content .content-container .text .container p, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .credit p, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption p, .vco-slider .nav-previous .title p, .vco-slider .nav-next .title p, .vco-slider .slider-item .content .content-container.layout-text .text .container p {
+    color: inherit !important;
+    font-weight: inherit !important;
+    line-height: normal !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    margin-top: 0; }
+  .vco-slider .nav-previous .date sup, .vco-slider .slider-item .content .content-container .text .container sup, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .credit sup, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption sup, .vco-slider .nav-previous .title sup, .vco-slider .nav-next .title sup, .vco-slider .slider-item .content .content-container.layout-text .text .container sup {
+    line-height: normal;
+    color: inherit !important; }
+  .vco-slider .nav-previous .date sub, .vco-slider .slider-item .content .content-container .text .container sub, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .credit sub, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption sub, .vco-slider .nav-previous .title sub, .vco-slider .nav-next .title sub, .vco-slider .slider-item .content .content-container.layout-text .text .container sub {
+    line-height: normal;
+    color: inherit !important; }
+  .vco-slider .nav-previous .date h2.start, .vco-slider .slider-item .content .content-container .text .container h2.start, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .credit h2.start, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption h2.start, .vco-slider .nav-previous .title h2.start, .vco-slider .nav-next .title h2.start, .vco-slider .slider-item .content .content-container.layout-text .text .container h2.start {
+    font-weight: 300 !important; }
+  .vco-slider .nav-previous .date h3, .vco-slider .slider-item .content .content-container .text .container h3, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .credit h3, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption h3, .vco-slider .nav-previous .title h3, .vco-slider .nav-next .title h3, .vco-slider .slider-item .content .content-container.layout-text .text .container h3 {
+    font-weight: normal;
+    color: black; }
+    .vco-slider .nav-previous .date h3 ul, .vco-slider .nav-previous .date h3 ol, .vco-slider .nav-previous .date h3 p, .vco-slider .slider-item .content .content-container .text .container h3 ul, .vco-slider .slider-item .content .content-container .text .container h3 ol, .vco-slider .slider-item .content .content-container .text .container h3 p, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .credit h3 ul, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .credit h3 ol, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .credit h3 p, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption h3 ul, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption h3 ol, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption h3 p, .vco-slider .nav-previous .title h3 ul, .vco-slider .nav-previous .title h3 ol, .vco-slider .nav-previous .title h3 p, .vco-slider .nav-next .title h3 ul, .vco-slider .nav-next .title h3 ol, .vco-slider .nav-next .title h3 p, .vco-slider .slider-item .content .content-container.layout-text .text .container h3 ul, .vco-slider .slider-item .content .content-container.layout-text .text .container h3 ol, .vco-slider .slider-item .content .content-container.layout-text .text .container h3 p {
+      color: inherit !important; }
+  .vco-slider .nav-previous .date a, .vco-slider .slider-item .content .content-container .text .container a, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .credit a, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption a, .vco-slider .nav-previous .title a, .vco-slider .nav-next .title a, .vco-slider .slider-item .content .content-container.layout-text .text .container a {
+    cursor: pointer; }
+
+.vco-slider .nav-previous .date ul, .vco-slider .nav-previous .date ol, .vco-slider .nav-previous .title ul, .vco-slider .nav-previous .title ol, .vco-slider .nav-next .title ul, .vco-slider .nav-next .title ol {
+  padding: 0 0 0 20px;
+  list-style-position: outside; }
+
+@media only screen and (min-width: 560px) {
+  .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption ul, .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption ol {
+    list-style-position: outside;
+    padding: 0 0 0 40px; } }

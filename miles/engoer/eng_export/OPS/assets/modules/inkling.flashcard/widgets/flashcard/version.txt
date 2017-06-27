@@ -1,0 +1,3 @@
+com.inkling.widget.flashcard
+1.2.1
+20161004.204502z.20af5dd5

@@ -138,8 +138,8 @@ function loadPageHTML(lin){
 //if localStorage is supported. update local with temporary variables
 function updateLocStorage(){
 	if (typeof(Storage) !== "undefined") {
-		localStorage.pgPos = pgPos;
-		localStorage.chPos = chPos;
+		localStorage.nmhpgPos = pgPos;
+		localStorage.nmhchPos = chPos;
 	}
 }
 
@@ -207,18 +207,18 @@ function setUpTOC(){
 		//check for local storage and create/load local storage page
 		if (typeof(Storage) !== "undefined") {
     	// Code for localStorage/sessionStorage.
-    		if(localStorage.chPos && localStorage.pgPos){
+    		if(localStorage.nmhchPos && localStorage.nmhpgPos){
     			console.log('Local variables available');
-    			chPos = localStorage.chPos;
-    			pgPos = localStorage.pgPos;
+    			chPos = localStorage.nmhchPos;
+    			pgPos = localStorage.nmhpgPos;
     		}
     		else{
     			console.log('Made local variables');
-    			localStorage.chPos = chPos;
-    			localStorage.pgPos = pgPos;
+    			localStorage.nmhchPos = chPos;
+    			localStorage.nmhpgPos = pgPos;
     		}
     		//after loading TOC open first chapter
-			loadPageHTML(book.chapters[localStorage.chPos].pglinks[localStorage.pgPos]);
+			loadPageHTML(book.chapters[localStorage.nmhchPos].pglinks[localStorage.nmhpgPos]);
 		} 
 		else {
     		// Sorry! No Web Storage support..

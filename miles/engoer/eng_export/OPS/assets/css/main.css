@@ -1,0 +1,266 @@
+/*--------------------------------------------------------------------
+ * Theme Name:      [Add Theme Name]
+ * Version:         1.0.0
+ * Author:          Inkling
+ * Description:     Boilerplate theme for new CSS styles.
+ *
+ * Do not add any custom CSS to this file! 
+ * Please use custom.css instead.
+ *
+ * This file is reserved for the advanced Sass workflow.
+ *------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+ * Theme Headers
+ *----------------------------------------------------------------*/
+.chapter-intro-a h1 {
+  font-size: 42px;
+  font-weight: 300;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 560px) {
+  .chapter-intro-a h1 {
+    font-size: 52.5px;
+  }
+}
+
+.chapter-intro-a .subtitle {
+  font-family: "Inkling Serif Web", "Meta Serif Office Pro", Georgia, serif;
+  line-height: 1.3em;
+  font-weight: 100;
+  color: #bbb;
+  font-size: 19px;
+  text-transform: none;
+}
+
+@media (min-width: 560px) {
+  .chapter-intro-a .subtitle {
+    font-size: 24px;
+  }
+}
+
+.chapter-intro-a .unit-info {
+  background-color: #00577f;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.chapter-intro-a .unit-info .unit-number {
+  text-transform: uppercase;
+  font-size: 80%;
+}
+
+.chapter-intro-a .unit-info .unit-title {
+  text-transform: uppercase;
+  font-size: 80%;
+}
+
+.chapter-intro-a .title-info .chapter-number {
+  font-family: "Inkling Serif Web", "Meta Serif Office Pro", Georgia, serif;
+  color: #007db6;
+  font-size: 2.2105em;
+}
+
+.chapter-intro-a .title-info .subtitle {
+  font-family: "Inkling Serif Web", "Meta Serif Office Pro", Georgia, serif;
+  line-height: 1.3em;
+  font-weight: 100;
+  color: #bbb;
+  font-size: 19px;
+  text-transform: none;
+}
+
+@media (min-width: 560px) {
+  .chapter-intro-a .title-info .subtitle {
+    font-size: 24px;
+  }
+}
+
+.header h1 {
+  font-size: 42px;
+  font-weight: 300;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 560px) {
+  .header h1 {
+    font-size: 52.5px;
+  }
+}
+
+.header .subtitle {
+  text-transform: none;
+}
+
+/*------------------------------------------------------------------
+ * Theme Images
+ *----------------------------------------------------------------*/
+figcaption {
+  font-family: "Source Sans Pro", Verdana, Helvetica, sans;
+}
+
+figcaption .number {
+  font-family: "Inkling Serif Web", "Meta Serif Office Pro", Georgia, serif;
+  color: #007db6;
+}
+
+/*------------------------------------------------------------------
+ * Theme Blockquotes
+ *----------------------------------------------------------------*/
+.blockquote-a {
+  font-size: 1.2632em;
+  color: #222;
+  background: #f8f8f8;
+  font-family: "Source Sans Pro", Verdana, Helvetica, sans;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  border-left: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 28.5px;
+  margin-bottom: 28.5px;
+}
+
+.blockquote-a p {
+  margin-bottom: 0;
+}
+
+.blockquote-b {
+  padding-left: 10px;
+  font-size: 36px;
+}
+
+.blockquote-b:before {
+  content: '';
+  border-top: 4px solid #007db6;
+  display: block;
+  width: 100px;
+  padding-bottom: 10px;
+}
+
+/*------------------------------------------------------------------
+ * Theme Text
+ *----------------------------------------------------------------*/
+.dropcap {
+  font-weight: 100;
+}
+
+/*------------------------------------------------------------------
+ * Theme Sections
+ *----------------------------------------------------------------*/
+.section-a {
+  border: #007db6 solid 4px;
+  background-color: #fff;
+  padding: 20px 40px;
+}
+
+.section-b {
+  border: none;
+  background: #f8f8f8;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.section-c {
+  background: #e5f2f7;
+}
+
+/*------------------------------------------------------------------
+ * Theme Asides
+ *----------------------------------------------------------------*/
+.sidenote {
+  background: #f8f8f8;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidenote-b {
+  background: #fff;
+  color: #bbb;
+  box-shadow: none;
+}
+
+.sidenote-b .sidenote-title {
+  background: transparent;
+  color: #222;
+}
+
+.sidenote-a:before {
+  content: '';
+  border-top: 4px solid #007db6;
+  display: block;
+  width: 100px;
+  padding-bottom: 10px;
+}
+
+.sidenote-important .sidenote-title {
+  background-color: #C74322;
+}
+
+.sidenote-question .sidenote-title {
+  background-color: #007db6;
+}
+
+.sidenote-tip .sidenote-title {
+  background-color: #60b031;
+}
+
+/*------------------------------------------------------------------
+ * Theme Buttons
+ *----------------------------------------------------------------*/
+.button-a {
+  background: #f8f8f8;
+  text-align: left;
+  border-radius: 3px;
+  border-bottom: 3px solid #bbb;
+  background-position: right 13.3333px top 50%;
+  background-size: auto 1.5em;
+  background-repeat: no-repeat;
+  background-image: url(images/icon-arrow-black.svg);
+  padding-right: 45px;
+  font-family: "Source Sans Pro", Verdana, Helvetica, sans;
+}
+
+.button-b {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "Source Sans Pro", Verdana, Helvetica, sans;
+}
+
+/*------------------------------------------------------------------
+ * Theme Tables
+ *----------------------------------------------------------------*/
+table td {
+  padding: 5px;
+  text-align: left;
+}
+
+table th {
+  background: #007db6;
+  color: #fff;
+  font-family: "Source Sans Pro", Verdana, Helvetica, sans;
+}
+
+.table-a tr:first-child {
+  background: #e5f2f7;
+  font-family: "Source Sans Pro", Verdana, Helvetica, sans;
+  font-weight: 600;
+  border: 1px solid #007db6;
+}
+
+.table-a tr, .table-a td {
+  border: 1px solid #007db6;
+}
+
+.table-b tr:first-child td {
+  border: 1px solid #f8f8f8;
+  border: 0 none;
+  background: #bbb;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Source Sans Pro", Verdana, Helvetica, sans;
+  letter-spacing: 0.0263em;
+}
+
+.figure-table figcaption {
+  text-align: left;
+}

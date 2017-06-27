@@ -1,0 +1,8 @@
+{
+    "name": "slideline",
+    "organization": "inkling",
+    "version": "1.2.2",
+    "displayName": "Inkling Slideline",
+    "description": "Inkling Slideline platform widget and associated pattern.",
+    "keywords": ["platform widget", "image"]
+}

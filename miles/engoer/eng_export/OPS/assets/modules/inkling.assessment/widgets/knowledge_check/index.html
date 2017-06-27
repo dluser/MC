@@ -1,0 +1,20 @@
+<!doctype html><html ng-app="inklingKnowledgeCheck"><head><meta charset="utf-8"><title>inklingKnowledgeCheck</title><meta name="description" content=""><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="IE=edge"><link rel="stylesheet" type="text/css" href="../../../../css/fonts/fonts.css"><link rel="stylesheet" href="styles/vendor-5e31a15f1e.css"><link rel="stylesheet" href="styles/app-f1b8cc5117.css"></head><body class="index"><script>
+      /**
+       * We set "hard" width on the body in order to deal with the IFrame sizing
+       * issue on iOS Safari that resizes the IFrame as the body grows, which throws
+       * off all size calculations in the widget code
+       */
+      function updateBodyWidth(){
+        var landscape = (window.orientation && Math.abs(window.orientation) === 90);
+        var width= (landscape) ? window.screen.height : window.screen.width;
+
+        document.body.style.maxWidth = (width + 'px');
+      }
+
+      updateBodyWidth();
+
+      window.addEventListener('orientationchange', updateBodyWidth);
+      window.addEventListener('resize', updateBodyWidth);
+    </script><!--[if lt IE 10]>
+ <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+ <![endif]--><svg id="svg-area"></svg><div class="icon-loading" ng-hide="setupDone"></div><div id="main-viewer" ui-view="main" ng-if="config" ng-show="setupDone"></div><script src="scripts/vendor-27ba1b238e.js"></script><script src="scripts/app-8896097360.js"></script></body></html>

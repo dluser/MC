@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="10px" viewBox="0 0 11 10" version="1.1">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Edit Pattern</title>
+    <desc>Created with Sketch.</desc>
+    <defs />
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03-Assign-01" transform="translate(-479.000000, -650.000000)" fill="#0099B7">
+            <g id="Rectangle-273-+-Path-159-+-Triangle-2" transform="translate(475.000000, 646.000000)">
+                <g id="Edit-Pattern" transform="translate(9.071068, 9.778175) rotate(45.000000) translate(-9.071068, -9.778175) translate(7.071068, 3.778175)">
+                    <g id="Group-5" transform="translate(-0.000000, 0.000000)">
+                        <path d="M0.389333163,0.0173616021 L3.59034908,0.0173616021 L3.59034908,8.57677984 L0.389333163,8.57677984 L0.389333163,0.0173616021 Z" id="Rectangle-49" />
+                        <polygon id="Triangle-3" points="1.9815578 9.2598166 3.56130915 11.9689368 0.401806454 11.9689368 " />
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
