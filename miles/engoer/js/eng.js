@@ -47,8 +47,11 @@ function iFrameLoad(){
 	iFrame.height = "";
 	iFrame.css({'opacity':'1','height':h});
 	$.each(iframea, function(i,val){
-		if($(val).attr('href')[0] !== '.' || $(val).attr('href')[3] === 'g'){
-			$(val).attr('target','_blank');
+		var href = $(val).attr('href');
+		if(href !== undefined){
+			if(href[0] !== '.' || href[3] === 'g'){
+				$(val).attr('target','_blank');
+			}
 		}
 	});
 	$('.loader').hide();
