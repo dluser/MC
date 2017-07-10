@@ -63,6 +63,11 @@
             </options>
           </option>
           <option name="search" value="false" />
+          <option name="closed_captions" value="true">
+            <options>
+              <option name="font" value="Open Sans" />
+            </options>
+          </option>
         </options>
       </optiongroup>
       <optiongroup name="bottombaroptions">
