@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course Copy Request</title>
+	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/backup.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src = "js/backup.js"></script>
+</head>
+<body>
+	<div class = "container-fluid">
+	    <div class = "row">
+	        <div class = "form-container">
+	            <form id = "foo">
+	                <div id = "form-contents">
+	                    <h1>Course Copy Request</h1>
+	                    <h4>Name</h4>
+	                    <input type = "text" name = "Name" placeholder = "Enter here" value = "" required></input>
+	                    
+	                    <h4>CNM Email</h4>
+	                    <input type = "email" name = "Email" placeholder = "Enter here" value = "" pattern=".+@cnm.edu" title="Please provide a valid CNM email" required></input>
+	                    
+	                    <h4>Phone ext.</h4>
+	                    <input type = "text" name = "Phone ext." placeholder = "Enter here" value = ""></input>
+	                    
+	                    <h4>Academic School</h4>
+	                    <select name = "School" required>
+	                        <option disabled selected value> -- Select an option -- </option>
+	                        <option value = "Health, Wellness and Public Safety (HWPS)">Health, Wellness and Public Safety (HWPS)</option>
+	                        <option value = "Applied Technologies (AT)">Applied Technologies (AT)</option>
+	                        <option value = "Business and Information Technology (BIT)">Business and Information Technology (BIT)</option>
+	                        <option value = "Communications, Humanities and Social Sciences (CHSS)">Communications, Humanities and Social Sciences (CHSS)</option>
+	                        <option value = "Mathematics, Science and Engineering (MSE)">Mathematics, Science and Engineering (MSE)</option>
+	                        <option value = "School of Adult and General Education (SAGE)">School of Adult and General Education (SAGE)</option>
+	                        <option value = "Workforce Training Center (WTC)">Workforce Training Center (WTC)</option>
+	                    </select>
+	                    
+	                    <h4>Source Course</h4>
+	                    <input type = "text" name = "Source Course" placeholder = "Enter here" required></input>
+	                    
+	                    <h4>Destination Course #1</h4>
+	                    <input type = "text" name = "Destination Course #1" placeholder = "Enter here" required></input>
+	                    
+	                    <h4>Destination Course #2</h4>
+	                    <input type = "text" name = "Destination Course #2" placeholder = "Enter here"></input>
+	                    
+	                    <h4>Destination Course #3</h4>
+	                    <input type = "text" name = "Destination Course #3" placeholder = "Enter here"></input>
+	                    
+	                    <h4>Destination Course #4</h4>
+	                    <input type = "text" name = "Destination Course #4" placeholder = "Enter here"></input>
+	                    
+	                    <h4>Discussions</h4>
+	                    <select name = "Discussions">
+	                        <option value = "Delete old posts">Delete old posts</option>
+	                        <option value = "Keep old posts">Keep old posts</option>
+	                    </select>
+	                    
+	                    <h4>Announcements</h4>
+	                    <select name = "Announcements">
+	                        <option value = "Delete old announcements">Delete old announcements</option>
+	                        <option value = "Keep old announcements">Keep old announcements</option>
+	                    </select>
+	                    
+	                    <h4>Additional Tools</h4>
+	                    <div>
+	                        <input type = "checkbox" name = "Blogs"></input>
+	                        <label>Blogs</label>
+	                    </div>
+	                    <div>
+	                        <input type = "checkbox" name = "Journals"></input>
+	                        <label>Journals</label>
+	                    </div>
+	                    <div>
+	                        <input type = "checkbox" name = "Bb Calendar"></input>
+	                        <label>Bb Calendar</label>
+	                    </div>
+	                    <div>
+	                        <input type = "checkbox" name = "Wikis"></input>
+	                        <label>Wikis</label>
+	                    </div>
+	                    <div>
+	                        <input type = "checkbox" name = "Groups"></input>
+	                        <label>Groups</label>
+	                    </div>
+	                    
+	                    <h4>Online Office Hours</h4>
+	                    <div>
+	                        <input type = "checkbox" name = "Bb IM"></input>
+	                        <label>Bb IM</label>
+	                    </div>
+	                    <div>
+	                        <input type = "checkbox" name = "Bb Collaborate"></input>
+	                        <label>Bb Collaborate</label>
+	                    </div>
+	                    <h4>Special Requests</h4>
+	                    <input type = "text" name = "Special Requests" placeholder = "Enter here"></input>
+	                    <div>
+	                        <input type = "submit"></input>
+	                    </div>
+	                </div>
+	                <div id = "success" class = "text-center">
+	                    <p>Thank you for submitting your course copy request! You will receive an email confirmation shortly. If you have any questions or concerns please contact us at dl@cnm.edu</p>
+	                </div>
+	            </form>
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>
