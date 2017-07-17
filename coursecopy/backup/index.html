@@ -4,9 +4,10 @@
 	<title>Course Copy Request</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/backup.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src = "js/backup.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/backup.css">
 </head>
 <body>
 	<div class = "container-fluid">
@@ -14,90 +15,117 @@
 	        <div class = "form-container">
 	            <form id = "foo">
 	                <div id = "form-contents">
+	                
 	                    <h1>Course Copy Request</h1>
-	                    <h4>Name</h4>
-	                    <input type = "text" name = "Name" placeholder = "Enter here" value = "" required></input>
+		                <div>
+		                    <h4>Name</h4>
+		                    <input class="form-control" type = "text" name = "Name" placeholder = "Enter here" value = "" required>
+		                </div>
 	                    
-	                    <h4>CNM Email</h4>
-	                    <input type = "email" name = "Email" placeholder = "Enter here" value = "" pattern=".+@cnm.edu" title="Please provide a valid CNM email" required></input>
-	                    
-	                    <h4>Phone ext.</h4>
-	                    <input type = "text" name = "Phone ext." placeholder = "Enter here" value = ""></input>
-	                    
-	                    <h4>Academic School</h4>
-	                    <select name = "School" required>
-	                        <option disabled selected value> -- Select an option -- </option>
-	                        <option value = "Health, Wellness and Public Safety (HWPS)">Health, Wellness and Public Safety (HWPS)</option>
-	                        <option value = "Applied Technologies (AT)">Applied Technologies (AT)</option>
-	                        <option value = "Business and Information Technology (BIT)">Business and Information Technology (BIT)</option>
-	                        <option value = "Communications, Humanities and Social Sciences (CHSS)">Communications, Humanities and Social Sciences (CHSS)</option>
-	                        <option value = "Mathematics, Science and Engineering (MSE)">Mathematics, Science and Engineering (MSE)</option>
-	                        <option value = "School of Adult and General Education (SAGE)">School of Adult and General Education (SAGE)</option>
-	                        <option value = "Workforce Training Center (WTC)">Workforce Training Center (WTC)</option>
-	                    </select>
-	                    
-	                    <h4>Source Course</h4>
-	                    <input type = "text" name = "Source Course" placeholder = "Enter here" required></input>
-	                    
-	                    <h4>Destination Course #1</h4>
-	                    <input type = "text" name = "Destination Course #1" placeholder = "Enter here" required></input>
-	                    
-	                    <h4>Destination Course #2</h4>
-	                    <input type = "text" name = "Destination Course #2" placeholder = "Enter here"></input>
-	                    
-	                    <h4>Destination Course #3</h4>
-	                    <input type = "text" name = "Destination Course #3" placeholder = "Enter here"></input>
-	                    
-	                    <h4>Destination Course #4</h4>
-	                    <input type = "text" name = "Destination Course #4" placeholder = "Enter here"></input>
-	                    
-	                    <h4>Discussions</h4>
-	                    <select name = "Discussions">
-	                        <option value = "Delete old posts">Delete old posts</option>
-	                        <option value = "Keep old posts">Keep old posts</option>
-	                    </select>
-	                    
-	                    <h4>Announcements</h4>
-	                    <select name = "Announcements">
-	                        <option value = "Delete old announcements">Delete old announcements</option>
-	                        <option value = "Keep old announcements">Keep old announcements</option>
-	                    </select>
-	                    
-	                    <h4>Additional Tools</h4>
+	                    <div> 
+	                    	<h4>Email</h4>
+		                    <input class="form-control" type = "email" name = "Email" placeholder = "Enter here" value = "" pattern=".+@cnm.edu" title="Please provide a valid CNM email" required>
+	                    </div>
+
 	                    <div>
-	                        <input type = "checkbox" name = "Blogs"></input>
+		                    <h4>Phone ext.</h4>
+		                    <input class = "form-control" type = "text" name = "Phone ext." placeholder = "Enter here" value = "">
+	                    </div>
+	                    
+	                    <div>
+	                    <h4>Academic School</h4>
+		                    <select class = "form-control" name = "School" required>
+		                        <option disabled selected value> -- Select an option -- </option>
+		                        <option value = "Health, Wellness and Public Safety (HWPS)">Health, Wellness and Public Safety (HWPS)</option>
+		                        <option value = "Applied Technologies (AT)">Applied Technologies (AT)</option>
+		                        <option value = "Business and Information Technology (BIT)">Business and Information Technology (BIT)</option>
+		                        <option value = "Communications, Humanities and Social Sciences (CHSS)">Communications, Humanities and Social Sciences (CHSS)</option>
+		                        <option value = "Mathematics, Science and Engineering (MSE)">Mathematics, Science and Engineering (MSE)</option>
+		                        <option value = "School of Adult and General Education (SAGE)">School of Adult and General Education (SAGE)</option>
+		                        <option value = "Workforce Training Center (WTC)">Workforce Training Center (WTC)</option>
+		                    </select>
+	                    </div>
+
+
+	                    <div>
+		                    <h4>Source Course</h4>
+		                    <input class = "form-control" type = "text" name = "Source Course" placeholder = "Enter here" required>
+	                    </div>
+	                    
+	                    <div>
+		                    <h4>Destination Course #1</h4>
+		                    <input class = "form-control" type = "text" name = "Destination Course #1" placeholder = "Enter here" required>
+	                    </div>
+	                    
+	                    <div>
+		                    <h4>Destination Course #2</h4>
+		                    <input class = "form-control" type = "text" name = "Destination Course #2" placeholder = "Enter here">
+	                    </div>
+	                    
+	                    <div>
+		                    <h4>Destination Course #3</h4>
+		                    <input class = "form-control" type = "text" name = "Destination Course #3" placeholder = "Enter here">
+	                    </div>
+	                    
+	                    <div>
+		                    <h4>Destination Course #4</h4>
+		                    <input class = "form-control" type = "text" name = "Destination Course #4" placeholder = "Enter here">
+	                    </div>
+	                    
+	                    <div>
+		                    <h4>Discussions</h4>
+		                    <select class = "form-control" name = "Discussions">
+		                        <option value = "Delete old posts">Delete old posts</option>
+		                        <option value = "Keep old posts">Keep old posts</option>
+		                    </select>
+	                    </div>
+	                    
+	                    <div>
+		                    <h4>Announcements</h4>
+		                    <select class = "form-control" name = "Announcements">
+		                        <option value = "Delete old announcements">Delete old announcements</option>
+		                        <option value = "Keep old announcements">Keep old announcements</option>
+		                    </select>
+	                    </div>
+
+	                    <h4>Additional Tools</h4>
+	                    <div class = "custom-checkbox">
+	                        <input type = "checkbox" name = "Blogs">
 	                        <label>Blogs</label>
 	                    </div>
-	                    <div>
-	                        <input type = "checkbox" name = "Journals"></input>
+	                    <div class = "custom-checkbox">
+	                        <input type = "checkbox" name = "Journals">
 	                        <label>Journals</label>
 	                    </div>
-	                    <div>
-	                        <input type = "checkbox" name = "Bb Calendar"></input>
+	                    <div class = "custom-checkbox">
+	                        <input type = "checkbox" name = "Bb Calendar">
 	                        <label>Bb Calendar</label>
 	                    </div>
-	                    <div>
-	                        <input type = "checkbox" name = "Wikis"></input>
+	                    <div class = "custom-checkbox">
+	                        <input type = "checkbox" name = "Wikis">
 	                        <label>Wikis</label>
 	                    </div>
-	                    <div>
-	                        <input type = "checkbox" name = "Groups"></input>
+	                    <div class = "custom-checkbox">
+	                        <input type = "checkbox" name = "Groups">
 	                        <label>Groups</label>
 	                    </div>
 	                    
 	                    <h4>Online Office Hours</h4>
-	                    <div>
-	                        <input type = "checkbox" name = "Bb IM"></input>
+	                    <div class = "custom-checkbox">
+	                        <input type = "checkbox" name = "Bb IM">
 	                        <label>Bb IM</label>
 	                    </div>
-	                    <div>
-	                        <input type = "checkbox" name = "Bb Collaborate"></input>
+	                    <div class = "custom-checkbox">
+	                        <input type = "checkbox" name = "Bb Collaborate">
 	                        <label>Bb Collaborate</label>
 	                    </div>
-	                    <h4>Special Requests</h4>
-	                    <input type = "text" name = "Special Requests" placeholder = "Enter here"></input>
+
 	                    <div>
-	                        <input type = "submit"></input>
+		                    <h4>Special Requests</h4>
+		                    <textarea rows = "5" class = "form-control" type = "text" name = "Special Requests" placeholder = "Enter here"></textarea>
+	                    </div>
+	                    <div>
+	                        <input class = "btn btn-lg btn-primary" type = "submit">
 	                    </div>
 	                </div>
 	                <div id = "success" class = "text-center">

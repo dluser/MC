@@ -14,29 +14,9 @@ form{
 h4{
     margin-top:40px;
 }
-input{
-    outline: none;
-}
-input[type=text],input[type=email],select{
-    width:250px;
-}
-input[type=submit]{
-    margin-top:40px;
-}
-input[type=checkbox]{
-    margin-right:10px;
-}
-input[type=text],input[type=email]{
-    border:none;
-    border-bottom:1px solid #eeeeee;
-}
-input[type=submit]{
-    border:none;
-    border-radius:10px;
-    padding:15px 30px;
-    color:white;
-    background-color:#7093CD;
-}
 #success{
     display:none;
+}
+input[type=submit]{
+    margin-top:20px;
 }
