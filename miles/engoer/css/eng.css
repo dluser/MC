@@ -23,6 +23,10 @@ iframe{
 	opacity:0;
 	height:0px;
 }
+.sidebar-nav h2{
+	text-align: center;
+	background-color:red;
+}
 .sidebar-nav{
 	margin-top:10px;
 }
@@ -76,6 +80,18 @@ iframe{
 }
 .glyphicon:hover{
 	color:#439CC8;
+}
+.sidebar-nav .ch-divide{
+	font-size:12px;
+    width: 100%;
+    background-color: #E83449;
+    color: #eeeeee;
+    padding:5px 10px;
+    text-align: left;
+    text-indent: 0px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 #book-page{
 	background-color: white;
