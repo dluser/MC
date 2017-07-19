@@ -35,7 +35,7 @@ $(document).ready(function(){
 			}
 		}
 		catch(err){
-			console.log(err);
+			//console.log(err);
 		}
 	},1000);
 });
@@ -141,8 +141,8 @@ function loadPageHTML(lin){
 //if localStorage is supported. update local with temporary variables
 function updateLocStorage(){
 	if (typeof(Storage) !== "undefined") {
-		localStorage.engpgPos = pgPos;
-		localStorage.engchPos = chPos;
+		localStorage.EngpgPos = pgPos;
+		localStorage.EngchPos = chPos;
 	}
 }
 
@@ -152,8 +152,8 @@ function setUpTOC(){
   		//parse into html
   		toc = $.parseHTML(data);
   		//find the list of all chapters and pages and add to the sidbar navigation
-  		$(toc[10]).find('ol li ol li ol').remove();
-  		$('.sidebar-nav').html($(toc[10]).children().children());
+  		$(toc[10]).find('ol li ol li ol ol').remove();
+  		$('.sidebar-nav').html($(toc[10]).children().children().children().children());
 
   		//cycle through each chapter
   		$.each($('.sidebar-nav > li'),function(i,val){ 
@@ -207,21 +207,28 @@ function setUpTOC(){
 			loadPageHTML(link);
 		});
 
+		$($('.chapter')[0]).before("<li class = 'ch-divide'>Part 1: Introduction to College Writing</li>");
+		$($('.chapter')[3]).after("<li class = 'ch-divide'>Part 2: Writing Processes</li>");
+		$($('.chapter')[10]).after("<li class = 'ch-divide'>Part 3: 1101 Genres</li>");
+		$($('.chapter')[18]).after("<li class = 'ch-divide'>Part 4: Analysis and Critical Thinking</li>");
+		$($('.chapter')[25]).after("<li class = 'ch-divide'>Part 5: Argumentative Writing</li>");
+		$($('.chapter')[29]).after("<li class = 'ch-divide'>Part 6: Research Process, MLA and APA</li>");
+
 		//check for local storage and create/load local storage page
 		if (typeof(Storage) !== "undefined") {
     	// Code for localStorage/sessionStorage.
-    		if(localStorage.engchPos && localStorage.engpgPos){
+    		if(localStorage.EngchPos && localStorage.EngpgPos){
     			console.log('Local variables available');
-    			chPos = localStorage.engchPos;
-    			pgPos = localStorage.engpgPos;
+    			chPos = localStorage.EngchPos;
+    			pgPos = localStorage.EngpgPos;
     		}
     		else{
     			console.log('Made local variables');
-    			localStorage.engchPos = chPos;
-    			localStorage.engpgPos = pgPos;
+    			localStorage.EngchPos = chPos;
+    			localStorage.EngpgPos = pgPos;
     		}
     		//after loading TOC open first chapter
-			loadPageHTML(book.chapters[localStorage.engchPos].pglinks[localStorage.engpgPos]);
+			loadPageHTML(book.chapters[localStorage.EngchPos].pglinks[localStorage.EngpgPos]);
 		} 
 		else {
     		// Sorry! No Web Storage support..
