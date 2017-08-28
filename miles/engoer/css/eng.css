@@ -110,6 +110,10 @@ iframe{
 #page-content-wrapper{
 	padding:0;
 }
+#pdflink{
+	text-align: center;
+	clear:both;
+}
 #menu-container{
 	-webkit-transform: translateZ(0);
     transform: translateZ(0);
