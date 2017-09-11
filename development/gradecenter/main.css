@@ -1,0 +1,40 @@
+html, body{
+	background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+} 
+h1.ui.header .content{
+	font-size: 1em;
+	line-height: 1em;
+}
+.title, .content, .ui.accordion .title:not(.ui){
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	line-height: 20px;
+}
+
+.ui.styled.accordion .active.title{
+	color:#043C6E;
+}
+
+.ui.styled.accordion .title:hover{
+	color:#043C6E;
+}
+
+.ui.styled.accordion .title:hover .dropdown.icon{
+	color:#F5BD2C;
+}
+
+.ui.styled.accordion .active.title .dropdown.icon{
+	color:#F5BD2C;
+}
+.ui.styled.accordion .content{
+	padding:0em 1em 0.5em;
+}
+.ui.grid.container{
+	margin:50px 0px;
+}
+.ui.stackable.grid:not(.vertically)>.row{
+	padding:1rem 0;
+}
