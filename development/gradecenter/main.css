@@ -34,6 +34,7 @@ h1.ui.header .content{
 }
 .ui.grid.container{
 	margin:50px 0px;
+	padding:10px;
 }
 .ui.stackable.grid:not(.vertically)>.row{
 	padding:1rem 0;
