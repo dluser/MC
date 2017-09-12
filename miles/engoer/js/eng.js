@@ -22,6 +22,13 @@ $(document).ready(function(){
 		$("#wrapper").removeClass("toggled");
 	});
 
+	$("#pdflink").click(function(){
+		ga('send', 'event', 'PDF', 'download', 'OER PDF Export', {
+			nonInteraction: true
+		});
+		console.log("PDF clicked");
+	});
+
 	//monitor iframe height
 	var myInterval = setInterval(function(){
 		try{
