@@ -1,0 +1,19 @@
+table{
+	border-top:3px solid black;
+	border-bottom: 3px solid black;
+	border-collapse: collapse;
+	margin:auto;
+	box-shadow: 0px 0px 3px #bbb;
+	max-width: 800px;
+}
+th,td{
+	padding:20px;
+	border-top:1px solid gray;
+	border-bottom:1px solid gray;
+}
+.good{
+	background-color: #8dfc92;
+}
+.bad{
+	background-color: #f9f75e;
+}
