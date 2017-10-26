@@ -22,6 +22,13 @@ $(document).ready(function(){
 		$("#wrapper").removeClass("toggled");
 	});
 
+	$("#pdflink").click(function(){
+		ga('send', 'event', 'PDF', 'download', 'OER PDF Export', {
+			nonInteraction: true
+		});
+		console.log("PDF clicked");
+	});
+
 	//monitor iframe height
 	var myInterval = setInterval(function(){
 		try{
@@ -51,6 +58,16 @@ function iFrameLoad(){
 		if(href !== undefined){
 			if(href[0] !== '.' || href[3] === 'g'){
 				$(val).attr('target','_blank');
+			}
+			else{
+					$(val).click(function(e){
+					e.preventDefault();
+					$('.loader').show();
+					var link = $(this).attr("href");
+					link = "s9ml" + link.slice(2);
+					findPos(link);
+					loadPageHTML(link);
+				});
 			}
 		}
 	});
@@ -208,11 +225,11 @@ function setUpTOC(){
 		});
 
 		$($('.chapter')[0]).before("<li class = 'ch-divide'>Part 1: Introduction to College Writing</li>");
-		$($('.chapter')[3]).after("<li class = 'ch-divide'>Part 2: Writing Processes</li>");
-		$($('.chapter')[10]).after("<li class = 'ch-divide'>Part 3: 1101 Genres</li>");
-		$($('.chapter')[18]).after("<li class = 'ch-divide'>Part 4: Analysis and Critical Thinking</li>");
-		$($('.chapter')[25]).after("<li class = 'ch-divide'>Part 5: Argumentative Writing</li>");
-		$($('.chapter')[29]).after("<li class = 'ch-divide'>Part 6: Research Process, MLA and APA</li>");
+		$($('.chapter')[4]).after("<li class = 'ch-divide'>Part 2: Writing Processes</li>");
+		$($('.chapter')[11]).after("<li class = 'ch-divide'>Part 3: 1101 Genres</li>");
+		$($('.chapter')[19]).after("<li class = 'ch-divide'>Part 4: Analysis and Critical Thinking</li>");
+		$($('.chapter')[26]).after("<li class = 'ch-divide'>Part 5: Argumentative Writing</li>");
+		$($('.chapter')[30]).after("<li class = 'ch-divide'>Part 6: Research Process, MLA and APA</li>");
 
 		//check for local storage and create/load local storage page
 		if (typeof(Storage) !== "undefined") {
