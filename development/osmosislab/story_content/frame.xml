@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="npxnabnsnfns00000000001" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" outputtype="undefined" theme="classic">
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="npxnabnsnfns00001000001" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" outputtype="undefined" theme="classic">
   <layouts>
-    <layout name="npnxnanbsnfns00000000001" font="Open Sans" controllayout="npnxnanbsnfns00000000001" colorscheme="npxnabnsnfns00000000001" string_table="npxnabnsnfns00000000001" />
-    <layout name="pxabnsnfns00000000001" font="Open Sans" controllayout="pxabnsnfns00000000001" colorscheme="npxnabnsnfns00000000001" string_table="npxnabnsnfns00000000001" />
-    <layout name="npxnabnsnfns00000000001" font="Open Sans" controllayout="npxnabnsnfns00000000001" colorscheme="npxnabnsnfns00000000001" string_table="npxnabnsnfns00000000001" />
-    <layout name="npnxnanbnsnfns00000000001" font="Open Sans" controllayout="npnxnanbnsnfns00000000001" colorscheme="npxnabnsnfns00000000001" string_table="npxnabnsnfns00000000001" />
-    <layout name="pxabnsnfns00000000000" font="Open Sans" controllayout="pxabnsnfns00000000000" colorscheme="npxnabnsnfns00000000001" string_table="npxnabnsnfns00000000001" />
+    <layout name="npnxnanbsnfns00001000001" font="Open Sans" controllayout="npnxnanbsnfns00001000001" colorscheme="npxnabnsnfns00001000001" string_table="npxnabnsnfns00001000001" />
+    <layout name="pxabnsnfns00001000001" font="Open Sans" controllayout="pxabnsnfns00001000001" colorscheme="npxnabnsnfns00001000001" string_table="npxnabnsnfns00001000001" />
+    <layout name="npxnabnsnfns00001000001" font="Open Sans" controllayout="npxnabnsnfns00001000001" colorscheme="npxnabnsnfns00001000001" string_table="npxnabnsnfns00001000001" />
+    <layout name="npnxnanbnsnfns00001000001" font="Open Sans" controllayout="npnxnanbnsnfns00001000001" colorscheme="npxnabnsnfns00001000001" string_table="npxnabnsnfns00001000001" />
+    <layout name="pxabnsnfns00001000000" font="Open Sans" controllayout="pxabnsnfns00001000000" colorscheme="npxnabnsnfns00001000001" string_table="npxnabnsnfns00001000001" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -19,7 +19,7 @@
           <option name="logo_enabled" value="false">
             <options />
           </option>
-          <option name="sidebar_enabled" value="false">
+          <option name="sidebar_enabled" value="true">
             <options>
               <option name="sidebarpos" value="left" />
             </options>
@@ -27,7 +27,7 @@
           <optionlist name="tabs">
             <listitems>
               <listitem name="resources" value="false" group="linkright" />
-              <listitem name="outline" value="false" group="sidebar" />
+              <listitem name="outline" value="true" group="sidebar" />
               <listitem name="glossary" value="false" group="sidebar" />
               <listitem name="transcript" value="false" group="sidebar" />
             </listitems>
@@ -80,7 +80,7 @@
     </optiongroups>
   </control_options>
   <control_layouts>
-    <control_layout name="npnxnanbsnfns00000000001">
+    <control_layout name="npnxnanbsnfns00001000001">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -96,14 +96,14 @@
       <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
-      <control name="outline" enabled="false">
+      <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
         </controls>
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns00000000001">
+    <control_layout name="pxabnsnfns00001000001">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -119,14 +119,14 @@
       <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
-      <control name="outline" enabled="false">
+      <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
         </controls>
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npxnabnsnfns00000000001">
+    <control_layout name="npxnabnsnfns00001000001">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -142,14 +142,14 @@
       <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
-      <control name="outline" enabled="false">
+      <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
         </controls>
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npnxnanbnsnfns00000000001">
+    <control_layout name="npnxnanbnsnfns00001000001">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -165,14 +165,14 @@
       <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
-      <control name="outline" enabled="false">
+      <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
         </controls>
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns00000000000">
+    <control_layout name="pxabnsnfns00001000000">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -188,7 +188,7 @@
       <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
-      <control name="outline" enabled="false">
+      <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
         </controls>
@@ -197,7 +197,7 @@
     </control_layout>
   </control_layouts>
   <colorschemes>
-    <colorscheme name="npxnabnsnfns00000000001">
+    <colorscheme name="npxnabnsnfns00001000001">
       <color_group name="infopanel">
         <group_colors>
           <color name="link_text">
@@ -1103,7 +1103,7 @@
     </colorscheme>
   </colorschemes>
   <string_tables>
-    <string_table name="npxnabnsnfns00000000001">
+    <string_table name="npxnabnsnfns00001000001">
       <string id="check_include">Check to include</string>
       <string id="clear">Clear and return to menu</string>
       <string id="close">Close</string>
@@ -1118,7 +1118,6 @@
       <string id="acc_definition">definition</string>
       <string id="glossary">Glossary</string>
       <string id="terms">Terms</string>
-      <string id="send_an_email">Send an email</string>
       <string id="outline">Menu</string>
       <string id="disabled_orientation">Please rotate your device</string>
       <string id="next">NEXT</string>
@@ -1130,8 +1129,9 @@
       <string id="closed_captions">Captions</string>
       <string id="acc_pause">pause</string>
       <string id="acc_play">play</string>
+      <string id="send_an_email">Send an email</string>
       <string id="prev">PREV</string>
-      <string id="acc_skipnavigation">Skip navigation. Press enter to return to the slide.</string>
+      <string id="acc_previous">previous</string>
       <string id="question_list">Question List</string>
       <string id="acc_replay">replay</string>
       <string id="resources">Resources</string>
@@ -1141,12 +1141,12 @@
       <string id="acc_search_input">search</string>
       <string id="search_in">Search in:</string>
       <string id="search_results">Search Results</string>
+      <string id="acc_skipnavigation">Skip navigation. Press enter to return to the slide.</string>
       <string id="slide_text_chk">Slide Text</string>
       <string id="submitall">SUBMIT ALL</string>
       <string id="acc_submitall">submit all</string>
       <string id="submit">SUBMIT</string>
       <string id="acc_submit">submit</string>
-      <string id="acc_previous">previous</string>
       <string id="acc_volume">volume</string>
     </string_table>
   </string_tables>
@@ -1165,10 +1165,12 @@
         <slidelink slideid="_player.5yaJXPYQ7Va" displaytext="Osmosis Lab" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.5yaJXPYQ7Va.6pLwqUjDMmJ" displaytext="Intro" expand="false" type="slide" />
-            <slidelink slideid="_player.5yaJXPYQ7Va.6R3pltRPdH0" displaytext="ThingsToConsider" expand="false" type="slide" />
-            <slidelink slideid="_player.5yaJXPYQ7Va.5nTaplKSD76" displaytext="AnimalCells" expand="false" type="slide" />
-            <slidelink slideid="_player.5yaJXPYQ7Va.6nsAmbFb07r" displaytext="AnimalCells_Quiz" expand="false" type="slide" />
-            <slidelink slideid="_player.5yaJXPYQ7Va.5qlI9LadRAw" displaytext="PlantCells" expand="false" type="slide" />
+            <slidelink slideid="_player.5yaJXPYQ7Va.6R3pltRPdH0" displaytext="Things to Consider" expand="false" type="slide" />
+            <slidelink slideid="_player.5yaJXPYQ7Va.5nTaplKSD76" displaytext="Animal Cells Activity" expand="false" type="slide" />
+            <slidelink slideid="_player.5yaJXPYQ7Va.6nsAmbFb07r" displaytext="Animal Cells Quiz" expand="false" type="slide" />
+            <slidelink slideid="_player.5yaJXPYQ7Va.5qlI9LadRAw" displaytext="Plant Cells Activity" expand="false" type="slide" />
+            <slidelink slideid="_player.5yaJXPYQ7Va.5rQSWQk7WVP" displaytext="Plant Cells Quiz" expand="false" type="slide" />
+            <slidelink slideid="_player.5yaJXPYQ7Va.5ma7ecYb4xg" displaytext="Test Yourself" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
