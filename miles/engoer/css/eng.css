@@ -6,7 +6,7 @@ button{
 	border:none;
 	color:#8a8a8c;
 	background-color: #ededef;
-	outline:none;
+	outline:none
 }
 button:hover{
 	color:white;
@@ -22,6 +22,9 @@ iframe{
 	border:none;
 	opacity:0;
 	height:0px;
+}
+.btn{
+	box-shadow:0px 0px 5px #bbb;
 }
 .sidebar-nav h2{
 	text-align: center;
@@ -111,8 +114,10 @@ iframe{
 	padding:0;
 }
 #pdflink{
-	text-align: center;
+	text-align: right;
 	clear:both;
+	margin:0;
+	padding:0px 10px 0px 0px;
 }
 #menu-container{
 	-webkit-transform: translateZ(0);
@@ -151,7 +156,7 @@ iframe{
 	height:15px;
 	margin:-2px 0px 0px 5px;
 }
-#menu-container h1{
+#menu-container h1, #menu-container p{
 	text-align: right;
 	font-size:16px;
 	float:right;
@@ -181,6 +186,14 @@ iframe{
 	color:#439CC8 !important;
 	background-color: transparent;
 }
+#footer{
+	position:fixed;
+	height:44px;
+	width:100%;
+	top:100%;
+	margin-top:-44px;
+}
+
 
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
