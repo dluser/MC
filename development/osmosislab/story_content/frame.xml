@@ -1166,6 +1166,7 @@
       <string id="acc_definition">definition</string>
       <string id="glossary">Glossary</string>
       <string id="terms">Terms</string>
+      <string id="send_an_email">Send an email</string>
       <string id="outline">Menu</string>
       <string id="disabled_orientation">Please rotate your device</string>
       <string id="next">NEXT</string>
@@ -1177,9 +1178,8 @@
       <string id="closed_captions">Captions</string>
       <string id="acc_pause">pause</string>
       <string id="acc_play">play</string>
-      <string id="send_an_email">Send an email</string>
       <string id="prev">PREV</string>
-      <string id="acc_previous">previous</string>
+      <string id="acc_skipnavigation">Skip navigation. Press enter to return to the slide.</string>
       <string id="question_list">Question List</string>
       <string id="acc_replay">replay</string>
       <string id="resources">Resources</string>
@@ -1189,12 +1189,12 @@
       <string id="acc_search_input">search</string>
       <string id="search_in">Search in:</string>
       <string id="search_results">Search Results</string>
-      <string id="acc_skipnavigation">Skip navigation. Press enter to return to the slide.</string>
       <string id="slide_text_chk">Slide Text</string>
       <string id="submitall">SUBMIT ALL</string>
       <string id="acc_submitall">submit all</string>
       <string id="submit">SUBMIT</string>
       <string id="acc_submit">submit</string>
+      <string id="acc_previous">previous</string>
       <string id="acc_volume">volume</string>
     </string_table>
   </string_tables>
