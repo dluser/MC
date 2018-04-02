@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="npxnabnsnfns00000000001" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" outputtype="undefined" theme="classic">
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="npxnabnsnfns00001010001" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" outputtype="undefined" theme="classic">
   <layouts>
-    <layout name="npnxnanbsnfns00000000001" font="Open Sans" controllayout="npnxnanbsnfns00000000001" colorscheme="npxnabnsnfns00000000001" string_table="npxnabnsnfns00000000001" />
-    <layout name="pxabnsnfns00000000001" font="Open Sans" controllayout="pxabnsnfns00000000001" colorscheme="npxnabnsnfns00000000001" string_table="npxnabnsnfns00000000001" />
-    <layout name="npxnabnsnfns00000000001" font="Open Sans" controllayout="npxnabnsnfns00000000001" colorscheme="npxnabnsnfns00000000001" string_table="npxnabnsnfns00000000001" />
-    <layout name="npnxnanbnsnfns00000000001" font="Open Sans" controllayout="npnxnanbnsnfns00000000001" colorscheme="npxnabnsnfns00000000001" string_table="npxnabnsnfns00000000001" />
-    <layout name="pxabnsnfns00000000000" font="Open Sans" controllayout="pxabnsnfns00000000000" colorscheme="npxnabnsnfns00000000001" string_table="npxnabnsnfns00000000001" />
-    <layout name="pnxanbsnfns00000000001" font="Open Sans" controllayout="pnxanbsnfns00000000001" colorscheme="npxnabnsnfns00000000001" string_table="npxnabnsnfns00000000001" />
-    <layout name="pnxanbnsnfns00000000001" font="Open Sans" controllayout="pnxanbnsnfns00000000001" colorscheme="npxnabnsnfns00000000001" string_table="npxnabnsnfns00000000001" />
+    <layout name="npnxnanbsnfns00001010001" font="Open Sans" controllayout="npnxnanbsnfns00001010001" colorscheme="npxnabnsnfns00001010001" string_table="npxnabnsnfns00001010001" />
+    <layout name="pxabnsnfns00001010001" font="Open Sans" controllayout="pxabnsnfns00001010001" colorscheme="npxnabnsnfns00001010001" string_table="npxnabnsnfns00001010001" />
+    <layout name="npxnabnsnfns00001010001" font="Open Sans" controllayout="npxnabnsnfns00001010001" colorscheme="npxnabnsnfns00001010001" string_table="npxnabnsnfns00001010001" />
+    <layout name="npnxnanbnsnfns00001010001" font="Open Sans" controllayout="npnxnanbnsnfns00001010001" colorscheme="npxnabnsnfns00001010001" string_table="npxnabnsnfns00001010001" />
+    <layout name="pxabnsnfns00001010000" font="Open Sans" controllayout="pxabnsnfns00001010000" colorscheme="npxnabnsnfns00001010001" string_table="npxnabnsnfns00001010001" />
+    <layout name="pnxanbsnfns00001010001" font="Open Sans" controllayout="pnxanbsnfns00001010001" colorscheme="npxnabnsnfns00001010001" string_table="npxnabnsnfns00001010001" />
+    <layout name="pnxanbnsnfns00001010001" font="Open Sans" controllayout="pnxanbnsnfns00001010001" colorscheme="npxnabnsnfns00001010001" string_table="npxnabnsnfns00001010001" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -15,13 +15,13 @@
         <options>
           <option name="title_enabled" value="true">
             <options>
-              <option name="title_text" value="Osmosis Lab" />
+              <option name="title_text" value="Osmosis Lab - CNM Biology" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
             <options />
           </option>
-          <option name="sidebar_enabled" value="false">
+          <option name="sidebar_enabled" value="true">
             <options>
               <option name="sidebarpos" value="left" />
             </options>
@@ -29,8 +29,8 @@
           <optionlist name="tabs">
             <listitems>
               <listitem name="resources" value="false" group="linkright" />
-              <listitem name="outline" value="false" group="sidebar" />
-              <listitem name="glossary" value="false" group="sidebar" />
+              <listitem name="outline" value="true" group="sidebar" />
+              <listitem name="glossary" value="true" group="sidebar" />
               <listitem name="transcript" value="false" group="sidebar" />
             </listitems>
           </optionlist>
@@ -82,7 +82,7 @@
     </optiongroups>
   </control_options>
   <control_layouts>
-    <control_layout name="npnxnanbsnfns00000000001">
+    <control_layout name="npnxnanbsnfns00001010001">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -96,16 +96,16 @@
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="false" />
-      <control name="glossary" enabled="false" />
+      <control name="glossary" enabled="true" />
       <control name="transcript" enabled="false" />
-      <control name="outline" enabled="false">
+      <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
         </controls>
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns00000000001">
+    <control_layout name="pxabnsnfns00001010001">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -119,16 +119,16 @@
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="false" />
-      <control name="glossary" enabled="false" />
+      <control name="glossary" enabled="true" />
       <control name="transcript" enabled="false" />
-      <control name="outline" enabled="false">
+      <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
         </controls>
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npxnabnsnfns00000000001">
+    <control_layout name="npxnabnsnfns00001010001">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -142,16 +142,16 @@
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="false" />
-      <control name="glossary" enabled="false" />
+      <control name="glossary" enabled="true" />
       <control name="transcript" enabled="false" />
-      <control name="outline" enabled="false">
+      <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
         </controls>
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npnxnanbnsnfns00000000001">
+    <control_layout name="npnxnanbnsnfns00001010001">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -165,16 +165,16 @@
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="false" />
-      <control name="glossary" enabled="false" />
+      <control name="glossary" enabled="true" />
       <control name="transcript" enabled="false" />
-      <control name="outline" enabled="false">
+      <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
         </controls>
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns00000000000">
+    <control_layout name="pxabnsnfns00001010000">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -188,16 +188,16 @@
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="false" />
-      <control name="glossary" enabled="false" />
+      <control name="glossary" enabled="true" />
       <control name="transcript" enabled="false" />
-      <control name="outline" enabled="false">
+      <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
         </controls>
       </control>
       <control name="close_btn" enabled="false" />
     </control_layout>
-    <control_layout name="pnxanbsnfns00000000001">
+    <control_layout name="pnxanbsnfns00001010001">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -211,16 +211,16 @@
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="false" />
-      <control name="glossary" enabled="false" />
+      <control name="glossary" enabled="true" />
       <control name="transcript" enabled="false" />
-      <control name="outline" enabled="false">
+      <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
         </controls>
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pnxanbnsnfns00000000001">
+    <control_layout name="pnxanbnsnfns00001010001">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -234,9 +234,9 @@
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="false" />
-      <control name="glossary" enabled="false" />
+      <control name="glossary" enabled="true" />
       <control name="transcript" enabled="false" />
-      <control name="outline" enabled="false">
+      <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
         </controls>
@@ -245,7 +245,7 @@
     </control_layout>
   </control_layouts>
   <colorschemes>
-    <colorscheme name="npxnabnsnfns00000000001">
+    <colorscheme name="npxnabnsnfns00001010001">
       <color_group name="infopanel">
         <group_colors>
           <color name="link_text">
@@ -1151,7 +1151,7 @@
     </colorscheme>
   </colorschemes>
   <string_tables>
-    <string_table name="npxnabnsnfns00000000001">
+    <string_table name="npxnabnsnfns00001010001">
       <string id="check_include">Check to include</string>
       <string id="clear">Clear and return to menu</string>
       <string id="close">Close</string>
@@ -1205,6 +1205,11 @@
         <file bold="false" italic="false" />
       </files>
     </font>
+    <font name="Arial">
+      <files>
+        <file bold="false" italic="false" />
+      </files>
+    </font>
   </fonts>
   <sounds enabled="true" />
   <nav_data>
@@ -1215,20 +1220,35 @@
             <slidelink slideid="_player.5yaJXPYQ7Va.6pLwqUjDMmJ" displaytext="Intro" expand="false" type="slide" />
             <slidelink slideid="_player.5yaJXPYQ7Va.6R3pltRPdH0" displaytext="Things to Consider" expand="false" type="slide" />
             <slidelink slideid="_player.5yaJXPYQ7Va.5nTaplKSD76" displaytext="Animal Cells Activity" expand="false" type="slide" />
-            <slidelink slideid="_player.5yaJXPYQ7Va.6nsAmbFb07r" displaytext="Animal Cells Quiz" expand="false" type="slide" />
-            <slidelink slideid="_player.5yaJXPYQ7Va.5xVObxP7Noq" displaytext="Animal Cells Quiz" expand="false" type="slide" />
+            <slidelink slideid="_player.5yaJXPYQ7Va.6nsAmbFb07r" displaytext="Animal Cells Quiz #1" expand="false" type="slide" />
+            <slidelink slideid="_player.5yaJXPYQ7Va.5xVObxP7Noq" displaytext="Animal Cells Quiz #2" expand="false" type="slide" />
             <slidelink slideid="_player.5yaJXPYQ7Va.5qlI9LadRAw" displaytext="Plant Cells Activity" expand="false" type="slide" />
-            <slidelink slideid="_player.5yaJXPYQ7Va.5rQSWQk7WVP" displaytext="Plant Cells Quiz" expand="false" type="slide" />
-            <slidelink slideid="_player.5yaJXPYQ7Va.5WedfV7QG75" displaytext="Plant Cells Quiz" expand="false" type="slide" />
+            <slidelink slideid="_player.5yaJXPYQ7Va.5rQSWQk7WVP" displaytext="Plant Cells Quiz #1" expand="false" type="slide" />
+            <slidelink slideid="_player.5yaJXPYQ7Va.5WedfV7QG75" displaytext="Plant Cells Quiz #2" expand="false" type="slide" />
             <slidelink slideid="_player.5yaJXPYQ7Va.6GWWumtCK1b" displaytext="Test Yourself #1" expand="false" type="slide" />
             <slidelink slideid="_player.5yaJXPYQ7Va.5kQiKz2xHRR" displaytext="Test Yourself #2" expand="false" type="slide" />
             <slidelink slideid="_player.5yaJXPYQ7Va.6lNiJgv4BRo" displaytext="Test Yourself #3" expand="false" type="slide" />
             <slidelink slideid="_player.5yaJXPYQ7Va.6G6rkgFDPGi" displaytext="Things to Consider" expand="false" type="slide" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.67QJhSr7DXW" displaytext="Journal" expand="true" type="slide">
+        <slidelink slideid="_player.67QJhSr7DXW" displaytext="Journal" expand="false" type="slide">
           <links>
             <slidelink slideid="_player.67QJhSr7DXW.5jiSwErocmV" displaytext="Journal" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.6q4tXMVKPVa" displaytext="Self-Quiz" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.6q4tXMVKPVa.6gJCcMIgzN9" displaytext="When a patient is accidently given a hypertonic solution why do their red blood cells crenate?" expand="false" type="slide" />
+            <slidelink slideid="_player.6q4tXMVKPVa.6iN0RpM5EuS" displaytext="When a patient is given a low salt solution (around .9% NaCl) their red bloods stay the same because the solution is ___________ to their cells." expand="false" type="slide" />
+            <slidelink slideid="_player.6q4tXMVKPVa.6VAPTNJuZnj" displaytext="Why is distilled water a hypotonic solution?" expand="false" type="slide" />
+            <slidelink slideid="_player.6q4tXMVKPVa.6Ix4ly3fX85" displaytext="If salad greens wilt or become soggy its cells are..……" expand="false" type="slide" />
+            <slidelink slideid="_player.6q4tXMVKPVa.6UuZ6mSLL7Y" displaytext="Which salad dressing solute concentration would you expect to cause salad greens to wilt the fastest?" expand="false" type="slide" />
+            <slidelink slideid="_player.6q4tXMVKPVa.6RfXsIIbDqE" displaytext="Why does a high solute dressing type cause the salad greens to wilt the fastest?" expand="false" type="slide" />
+            <slidelink slideid="_player.6q4tXMVKPVa.6EMo0DQf022" displaytext="In the test yourself exercise why did the freshwater protist crenate in the saltwater tank?" expand="false" type="slide" />
+            <slidelink slideid="_player.6q4tXMVKPVa.6BCMqCPg2zq" displaytext="In the test yourself exercise, why did the freshwater protist stay normal in the freshwater tank?" expand="false" type="slide" />
+            <slidelink slideid="_player.6q4tXMVKPVa.64LEbPCFRNQ" displaytext="Why did the does a saltwater organism (like the armored dinoflagellate) go turgid in the freshwater?" expand="false" type="slide" />
+            <slidelink slideid="_player.6q4tXMVKPVa.6ZrJ5gYBHDp" displaytext="What is osmosis?" expand="false" type="slide" />
+            <slidelink slideid="_player.6q4tXMVKPVa.6IDOW7xZcx9" displaytext="What definition best describes the term diffusion?" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
@@ -1236,5 +1256,26 @@
   </nav_data>
   <resource_data description="" />
   <transcript_data />
-  <glossary_data />
+  <glossary_data>
+    <terms>
+      <term title="Crenate">Shriveling of cytoplasm in an animal cell</term>
+      <term title="Diffusion">The passive process in which solutes like table salt, sugar, baking soda, among others, spread out from a high concentration to a lower concentration</term>
+      <term title="Distilled Water ">Purified water with most solutes removed</term>
+      <term title="Freshwater">Water low in NaCl (well under 1%)</term>
+      <term title="Hypertonic environment ">The solution outside of the cell is higher in solute concentration than the cell’s interior</term>
+      <term title="Hypotonic environment">The solution outside of the cell is lower in solute concentration than the cell’s interior</term>
+      <term title="Isotonic environment">The solution outside of the cell has an equal solute concentration to the cell’s interior</term>
+      <term title="IV Solution ">Intra (inside) venous (vein) solution that delivers solutions through an injection or infusion process into an animal’s vein.  Sometimes called “drips”. </term>
+      <term title="Lyse">Bursting / rupturing of a cell.</term>
+      <term title="NaCl">Pure table salt - the solute used in this example.  Other ions and molecules can also be solutes as well (ex. potassium, proteins, sugars, etc.).</term>
+      <term title="Osmosis">The movement of water over a cell membrane – the water moves toward areas that have higher solute concentrations.</term>
+      <term title="Plasmolyse / Plasmolysis ">Shriveling of cytoplasm inside plant cells while the cell wall of the plant cell stays in the same rigid shape</term>
+      <term title="Saltwater">Water with a high NaCl content (most oceans are around 3.5% salinity; but others like the Dead Sea has a salinity of around 34%)</term>
+      <term title="Selectively Permeable ">Control of which molecules easily move over the cell membrane – some molecules can pass easily across the cell membrane but others are excluded</term>
+      <term title="Solute">The dissolved substance in a (liquid) solution (ex. potassium, proteins, sugars, etc.)</term>
+      <term title="Solution">A mixture of the solute and solvent (e.g., blood plasma, lake water, lemonade)</term>
+      <term title="Solvent">The dissolving liquid (e.g., water in lemonade is the solvent but oil in body lotions is the solvent)</term>
+      <term title="Turgid">Swollen or bulging</term>
+    </terms>
+  </glossary_data>
 </bwFrame>
