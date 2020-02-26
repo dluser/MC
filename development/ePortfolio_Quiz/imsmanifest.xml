@@ -55,7 +55,6 @@
       <title>ePortfolio Quiz</title>
       <item identifier="Untitled1_SCO" isvisible="true" identifierref="__5gdyoXrW61I_course_id_RES">
         <title>Untitled1</title>
-        <adlcp:masteryscore>80</adlcp:masteryscore>
       </item>
     </organization>
   </organizations>
@@ -65,18 +64,12 @@
       <file href="mobile/6SK1J6hldnq_DX2160_DY2160_CX1508_CY1005.png" />
       <file href="mobile/5rbEVHja17g_DX212_DY212_CX145_CY60.png" />
       <file href="mobile/69ZhO2DrSY6_DX882_DY882_CX661_CY358.png" />
-      <file href="story_content/report.html" />
-      <file href="mobile/5iX6QSiXk4T_DX518_DY518_CX388_CY304.jpg" />
-      <file href="mobile/5VGPQFjPLDk_DX928_DY928_CX696_CY464.png" />
       <file href="meta.xml" />
       <file href="story_content/user.js" />
-      <file href="mobile/Shape6JyRh0tSDeO.png" />
-      <file href="mobile/Shape5vB37zqouLQ.png" />
-      <file href="mobile/Shape63ll5mJ4R3j.png" />
       <file href="html5/data/css/output.min.css" />
       <file href="html5/data/js/5cKNAq8QIFN.js" />
-      <file href="html5/data/js/5wFXuplL7Uq.js" />
       <file href="html5/data/js/60ixb05mSKJ.js" />
+      <file href="html5/data/js/6DEzgXw3Prr.js" />
       <file href="html5/data/js/6EhHxXTsAm1.js" />
       <file href="html5/data/js/6moDDWsSg1I.js" />
       <file href="html5/data/js/6TfThHbW93K.js" />
