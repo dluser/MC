@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="_5qIF0CgR7p3_course_id" version="1.0" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+      <general>
+        <title>
+          <langstring xml:lang="x-none">CIS 2680: Virtualization Environment</langstring>
+        </title>
+      </general>
+      <lifecycle>
+        <version>
+          <langstring xml:lang="x-none">1</langstring>
+        </version>
+        <status>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">Final</langstring>
+          </value>
+        </status>
+      </lifecycle>
+      <metametadata>
+        <metadatascheme>ADL SCORM 1.2</metadatascheme>
+      </metametadata>
+      <educational>
+        <typicallearningtime>
+          <datetime>PT0H0M0S</datetime>
+        </typicallearningtime>
+      </educational>
+      <rights>
+        <cost>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </cost>
+        <copyrightandotherrestrictions>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </copyrightandotherrestrictions>
+      </rights>
+    </lom>
+  </metadata>
+  <organizations default="CIS_2680:_Virtualization_Environment_ORG">
+    <organization identifier="CIS_2680:_Virtualization_Environment_ORG">
+      <title>CIS 2680: Virtualization Environment</title>
+      <item identifier="CIS_2680__SCO" isvisible="true" identifierref="__5qIF0CgR7p3_course_id_RES">
+        <title>CIS 2680: Virtualization Environment</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="__5qIF0CgR7p3_course_id_RES" type="webcontent" href="index_lms.html" adlcp:scormtype="sco">
+      <file href="story_content/thumbnail.jpg" />
+      <file href="mobile/5pz3e3ANBP4_80_DX512_DY512_CX288_CY402.png" />
+      <file href="mobile/6gLbFmWRRSt_80_DX212_DY212_CX106_CY106.png" />
+      <file href="mobile/5Y4Pg5eN3Dv_80_DX404_DY404_CX227_CY317.png" />
+      <file href="mobile/5mpAuQeEcmW_80_DX116_DY116_CX88_CY90.png" />
+      <file href="mobile/6jtbiFhPEfT_80_DX186_DY186_CX146_CY121.png" />
+      <file href="mobile/6NYB7zTACiS_80_DX220_DY220_CX173_CY168.png" />
+      <file href="mobile/6pZD5TEccSD_80_DX220_DY220_CX173_CY168.png" />
+      <file href="mobile/6kuniI3KMOW_80_DX1268_DY1268_CX996_CY560.jpg" />
+      <file href="story_content/zoomIcon.png" />
+      <file href="mobile/5xBFBrRaHfy_80_DX972_DY648_CX972_CY648.png" />
+      <file href="mobile/6U2qhTunv80_80_DX408_DY408_CX319_CY317.png" />
+      <file href="meta.xml" />
+      <file href="story_content/user.js" />
+      <file href="mobile/Shape67Mq4RmH0th.png" />
+      <file href="mobile/Shape5sdOpaqHfof.png" />
+      <file href="mobile/_default_Hover_Shape5sdOpaqHfof.png" />
+      <file href="mobile/Shape5qvRBzr41kW.png" />
+      <file href="mobile/_default_Hover_Shape5qvRBzr41kW.png" />
+      <file href="mobile/Shape5dLYiYWcG2L.png" />
+      <file href="mobile/_default_Hover_Shape5dLYiYWcG2L.png" />
+      <file href="mobile/Shape67aOsmSeRMw.png" />
+      <file href="mobile/_default_Hover_Shape67aOsmSeRMw.png" />
+      <file href="html5/lib/scripts/slides.min.js" />
+      <file href="html5/lib/scripts/frame.mobile.min.js" />
+      <file href="html5/lib/scripts/bootstrapper.min.js" />
+      <file href="html5/lib/scripts/frame.desktop.min.js" />
+      <file href="html5/lib/stylesheets/mobile.min.css" />
+      <file href="html5/lib/stylesheets/desktop.min.css" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-light.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-bold.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-regular.woff" />
+      <file href="html5/data/css/output.min.css" />
+      <file href="html5/data/js/paths.js" />
+      <file href="html5/data/js/5z8V2mya8np.js" />
+      <file href="html5/data/js/data.js" />
+      <file href="html5/data/js/frame.js" />
+      <file href="analytics-frame.html" />
+      <file href="story.html" />
+      <file href="index_lms.html" />
+      <file href="lms/AICCComm.html" />
+      <file href="lms/blank.html" />
+      <file href="lms/browsersniff.js" />
+      <file href="lms/goodbye.html" />
+      <file href="lms/LICENSE.txt" />
+      <file href="lms/scormdriver.js" />
+    </resource>
+  </resources>
+</manifest>
