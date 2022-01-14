@@ -1,0 +1,458 @@
+.mediaViewInfo {
+	--web-view-name: Outdoor Adventures - About;
+	--web-view-id: Outdoor_Adventures_-_About;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Outdoor_Adventures_-_About;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Outdoor_Adventures_-_About {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Outdoor Adventures - About;
+	--web-view-id: Outdoor_Adventures_-_About;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+#Outdoor_Adventures {
+	left: 142px;
+	top: 449px;
+	position: absolute;
+	overflow: visible;
+	width: 431px;
+	white-space: nowrap;
+	line-height: 104px;
+	margin-top: -27px;
+	text-align: left;
+	font-family: Adobe Clean;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	color: rgba(16,3,3,1);
+}
+#Starting_at_299__person_Cupim_ {
+	left: 145px;
+	top: 550px;
+	position: absolute;
+	overflow: visible;
+	width: 532px;
+	height: 391px;
+	line-height: 39px;
+	margin-top: -9.5px;
+	text-align: left;
+	font-family: Depot New;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(16,3,3,1);
+}
+#Book_Now_Button {
+	position: absolute;
+	width: 145px;
+	height: 62px;
+	left: 909px;
+	top: 75px;
+	overflow: visible;
+}
+#Rectangle_7 {
+	fill: rgba(237,124,82,1);
+}
+.Rectangle_7 {
+	position: absolute;
+	overflow: visible;
+	width: 145px;
+	height: 54px;
+	left: 0px;
+	top: 0px;
+}
+#Book_Now {
+	left: 12px;
+	top: 13px;
+	position: absolute;
+	overflow: visible;
+	width: 123px;
+	height: 49px;
+	line-height: 39px;
+	margin-top: -9.5px;
+	text-align: center;
+	font-family: Adobe Clean;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+#logo {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: 140px;
+	top: 56px;
+	overflow: visible;
+}
+#Path_1 {
+	fill: rgba(112,112,112,1);
+}
+.Path_1 {
+	overflow: visible;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Logo_w {
+	position: absolute;
+	width: 33px;
+	height: 48.09px;
+	left: 23.5px;
+	top: 15.955px;
+	overflow: visible;
+}
+#Path_5 {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 2px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Path_5 {
+	overflow: visible;
+	position: absolute;
+	width: 33px;
+	height: 34.09px;
+	left: 0px;
+	top: 14px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Rectangle_2 {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 2px;
+	stroke-linejoin: round;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_2 {
+	position: absolute;
+	overflow: visible;
+	width: 33px;
+	height: 12px;
+	left: 0px;
+	top: 2px;
+}
+#Rectangle_3 {
+	fill: rgba(112,112,112,1);
+	stroke: rgba(255,255,255,1);
+	stroke-width: 2px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_3 {
+	position: absolute;
+	overflow: visible;
+	width: 7px;
+	height: 23px;
+	left: 7px;
+	top: 0px;
+}
+#Rectangle_4 {
+	fill: rgba(112,112,112,1);
+	stroke: rgba(255,255,255,1);
+	stroke-width: 2px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_4 {
+	position: absolute;
+	overflow: visible;
+	width: 7px;
+	height: 23px;
+	left: 19px;
+	top: 0px;
+}
+#Rectangle_5 {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 2px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_5 {
+	position: absolute;
+	overflow: visible;
+	width: 15px;
+	height: 10px;
+	left: 9px;
+	top: 30px;
+}
+#Home_Carrousel {
+	position: absolute;
+	width: 602.423px;
+	height: 1751px;
+	left: 1179px;
+	top: -343px;
+	overflow: visible;
+}
+#IMG_9928_1 {
+	position: absolute;
+	width: 535px;
+	height: 609px;
+	left: 67.423px;
+	top: 581px;
+	overflow: visible;
+}
+#IMG_0932 {
+	position: absolute;
+	width: 535px;
+	height: 532px;
+	left: 65px;
+	top: 0px;
+	overflow: visible;
+}
+#IMG_1077 {
+	position: absolute;
+	width: 535px;
+	height: 532px;
+	left: 65px;
+	top: 1219px;
+	overflow: visible;
+}
+#noun_Arrow_1920806 {
+	position: absolute;
+	width: 24.948px;
+	height: 355.262px;
+	left: 8.526px;
+	top: 604.369px;
+	overflow: visible;
+}
+#Path_2 {
+	fill: rgba(0,0,0,1);
+}
+.Path_2 {
+	overflow: visible;
+	position: absolute;
+	width: 31.262px;
+	height: 24.948px;
+	transform: translate(-1102.395px, -28.518px) matrix(1,0,0,1,1099.2382,355.6748) rotate(90deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+#Path_3 {
+	fill: rgba(0,0,0,1);
+}
+.Path_3 {
+	overflow: visible;
+	position: absolute;
+	width: 31.262px;
+	height: 24.948px;
+	transform: translate(-1102.395px, -28.518px) matrix(1,0,0,1,1099.2382,31.6748) rotate(-90deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+#Rectangle_6 {
+	fill: rgba(230,225,225,1);
+}
+.Rectangle_6 {
+	position: absolute;
+	overflow: visible;
+	width: 42px;
+	height: 42px;
+	left: 0px;
+	top: 757px;
+}
+#Repeat_Grid_1 {
+	position: absolute;
+	width: 122px;
+	height: 230px;
+	left: 1139px;
+	top: 337px;
+	overflow: hidden;
+}
+#Group {
+	position: absolute;
+	width: 122px;
+	height: 49px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#n_1 {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 123px;
+	height: 49px;
+	line-height: 39px;
+	margin-top: -9.5px;
+	text-align: center;
+	font-family: Adobe Clean;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(16,3,3,1);
+}
+#Group_bd {
+	position: absolute;
+	width: 122px;
+	height: 49px;
+	left: 0px;
+	top: 85px;
+	overflow: visible;
+}
+#n_2 {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 123px;
+	height: 49px;
+	line-height: 39px;
+	margin-top: -9.5px;
+	text-align: center;
+	font-family: Adobe Clean;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(16,3,3,1);
+}
+#Group_bf {
+	position: absolute;
+	width: 122px;
+	height: 49px;
+	left: 0px;
+	top: 170px;
+	overflow: visible;
+}
+#n_3 {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 123px;
+	height: 49px;
+	line-height: 39px;
+	margin-top: -9.5px;
+	text-align: center;
+	font-family: Adobe Clean;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(16,3,3,1);
+}
+#Navigation {
+	position: absolute;
+	width: 398px;
+	height: 49px;
+	left: 416px;
+	top: 81px;
+	overflow: visible;
+}
+#About {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 123px;
+	height: 49px;
+	line-height: 39px;
+	margin-top: -9.5px;
+	text-align: center;
+	font-family: Adobe Clean;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(16,3,3,1);
+}
+#Trips_bj {
+	left: 138px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 123px;
+	height: 49px;
+	transition: all 0.30000001192092896s ease-out;
+	--web-animation: fadein 0.30000001192092896s ease-out;
+	--web-action-type: page;
+	--web-action-target: Trips.html;
+	cursor: pointer;
+	line-height: 39px;
+	margin-top: -9.5px;
+	text-align: center;
+	font-family: Adobe Clean;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(16,3,3,1);
+}
+#Pricing {
+	left: 276px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 123px;
+	height: 49px;
+	transition: all 0.30000001192092896s ease-out;
+	--web-animation: fadein 0.30000001192092896s ease-out;
+	--web-action-type: page;
+	--web-action-target: Pricing___1.html;
+	cursor: pointer;
+	line-height: 39px;
+	margin-top: -9.5px;
+	text-align: center;
+	font-family: Adobe Clean;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(16,3,3,1);
+}
+#Path_4 {
+	fill: rgba(105,105,105,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Path_4 {
+	overflow: visible;
+	position: absolute;
+	width: 90px;
+	height: 4px;
+	left: 16px;
+	top: 28px;
+	transform: matrix(1,0,0,1,0,0);
+}
