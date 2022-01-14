@@ -1,0 +1,7653 @@
+:root {
+	--web-view-ids: Articles,Home__2,Audio,Mobile_-_Articles,Mobile_-_Home__1,Mobile_-_Audio,Mobile_-_Menu,Mobile_-_Menu_Home,Mobile_-_Menu_Articles,Mobile_-_Menu_Audio,Mobile_-_Audio_button_cover,Artboard__1;
+	--web-view-name: Articles;
+	--web-view-id: Articles;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-enable-scale-up: true;
+	--web-scale-on-resize: true;
+	--web-show-scale-controls: false;
+	--web-scale-on-double-click: false;
+	--web-center-horizontally: false;
+	--web-center-vertically: false;
+	--web-actual-size-on-double-click: false;
+	--web-navigate-on-keypress: false;
+	--web-refresh-for-changes: false;
+	--web-add-image-compare: false;
+	--web-show-by-media-query: true;
+	--web-application: false;
+	--web-show-navigation-controls: false;
+	--web-enable-deep-linking: true;
+	--web-is-overlay: false;
+	--web-page-font: arial, sans-serif;
+}
+#Articles,
+#Home__2,
+#Audio,
+#Mobile_-_Articles,
+#Mobile_-_Home__1,
+#Mobile_-_Audio,
+#Mobile_-_Menu,
+#Mobile_-_Menu_Home,
+#Mobile_-_Menu_Articles,
+#Mobile_-_Menu_Audio,
+#Mobile_-_Audio_button_cover,
+#Artboard__1 {
+	display: none;
+}
+@media (min-width: 1920px) {
+	.mediaViewInfo {
+		--web-view-name: Articles;
+		--web-view-id: Articles;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+		--web-page-font: arial, sans-serif;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Articles {
+		position: absolute;
+		display: block;
+		width: 1920px;
+		height: 1080px;
+		font-family: arial, sans-serif;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Articles;
+		--web-view-id: Articles;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+		--web-page-font: arial, sans-serif;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#helena-lopes-463976-unsplash {
+		opacity: 0.02;
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Block_02 {
+		position: absolute;
+		width: 1171px;
+		height: 375px;
+		left: 316px;
+		top: 315px;
+		overflow: visible;
+	}
+	#Check_recommended_articles {
+		left: 331px;
+		top: 41px;
+		position: absolute;
+		overflow: visible;
+		width: 476px;
+		white-space: nowrap;
+		line-height: 51px;
+		margin-top: -5.5px;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(48,51,54,1);
+	}
+	#Lorem_Ipsum_has_been_the_indus {
+		left: 331px;
+		top: 159px;
+		position: absolute;
+		overflow: visible;
+		width: 841px;
+		height: 94px;
+		line-height: 22px;
+		margin-top: -4.5px;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(123,133,145,1);
+	}
+	#journey-man-1474565-unsplash {
+		position: absolute;
+		width: 293px;
+		height: 375px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#aerial-view-bird-s-eye-view-ca {
+		position: absolute;
+		width: 85.65px;
+		height: 89.976px;
+		left: 331px;
+		top: 285px;
+		overflow: visible;
+	}
+	#aerial-view-bird-s-eye-view-ca_x {
+		position: absolute;
+		width: 85.65px;
+		height: 89.976px;
+		left: 432.223px;
+		top: 285px;
+		overflow: visible;
+	}
+	#barefoot-beach-cheerful-157465 {
+		position: absolute;
+		width: 85.65px;
+		height: 89.976px;
+		left: 533.446px;
+		top: 285px;
+		overflow: visible;
+	}
+	#Collection_01 {
+		position: absolute;
+		width: 230.734px;
+		height: 231.354px;
+		left: 316px;
+		top: 723px;
+		overflow: visible;
+	}
+	#Rectangle_10 {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_10 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 248.734px;
+		height: 249.354px;
+		left: 0px;
+		top: 0px;
+	}
+	#tony-lee-1475087-unsplash {
+		position: absolute;
+		width: 230.734px;
+		height: 150.101px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_ {
+		position: absolute;
+		width: 36.968px;
+		height: 36.968px;
+		left: 177.854px;
+		top: 15.498px;
+		overflow: visible;
+	}
+	#PICK_ME_UP {
+		left: 18.712px;
+		top: 176.695px;
+		position: absolute;
+		overflow: visible;
+		width: 56px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 9px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#Got_the_weather_blues {
+		left: 18.858px;
+		top: 195.647px;
+		position: absolute;
+		overflow: visible;
+		width: 72px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Acumin Pro, arial, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 7px;
+		color: rgba(123,133,145,1);
+	}
+	#Group_2710 {
+		position: absolute;
+		width: 23.305px;
+		height: 23.305px;
+		left: 188.294px;
+		top: 180.349px;
+		overflow: visible;
+	}
+	#Ellipse_37 {
+		fill: rgba(232,232,232,1);
+	}
+	.Ellipse_37 {
+		position: absolute;
+		overflow: visible;
+		width: 23.305px;
+		height: 23.305px;
+		left: 0px;
+		top: 0px;
+	}
+	#Text {
+		opacity: 0.58;
+		left: 7.283px;
+		top: 2.913px;
+		position: absolute;
+		overflow: visible;
+		width: 8px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#Path_19 {
+		fill: rgba(255,0,0,1);
+	}
+	.Path_19 {
+		overflow: visible;
+		position: absolute;
+		width: 10.07px;
+		height: 27.004px;
+		left: 581.951px;
+		top: 315px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Collection_01_ {
+		position: absolute;
+		width: 230.734px;
+		height: 231.354px;
+		left: 580.565px;
+		top: 723px;
+		overflow: visible;
+	}
+	#Rectangle_10_ba {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_10_ba {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 248.734px;
+		height: 249.354px;
+		left: 0px;
+		top: 0px;
+	}
+	#elijah-macleod-654389-unsplash {
+		position: absolute;
+		width: 230.734px;
+		height: 150.101px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n__bc {
+		position: absolute;
+		width: 36.968px;
+		height: 36.968px;
+		left: 177.854px;
+		top: 15.498px;
+		overflow: visible;
+	}
+	#FEELING_FRAGILE {
+		left: 18.712px;
+		top: 176.695px;
+		position: absolute;
+		overflow: visible;
+		width: 83px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 9px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#Need_a_little_extra_love {
+		left: 18.858px;
+		top: 195.647px;
+		position: absolute;
+		overflow: visible;
+		width: 73px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Acumin Pro, arial, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 7px;
+		color: rgba(123,133,145,1);
+	}
+	#Group_2710_bf {
+		position: absolute;
+		width: 23.305px;
+		height: 23.305px;
+		left: 188.294px;
+		top: 180.349px;
+		overflow: visible;
+	}
+	#Ellipse_37_bg {
+		fill: rgba(232,232,232,1);
+	}
+	.Ellipse_37_bg {
+		position: absolute;
+		overflow: visible;
+		width: 23.305px;
+		height: 23.305px;
+		left: 0px;
+		top: 0px;
+	}
+	#Text_bh {
+		opacity: 0.58;
+		left: 7.283px;
+		top: 2.913px;
+		position: absolute;
+		overflow: visible;
+		width: 8px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#Collection_01_bi {
+		position: absolute;
+		width: 230.734px;
+		height: 231.354px;
+		left: 845.13px;
+		top: 723px;
+		overflow: visible;
+	}
+	#Rectangle_10_bj {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_10_bj {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 248.734px;
+		height: 249.354px;
+		left: 0px;
+		top: 0px;
+	}
+	#judith-prins-1475659-unsplash {
+		position: absolute;
+		width: 230.734px;
+		height: 150.101px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Ellipse_33 {
+		position: absolute;
+		width: 36.968px;
+		height: 36.968px;
+		left: 177.854px;
+		top: 15.498px;
+		overflow: visible;
+	}
+	#DEAR_DIARY {
+		left: 18.712px;
+		top: 176.695px;
+		position: absolute;
+		overflow: visible;
+		width: 60px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 9px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#A_modern_twist_on_journaling {
+		left: 18.858px;
+		top: 195.647px;
+		position: absolute;
+		overflow: visible;
+		width: 91px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Acumin Pro, arial, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 7px;
+		color: rgba(123,133,145,1);
+	}
+	#Group_2710_bo {
+		position: absolute;
+		width: 23.305px;
+		height: 23.305px;
+		left: 188.294px;
+		top: 180.349px;
+		overflow: visible;
+	}
+	#Ellipse_37_bp {
+		fill: rgba(232,232,232,1);
+	}
+	.Ellipse_37_bp {
+		position: absolute;
+		overflow: visible;
+		width: 23.305px;
+		height: 23.305px;
+		left: 0px;
+		top: 0px;
+	}
+	#Text_bq {
+		opacity: 0.58;
+		left: 7.283px;
+		top: 2.913px;
+		position: absolute;
+		overflow: visible;
+		width: 8px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#Collection_01_br {
+		position: absolute;
+		width: 230.734px;
+		height: 231.354px;
+		left: 1109.695px;
+		top: 723px;
+		overflow: visible;
+	}
+	#Rectangle_10_bs {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_10_bs {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 248.734px;
+		height: 249.354px;
+		left: 0px;
+		top: 0px;
+	}
+	#artsy-vibes-1483067-unsplash {
+		position: absolute;
+		width: 230.734px;
+		height: 150.101px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n__bu {
+		position: absolute;
+		width: 36.968px;
+		height: 36.968px;
+		left: 177.854px;
+		top: 15.498px;
+		overflow: visible;
+	}
+	#SEMINAR {
+		left: 18.712px;
+		top: 176.695px;
+		position: absolute;
+		overflow: visible;
+		width: 45px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 9px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#Neurogenesis_What_is_it__why_c {
+		left: 18.858px;
+		top: 195.647px;
+		position: absolute;
+		overflow: visible;
+		width: 112px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Acumin Pro, arial, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 7px;
+		color: rgba(123,133,145,1);
+	}
+	#Group_2710_bx {
+		position: absolute;
+		width: 23.305px;
+		height: 23.305px;
+		left: 188.294px;
+		top: 180.349px;
+		overflow: visible;
+	}
+	#Ellipse_37_by {
+		fill: rgba(232,232,232,1);
+	}
+	.Ellipse_37_by {
+		position: absolute;
+		overflow: visible;
+		width: 23.305px;
+		height: 23.305px;
+		left: 0px;
+		top: 0px;
+	}
+	#Text_bz {
+		opacity: 0.58;
+		left: 7.283px;
+		top: 2.913px;
+		position: absolute;
+		overflow: visible;
+		width: 8px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#Group_2707 {
+		position: absolute;
+		width: 208.667px;
+		height: 35.575px;
+		left: 1396.667px;
+		top: 140px;
+		overflow: visible;
+	}
+	#Rectangle_1476 {
+		fill: rgba(246,246,246,1);
+	}
+	.Rectangle_1476 {
+		position: absolute;
+		overflow: visible;
+		width: 208.667px;
+		height: 35.575px;
+		left: 0px;
+		top: 0px;
+	}
+	#Search_Input {
+		position: absolute;
+		width: 84.034px;
+		height: 20.329px;
+		left: 24.8px;
+		top: 7.623px;
+		overflow: visible;
+	}
+	#Search_ {
+		opacity: 0.64;
+		left: 33.034px;
+		top: 2px;
+		position: absolute;
+		overflow: visible;
+		width: 52px;
+		white-space: nowrap;
+		line-height: 25px;
+		margin-top: -5.5px;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(193,193,193,1);
+	}
+	#icon_search {
+		position: absolute;
+		width: 20.329px;
+		height: 20.329px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#icon_search_b {
+		fill: rgba(188,188,203,1);
+	}
+	.icon_search_b {
+		overflow: visible;
+		position: absolute;
+		width: 20.328px;
+		height: 20.328px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#HOME {
+		left: 318px;
+		top: 148px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Home__2;
+		cursor: pointer;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(198,198,212,1);
+		letter-spacing: 0.1px;
+	}
+	#ARTICLES {
+		left: 428px;
+		top: 148px;
+		position: absolute;
+		overflow: visible;
+		width: 76px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+		letter-spacing: 0.1px;
+	}
+	#AUDIO {
+		left: 564px;
+		top: 148px;
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Audio;
+		cursor: pointer;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(198,198,212,1);
+		letter-spacing: 0.1px;
+	}
+	#Rectangle_1486 {
+		fill: rgba(70,33,173,1);
+	}
+	.Rectangle_1486 {
+		position: absolute;
+		overflow: visible;
+		width: 72px;
+		height: 72px;
+		left: 1533px;
+		top: 315px;
+	}
+	#Text_ca {
+		left: 1565px;
+		top: 318px;
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(255,238,0,1);
+		letter-spacing: 0.1px;
+	}
+	#Collection_01_cb {
+		position: absolute;
+		width: 230.734px;
+		height: 231.354px;
+		left: 1374.599px;
+		top: 723px;
+		overflow: visible;
+	}
+	#Rectangle_10_cc {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_10_cc {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 248.734px;
+		height: 249.354px;
+		left: 0px;
+		top: 0px;
+	}
+	#jeff-sheldon-264922-unsplash {
+		position: absolute;
+		width: 230.734px;
+		height: 150.101px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n__ce {
+		position: absolute;
+		width: 36.968px;
+		height: 36.968px;
+		left: 177.854px;
+		top: 15.498px;
+		overflow: visible;
+	}
+	#SEMINAR_cf {
+		left: 18.712px;
+		top: 176.695px;
+		position: absolute;
+		overflow: visible;
+		width: 45px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 9px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#Neurogenesis_What_is_it__why_c_cg {
+		left: 18.858px;
+		top: 195.647px;
+		position: absolute;
+		overflow: visible;
+		width: 112px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Acumin Pro, arial, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 7px;
+		color: rgba(123,133,145,1);
+	}
+	#Group_2710_ch {
+		position: absolute;
+		width: 23.305px;
+		height: 23.305px;
+		left: 188.294px;
+		top: 180.349px;
+		overflow: visible;
+	}
+	#Ellipse_37_ci {
+		fill: rgba(232,232,232,1);
+	}
+	.Ellipse_37_ci {
+		position: absolute;
+		overflow: visible;
+		width: 23.305px;
+		height: 23.305px;
+		left: 0px;
+		top: 0px;
+	}
+	#Text_cj {
+		opacity: 0.58;
+		left: 7.283px;
+		top: 2.913px;
+		position: absolute;
+		overflow: visible;
+		width: 8px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#Line_27 {
+		fill: transparent;
+		stroke: rgba(71,35,174,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_27 {
+		overflow: visible;
+		position: absolute;
+		width: 75px;
+		height: 3px;
+		left: 428.5px;
+		top: 169.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Symbol_7__4 {
+		position: absolute;
+		width: 247px;
+		height: 208px;
+		left: 837px;
+		top: -104px;
+		overflow: visible;
+	}
+	#Rectangle_1489 {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_1489 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.259));
+		position: absolute;
+		overflow: visible;
+		width: 265px;
+		height: 226px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_2815 {
+		position: absolute;
+		width: 95px;
+		height: 67.694px;
+		left: 76px;
+		top: 121px;
+		overflow: visible;
+	}
+	#Rectangle_1516 {
+		fill: rgba(95,65,182,1);
+	}
+	.Rectangle_1516 {
+		position: absolute;
+		overflow: visible;
+		width: 39px;
+		height: 39px;
+		left: 26px;
+		top: 0px;
+	}
+	#LOGOHERE {
+		left: 0px;
+		top: 51.694px;
+		position: absolute;
+		overflow: visible;
+		width: 96px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(95,65,182,1);
+		letter-spacing: 2px;
+	}
+	#Group_2790 {
+		position: absolute;
+		width: 15px;
+		height: 30px;
+		left: 38px;
+		top: 4px;
+		overflow: visible;
+	}
+	#L {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 16px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat, arial, sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(255,238,0,1);
+		letter-spacing: 0.1px;
+	}
+}
+@media (min-width: 1920px) {
+	.mediaViewInfo {
+		--web-view-name: Home – 2;
+		--web-view-id: Home__2;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Home__2 {
+		position: absolute;
+		display: block;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Home – 2;
+		--web-view-id: Home__2;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#zachary-nelson-192289-unsplash {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#helena-lopes-463976-unsplash_cv {
+		opacity: 0.83;
+		fill: rgba(70,33,173,1);
+	}
+	.helena-lopes-463976-unsplash_cv {
+		overflow: visible;
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_2799 {
+		opacity: 0.28;
+		position: absolute;
+		width: 959px;
+		height: 959px;
+		left: 481px;
+		top: 61px;
+		overflow: visible;
+	}
+	#Ellipse_54 {
+		opacity: 0.17;
+		fill: rgba(141,137,252,1);
+	}
+	.Ellipse_54 {
+		position: absolute;
+		overflow: visible;
+		width: 959px;
+		height: 959px;
+		left: 0px;
+		top: 0px;
+	}
+	#Ellipse_53 {
+		opacity: 0.15;
+		fill: rgba(141,137,252,1);
+	}
+	.Ellipse_53 {
+		position: absolute;
+		overflow: visible;
+		width: 511px;
+		height: 511px;
+		left: 224px;
+		top: 224px;
+	}
+	#Ellipse_52 {
+		opacity: 0.15;
+		fill: rgba(141,137,252,1);
+	}
+	.Ellipse_52 {
+		position: absolute;
+		overflow: visible;
+		width: 351px;
+		height: 351px;
+		left: 304px;
+		top: 304px;
+	}
+	#Ellipse_51 {
+		opacity: 0.42;
+		fill: rgba(141,137,252,1);
+	}
+	.Ellipse_51 {
+		position: absolute;
+		overflow: visible;
+		width: 175px;
+		height: 175px;
+		left: 392px;
+		top: 392px;
+	}
+	#Group_2816 {
+		position: absolute;
+		width: 566px;
+		height: 95px;
+		left: 677px;
+		top: 321px;
+		overflow: visible;
+	}
+	#Join_us_today {
+		left: 144px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 279px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#Lorem_ipsum_dolor_sit_amet_con {
+		left: 0px;
+		top: 59px;
+		position: absolute;
+		overflow: visible;
+		width: 567px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#HOME_c {
+		left: 318px;
+		top: 148px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.1px;
+	}
+	#ARTICLES_c {
+		left: 428px;
+		top: 148px;
+		position: absolute;
+		overflow: visible;
+		width: 76px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Articles;
+		cursor: pointer;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(198,198,212,1);
+		letter-spacing: 0.1px;
+	}
+	#AUDIO_c {
+		left: 564px;
+		top: 148px;
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Audio;
+		cursor: pointer;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(198,198,212,1);
+		letter-spacing: 0.1px;
+	}
+	#Line_27_c {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_27_c {
+		overflow: visible;
+		position: absolute;
+		width: 49px;
+		height: 3px;
+		left: 318.5px;
+		top: 169.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Symbol_7__6 {
+		position: absolute;
+		width: 247px;
+		height: 208px;
+		left: 837px;
+		top: -104px;
+		overflow: visible;
+	}
+	#Rectangle_1489_c {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_1489_c {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.259));
+		position: absolute;
+		overflow: visible;
+		width: 265px;
+		height: 226px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_2815_da {
+		position: absolute;
+		width: 95px;
+		height: 67.694px;
+		left: 76px;
+		top: 121px;
+		overflow: visible;
+	}
+	#Rectangle_1516_db {
+		fill: rgba(95,65,182,1);
+	}
+	.Rectangle_1516_db {
+		position: absolute;
+		overflow: visible;
+		width: 39px;
+		height: 39px;
+		left: 26px;
+		top: 0px;
+	}
+	#LOGOHERE_dc {
+		left: 0px;
+		top: 51.694px;
+		position: absolute;
+		overflow: visible;
+		width: 96px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(95,65,182,1);
+		letter-spacing: 2px;
+	}
+	#Group_2790_dd {
+		position: absolute;
+		width: 15px;
+		height: 30px;
+		left: 38px;
+		top: 4px;
+		overflow: visible;
+	}
+	#L_de {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 16px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(255,238,0,1);
+		letter-spacing: 0.1px;
+	}
+	#Group_2821 {
+		position: absolute;
+		width: 1164.197px;
+		height: 156.633px;
+		left: 378px;
+		top: 509px;
+		overflow: visible;
+	}
+	#Group_59 {
+		position: absolute;
+		width: 273.197px;
+		height: 156.633px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Lorem_ipsum_dolor_sit_amet_con_dh {
+		left: 0px;
+		top: 122.028px;
+		position: absolute;
+		overflow: hidden;
+		width: 274.197px;
+		height: 34.60499954223633px;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Mask_Group_1 {
+		position: absolute;
+		width: 72.853px;
+		height: 72.853px;
+		left: 100.172px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Spend_time_smart {
+		left: 60.299px;
+		top: 92.066px;
+		position: absolute;
+		overflow: visible;
+		width: 143px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_61 {
+		position: absolute;
+		width: 273.197px;
+		height: 156.633px;
+		left: 295px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Lorem_ipsum_dolor_sit_amet_con_dl {
+		left: 0px;
+		top: 122.028px;
+		position: absolute;
+		overflow: hidden;
+		width: 274.197px;
+		height: 34.60499954223633px;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Symbol_3__1 {
+		position: absolute;
+		width: 72.853px;
+		height: 72.853px;
+		left: 100.172px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Mask_Group_3 {
+		position: absolute;
+		width: 72.853px;
+		height: 72.853px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Audio_podcast {
+		left: 75.049px;
+		top: 92.066px;
+		position: absolute;
+		overflow: visible;
+		width: 115px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_62 {
+		position: absolute;
+		width: 273.197px;
+		height: 156.633px;
+		left: 593px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Lorem_ipsum_dolor_sit_amet_con_dq {
+		left: 0px;
+		top: 122.028px;
+		position: absolute;
+		overflow: hidden;
+		width: 274.197px;
+		height: 34.60499954223633px;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Symbol_4__1 {
+		position: absolute;
+		width: 72.853px;
+		height: 72.853px;
+		left: 100.172px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Mask_Group_4 {
+		position: absolute;
+		width: 72.853px;
+		height: 72.853px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Boost_your_time {
+		left: 70.44px;
+		top: 92.066px;
+		position: absolute;
+		overflow: visible;
+		width: 127px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_64 {
+		position: absolute;
+		width: 273.197px;
+		height: 156.633px;
+		left: 891px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Lorem_ipsum_dolor_sit_amet_con_dv {
+		left: 0px;
+		top: 122.028px;
+		position: absolute;
+		overflow: hidden;
+		width: 274.197px;
+		height: 34.60499954223633px;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Symbol_6__1 {
+		position: absolute;
+		width: 72.853px;
+		height: 72.853px;
+		left: 100.172px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Mask_Group_6 {
+		position: absolute;
+		width: 72.853px;
+		height: 72.853px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Quality {
+		left: 105.368px;
+		top: 92.066px;
+		position: absolute;
+		overflow: visible;
+		width: 57px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_2822 {
+		position: absolute;
+		width: 567.333px;
+		height: 43.482px;
+		left: 676.333px;
+		top: 759px;
+		overflow: visible;
+	}
+	#Group_2794 {
+		position: absolute;
+		width: 252.333px;
+		height: 43.482px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_1483 {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_1483 {
+		position: absolute;
+		overflow: visible;
+		width: 252.333px;
+		height: 43.482px;
+		left: 0px;
+		top: 0px;
+	}
+	#Sign_up {
+		left: 90.871px;
+		top: 10.209px;
+		position: absolute;
+		overflow: visible;
+		width: 67px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_2797 {
+		position: absolute;
+		width: 252.077px;
+		height: 43.481px;
+		left: 315.256px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Group_2795 {
+		position: absolute;
+		width: 252.077px;
+		height: 43.481px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_1484 {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_1484 {
+		filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.051));
+		position: absolute;
+		overflow: visible;
+		width: 288.077px;
+		height: 79.481px;
+		left: 0px;
+		top: 0px;
+	}
+	#Login {
+		filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.051));
+		left: 100.291px;
+		top: 10.209px;
+		position: absolute;
+		overflow: visible;
+		width: 49px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		color: rgba(70,33,173,1);
+	}
+}
+@media (min-width: 1920px) {
+	.mediaViewInfo {
+		--web-view-name: Audio;
+		--web-view-id: Audio;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Audio {
+		position: absolute;
+		display: block;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Audio;
+		--web-view-id: Audio;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#helena-lopes-463976-unsplash_d {
+		opacity: 0.02;
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Group_2707_ea {
+		position: absolute;
+		width: 208.667px;
+		height: 35.575px;
+		left: 1396.667px;
+		top: 140px;
+		overflow: visible;
+	}
+	#Rectangle_1476_eb {
+		fill: rgba(246,246,246,1);
+	}
+	.Rectangle_1476_eb {
+		position: absolute;
+		overflow: visible;
+		width: 208.667px;
+		height: 35.575px;
+		left: 0px;
+		top: 0px;
+	}
+	#Search_Input_ec {
+		position: absolute;
+		width: 84.034px;
+		height: 20.329px;
+		left: 24.8px;
+		top: 7.623px;
+		overflow: visible;
+	}
+	#Search__ed {
+		opacity: 0.64;
+		left: 33.034px;
+		top: 2px;
+		position: absolute;
+		overflow: visible;
+		width: 52px;
+		white-space: nowrap;
+		line-height: 25px;
+		margin-top: -5.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(193,193,193,1);
+	}
+	#icon_search_ee {
+		position: absolute;
+		width: 20.329px;
+		height: 20.329px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#icon_search_ef {
+		fill: rgba(188,188,203,1);
+	}
+	.icon_search_ef {
+		overflow: visible;
+		position: absolute;
+		width: 20.328px;
+		height: 20.329px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Rectangle_2 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(239,239,239,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_2 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 639px;
+		height: 629px;
+		left: 318px;
+		top: 280px;
+	}
+	#n_43 {
+		left: 886.001px;
+		top: 780.776px;
+		position: absolute;
+		overflow: visible;
+		width: 32px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(111,111,111,1);
+	}
+	#Live_Your_Life_Feat_TI {
+		left: 375px;
+		top: 782.646px;
+		position: absolute;
+		overflow: visible;
+		width: 87px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(59,61,64,1);
+	}
+	#Stroke {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Stroke {
+		overflow: visible;
+		position: absolute;
+		width: 23px;
+		height: 23px;
+		left: 340px;
+		top: 779px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon {
+		fill: rgba(131,141,143,1);
+	}
+	.Icon {
+		overflow: visible;
+		position: absolute;
+		width: 6px;
+		height: 6.001px;
+		left: 349px;
+		top: 787px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line {
+		fill: rgba(238,238,238,1);
+	}
+	.Line {
+		position: absolute;
+		overflow: visible;
+		width: 619px;
+		height: 1px;
+		left: 319px;
+		top: 766px;
+	}
+	#n_43_em {
+		left: 883.001px;
+		top: 732.776px;
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(111,111,111,1);
+	}
+	#Bad_Girl {
+		left: 375px;
+		top: 732.646px;
+		position: absolute;
+		overflow: visible;
+		width: 53px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(59,61,64,1);
+	}
+	#Stroke_eo {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Stroke_eo {
+		overflow: visible;
+		position: absolute;
+		width: 23px;
+		height: 23px;
+		left: 340px;
+		top: 731px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_ep {
+		fill: rgba(131,141,143,1);
+	}
+	.Icon_ep {
+		overflow: visible;
+		position: absolute;
+		width: 6px;
+		height: 6.001px;
+		left: 349px;
+		top: 739px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_eq {
+		fill: rgba(238,238,238,1);
+	}
+	.Line_eq {
+		position: absolute;
+		overflow: visible;
+		width: 619px;
+		height: 1px;
+		left: 319px;
+		top: 717px;
+	}
+	#n_00 {
+		left: 888.001px;
+		top: 683.776px;
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(111,111,111,1);
+	}
+	#Trust_In_Me {
+		left: 375px;
+		top: 684.646px;
+		position: absolute;
+		overflow: visible;
+		width: 74px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(59,61,64,1);
+	}
+	#Stroke_et {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Stroke_et {
+		overflow: visible;
+		position: absolute;
+		width: 23px;
+		height: 23px;
+		left: 340px;
+		top: 681px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_eu {
+		fill: rgba(131,141,143,1);
+	}
+	.Icon_eu {
+		overflow: visible;
+		position: absolute;
+		width: 6px;
+		height: 6.001px;
+		left: 349px;
+		top: 689px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_ev {
+		fill: rgba(238,238,238,1);
+	}
+	.Line_ev {
+		position: absolute;
+		overflow: visible;
+		width: 619px;
+		height: 1px;
+		left: 319px;
+		top: 667px;
+	}
+	#n_59 {
+		left: 890.001px;
+		top: 633.776px;
+		position: absolute;
+		overflow: visible;
+		width: 28px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(111,111,111,1);
+	}
+	#Hatin_On_The_Club_Feat_The_Dre {
+		left: 375px;
+		top: 634.646px;
+		position: absolute;
+		overflow: visible;
+		width: 125px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(59,61,64,1);
+	}
+	#Stroke_ey {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Stroke_ey {
+		overflow: visible;
+		position: absolute;
+		width: 23px;
+		height: 23px;
+		left: 340px;
+		top: 631px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_ez {
+		fill: rgba(131,141,143,1);
+	}
+	.Icon_ez {
+		overflow: visible;
+		position: absolute;
+		width: 6px;
+		height: 6.001px;
+		left: 349px;
+		top: 639px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_e {
+		fill: rgba(238,238,238,1);
+	}
+	.Line_e {
+		position: absolute;
+		overflow: visible;
+		width: 619px;
+		height: 1px;
+		left: 319px;
+		top: 616px;
+	}
+	#n_43_e {
+		left: 885.001px;
+		top: 583.776px;
+		position: absolute;
+		overflow: visible;
+		width: 33px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(111,111,111,1);
+	}
+	#Cinderalla_Feat_Chris_Brown {
+		left: 375px;
+		top: 583.646px;
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(59,61,64,1);
+	}
+	#Stroke_e {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Stroke_e {
+		overflow: visible;
+		position: absolute;
+		width: 23px;
+		height: 23px;
+		left: 340px;
+		top: 580px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_e {
+		fill: rgba(131,141,143,1);
+	}
+	.Icon_e {
+		overflow: visible;
+		position: absolute;
+		width: 6px;
+		height: 6.001px;
+		left: 349px;
+		top: 588px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_fa {
+		fill: rgba(238,238,238,1);
+	}
+	.Line_fa {
+		position: absolute;
+		overflow: visible;
+		width: 619px;
+		height: 1px;
+		left: 319px;
+		top: 567px;
+	}
+	#n_48 {
+		left: 884.001px;
+		top: 533.776px;
+		position: absolute;
+		overflow: visible;
+		width: 33px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(111,111,111,1);
+	}
+	#Pon_de_Replay {
+		left: 375px;
+		top: 532.645px;
+		position: absolute;
+		overflow: visible;
+		width: 66px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(59,61,64,1);
+	}
+	#Button {
+		fill: rgba(131,141,143,1);
+	}
+	.Button {
+		overflow: visible;
+		position: absolute;
+		width: 22px;
+		height: 22px;
+		left: 340px;
+		top: 531px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_fa {
+		fill: rgba(255,255,255,1);
+	}
+	.Icon_fa {
+		overflow: visible;
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		left: 348px;
+		top: 539px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_fb {
+		fill: rgba(238,238,238,1);
+	}
+	.Line_fb {
+		position: absolute;
+		overflow: visible;
+		width: 619px;
+		height: 1px;
+		left: 319px;
+		top: 516px;
+	}
+	#n_43_fb {
+		left: 883.001px;
+		top: 482.776px;
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(111,111,111,1);
+	}
+	#The_Wait_Is_Ova {
+		left: 375px;
+		top: 482.646px;
+		position: absolute;
+		overflow: visible;
+		width: 64px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(59,61,64,1);
+	}
+	#Stroke_fd {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Stroke_fd {
+		overflow: visible;
+		position: absolute;
+		width: 23px;
+		height: 23px;
+		left: 340px;
+		top: 480px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_fe {
+		fill: rgba(131,141,143,1);
+	}
+	.Icon_fe {
+		overflow: visible;
+		position: absolute;
+		width: 6px;
+		height: 6.001px;
+		left: 349px;
+		top: 488px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#download {
+		fill: rgba(0,0,0,1);
+	}
+	.download {
+		overflow: visible;
+		position: absolute;
+		width: 9.312px;
+		height: 12.003px;
+		left: 839.344px;
+		top: 485.856px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#download_copy {
+		fill: rgba(0,0,0,1);
+	}
+	.download_copy {
+		overflow: visible;
+		position: absolute;
+		width: 9.312px;
+		height: 12.003px;
+		left: 839.344px;
+		top: 535.856px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#download_copy_2 {
+		fill: rgba(0,0,0,1);
+	}
+	.download_copy_2 {
+		overflow: visible;
+		position: absolute;
+		width: 9.312px;
+		height: 12.003px;
+		left: 839.344px;
+		top: 586.856px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#download_copy_2_fi {
+		fill: rgba(0,0,0,1);
+	}
+	.download_copy_2_fi {
+		overflow: visible;
+		position: absolute;
+		width: 9.312px;
+		height: 12.003px;
+		left: 839.344px;
+		top: 636.856px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#download_copy_3 {
+		fill: rgba(0,0,0,1);
+	}
+	.download_copy_3 {
+		overflow: visible;
+		position: absolute;
+		width: 9.312px;
+		height: 12.003px;
+		left: 839.344px;
+		top: 688.856px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#download_copy_3_fk {
+		fill: rgba(0,0,0,1);
+	}
+	.download_copy_3_fk {
+		overflow: visible;
+		position: absolute;
+		width: 9.312px;
+		height: 12.003px;
+		left: 839.344px;
+		top: 738.856px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#download_copy_4 {
+		fill: rgba(0,0,0,1);
+	}
+	.download_copy_4 {
+		overflow: visible;
+		position: absolute;
+		width: 9.312px;
+		height: 12.003px;
+		left: 839.344px;
+		top: 785.856px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Scroll_Bar {
+		fill: rgba(153,153,153,1);
+	}
+	.Scroll_Bar {
+		position: absolute;
+		overflow: visible;
+		width: 5px;
+		height: 120px;
+		left: 929px;
+		top: 479px;
+	}
+	#berti-benbanaste-1475726-unspl {
+		position: absolute;
+		width: 189px;
+		height: 154px;
+		left: 340px;
+		top: 304px;
+		overflow: visible;
+	}
+	#Pon_de_Replay_by_Rihanna_Album {
+		left: 566px;
+		top: 332px;
+		position: absolute;
+		overflow: visible;
+		width: 126px;
+		white-space: nowrap;
+		line-height: 24px;
+		margin-top: -0.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 23px;
+		color: rgba(59,61,64,1);
+	}
+	#Group_4 {
+		position: absolute;
+		width: 120px;
+		height: 24px;
+		left: 566px;
+		top: 424px;
+		overflow: visible;
+	}
+	#Rounded_Rectangle_1 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(225,225,225,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rounded_Rectangle_1 {
+		position: absolute;
+		overflow: visible;
+		width: 121px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_3 {
+		position: absolute;
+		width: 92px;
+		height: 13px;
+		left: 14.5px;
+		top: 5.5px;
+		overflow: visible;
+	}
+	#ADD_TO_PLAYLIST {
+		left: 21px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 72px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(78,78,78,1);
+	}
+	#Icon_ft {
+		fill: rgba(10,10,10,1);
+	}
+	.Icon_ft {
+		overflow: visible;
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		left: 0px;
+		top: 2.58px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Rectangle_10_fu {
+		fill: rgba(70,33,173,1);
+	}
+	.Rectangle_10_fu {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 65px;
+		left: 0px;
+		top: 1015px;
+	}
+	#n_48_fv {
+		left: 1456px;
+		top: 1040px;
+		position: absolute;
+		overflow: visible;
+		width: 28px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(255,255,255,1);
+	}
+	#Rounded_Rectangle_2 {
+		fill: rgba(255,255,255,1);
+	}
+	.Rounded_Rectangle_2 {
+		position: absolute;
+		overflow: visible;
+		width: 984px;
+		height: 7px;
+		left: 448px;
+		top: 1046px;
+	}
+	#Rounded_Rectangle_2_copy {
+		fill: rgba(255,238,0,1);
+	}
+	.Rounded_Rectangle_2_copy {
+		position: absolute;
+		overflow: visible;
+		width: 300px;
+		height: 7px;
+		left: 448px;
+		top: 1046px;
+	}
+	#Forma_1 {
+		fill: rgba(212,212,212,1);
+	}
+	.Forma_1 {
+		overflow: visible;
+		position: absolute;
+		width: 23.995px;
+		height: 24px;
+		left: 410.005px;
+		top: 1037px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Forma_1_copy {
+		fill: rgba(212,212,212,1);
+	}
+	.Forma_1_copy {
+		overflow: visible;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 318px;
+		top: 1037px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Forma_1_f {
+		fill: rgba(255,255,255,1);
+	}
+	.Forma_1_f {
+		overflow: visible;
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		left: 356px;
+		top: 1029px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Forma_1_ga {
+		fill: rgba(255,255,255,1);
+	}
+	.Forma_1_ga {
+		overflow: visible;
+		position: absolute;
+		width: 19.041px;
+		height: 18.982px;
+		left: 1505.98px;
+		top: 1040px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Rihanna_-_Pon_de_Replay {
+		left: 448.5px;
+		top: 1026px;
+		position: absolute;
+		overflow: visible;
+		width: 96px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(255,255,255,1);
+	}
+	#download_copy_5 {
+		fill: rgba(255,255,255,1);
+	}
+	.download_copy_5 {
+		overflow: visible;
+		position: absolute;
+		width: 15px;
+		height: 19.001px;
+		left: 1549px;
+		top: 1039px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Forma_1_gb {
+		fill: rgba(255,255,255,1);
+	}
+	.Forma_1_gb {
+		overflow: visible;
+		position: absolute;
+		width: 16.984px;
+		height: 18.806px;
+		left: 1587.995px;
+		top: 1040px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_2 {
+		position: absolute;
+		width: 120px;
+		height: 24px;
+		left: 705.5px;
+		top: 424px;
+		overflow: visible;
+	}
+	#Rounded_Rectangle_1_copy {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(225,225,225,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rounded_Rectangle_1_copy {
+		position: absolute;
+		overflow: visible;
+		width: 121px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_1 {
+		position: absolute;
+		width: 87.656px;
+		height: 13px;
+		left: 19.5px;
+		top: 5.5px;
+		overflow: visible;
+	}
+	#download_f {
+		left: 20.656px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(78,78,78,1);
+	}
+	#Icon_f {
+		fill: rgba(0,0,0,1);
+	}
+	.Icon_f {
+		overflow: visible;
+		position: absolute;
+		width: 9.312px;
+		height: 12.003px;
+		left: 0px;
+		top: 0.436px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Collection_01_ga {
+		position: absolute;
+		width: 623.333px;
+		height: 376px;
+		left: 982px;
+		top: 280px;
+		overflow: visible;
+	}
+	#Rectangle_10_gb {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_10_gb {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 641.333px;
+		height: 319px;
+		left: 0px;
+		top: 75px;
+	}
+	#ABOUT_SHOW {
+		left: 26.552px;
+		top: 204.615px;
+		position: absolute;
+		overflow: visible;
+		width: 97px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#eugene-chystiakov-1483041-unsp {
+		position: absolute;
+		width: 623.333px;
+		height: 167.505px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#NEXT_EPISODE {
+		left: 26.552px;
+		top: 300.615px;
+		position: absolute;
+		overflow: visible;
+		width: 100px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#Every_Monday_700_oclock {
+		left: 26.736px;
+		top: 324.281px;
+		position: absolute;
+		overflow: visible;
+		width: 143px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Acumin Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(123,133,145,1);
+	}
+	#Lorem_Ipsum_is_simply_dummy_te {
+		left: 27px;
+		top: 227px;
+		position: absolute;
+		overflow: visible;
+		width: 573px;
+		height: 65px;
+		text-align: left;
+		font-family: Acumin Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(123,133,145,1);
+	}
+	#Rectangle_1481 {
+		opacity: 0.32;
+		fill: rgba(0,0,0,1);
+	}
+	.Rectangle_1481 {
+		position: absolute;
+		overflow: visible;
+		width: 213px;
+		height: 34px;
+		left: 1187px;
+		top: 352px;
+	}
+	#BE_POSTIIVE {
+		left: 1248px;
+		top: 360px;
+		position: absolute;
+		overflow: visible;
+		width: 92px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.1px;
+	}
+	#HOME_gj {
+		left: 318px;
+		top: 148px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Home__2;
+		cursor: pointer;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(198,198,212,1);
+		letter-spacing: 0.1px;
+	}
+	#ARTICLES_gk {
+		left: 428px;
+		top: 148px;
+		position: absolute;
+		overflow: visible;
+		width: 76px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Articles;
+		cursor: pointer;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(203,203,216,1);
+		letter-spacing: 0.1px;
+	}
+	#AUDIO_gl {
+		left: 564px;
+		top: 148px;
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+		letter-spacing: 0.1px;
+	}
+	#Group_2809 {
+		position: absolute;
+		width: 623.333px;
+		height: 195.801px;
+		left: 982px;
+		top: 694px;
+		overflow: visible;
+	}
+	#Group_2806 {
+		position: absolute;
+		width: 188.292px;
+		height: 195.801px;
+		left: 217.845px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Collection_01_go {
+		position: absolute;
+		width: 188.292px;
+		height: 195.801px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_10_gp {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_10_gp {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 206.292px;
+		height: 165.175px;
+		left: 0px;
+		top: 48.626px;
+	}
+	#TITLE_-_SHOW {
+		left: 15.27px;
+		top: 152.493px;
+		position: absolute;
+		overflow: visible;
+		width: 65px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 9px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#adam-marcucci-568023-unsplash {
+		position: absolute;
+		width: 188.292px;
+		height: 129.494px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Feeling_frazzled {
+		left: 15.389px;
+		top: 168.511px;
+		position: absolute;
+		overflow: visible;
+		width: 53px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Acumin Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 7px;
+		color: rgba(123,133,145,1);
+	}
+	#Group_2792 {
+		position: absolute;
+		width: 19.126px;
+		height: 19.126px;
+		left: 149.12px;
+		top: 159.494px;
+		overflow: visible;
+	}
+	#Stroke_gu {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Stroke_gu {
+		overflow: visible;
+		position: absolute;
+		width: 20.126px;
+		height: 20.126px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_gv {
+		fill: rgba(131,141,143,1);
+	}
+	.Icon_gv {
+		overflow: visible;
+		position: absolute;
+		width: 5.216px;
+		height: 5.217px;
+		left: 7.824px;
+		top: 6.955px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_2808 {
+		position: absolute;
+		width: 188.292px;
+		height: 195.801px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Collection_01_gx {
+		position: absolute;
+		width: 188.292px;
+		height: 195.801px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_10_gy {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_10_gy {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 206.292px;
+		height: 165.175px;
+		left: 0px;
+		top: 48.626px;
+	}
+	#TITLE_-_SHOW_gz {
+		left: 15.27px;
+		top: 152.493px;
+		position: absolute;
+		overflow: visible;
+		width: 65px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 9px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#artsy-vibes-1483057-unsplash {
+		position: absolute;
+		width: 188.292px;
+		height: 129.494px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Tought_meeting_today {
+		left: 15.389px;
+		top: 168.511px;
+		position: absolute;
+		overflow: visible;
+		width: 72px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Acumin Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 7px;
+		color: rgba(123,133,145,1);
+	}
+	#Group_2793 {
+		position: absolute;
+		width: 19.126px;
+		height: 19.126px;
+		left: 151.065px;
+		top: 159.494px;
+		overflow: visible;
+	}
+	#Stroke_g {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Stroke_g {
+		overflow: visible;
+		position: absolute;
+		width: 20.126px;
+		height: 20.126px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_g {
+		fill: rgba(131,141,143,1);
+	}
+	.Icon_g {
+		overflow: visible;
+		position: absolute;
+		width: 5.216px;
+		height: 5.217px;
+		left: 7.824px;
+		top: 6.955px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_2807 {
+		position: absolute;
+		width: 188.292px;
+		height: 195.801px;
+		left: 435.042px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Collection_01_g {
+		position: absolute;
+		width: 188.292px;
+		height: 195.801px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_10_g {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_10_g {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 206.292px;
+		height: 165.175px;
+		left: 0px;
+		top: 48.626px;
+	}
+	#TITLE_-_SHOW_g {
+		left: 15.27px;
+		top: 152.493px;
+		position: absolute;
+		overflow: visible;
+		width: 65px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 9px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#paul-esch-laurent-730939-unspl {
+		position: absolute;
+		width: 188.292px;
+		height: 129.494px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Feeling_frazzled_ha {
+		left: 15.389px;
+		top: 168.511px;
+		position: absolute;
+		overflow: visible;
+		width: 53px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Acumin Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 7px;
+		color: rgba(123,133,145,1);
+	}
+	#Group_2792_hb {
+		position: absolute;
+		width: 19.126px;
+		height: 19.126px;
+		left: 149.12px;
+		top: 159.494px;
+		overflow: visible;
+	}
+	#Stroke_hc {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: round;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Stroke_hc {
+		overflow: visible;
+		position: absolute;
+		width: 20.126px;
+		height: 20.126px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_hd {
+		fill: rgba(131,141,143,1);
+	}
+	.Icon_hd {
+		overflow: visible;
+		position: absolute;
+		width: 5.216px;
+		height: 5.217px;
+		left: 7.824px;
+		top: 6.955px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_2810 {
+		position: absolute;
+		width: 120px;
+		height: 24px;
+		left: 1444px;
+		top: 593px;
+		overflow: visible;
+	}
+	#Rounded_Rectangle_1_hf {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(225,225,225,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rounded_Rectangle_1_hf {
+		position: absolute;
+		overflow: visible;
+		width: 121px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_3_hg {
+		position: absolute;
+		width: 92px;
+		height: 13px;
+		left: 14.5px;
+		top: 5.5px;
+		overflow: visible;
+	}
+	#ADD_TO_PLAYLIST_hh {
+		left: 21px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 72px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(78,78,78,1);
+	}
+	#Icon_hi {
+		fill: rgba(10,10,10,1);
+	}
+	.Icon_hi {
+		overflow: visible;
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		left: 0px;
+		top: 2.58px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_27_hj {
+		fill: transparent;
+		stroke: rgba(70,33,173,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_27_hj {
+		overflow: visible;
+		position: absolute;
+		width: 53px;
+		height: 3px;
+		left: 564.5px;
+		top: 169.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Symbol_7__5 {
+		position: absolute;
+		width: 247px;
+		height: 208px;
+		left: 837px;
+		top: -104px;
+		overflow: visible;
+	}
+	#Rectangle_1489_hl {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_1489_hl {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.259));
+		position: absolute;
+		overflow: visible;
+		width: 265px;
+		height: 226px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_2815_hm {
+		position: absolute;
+		width: 95px;
+		height: 67.694px;
+		left: 76px;
+		top: 121px;
+		overflow: visible;
+	}
+	#Rectangle_1516_hn {
+		fill: rgba(95,65,182,1);
+	}
+	.Rectangle_1516_hn {
+		position: absolute;
+		overflow: visible;
+		width: 39px;
+		height: 39px;
+		left: 26px;
+		top: 0px;
+	}
+	#LOGOHERE_ho {
+		left: 0px;
+		top: 51.694px;
+		position: absolute;
+		overflow: visible;
+		width: 96px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(95,65,182,1);
+		letter-spacing: 2px;
+	}
+	#Group_2790_hp {
+		position: absolute;
+		width: 15px;
+		height: 30px;
+		left: 38px;
+		top: 4px;
+		overflow: visible;
+	}
+	#L_hq {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 16px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(255,238,0,1);
+		letter-spacing: 0.1px;
+	}
+}
+@media (min-width: 0px) and (max-width: 1919px) {
+	.mediaViewInfo {
+		--web-view-name: Mobile - Articles;
+		--web-view-id: Mobile_-_Articles;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Mobile_-_Articles {
+		position: absolute;
+		display: block;
+		width: 375px;
+		height: 1645px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Mobile - Articles;
+		--web-view-id: Mobile_-_Articles;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#achievement-adult-agreement-11 {
+		position: absolute;
+		width: 183px;
+		height: 177px;
+		left: 49px;
+		top: 117px;
+		overflow: visible;
+	}
+	#Check_our_articles {
+		left: 49px;
+		top: 312px;
+		position: absolute;
+		overflow: visible;
+		width: 216px;
+		white-space: nowrap;
+		line-height: 51px;
+		margin-top: -5.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(48,51,54,1);
+	}
+	#Lorem_Ipsum_has_been_the_indus_hv {
+		left: 49px;
+		top: 422px;
+		position: absolute;
+		overflow: hidden;
+		width: 284px;
+		height: 94px;
+		line-height: 22px;
+		margin-top: -4.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(123,133,145,1);
+	}
+	#aerial-view-bird-s-eye-view-ca_hw {
+		position: absolute;
+		width: 80.222px;
+		height: 84.274px;
+		left: 244.089px;
+		top: 117px;
+		overflow: visible;
+	}
+	#barefoot-beach-cheerful-157465_hx {
+		position: absolute;
+		width: 80.222px;
+		height: 84.274px;
+		left: 244.506px;
+		top: 209.726px;
+		overflow: visible;
+	}
+	#Tag {
+		position: absolute;
+		width: 99px;
+		height: 33px;
+		left: 49px;
+		top: 534px;
+		overflow: visible;
+	}
+	#Rectangle_9 {
+		fill: rgba(70,33,173,1);
+	}
+	.Rectangle_9 {
+		position: absolute;
+		overflow: visible;
+		width: 99px;
+		height: 33px;
+		left: 0px;
+		top: 0px;
+	}
+	#MORE {
+		left: 28px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 11px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 2px;
+	}
+	#Group_2712 {
+		position: absolute;
+		width: 283px;
+		height: 290.743px;
+		left: 49px;
+		top: 953px;
+		overflow: visible;
+	}
+	#Collection_01_h {
+		position: absolute;
+		width: 283px;
+		height: 290.743px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_10_h {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_10_h {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 301px;
+		height: 235.659px;
+		left: 0px;
+		top: 73.084px;
+	}
+	#FOCUS_FIRST {
+		left: 22.95px;
+		top: 225.652px;
+		position: absolute;
+		overflow: visible;
+		width: 89px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#business-business-women-collab {
+		position: absolute;
+		width: 283px;
+		height: 191.084px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Feeling_frazzled_h {
+		left: 23.129px;
+		top: 249.218px;
+		position: absolute;
+		overflow: visible;
+		width: 82px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Acumin Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(123,133,145,1);
+	}
+	#n__h {
+		opacity: 0.6;
+		position: absolute;
+		width: 45.342px;
+		height: 45.342px;
+		left: 218.142px;
+		top: 21.431px;
+		overflow: visible;
+	}
+	#Group_2709 {
+		position: absolute;
+		width: 28.584px;
+		height: 28.584px;
+		left: 230.947px;
+		top: 230.133px;
+		overflow: visible;
+	}
+	#Ellipse_37_h {
+		fill: rgba(232,232,232,1);
+	}
+	.Ellipse_37_h {
+		position: absolute;
+		overflow: visible;
+		width: 28.584px;
+		height: 28.584px;
+		left: 0px;
+		top: 0px;
+	}
+	#Text_ia {
+		opacity: 0.58;
+		left: 8.933px;
+		top: 3.573px;
+		position: absolute;
+		overflow: visible;
+		width: 11px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#Group_2711 {
+		position: absolute;
+		width: 283px;
+		height: 290.743px;
+		left: 46px;
+		top: 632px;
+		overflow: visible;
+	}
+	#Collection_01_ic {
+		position: absolute;
+		width: 283px;
+		height: 290.743px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_10_id {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_10_id {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 301px;
+		height: 235.659px;
+		left: 0px;
+		top: 73.084px;
+	}
+	#CONFIDENCE_BOOSTER {
+		left: 22.95px;
+		top: 225.652px;
+		position: absolute;
+		overflow: visible;
+		width: 160px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#brennan-burling-1473819-unspla {
+		position: absolute;
+		width: 283px;
+		height: 191.084px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Tought_meeting_today_ig {
+		left: 23.129px;
+		top: 249.218px;
+		position: absolute;
+		overflow: visible;
+		width: 112px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Acumin Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(123,133,145,1);
+	}
+	#Ellipse_35 {
+		opacity: 0.6;
+		position: absolute;
+		width: 45.342px;
+		height: 45.342px;
+		left: 218.142px;
+		top: 21.431px;
+		overflow: visible;
+	}
+	#Group_2708 {
+		position: absolute;
+		width: 28.584px;
+		height: 28.584px;
+		left: 230.947px;
+		top: 230.133px;
+		overflow: visible;
+	}
+	#Ellipse_37_ij {
+		fill: rgba(232,232,232,1);
+	}
+	.Ellipse_37_ij {
+		position: absolute;
+		overflow: visible;
+		width: 28.584px;
+		height: 28.584px;
+		left: 0px;
+		top: 0px;
+	}
+	#Text_ik {
+		opacity: 0.58;
+		left: 8.933px;
+		top: 3.573px;
+		position: absolute;
+		overflow: visible;
+		width: 11px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#Group_2713 {
+		position: absolute;
+		width: 283.418px;
+		height: 291.198px;
+		left: 46px;
+		top: 1274px;
+		overflow: visible;
+	}
+	#Collection_01_im {
+		position: absolute;
+		width: 283.418px;
+		height: 291.198px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_10_in {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_10_in {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 301.418px;
+		height: 309.198px;
+		left: 0px;
+		top: 0px;
+	}
+	#tony-lee-1475087-unsplash_io {
+		position: absolute;
+		width: 283.418px;
+		height: 184.374px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n__ip {
+		opacity: 0.6;
+		position: absolute;
+		width: 45.409px;
+		height: 45.409px;
+		left: 218.464px;
+		top: 19.037px;
+		overflow: visible;
+	}
+	#PICK_ME_UP_iq {
+		left: 22.984px;
+		top: 222.721px;
+		position: absolute;
+		overflow: visible;
+		width: 81px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#Got_the_weather_blues_ir {
+		left: 23.164px;
+		top: 247.654px;
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Acumin Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(123,133,145,1);
+	}
+	#Group_2710_is {
+		position: absolute;
+		width: 28.626px;
+		height: 28.626px;
+		left: 231.288px;
+		top: 228.547px;
+		overflow: visible;
+	}
+	#Ellipse_37_it {
+		fill: rgba(232,232,232,1);
+	}
+	.Ellipse_37_it {
+		position: absolute;
+		overflow: visible;
+		width: 28.626px;
+		height: 28.626px;
+		left: 0px;
+		top: 0px;
+	}
+	#Text_iu {
+		opacity: 0.58;
+		left: 8.946px;
+		top: 3.578px;
+		position: absolute;
+		overflow: visible;
+		width: 11px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#Group_2789 {
+		position: absolute;
+		width: 375px;
+		height: 70px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#NavbarBG {
+		fill: rgba(255,255,255,1);
+	}
+	.NavbarBG {
+		filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.039));
+		position: absolute;
+		overflow: visible;
+		width: 393px;
+		height: 88px;
+		left: 0px;
+		top: 0px;
+	}
+	#Notification {
+		position: absolute;
+		width: 19px;
+		height: 21px;
+		left: 327.59px;
+		top: 22px;
+		overflow: visible;
+	}
+	#Notification_Icon {
+		fill: rgba(198,198,208,1);
+	}
+	.Notification_Icon {
+		overflow: visible;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 0px;
+		top: 5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Notification_Badge {
+		fill: rgba(242,140,175,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Notification_Badge {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 12px;
+		left: 11px;
+		top: 0px;
+	}
+	#Logo {
+		position: absolute;
+		width: 16.633px;
+		height: 14.97px;
+		left: 25px;
+		top: 29px;
+		overflow: visible;
+		cursor: pointer;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Mobile_-_Menu_Articles;
+	}
+	#menu_1 {
+		position: absolute;
+		width: 16.633px;
+		height: 14.97px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_x33__6_ {
+		position: absolute;
+		width: 16.633px;
+		height: 14.97px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Group_2707_i {
+		position: absolute;
+		width: 16.633px;
+		height: 14.97px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_1871 {
+		fill: rgba(188,188,203,1);
+	}
+	.Path_1871 {
+		overflow: visible;
+		position: absolute;
+		width: 16.633px;
+		height: 14.97px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_1872 {
+		fill: transparent;
+		stroke: rgba(141,137,252,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1872 {
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 173px;
+		top: 20px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#L_i {
+		left: 182px;
+		top: 23px;
+		position: absolute;
+		overflow: visible;
+		width: 13px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.1px;
+	}
+	#ic_settings_backup_restore_24p {
+		opacity: 0.2;
+		fill: rgba(0,0,0,1);
+	}
+	.ic_settings_backup_restore_24p {
+		overflow: visible;
+		position: absolute;
+		width: 21px;
+		height: 18px;
+		left: 177px;
+		top: 1598px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Rectangle_1516_i {
+		fill: rgba(95,65,182,1);
+	}
+	.Rectangle_1516_i {
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		height: 35px;
+		left: 170px;
+		top: 18px;
+	}
+	#Group_2790_i {
+		position: absolute;
+		width: 13px;
+		height: 25px;
+		left: 180.769px;
+		top: 21.59px;
+		overflow: visible;
+	}
+	#L_ja {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 14px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,238,0,1);
+		letter-spacing: 0.1px;
+	}
+}
+@media (min-width: 0px) and (max-width: 1919px) {
+	.mediaViewInfo {
+		--web-view-name: Mobile - Home – 1;
+		--web-view-id: Mobile_-_Home__1;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Mobile_-_Home__1 {
+		position: absolute;
+		display: block;
+		width: 375px;
+		height: 1947px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Mobile - Home – 1;
+		--web-view-id: Mobile_-_Home__1;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Group_2818 {
+		position: absolute;
+		width: 3461.333px;
+		height: 1947px;
+		left: -1376px;
+		top: 0px;
+		overflow: visible;
+	}
+	#zachary-nelson-192289-unsplash_je {
+		position: absolute;
+		width: 3461.333px;
+		height: 1947px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#helena-lopes-463976-unsplash_jf {
+		opacity: 0.83;
+		fill: rgba(70,33,173,1);
+	}
+	.helena-lopes-463976-unsplash_jf {
+		overflow: visible;
+		position: absolute;
+		width: 3461.333px;
+		height: 1947px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_2789_jg {
+		position: absolute;
+		width: 375px;
+		height: 70px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#NavbarBG_jh {
+		fill: rgba(255,255,255,1);
+	}
+	.NavbarBG_jh {
+		filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.039));
+		position: absolute;
+		overflow: visible;
+		width: 393px;
+		height: 88px;
+		left: 0px;
+		top: 0px;
+	}
+	#Notification_ji {
+		position: absolute;
+		width: 19px;
+		height: 21px;
+		left: 327.59px;
+		top: 22px;
+		overflow: visible;
+	}
+	#Notification_Icon_jj {
+		fill: rgba(198,198,208,1);
+	}
+	.Notification_Icon_jj {
+		overflow: visible;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 0px;
+		top: 5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Notification_Badge_jk {
+		fill: rgba(242,140,175,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Notification_Badge_jk {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 12px;
+		left: 11px;
+		top: 0px;
+	}
+	#Logo_jl {
+		position: absolute;
+		width: 16.633px;
+		height: 14.97px;
+		left: 25px;
+		top: 29px;
+		overflow: visible;
+		cursor: pointer;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Mobile_-_Menu_Home;
+	}
+	#menu_1_jm {
+		position: absolute;
+		width: 16.633px;
+		height: 14.97px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_x33__6__jn {
+		position: absolute;
+		width: 16.633px;
+		height: 14.97px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Group_2707_jo {
+		position: absolute;
+		width: 16.633px;
+		height: 14.97px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_1871_jp {
+		fill: rgba(188,188,203,1);
+	}
+	.Path_1871_jp {
+		overflow: visible;
+		position: absolute;
+		width: 16.633px;
+		height: 14.97px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Join_us_today_jq {
+		left: 54px;
+		top: 177px;
+		position: absolute;
+		overflow: visible;
+		width: 150px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#Lorem_ipsum_dolor_sit_amet_con_jr {
+		left: 55px;
+		top: 335px;
+		position: absolute;
+		overflow: visible;
+		width: 266px;
+		height: 80px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_2799_js {
+		opacity: 0.28;
+		position: absolute;
+		width: 573px;
+		height: 573px;
+		left: 57px;
+		top: 1327px;
+		overflow: visible;
+	}
+	#Ellipse_54_jt {
+		opacity: 0.17;
+		fill: rgba(141,137,252,1);
+	}
+	.Ellipse_54_jt {
+		position: absolute;
+		overflow: visible;
+		width: 573px;
+		height: 573px;
+		left: 0px;
+		top: 0px;
+	}
+	#Ellipse_53_ju {
+		opacity: 0.15;
+		fill: rgba(141,137,252,1);
+	}
+	.Ellipse_53_ju {
+		position: absolute;
+		overflow: visible;
+		width: 305.321px;
+		height: 305.321px;
+		left: 133.839px;
+		top: 133.839px;
+	}
+	#Ellipse_52_jv {
+		opacity: 0.15;
+		fill: rgba(141,137,252,1);
+	}
+	.Ellipse_52_jv {
+		position: absolute;
+		overflow: visible;
+		width: 209.722px;
+		height: 209.722px;
+		left: 181.639px;
+		top: 181.639px;
+	}
+	#Ellipse_51_jw {
+		opacity: 0.42;
+		fill: rgba(141,137,252,1);
+	}
+	.Ellipse_51_jw {
+		position: absolute;
+		overflow: visible;
+		width: 104.562px;
+		height: 104.562px;
+		left: 234.219px;
+		top: 234.219px;
+	}
+	#Group_59_jx {
+		position: absolute;
+		width: 273.197px;
+		height: 156.633px;
+		left: 48px;
+		top: 499px;
+		overflow: visible;
+	}
+	#Lorem_ipsum_dolor_sit_amet_con_jy {
+		left: 0px;
+		top: 122.028px;
+		position: absolute;
+		overflow: hidden;
+		width: 274.197px;
+		height: 34.60499954223633px;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Mask_Group_1_jz {
+		position: absolute;
+		width: 72.853px;
+		height: 72.853px;
+		left: 100.172px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Spend_time_smart_j {
+		left: 60.299px;
+		top: 92.066px;
+		position: absolute;
+		overflow: visible;
+		width: 143px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_61_j {
+		position: absolute;
+		width: 273.197px;
+		height: 156.633px;
+		left: 48px;
+		top: 679px;
+		overflow: visible;
+	}
+	#Lorem_ipsum_dolor_sit_amet_con_j {
+		left: 0px;
+		top: 122.028px;
+		position: absolute;
+		overflow: hidden;
+		width: 274.197px;
+		height: 34.60499954223633px;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Symbol_3__1_j {
+		position: absolute;
+		width: 72.853px;
+		height: 72.853px;
+		left: 100.172px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Mask_Group_3_j {
+		position: absolute;
+		width: 72.853px;
+		height: 72.853px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Audio_podcast_j {
+		left: 75.049px;
+		top: 92.066px;
+		position: absolute;
+		overflow: visible;
+		width: 115px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_62_j {
+		position: absolute;
+		width: 273.197px;
+		height: 156.633px;
+		left: 48px;
+		top: 859.273px;
+		overflow: visible;
+	}
+	#Lorem_ipsum_dolor_sit_amet_con_ka {
+		left: 0px;
+		top: 122.028px;
+		position: absolute;
+		overflow: hidden;
+		width: 274.197px;
+		height: 34.60499954223633px;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Symbol_4__1_j {
+		position: absolute;
+		width: 72.853px;
+		height: 72.853px;
+		left: 100.172px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Mask_Group_4_j {
+		position: absolute;
+		width: 72.853px;
+		height: 72.853px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Line-chart {
+		left: 92.44px;
+		top: 92.066px;
+		position: absolute;
+		overflow: visible;
+		width: 83px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_64_kb {
+		position: absolute;
+		width: 273.197px;
+		height: 156.633px;
+		left: 48px;
+		top: 1039.273px;
+		overflow: visible;
+	}
+	#Lorem_ipsum_dolor_sit_amet_con_kc {
+		left: 0px;
+		top: 122.028px;
+		position: absolute;
+		overflow: hidden;
+		width: 274.197px;
+		height: 34.60499954223633px;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Symbol_6__1_kd {
+		position: absolute;
+		width: 72.853px;
+		height: 72.853px;
+		left: 100.172px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Mask_Group_6_ke {
+		position: absolute;
+		width: 72.853px;
+		height: 72.853px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Quality_kf {
+		left: 105.368px;
+		top: 92.066px;
+		position: absolute;
+		overflow: visible;
+		width: 57px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#Path_1873 {
+		fill: rgba(70,33,173,1);
+	}
+	.Path_1873 {
+		overflow: visible;
+		position: absolute;
+		width: 375px;
+		height: 20px;
+		left: 0px;
+		top: 1927px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Copyright_2019_All_Rights_Rese {
+		left: 115px;
+		top: 1933px;
+		position: absolute;
+		overflow: visible;
+		width: 146px;
+		white-space: nowrap;
+		line-height: 35px;
+		margin-top: -14px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 7px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 1.2px;
+	}
+	#Group_2817 {
+		position: absolute;
+		width: 307.667px;
+		height: 572px;
+		left: 34.333px;
+		top: 1280px;
+		overflow: visible;
+	}
+	#Personal_Information {
+		position: absolute;
+		width: 307.667px;
+		height: 572px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_1515 {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_1515 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.522));
+		position: absolute;
+		overflow: visible;
+		width: 325.667px;
+		height: 590px;
+		left: 0px;
+		top: 0px;
+	}
+	#Card_Female {
+		position: absolute;
+		width: 103.524px;
+		height: 116.7px;
+		left: 161.377px;
+		top: 118px;
+		overflow: visible;
+	}
+	#Rectangle_78 {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_78 {
+		filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.051));
+		position: absolute;
+		overflow: visible;
+		width: 139.524px;
+		height: 152.7px;
+		left: 0px;
+		top: 0px;
+	}
+	#noun_miss_518255 {
+		position: absolute;
+		width: 30.116px;
+		height: 38.288px;
+		left: 36.892px;
+		top: 39.527px;
+		overflow: visible;
+	}
+	#Path_107 {
+		fill: rgba(70,33,173,1);
+	}
+	.Path_107 {
+		overflow: visible;
+		position: absolute;
+		width: 30.116px;
+		height: 38.288px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Card_Male {
+		position: absolute;
+		width: 103.524px;
+		height: 116.7px;
+		left: 42.059px;
+		top: 118px;
+		overflow: visible;
+	}
+	#Rectangle_77 {
+		fill: rgba(70,33,173,1);
+	}
+	.Rectangle_77 {
+		filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.051));
+		position: absolute;
+		overflow: visible;
+		width: 139.524px;
+		height: 152.7px;
+		left: 0px;
+		top: 0px;
+	}
+	#noun_Gentleman_518257 {
+		position: absolute;
+		width: 30.116px;
+		height: 36.319px;
+		left: 37.08px;
+		top: 40.469px;
+		overflow: visible;
+	}
+	#Group_148 {
+		position: absolute;
+		width: 30.116px;
+		height: 36.319px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_108 {
+		fill: rgba(255,255,255,1);
+	}
+	.Path_108 {
+		overflow: visible;
+		position: absolute;
+		width: 17.378px;
+		height: 19.527px;
+		left: 6.369px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_109 {
+		fill: rgba(255,255,255,1);
+	}
+	.Path_109 {
+		overflow: visible;
+		position: absolute;
+		width: 30.116px;
+		height: 14.783px;
+		left: 0px;
+		top: 21.536px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Region_Input {
+		position: absolute;
+		width: 257.667px;
+		height: 45px;
+		left: 25px;
+		top: 408.328px;
+		overflow: visible;
+	}
+	#Rectangle_79 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(70,33,173,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_79 {
+		position: absolute;
+		overflow: visible;
+		width: 257.667px;
+		height: 45px;
+		left: 0px;
+		top: 0px;
+	}
+	#What_Are_Your_Interests {
+		left: 25px;
+		top: 16px;
+		position: absolute;
+		overflow: visible;
+		width: 153px;
+		white-space: nowrap;
+		line-height: 35px;
+		margin-top: -11.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(205,208,217,1);
+	}
+	#chevron-down {
+		position: absolute;
+		width: 12px;
+		height: 6px;
+		left: 215.667px;
+		top: 20px;
+		overflow: visible;
+	}
+	#Path_110 {
+		fill: transparent;
+		stroke: rgba(205,208,217,1);
+		stroke-width: 1.7999999523162842px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_110 {
+		overflow: visible;
+		position: absolute;
+		width: 14.545px;
+		height: 8.173px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Birthday_Input {
+		position: absolute;
+		width: 257.667px;
+		height: 45px;
+		left: 25px;
+		top: 285.791px;
+		overflow: visible;
+	}
+	#Rectangle_80 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(70,33,173,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_80 {
+		position: absolute;
+		overflow: visible;
+		width: 257.667px;
+		height: 45px;
+		left: 0px;
+		top: 0px;
+	}
+	#Username {
+		left: 30px;
+		top: 16px;
+		position: absolute;
+		overflow: visible;
+		width: 64px;
+		white-space: nowrap;
+		line-height: 35px;
+		margin-top: -11.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(205,208,217,1);
+	}
+	#Birthday_Input_k {
+		position: absolute;
+		width: 257.667px;
+		height: 45px;
+		left: 25px;
+		top: 346.791px;
+		overflow: visible;
+	}
+	#Rectangle_80_k {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(70,33,173,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_80_k {
+		position: absolute;
+		overflow: visible;
+		width: 257.667px;
+		height: 45px;
+		left: 0px;
+		top: 0px;
+	}
+	#Mail {
+		left: 30px;
+		top: 16px;
+		position: absolute;
+		overflow: visible;
+		width: 26px;
+		white-space: nowrap;
+		line-height: 35px;
+		margin-top: -11.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(205,208,217,1);
+	}
+	#Group_2794_k {
+		position: absolute;
+		width: 102.67px;
+		height: 29.815px;
+		left: 39.333px;
+		top: 48px;
+		overflow: visible;
+	}
+	#Rectangle_1483_k {
+		fill: transparent;
+		stroke: rgba(70,33,173,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_1483_k {
+		position: absolute;
+		overflow: visible;
+		width: 102.67px;
+		height: 29.815px;
+		left: 0px;
+		top: 0px;
+	}
+	#Sign_up_k {
+		left: 28px;
+		top: 7px;
+		position: absolute;
+		overflow: visible;
+		width: 47px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(70,33,173,1);
+	}
+	#Group_2797_k {
+		position: absolute;
+		width: 102.098px;
+		height: 29.815px;
+		left: 165.333px;
+		top: 48px;
+		overflow: visible;
+	}
+	#Group_2795_la {
+		position: absolute;
+		width: 102.098px;
+		height: 29.815px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_1484_lb {
+		fill: rgba(70,33,173,1);
+	}
+	.Rectangle_1484_lb {
+		filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.051));
+		position: absolute;
+		overflow: visible;
+		width: 138.098px;
+		height: 65.815px;
+		left: 0px;
+		top: 0px;
+	}
+	#Login_lc {
+		filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.051));
+		left: 34px;
+		top: 7px;
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	#Ellipse_50 {
+		fill: rgba(71,35,174,1);
+	}
+	.Ellipse_50 {
+		position: absolute;
+		overflow: visible;
+		width: 50px;
+		height: 50px;
+		left: 129.333px;
+		top: 492px;
+	}
+	#Text_le {
+		left: 143.333px;
+		top: 493px;
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(255,238,0,1);
+		letter-spacing: 1.2px;
+	}
+	#ic_person_outline_24px {
+		fill: rgba(205,208,217,1);
+	}
+	.ic_person_outline_24px {
+		overflow: visible;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 239.333px;
+		top: 300px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#ic_person_outline_24px_lg {
+		fill: rgba(205,208,217,1);
+	}
+	.ic_person_outline_24px_lg {
+		overflow: visible;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 239.333px;
+		top: 363px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_2820 {
+		position: absolute;
+		width: 35px;
+		height: 35px;
+		left: 170px;
+		top: 18px;
+		overflow: visible;
+	}
+	#Path_1872_li {
+		fill: transparent;
+		stroke: rgba(141,137,252,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1872_li {
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 3px;
+		top: 2px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#L_lj {
+		left: 12px;
+		top: 5px;
+		position: absolute;
+		overflow: visible;
+		width: 13px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.1px;
+	}
+	#Group_2819 {
+		position: absolute;
+		width: 35px;
+		height: 35px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_1516_ll {
+		fill: rgba(95,65,182,1);
+	}
+	.Rectangle_1516_ll {
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		height: 35px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_2790_lm {
+		position: absolute;
+		width: 13px;
+		height: 25px;
+		left: 10.769px;
+		top: 3.59px;
+		overflow: visible;
+	}
+	#L_ln {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 14px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,238,0,1);
+		letter-spacing: 0.1px;
+	}
+}
+@media (min-width: 0px) and (max-width: 1919px) {
+	.mediaViewInfo {
+		--web-view-name: Mobile - Audio;
+		--web-view-id: Mobile_-_Audio;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Mobile_-_Audio {
+		position: absolute;
+		display: block;
+		width: 375px;
+		height: 811px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Mobile - Audio;
+		--web-view-id: Mobile_-_Audio;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Group_2789_lq {
+		position: absolute;
+		width: 375px;
+		height: 70px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#NavbarBG_lr {
+		fill: rgba(255,255,255,1);
+	}
+	.NavbarBG_lr {
+		filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.039));
+		position: absolute;
+		overflow: visible;
+		width: 393px;
+		height: 88px;
+		left: 0px;
+		top: 0px;
+	}
+	#Notification_ls {
+		position: absolute;
+		width: 19px;
+		height: 21px;
+		left: 327.59px;
+		top: 22px;
+		overflow: visible;
+	}
+	#Notification_Icon_lt {
+		fill: rgba(198,198,208,1);
+	}
+	.Notification_Icon_lt {
+		overflow: visible;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 0px;
+		top: 5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Notification_Badge_lu {
+		fill: rgba(242,140,175,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Notification_Badge_lu {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 12px;
+		left: 11px;
+		top: 0px;
+	}
+	#Logo_lv {
+		position: absolute;
+		width: 16.633px;
+		height: 14.97px;
+		left: 25px;
+		top: 29px;
+		overflow: visible;
+		cursor: pointer;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Mobile_-_Menu_Audio;
+	}
+	#menu_1_lw {
+		position: absolute;
+		width: 16.633px;
+		height: 14.97px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_x33__6__lx {
+		position: absolute;
+		width: 16.633px;
+		height: 14.97px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Group_2707_ly {
+		position: absolute;
+		width: 16.633px;
+		height: 14.97px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Path_1871_lz {
+		fill: rgba(188,188,203,1);
+	}
+	.Path_1871_lz {
+		overflow: visible;
+		position: absolute;
+		width: 16.633px;
+		height: 14.97px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_1872_l {
+		fill: transparent;
+		stroke: rgba(141,137,252,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1872_l {
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 173px;
+		top: 20px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#L_l {
+		left: 182px;
+		top: 23px;
+		position: absolute;
+		overflow: visible;
+		width: 13px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.1px;
+	}
+	#Repeat_Grid_8 {
+		position: absolute;
+		width: 319px;
+		height: 247px;
+		left: 45px;
+		top: 502px;
+		overflow: hidden;
+	}
+	#Group_63 {
+		position: absolute;
+		width: 284px;
+		height: 40px;
+		left: 0px;
+		top: 1px;
+		overflow: visible;
+	}
+	#Group_61_l {
+		position: absolute;
+		width: 79px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Audio_Title {
+		opacity: 0.87;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 80px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(112,107,123,1);
+	}
+	#Author {
+		opacity: 0.54;
+		left: 0px;
+		top: 22px;
+		position: absolute;
+		overflow: visible;
+		width: 50px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(112,107,123,1);
+	}
+	#Group_62_l {
+		position: absolute;
+		width: 6px;
+		height: 26px;
+		left: 278px;
+		top: 9px;
+		overflow: visible;
+	}
+	#Ellipse_34 {
+		fill: rgba(112,107,123,1);
+	}
+	.Ellipse_34 {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 6px;
+		left: 0px;
+		top: 0px;
+	}
+	#Ellipse_35_l {
+		fill: rgba(112,107,123,1);
+	}
+	.Ellipse_35_l {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 6px;
+		left: 0px;
+		top: 10px;
+	}
+	#Ellipse_36 {
+		fill: rgba(112,107,123,1);
+	}
+	.Ellipse_36 {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 6px;
+		left: 0px;
+		top: 20px;
+	}
+	#Group_66 {
+		position: absolute;
+		width: 284px;
+		height: 40px;
+		left: 0px;
+		top: 58px;
+		overflow: visible;
+	}
+	#Group_64_mc {
+		position: absolute;
+		width: 79px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Audio_Title_md {
+		opacity: 0.87;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 80px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(112,107,123,1);
+	}
+	#Author_me {
+		opacity: 0.54;
+		left: 0px;
+		top: 22px;
+		position: absolute;
+		overflow: visible;
+		width: 50px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(112,107,123,1);
+	}
+	#Group_65 {
+		position: absolute;
+		width: 6px;
+		height: 26px;
+		left: 278px;
+		top: 9px;
+		overflow: visible;
+	}
+	#Ellipse_37_mg {
+		fill: rgba(112,107,123,1);
+	}
+	.Ellipse_37_mg {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 6px;
+		left: 0px;
+		top: 0px;
+	}
+	#Ellipse_38 {
+		fill: rgba(112,107,123,1);
+	}
+	.Ellipse_38 {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 6px;
+		left: 0px;
+		top: 10px;
+	}
+	#Ellipse_39 {
+		fill: rgba(112,107,123,1);
+	}
+	.Ellipse_39 {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 6px;
+		left: 0px;
+		top: 20px;
+	}
+	#Group_69 {
+		position: absolute;
+		width: 284px;
+		height: 40px;
+		left: 0px;
+		top: 115px;
+		overflow: visible;
+	}
+	#Group_67 {
+		position: absolute;
+		width: 79px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Audio_Title_ml {
+		opacity: 0.87;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 80px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(112,107,123,1);
+	}
+	#Author_mm {
+		opacity: 0.54;
+		left: 0px;
+		top: 22px;
+		position: absolute;
+		overflow: visible;
+		width: 50px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(112,107,123,1);
+	}
+	#Group_68 {
+		position: absolute;
+		width: 6px;
+		height: 26px;
+		left: 278px;
+		top: 9px;
+		overflow: visible;
+	}
+	#Ellipse_40 {
+		fill: rgba(112,107,123,1);
+	}
+	.Ellipse_40 {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 6px;
+		left: 0px;
+		top: 0px;
+	}
+	#Ellipse_41 {
+		fill: rgba(112,107,123,1);
+	}
+	.Ellipse_41 {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 6px;
+		left: 0px;
+		top: 10px;
+	}
+	#Ellipse_42 {
+		fill: rgba(112,107,123,1);
+	}
+	.Ellipse_42 {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 6px;
+		left: 0px;
+		top: 20px;
+	}
+	#Group_72 {
+		position: absolute;
+		width: 284px;
+		height: 40px;
+		left: 0px;
+		top: 172px;
+		overflow: visible;
+	}
+	#Group_70 {
+		position: absolute;
+		width: 79px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Audio_Title_mt {
+		opacity: 0.87;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 80px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(112,107,123,1);
+	}
+	#Author_mu {
+		opacity: 0.54;
+		left: 0px;
+		top: 22px;
+		position: absolute;
+		overflow: visible;
+		width: 50px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(112,107,123,1);
+	}
+	#Group_71 {
+		position: absolute;
+		width: 6px;
+		height: 26px;
+		left: 278px;
+		top: 9px;
+		overflow: visible;
+	}
+	#Ellipse_43 {
+		fill: rgba(112,107,123,1);
+	}
+	.Ellipse_43 {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 6px;
+		left: 0px;
+		top: 0px;
+	}
+	#Ellipse_44 {
+		fill: rgba(112,107,123,1);
+	}
+	.Ellipse_44 {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 6px;
+		left: 0px;
+		top: 10px;
+	}
+	#Ellipse_45 {
+		fill: rgba(112,107,123,1);
+	}
+	.Ellipse_45 {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 6px;
+		left: 0px;
+		top: 20px;
+	}
+	#Group_75 {
+		position: absolute;
+		width: 284px;
+		height: 40px;
+		left: 0px;
+		top: 229px;
+		overflow: visible;
+	}
+	#Group_73 {
+		position: absolute;
+		width: 134px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Audio_Title_m {
+		opacity: 0.87;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 80px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(112,107,123,1);
+	}
+	#Author_-_Show_Title {
+		opacity: 0.54;
+		left: 0px;
+		top: 22px;
+		position: absolute;
+		overflow: visible;
+		width: 135px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(112,107,123,1);
+	}
+	#Group_74 {
+		position: absolute;
+		width: 6px;
+		height: 26px;
+		left: 278px;
+		top: 9px;
+		overflow: visible;
+	}
+	#Ellipse_46 {
+		fill: rgba(112,107,123,1);
+	}
+	.Ellipse_46 {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 6px;
+		left: 0px;
+		top: 0px;
+	}
+	#Ellipse_47 {
+		fill: rgba(112,107,123,1);
+	}
+	.Ellipse_47 {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 6px;
+		left: 0px;
+		top: 10px;
+	}
+	#Ellipse_48 {
+		fill: rgba(112,107,123,1);
+	}
+	.Ellipse_48 {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 6px;
+		left: 0px;
+		top: 20px;
+	}
+	#Group {
+		position: absolute;
+		width: 136.347px;
+		height: 136.347px;
+		left: 119.208px;
+		top: 119px;
+		overflow: visible;
+	}
+	#berti-benbanaste-1475726-unspl_m {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		width: 136.347px;
+		height: 136.347px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Pon_de_Replay_by_Rihanna_Album_m {
+		left: 139px;
+		top: 277px;
+		position: absolute;
+		overflow: visible;
+		width: 99px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2px;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(59,61,64,1);
+	}
+	#Group_4_na {
+		position: absolute;
+		width: 120px;
+		height: 24px;
+		left: 58px;
+		top: 357px;
+		overflow: visible;
+	}
+	#Rounded_Rectangle_1_nb {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(225,225,225,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rounded_Rectangle_1_nb {
+		position: absolute;
+		overflow: visible;
+		width: 121px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_3_nc {
+		position: absolute;
+		width: 92px;
+		height: 13px;
+		left: 14.5px;
+		top: 5.5px;
+		overflow: visible;
+	}
+	#ADD_TO_PLAYLIST_nd {
+		left: 21px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 72px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(78,78,78,1);
+	}
+	#Icon_ne {
+		fill: rgba(10,10,10,1);
+	}
+	.Icon_ne {
+		overflow: visible;
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		left: 0px;
+		top: 2.58px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_2_nf {
+		position: absolute;
+		width: 120px;
+		height: 24px;
+		left: 197.5px;
+		top: 357px;
+		overflow: visible;
+	}
+	#Rounded_Rectangle_1_copy_ng {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(225,225,225,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rounded_Rectangle_1_copy_ng {
+		position: absolute;
+		overflow: visible;
+		width: 121px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_1_nh {
+		position: absolute;
+		width: 87.656px;
+		height: 13px;
+		left: 19.5px;
+		top: 5.5px;
+		overflow: visible;
+	}
+	#download_ni {
+		left: 20.656px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(78,78,78,1);
+	}
+	#Icon_nj {
+		fill: rgba(0,0,0,1);
+	}
+	.Icon_nj {
+		overflow: visible;
+		position: absolute;
+		width: 9.312px;
+		height: 12.003px;
+		left: 0px;
+		top: 0.436px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_140 {
+		position: absolute;
+		width: 375.5px;
+		height: 48.5px;
+		left: 0px;
+		top: 763px;
+		overflow: visible;
+		cursor: pointer;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Mobile_-_Audio_button_cover;
+	}
+	#background_rectangle {
+		fill: rgba(255,255,255,1);
+	}
+	.background_rectangle {
+		filter: drop-shadow(0px -3px 6px rgba(91, 134, 229, 0.2));
+		position: absolute;
+		overflow: visible;
+		width: 393px;
+		height: 66px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_128 {
+		position: absolute;
+		width: 128px;
+		height: 18px;
+		left: 124px;
+		top: 14px;
+		overflow: visible;
+	}
+	#Audio_Title_nn {
+		opacity: 0.87;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 80px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(70,33,173,1);
+	}
+	#Artist {
+		opacity: 0.87;
+		left: 90px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 39px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(70,33,173,1);
+	}
+	#Ellipse_33_np {
+		fill: rgba(70,33,173,1);
+	}
+	.Ellipse_33_np {
+		position: absolute;
+		overflow: visible;
+		width: 3px;
+		height: 3px;
+		left: 84px;
+		top: 8px;
+	}
+	#play_button {
+		fill: rgba(70,33,173,1);
+	}
+	.play_button {
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 311px;
+		top: 10px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#expand_arrow {
+		transform: translate(94px, -1254px) matrix(1,0,0,1,-54.6072,1266.9999) rotate(90deg);
+		transform-origin: center;
+		position: absolute;
+		width: 13.214px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Chevron_Right {
+		fill: rgba(174,172,178,1);
+	}
+	.Chevron_Right {
+		overflow: visible;
+		position: absolute;
+		width: 24px;
+		height: 13.214px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_26 {
+		opacity: 0.401;
+		fill: transparent;
+		stroke: rgba(91,134,229,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_26 {
+		overflow: visible;
+		position: absolute;
+		width: 375px;
+		height: 1px;
+		left: 0.5px;
+		top: 48.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_2796 {
+		position: absolute;
+		width: 89.251px;
+		height: 26.063px;
+		left: 241px;
+		top: 435.493px;
+		overflow: visible;
+	}
+	#Rectangle_1482 {
+		fill: rgba(70,33,173,1);
+	}
+	.Rectangle_1482 {
+		position: absolute;
+		overflow: visible;
+		width: 89.251px;
+		height: 26.063px;
+		left: 0px;
+		top: 0px;
+	}
+	#RECOMMENDED {
+		left: 10px;
+		top: 7.932px;
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 8px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_2794_nx {
+		position: absolute;
+		width: 89.751px;
+		height: 26.063px;
+		left: 45px;
+		top: 435.493px;
+		overflow: visible;
+	}
+	#Rectangle_1483_ny {
+		fill: transparent;
+		stroke: rgba(70,33,173,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_1483_ny {
+		position: absolute;
+		overflow: visible;
+		width: 89.751px;
+		height: 26.063px;
+		left: 0px;
+		top: 0px;
+	}
+	#AUDIO_LIST {
+		left: 21px;
+		top: 7.932px;
+		position: absolute;
+		overflow: visible;
+		width: 47px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 8px;
+		color: rgba(70,33,173,1);
+	}
+	#Group_2795_n {
+		position: absolute;
+		width: 89.251px;
+		height: 26.063px;
+		left: 143px;
+		top: 435.493px;
+		overflow: visible;
+	}
+	#Rectangle_1484_n {
+		fill: rgba(70,33,173,1);
+	}
+	.Rectangle_1484_n {
+		position: absolute;
+		overflow: visible;
+		width: 89.251px;
+		height: 26.063px;
+		left: 0px;
+		top: 0px;
+	}
+	#LIBRARY {
+		left: 27px;
+		top: 7.932px;
+		position: absolute;
+		overflow: visible;
+		width: 36px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 8px;
+		color: rgba(255,255,255,1);
+	}
+	#Rectangle_1516_n {
+		fill: rgba(95,65,182,1);
+	}
+	.Rectangle_1516_n {
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		height: 35px;
+		left: 170px;
+		top: 18px;
+	}
+	#Group_2790_n {
+		position: absolute;
+		width: 13px;
+		height: 25px;
+		left: 180.769px;
+		top: 21.59px;
+		overflow: visible;
+	}
+	#L_n {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 14px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,238,0,1);
+		letter-spacing: 0.1px;
+	}
+}
+@media (min-width: 0px) and (max-width: 1919px) {
+	.mediaViewInfo {
+		--web-view-name: Mobile - Menu;
+		--web-view-id: Mobile_-_Menu;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Mobile_-_Menu {
+		position: absolute;
+		display: block;
+		width: 375px;
+		height: 812px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Mobile - Menu;
+		--web-view-id: Mobile_-_Menu;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#achievement-adult-agreement-11_n {
+		position: absolute;
+		width: 183px;
+		height: 177px;
+		left: 49px;
+		top: 117px;
+		overflow: visible;
+	}
+	#Check_our_articles_n {
+		left: 49px;
+		top: 312px;
+		position: absolute;
+		overflow: visible;
+		width: 216px;
+		white-space: nowrap;
+		line-height: 51px;
+		margin-top: -5.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(48,51,54,1);
+	}
+	#Lorem_Ipsum_has_been_the_indus_oa {
+		left: 49px;
+		top: 422px;
+		position: absolute;
+		overflow: hidden;
+		width: 284px;
+		height: 94px;
+		line-height: 22px;
+		margin-top: -4.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(123,133,145,1);
+	}
+	#aerial-view-bird-s-eye-view-ca_ob {
+		position: absolute;
+		width: 80.222px;
+		height: 84.274px;
+		left: 244.089px;
+		top: 117px;
+		overflow: visible;
+	}
+	#barefoot-beach-cheerful-157465_oc {
+		position: absolute;
+		width: 80.222px;
+		height: 84.274px;
+		left: 244.506px;
+		top: 209.726px;
+		overflow: visible;
+	}
+	#Tag_od {
+		position: absolute;
+		width: 99px;
+		height: 33px;
+		left: 49px;
+		top: 534px;
+		overflow: visible;
+	}
+	#Rectangle_9_oe {
+		fill: rgba(70,33,173,1);
+	}
+	.Rectangle_9_oe {
+		position: absolute;
+		overflow: visible;
+		width: 99px;
+		height: 33px;
+		left: 0px;
+		top: 0px;
+	}
+	#MORE_of {
+		left: 28px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 11px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 2px;
+	}
+	#Group_2711_og {
+		position: absolute;
+		width: 283px;
+		height: 290.743px;
+		left: 46px;
+		top: 632px;
+		overflow: visible;
+	}
+	#Collection_01_oh {
+		position: absolute;
+		width: 283px;
+		height: 290.743px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_10_oi {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_10_oi {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 301px;
+		height: 235.659px;
+		left: 0px;
+		top: 73.084px;
+	}
+	#CONFIDENCE_BOOSTER_oj {
+		left: 22.95px;
+		top: 225.652px;
+		position: absolute;
+		overflow: visible;
+		width: 160px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#brennan-burling-1473819-unspla_ok {
+		position: absolute;
+		width: 283px;
+		height: 191.084px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Tought_meeting_today_ol {
+		left: 23.129px;
+		top: 249.218px;
+		position: absolute;
+		overflow: visible;
+		width: 112px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Acumin Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(123,133,145,1);
+	}
+	#Ellipse_35_om {
+		opacity: 0.6;
+		position: absolute;
+		width: 45.342px;
+		height: 45.342px;
+		left: 218.142px;
+		top: 21.431px;
+		overflow: visible;
+	}
+	#Group_2708_on {
+		position: absolute;
+		width: 28.584px;
+		height: 28.584px;
+		left: 230.947px;
+		top: 230.133px;
+		overflow: visible;
+	}
+	#Ellipse_37_oo {
+		fill: rgba(232,232,232,1);
+	}
+	.Ellipse_37_oo {
+		position: absolute;
+		overflow: visible;
+		width: 28.584px;
+		height: 28.584px;
+		left: 0px;
+		top: 0px;
+	}
+	#Text_op {
+		opacity: 0.58;
+		left: 8.933px;
+		top: 3.573px;
+		position: absolute;
+		overflow: visible;
+		width: 11px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		color: rgba(48,51,54,1);
+		letter-spacing: -0.1px;
+	}
+	#Group_2789_oq {
+		position: absolute;
+		width: 375px;
+		height: 356px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#NavbarBG_or {
+		fill: rgba(255,255,255,1);
+	}
+	.NavbarBG_or {
+		filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.039));
+		position: absolute;
+		overflow: visible;
+		width: 393px;
+		height: 374px;
+		left: 0px;
+		top: 0px;
+	}
+	#Notification_os {
+		position: absolute;
+		width: 19px;
+		height: 21px;
+		left: 326.59px;
+		top: 24.409px;
+		overflow: visible;
+	}
+	#Notification_Icon_ot {
+		fill: rgba(198,198,208,1);
+	}
+	.Notification_Icon_ot {
+		overflow: visible;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 0px;
+		top: 5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Notification_Badge_ou {
+		fill: rgba(242,140,175,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Notification_Badge_ou {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 12px;
+		left: 11px;
+		top: 0px;
+	}
+	#small-down {
+		position: absolute;
+		width: 16.633px;
+		height: 10.585px;
+		left: 25px;
+		top: 29.915px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Mobile_-_Articles;
+		cursor: pointer;
+	}
+	#Path_26 {
+		fill: rgba(164,175,183,1);
+	}
+	.Path_26 {
+		overflow: visible;
+		position: absolute;
+		width: 16.633px;
+		height: 10.585px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_2800 {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 173px;
+		top: 20px;
+		overflow: visible;
+	}
+	#Path_1872_oy {
+		fill: transparent;
+		stroke: rgba(141,137,252,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1872_oy {
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#L_oz {
+		left: 9px;
+		top: 3px;
+		position: absolute;
+		overflow: visible;
+		width: 13px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.1px;
+	}
+	#HOME_o {
+		left: 162px;
+		top: 193px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(198,198,212,1);
+		letter-spacing: 0.1px;
+	}
+	#LEARN {
+		left: 162px;
+		top: 244px;
+		position: absolute;
+		overflow: visible;
+		width: 55px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(70,33,173,1);
+		letter-spacing: 0.1px;
+	}
+	#LISTEN {
+		left: 161px;
+		top: 295px;
+		position: absolute;
+		overflow: visible;
+		width: 55px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(198,198,212,1);
+		letter-spacing: 0.1px;
+	}
+	#Group_2707_o {
+		position: absolute;
+		width: 208.667px;
+		height: 35.575px;
+		left: 84px;
+		top: 117px;
+		overflow: visible;
+	}
+	#Rectangle_1476_o {
+		fill: rgba(246,246,246,1);
+	}
+	.Rectangle_1476_o {
+		position: absolute;
+		overflow: visible;
+		width: 208.667px;
+		height: 35.575px;
+		left: 0px;
+		top: 0px;
+	}
+	#Search_Input_o {
+		position: absolute;
+		width: 73.862px;
+		height: 18.377px;
+		left: 67px;
+		top: 9px;
+		overflow: visible;
+	}
+	#Search__o {
+		opacity: 0.64;
+		left: 29.862px;
+		top: 1.808px;
+		position: absolute;
+		overflow: visible;
+		width: 45px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -4.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(193,193,193,1);
+	}
+	#icon_search_o {
+		position: absolute;
+		width: 18.377px;
+		height: 18.377px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#icon_search_pa {
+		fill: rgba(188,188,203,1);
+	}
+	.icon_search_pa {
+		overflow: visible;
+		position: absolute;
+		width: 18.377px;
+		height: 18.377px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Rectangle_1516_o {
+		fill: rgba(95,65,182,1);
+	}
+	.Rectangle_1516_o {
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		height: 35px;
+		left: 170px;
+		top: 18px;
+	}
+	#Group_2790_pa {
+		position: absolute;
+		width: 13px;
+		height: 25px;
+		left: 180.769px;
+		top: 21.59px;
+		overflow: visible;
+	}
+	#L_pb {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 14px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,238,0,1);
+		letter-spacing: 0.1px;
+	}
+}
+@media (min-width: 0px) and (max-width: 1919px) {
+	.mediaViewInfo {
+		--web-view-name: Mobile - Menu Home;
+		--web-view-id: Mobile_-_Menu_Home;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+		--web-is-overlay: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Mobile_-_Menu_Home {
+		position: absolute;
+		display: block;
+		width: 375px;
+		height: 365px;
+		overflow: hidden;
+		cursor: pointer;
+		--web-view-name: Mobile - Menu Home;
+		--web-view-id: Mobile_-_Menu_Home;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+		--web-is-overlay: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Group_2801 {
+		position: absolute;
+		width: 375px;
+		height: 356px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#NavbarBG_pf {
+		fill: rgba(255,255,255,1);
+	}
+	.NavbarBG_pf {
+		filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.039));
+		position: absolute;
+		overflow: visible;
+		width: 393px;
+		height: 374px;
+		left: 0px;
+		top: 0px;
+	}
+	#Notification_pg {
+		position: absolute;
+		width: 19px;
+		height: 21px;
+		left: 326.59px;
+		top: 24.409px;
+		overflow: visible;
+	}
+	#Notification_Icon_ph {
+		fill: rgba(198,198,208,1);
+	}
+	.Notification_Icon_ph {
+		overflow: visible;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 0px;
+		top: 5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Notification_Badge_pi {
+		fill: rgba(242,140,175,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Notification_Badge_pi {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 12px;
+		left: 11px;
+		top: 0px;
+	}
+	#small-down_pj {
+		position: absolute;
+		width: 16.633px;
+		height: 10.585px;
+		left: 25px;
+		top: 29.915px;
+		overflow: visible;
+	}
+	#Path_26_pk {
+		fill: rgba(164,175,183,1);
+	}
+	.Path_26_pk {
+		overflow: visible;
+		position: absolute;
+		width: 16.633px;
+		height: 10.585px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_2802 {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 173px;
+		top: 20px;
+		overflow: visible;
+	}
+	#Path_1872_pm {
+		fill: transparent;
+		stroke: rgba(141,137,252,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1872_pm {
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#L_pn {
+		left: 9px;
+		top: 3px;
+		position: absolute;
+		overflow: visible;
+		width: 13px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.1px;
+	}
+	#HOME_po {
+		left: 163px;
+		top: 193px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(95,65,182,1);
+		letter-spacing: 0.1px;
+	}
+	#ARTICLES_pp {
+		left: 150px;
+		top: 244px;
+		position: absolute;
+		overflow: visible;
+		width: 76px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Mobile_-_Articles;
+		cursor: pointer;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(198,198,212,1);
+		letter-spacing: 0.1px;
+	}
+	#AUDIO_pq {
+		left: 161px;
+		top: 295px;
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Mobile_-_Audio;
+		cursor: pointer;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(198,198,212,1);
+		letter-spacing: 0.1px;
+	}
+	#Group_2803 {
+		position: absolute;
+		width: 208.667px;
+		height: 35.575px;
+		left: 84px;
+		top: 117px;
+		overflow: visible;
+	}
+	#Rectangle_1476_ps {
+		fill: rgba(246,246,246,1);
+	}
+	.Rectangle_1476_ps {
+		position: absolute;
+		overflow: visible;
+		width: 208.667px;
+		height: 35.575px;
+		left: 0px;
+		top: 0px;
+	}
+	#Search_Input_pt {
+		position: absolute;
+		width: 73.862px;
+		height: 18.377px;
+		left: 67px;
+		top: 9px;
+		overflow: visible;
+	}
+	#Search__pu {
+		opacity: 0.64;
+		left: 29.862px;
+		top: 1.808px;
+		position: absolute;
+		overflow: visible;
+		width: 45px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -4.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(193,193,193,1);
+	}
+	#icon_search_pv {
+		position: absolute;
+		width: 18.377px;
+		height: 18.377px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#icon_search_pw {
+		fill: rgba(188,188,203,1);
+	}
+	.icon_search_pw {
+		overflow: visible;
+		position: absolute;
+		width: 18.377px;
+		height: 18.377px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Rectangle_1516_px {
+		fill: rgba(95,65,182,1);
+	}
+	.Rectangle_1516_px {
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		height: 35px;
+		left: 170px;
+		top: 18px;
+	}
+	#Group_2790_py {
+		position: absolute;
+		width: 13px;
+		height: 25px;
+		left: 180.769px;
+		top: 21.59px;
+		overflow: visible;
+	}
+	#L_pz {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 14px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,238,0,1);
+		letter-spacing: 0.1px;
+	}
+}
+@media (min-width: 0px) and (max-width: 1919px) {
+	.mediaViewInfo {
+		--web-view-name: Mobile - Menu Articles;
+		--web-view-id: Mobile_-_Menu_Articles;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+		--web-is-overlay: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Mobile_-_Menu_Articles {
+		position: absolute;
+		display: block;
+		width: 375px;
+		height: 365px;
+		overflow: hidden;
+		cursor: pointer;
+		--web-view-name: Mobile - Menu Articles;
+		--web-view-id: Mobile_-_Menu_Articles;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+		--web-is-overlay: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Group_2801_p {
+		position: absolute;
+		width: 375px;
+		height: 356px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#NavbarBG_p {
+		fill: rgba(255,255,255,1);
+	}
+	.NavbarBG_p {
+		filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.039));
+		position: absolute;
+		overflow: visible;
+		width: 393px;
+		height: 374px;
+		left: 0px;
+		top: 0px;
+	}
+	#Notification_p {
+		position: absolute;
+		width: 19px;
+		height: 21px;
+		left: 326.59px;
+		top: 24.409px;
+		overflow: visible;
+	}
+	#Notification_Icon_p {
+		fill: rgba(198,198,208,1);
+	}
+	.Notification_Icon_p {
+		overflow: visible;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 0px;
+		top: 5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Notification_Badge_p {
+		fill: rgba(242,140,175,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Notification_Badge_p {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 12px;
+		left: 11px;
+		top: 0px;
+	}
+	#small-down_p {
+		position: absolute;
+		width: 16.633px;
+		height: 10.585px;
+		left: 25px;
+		top: 29.915px;
+		overflow: visible;
+	}
+	#Path_26_p {
+		fill: rgba(164,175,183,1);
+	}
+	.Path_26_p {
+		overflow: visible;
+		position: absolute;
+		width: 16.633px;
+		height: 10.585px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_2802_p {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 173px;
+		top: 20px;
+		overflow: visible;
+	}
+	#Path_1872_qa {
+		fill: transparent;
+		stroke: rgba(141,137,252,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1872_qa {
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#L_qb {
+		left: 9px;
+		top: 3px;
+		position: absolute;
+		overflow: visible;
+		width: 13px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.1px;
+	}
+	#HOME_qc {
+		left: 163px;
+		top: 193px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Mobile_-_Home__1;
+		cursor: pointer;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(198,198,212,1);
+		letter-spacing: 0.1px;
+	}
+	#ARTICLES_qd {
+		left: 150px;
+		top: 244px;
+		position: absolute;
+		overflow: visible;
+		width: 77px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Mobile_-_Articles;
+		cursor: pointer;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(95,65,182,1);
+		letter-spacing: 0.1px;
+	}
+	#AUDIO_qe {
+		left: 162px;
+		top: 295px;
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Mobile_-_Audio;
+		cursor: pointer;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(198,198,212,1);
+		letter-spacing: 0.1px;
+	}
+	#Group_2803_qf {
+		position: absolute;
+		width: 208.667px;
+		height: 35.575px;
+		left: 84px;
+		top: 117px;
+		overflow: visible;
+	}
+	#Rectangle_1476_qg {
+		fill: rgba(246,246,246,1);
+	}
+	.Rectangle_1476_qg {
+		position: absolute;
+		overflow: visible;
+		width: 208.667px;
+		height: 35.575px;
+		left: 0px;
+		top: 0px;
+	}
+	#Search_Input_qh {
+		position: absolute;
+		width: 73.862px;
+		height: 18.377px;
+		left: 67px;
+		top: 9px;
+		overflow: visible;
+	}
+	#Search__qi {
+		opacity: 0.64;
+		left: 29.862px;
+		top: 1.808px;
+		position: absolute;
+		overflow: visible;
+		width: 45px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -4.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(193,193,193,1);
+	}
+	#icon_search_qj {
+		position: absolute;
+		width: 18.377px;
+		height: 18.377px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#icon_search_qk {
+		fill: rgba(188,188,203,1);
+	}
+	.icon_search_qk {
+		overflow: visible;
+		position: absolute;
+		width: 18.377px;
+		height: 18.377px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Rectangle_1516_ql {
+		fill: rgba(95,65,182,1);
+	}
+	.Rectangle_1516_ql {
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		height: 35px;
+		left: 170px;
+		top: 18px;
+	}
+	#Group_2790_qm {
+		position: absolute;
+		width: 13px;
+		height: 25px;
+		left: 180.769px;
+		top: 21.59px;
+		overflow: visible;
+	}
+	#L_qn {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 14px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,238,0,1);
+		letter-spacing: 0.1px;
+	}
+}
+@media (min-width: 0px) and (max-width: 1919px) {
+	.mediaViewInfo {
+		--web-view-name: Mobile - Menu Audio;
+		--web-view-id: Mobile_-_Menu_Audio;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+		--web-is-overlay: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Mobile_-_Menu_Audio {
+		position: absolute;
+		display: block;
+		width: 375px;
+		height: 365px;
+		overflow: hidden;
+		cursor: pointer;
+		--web-view-name: Mobile - Menu Audio;
+		--web-view-id: Mobile_-_Menu_Audio;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+		--web-is-overlay: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Group_2801_qq {
+		position: absolute;
+		width: 375px;
+		height: 356px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#NavbarBG_qr {
+		fill: rgba(255,255,255,1);
+	}
+	.NavbarBG_qr {
+		filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.039));
+		position: absolute;
+		overflow: visible;
+		width: 393px;
+		height: 374px;
+		left: 0px;
+		top: 0px;
+	}
+	#Notification_qs {
+		position: absolute;
+		width: 19px;
+		height: 21px;
+		left: 326.59px;
+		top: 24.409px;
+		overflow: visible;
+	}
+	#Notification_Icon_qt {
+		fill: rgba(198,198,208,1);
+	}
+	.Notification_Icon_qt {
+		overflow: visible;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 0px;
+		top: 5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Notification_Badge_qu {
+		fill: rgba(242,140,175,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Notification_Badge_qu {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 12px;
+		left: 11px;
+		top: 0px;
+	}
+	#small-down_qv {
+		position: absolute;
+		width: 16.633px;
+		height: 10.585px;
+		left: 25px;
+		top: 29.915px;
+		overflow: visible;
+	}
+	#Path_26_qw {
+		fill: rgba(164,175,183,1);
+	}
+	.Path_26_qw {
+		overflow: visible;
+		position: absolute;
+		width: 16.633px;
+		height: 10.585px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_2802_qx {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 173px;
+		top: 20px;
+		overflow: visible;
+	}
+	#Path_1872_qy {
+		fill: transparent;
+		stroke: rgba(141,137,252,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_1872_qy {
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#L_qz {
+		left: 9px;
+		top: 3px;
+		position: absolute;
+		overflow: visible;
+		width: 13px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.1px;
+	}
+	#HOME_q {
+		left: 163px;
+		top: 193px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Mobile_-_Home__1;
+		cursor: pointer;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(198,198,212,1);
+		letter-spacing: 0.1px;
+	}
+	#ARTICLES_q {
+		left: 150px;
+		top: 244px;
+		position: absolute;
+		overflow: visible;
+		width: 76px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: view;
+		--web-action-target: Mobile_-_Articles;
+		cursor: pointer;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(198,198,212,1);
+		letter-spacing: 0.1px;
+	}
+	#AUDIO_q {
+		left: 161px;
+		top: 295px;
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(95,65,182,1);
+		letter-spacing: 0.1px;
+	}
+	#Group_2803_q {
+		position: absolute;
+		width: 208.667px;
+		height: 35.575px;
+		left: 84px;
+		top: 117px;
+		overflow: visible;
+	}
+	#Rectangle_1476_q {
+		fill: rgba(246,246,246,1);
+	}
+	.Rectangle_1476_q {
+		position: absolute;
+		overflow: visible;
+		width: 208.667px;
+		height: 35.575px;
+		left: 0px;
+		top: 0px;
+	}
+	#Search_Input_q {
+		position: absolute;
+		width: 73.862px;
+		height: 18.377px;
+		left: 67px;
+		top: 9px;
+		overflow: visible;
+	}
+	#Search__q {
+		opacity: 0.64;
+		left: 29.862px;
+		top: 1.808px;
+		position: absolute;
+		overflow: visible;
+		width: 45px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -4.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(193,193,193,1);
+	}
+	#icon_search_q {
+		position: absolute;
+		width: 18.377px;
+		height: 18.377px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#icon_search_ra {
+		fill: rgba(188,188,203,1);
+	}
+	.icon_search_ra {
+		overflow: visible;
+		position: absolute;
+		width: 18.377px;
+		height: 18.377px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Rectangle_1516_q {
+		fill: rgba(95,65,182,1);
+	}
+	.Rectangle_1516_q {
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		height: 35px;
+		left: 170px;
+		top: 18px;
+	}
+	#Group_2790_ra {
+		position: absolute;
+		width: 13px;
+		height: 25px;
+		left: 180.769px;
+		top: 21.59px;
+		overflow: visible;
+	}
+	#L_rb {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 14px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 21px;
+		color: rgba(255,238,0,1);
+		letter-spacing: 0.1px;
+	}
+}
+@media (min-width: 0px) and (max-width: 1919px) {
+	.mediaViewInfo {
+		--web-view-name: Mobile - Audio button cover;
+		--web-view-id: Mobile_-_Audio_button_cover;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+		--web-is-overlay: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Mobile_-_Audio_button_cover {
+		position: absolute;
+		display: block;
+		width: 375px;
+		height: 247px;
+		overflow: hidden;
+		cursor: pointer;
+		--web-view-name: Mobile - Audio button cover;
+		--web-view-id: Mobile_-_Audio_button_cover;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+		--web-is-overlay: true;
+	}
+	#Rectangle_1488 {
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_1488 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 365px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_140_rf {
+		position: absolute;
+		width: 375.5px;
+		height: 48.5px;
+		left: 0px;
+		top: 8px;
+		overflow: visible;
+	}
+	#background_rectangle_rg {
+		fill: rgba(255,255,255,1);
+	}
+	.background_rectangle_rg {
+		filter: drop-shadow(0px -3px 6px rgba(91, 134, 229, 0.2));
+		position: absolute;
+		overflow: visible;
+		width: 393px;
+		height: 66px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_128_rh {
+		position: absolute;
+		width: 128px;
+		height: 18px;
+		left: 124px;
+		top: 15px;
+		overflow: visible;
+	}
+	#Audio_Title_ri {
+		opacity: 0.87;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 80px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(70,33,173,1);
+	}
+	#Artist_rj {
+		opacity: 0.87;
+		left: 90px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 39px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(70,33,173,1);
+	}
+	#Ellipse_33_rk {
+		fill: rgba(70,33,173,1);
+	}
+	.Ellipse_33_rk {
+		position: absolute;
+		overflow: visible;
+		width: 3px;
+		height: 3px;
+		left: 84px;
+		top: 8px;
+	}
+	#play_button_rl {
+		fill: rgba(70,33,173,1);
+	}
+	.play_button_rl {
+		overflow: visible;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 312px;
+		top: 10px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#expand_arrow_rm {
+		transform: translate(94px, -1254px) matrix(1,0,0,1,-54.6072,1266.9999) rotate(-90deg);
+		transform-origin: center;
+		position: absolute;
+		width: 13.214px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Chevron_Right_rn {
+		fill: rgba(174,172,178,1);
+	}
+	.Chevron_Right_rn {
+		overflow: visible;
+		position: absolute;
+		width: 24px;
+		height: 13.214px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_26_ro {
+		opacity: 0.401;
+		fill: transparent;
+	}
+	.Line_26_ro {
+		overflow: visible;
+		position: absolute;
+		width: 375px;
+		height: 1px;
+		left: 0.5px;
+		top: 48.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_rp {
+		position: absolute;
+		width: 68.542px;
+		height: 68.542px;
+		left: 46.208px;
+		top: 90px;
+		overflow: visible;
+	}
+	#berti-benbanaste-1475726-unspl_rq {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		width: 68.542px;
+		height: 68.542px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Group_2804 {
+		position: absolute;
+		width: 295.355px;
+		height: 97px;
+		left: 47px;
+		top: 108px;
+		overflow: visible;
+	}
+	#n_48_rs {
+		left: 268.355px;
+		top: 78px;
+		position: absolute;
+		overflow: visible;
+		width: 28px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(159,159,159,1);
+	}
+	#Group_2812 {
+		position: absolute;
+		width: 262px;
+		height: 7px;
+		left: 0px;
+		top: 84px;
+		overflow: visible;
+	}
+	#Rounded_Rectangle_2_ru {
+		fill: rgba(242,242,242,1);
+	}
+	.Rounded_Rectangle_2_ru {
+		position: absolute;
+		overflow: visible;
+		width: 262px;
+		height: 7px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rounded_Rectangle_2_copy_rv {
+		fill: rgba(255,238,0,1);
+	}
+	.Rounded_Rectangle_2_copy_rv {
+		position: absolute;
+		overflow: visible;
+		width: 46px;
+		height: 7px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_2814 {
+		position: absolute;
+		width: 91.479px;
+		height: 31.544px;
+		left: 88px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Forma_1_rx {
+		fill: rgba(212,212,212,1);
+	}
+	.Forma_1_rx {
+		overflow: visible;
+		position: absolute;
+		width: 18.923px;
+		height: 18.927px;
+		left: 72.556px;
+		top: 6.309px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Forma_1_copy_ry {
+		fill: rgba(212,212,212,1);
+	}
+	.Forma_1_copy_ry {
+		overflow: visible;
+		position: absolute;
+		width: 18.927px;
+		height: 18.927px;
+		left: 0px;
+		top: 6.309px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Forma_1_rz {
+		fill: rgba(159,159,159,1);
+	}
+	.Forma_1_rz {
+		overflow: visible;
+		position: absolute;
+		width: 31.544px;
+		height: 31.544px;
+		left: 29.967px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_2813 {
+		position: absolute;
+		width: 78.071px;
+		height: 15.758px;
+		left: 215.784px;
+		top: 8px;
+		overflow: visible;
+	}
+	#Forma_1_r {
+		fill: rgba(159,159,159,1);
+	}
+	.Forma_1_r {
+		overflow: visible;
+		position: absolute;
+		width: 15.016px;
+		height: 14.969px;
+		left: 0px;
+		top: 0.789px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#download_copy_5_r {
+		fill: rgba(159,159,159,1);
+	}
+	.download_copy_5_r {
+		overflow: visible;
+		position: absolute;
+		width: 11.829px;
+		height: 14.984px;
+		left: 33.926px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Forma_1_sa {
+		fill: rgba(159,159,159,1);
+	}
+	.Forma_1_sa {
+		overflow: visible;
+		position: absolute;
+		width: 13.394px;
+		height: 14.831px;
+		left: 64.678px;
+		top: 0.789px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+}
+@media (min-width: 1920px) {
+	.mediaViewInfo {
+		--web-view-name: Artboard – 1;
+		--web-view-id: Artboard__1;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Artboard__1 {
+		position: absolute;
+		display: block;
+		width: 1920px;
+		height: 365px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Artboard – 1;
+		--web-view-id: Artboard__1;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	#If_you_like_design_please_supp {
+		left: 101px;
+		top: 62px;
+		position: absolute;
+		overflow: visible;
+		width: 1140px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 45px;
+		color: rgba(70,33,173,1);
+	}
+	#httpswwwbehancenetstmax {
+		left: 101px;
+		top: 123px;
+		position: absolute;
+		overflow: visible;
+		width: 1000px;
+		height: 81px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(112,112,112,1);
+	}
+	#Or_hire_me_at_Upwork {
+		left: 101px;
+		top: 193px;
+		position: absolute;
+		overflow: visible;
+		width: 514px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 45px;
+		color: rgba(70,33,173,1);
+	}
+	#httpswwwupworkcomoprofilesuser {
+		left: 101px;
+		top: 255px;
+		position: absolute;
+		overflow: visible;
+		width: 1000px;
+		height: 81px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(112,112,112,1);
+	}
+}
