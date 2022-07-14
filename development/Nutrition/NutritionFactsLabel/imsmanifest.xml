@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="_6GQD2kWVR8h" version="1.0" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+      <general>
+        <title>
+          <langstring xml:lang="x-none">Nutrition Facts Label</langstring>
+        </title>
+      </general>
+      <lifecycle>
+        <version>
+          <langstring xml:lang="x-none">1</langstring>
+        </version>
+        <status>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">Final</langstring>
+          </value>
+        </status>
+      </lifecycle>
+      <metametadata>
+        <metadatascheme>ADL SCORM 1.2</metadatascheme>
+      </metametadata>
+      <educational>
+        <typicallearningtime>
+          <datetime>PT0H0M0S</datetime>
+        </typicallearningtime>
+      </educational>
+      <rights>
+        <cost>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </cost>
+        <copyrightandotherrestrictions>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </copyrightandotherrestrictions>
+      </rights>
+    </lom>
+  </metadata>
+  <organizations default="Nutrition_Facts_Label_ORG">
+    <organization identifier="Nutrition_Facts_Label_ORG">
+      <title>Nutrition Facts Label</title>
+      <item identifier="Nutrition_Facts_Label_SCO" isvisible="true" identifierref="__6GQD2kWVR8h_RES">
+        <title>Nutrition Facts Label</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="__6GQD2kWVR8h_RES" type="webcontent" href="index_lms.html" adlcp:scormtype="sco">
+      <file href="story_content/thumbnail.jpg" />
+      <file href="mobile/6PhxkKrosUR_P_132_0_1820_1364.jpg" />
+      <file href="mobile/5gK2fo8A8V4.png" />
+      <file href="mobile/6nEtaqRXzR3.png" />
+      <file href="meta.xml" />
+      <file href="story_content/user.js" />
+      <file href="mobile/Shape5a2B8GZGePR.png" />
+      <file href="mobile/Shape5sW7MNZcEoa.png" />
+      <file href="mobile/Shape6HnV5lDY2a7.png" />
+      <file href="mobile/Shape5ni5Mzyoo7P.png" />
+      <file href="mobile/Shape68u5aJDxtRY.png" />
+      <file href="mobile/Shape5jIogb3ci2p.png" />
+      <file href="mobile/Shape6ieL0lGQcqL.png" />
+      <file href="mobile/Shape6NrT124dspD.png" />
+      <file href="mobile/Shape6FqoeOKzi94.png" />
+      <file href="mobile/Shape6k1vGBWHz9E.png" />
+      <file href="mobile/Shape69mgFEPBfD6.png" />
+      <file href="mobile/Shape6PJ9zgUVxY2.png" />
+      <file href="mobile/Shape63X8pMc1Eao.png" />
+      <file href="mobile/Shape6g655wQmdpx.png" />
+      <file href="mobile/Shape62SMDQlpF1y.png" />
+      <file href="mobile/Shape6RYMuKx35iA.png" />
+      <file href="mobile/Shape6cNl47PtVpP.png" />
+      <file href="mobile/Shape6794XNEj9rO.png" />
+      <file href="mobile/Shape6AFb3VGvKsv.png" />
+      <file href="mobile/Shape5jx7PF7iZSC.png" />
+      <file href="mobile/Shape5WilOT8yzN3.png" />
+      <file href="mobile/Shape5gWYrCOsZL6.png" />
+      <file href="mobile/Shape5lryL4kqJbt.png" />
+      <file href="mobile/Shape5eXrt2LbWUv.png" />
+      <file href="mobile/Shape6C7vZnYmgox.png" />
+      <file href="mobile/Shape6GS5iKQrWsj.png" />
+      <file href="mobile/Shape5sgCnW1nGPO.png" />
+      <file href="mobile/Shape5p2L8JuvUuz.png" />
+      <file href="mobile/Shape664JwixKI92.png" />
+      <file href="mobile/Shape69Xhlr2NoGr.png" />
+      <file href="mobile/Shape5utaWXWTmlH.png" />
+      <file href="mobile/Shape5phzuJFVqFx.png" />
+      <file href="mobile/Shape6Milaap6HRa.png" />
+      <file href="mobile/Shape6RntGz23mxt.png" />
+      <file href="mobile/Shape5gofyHSQgFe.png" />
+      <file href="mobile/Shape5WfCn7YqCTS.png" />
+      <file href="mobile/Shape5dtyoONnxPk.png" />
+      <file href="mobile/Shape6orJAJwMT59.png" />
+      <file href="mobile/Shape6WaYps3yY1v.png" />
+      <file href="mobile/Shape6EbVwucvw1o.png" />
+      <file href="mobile/Shape5u68yl2bQJ8.png" />
+      <file href="mobile/Shape5eyA6NnXtsx.png" />
+      <file href="mobile/Shape6h39CmIQkqX.png" />
+      <file href="mobile/Shape5k7wsyzkA7N.png" />
+      <file href="mobile/Shape5sbCcQqK9uB.png" />
+      <file href="mobile/Shape6IPgjaWiLaM.png" />
+      <file href="mobile/Shape6mBOBBrMJoS.png" />
+      <file href="mobile/Shape68Rs1jE1r7i.png" />
+      <file href="mobile/Shape6dv2939r9l0.png" />
+      <file href="mobile/Shape6IQcUJziizn.png" />
+      <file href="mobile/Shape6PvjrzgMjHr.png" />
+      <file href="mobile/Shape6hC9AlNkt2G.png" />
+      <file href="mobile/Shape5VrLFYJaoZB.png" />
+      <file href="mobile/Shape63ROPuy7uf9.png" />
+      <file href="html5/lib/scripts/slides.min.js" />
+      <file href="html5/lib/scripts/frame.mobile.min.js" />
+      <file href="html5/lib/scripts/bootstrapper.min.js" />
+      <file href="html5/lib/scripts/frame.desktop.min.js" />
+      <file href="html5/lib/stylesheets/mobile.min.css" />
+      <file href="html5/lib/stylesheets/desktop.min.css" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-light.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-bold.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-regular.woff" />
+      <file href="html5/data/css/output.min.css" />
+      <file href="html5/data/js/5t4th1vmZAV.js" />
+      <file href="html5/data/js/5hEMZN6SgrW.js" />
+      <file href="html5/data/js/5kkSLnLCX82.js" />
+      <file href="html5/data/js/6Gpko3fOJfP.js" />
+      <file href="html5/data/js/6YbyH0CA4M5.js" />
+      <file href="html5/data/js/paths.js" />
+      <file href="html5/data/js/5rIxCHgmJtH.js" />
+      <file href="html5/data/js/5i9OJilETzo.js" />
+      <file href="html5/data/js/6807mnFknQX.js" />
+      <file href="html5/data/js/5ei0UggLonm.js" />
+      <file href="html5/data/js/6pADVS6hnaD.js" />
+      <file href="html5/data/js/data.js" />
+      <file href="html5/data/js/6B9ds02ko8t.js" />
+      <file href="html5/data/js/6YLtCnIYra8.js" />
+      <file href="html5/data/js/frame.js" />
+      <file href="html5/data/js/6hxJd2Hb5cS.js" />
+      <file href="html5/data/js/5ZL3QfwQkEf.js" />
+      <file href="html5/data/js/5ZXJrME0pPS.js" />
+      <file href="analytics-frame.html" />
+      <file href="story.html" />
+      <file href="index_lms.html" />
+      <file href="lms/AICCComm.html" />
+      <file href="lms/blank.html" />
+      <file href="lms/browsersniff.js" />
+      <file href="lms/goodbye.html" />
+      <file href="lms/scormdriver.js" />
+    </resource>
+  </resources>
+</manifest>
