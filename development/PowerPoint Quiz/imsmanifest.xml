@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="_6jt3mFNIZzP_course_id" version="1.0" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+      <general>
+        <title>
+          <langstring xml:lang="x-none">PowerPoint Quiz</langstring>
+        </title>
+      </general>
+      <lifecycle>
+        <version>
+          <langstring xml:lang="x-none">1</langstring>
+        </version>
+        <status>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">Final</langstring>
+          </value>
+        </status>
+      </lifecycle>
+      <metametadata>
+        <metadatascheme>ADL SCORM 1.2</metadatascheme>
+      </metametadata>
+      <educational>
+        <typicallearningtime>
+          <datetime>PT0H0M0S</datetime>
+        </typicallearningtime>
+      </educational>
+      <rights>
+        <cost>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </cost>
+        <copyrightandotherrestrictions>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </copyrightandotherrestrictions>
+      </rights>
+    </lom>
+  </metadata>
+  <organizations default="PowerPoint_Quiz_ORG">
+    <organization identifier="PowerPoint_Quiz_ORG">
+      <title>PowerPoint Quiz</title>
+      <item identifier="Word_Quiz_(experiment)_SCO" isvisible="true" identifierref="__6jt3mFNIZzP_course_id_RES">
+        <title>PowerPoint Quiz</title>
+        <adlcp:masteryscore>71</adlcp:masteryscore>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="__6jt3mFNIZzP_course_id_RES" type="webcontent" href="index_lms.html" adlcp:scormtype="sco">
+      <file href="story_content/thumbnail.jpg" />
+      <file href="mobile/5y7NPbJ8k5H_80_DX596_DY596_CX469_CY264.png" />
+      <file href="mobile/5Y4NyriOBaR_80_DX596_DY596_CX466_CY262.png" />
+      <file href="mobile/5h4WSbNbxWj_80_DX592_DY592_CX465_CY263.png" />
+      <file href="mobile/5XZ2kWCkyq0_80_DX724_DY724_CX500_CY281.gif" />
+      <file href="mobile/6XlqdmotvBh_80_DX724_DY724_CX456_CY243.gif" />
+      <file href="mobile/5fg8Lo0bSD9_80_DX1196_DY1196_CX750_CY212.png" />
+      <file href="mobile/6cUOvVyrpr8_80_DX720_DY720_CX500_CY281.gif" />
+      <file href="mobile/5fII1P7wPpk_80_DX596_DY596_CX466_CY262.png" />
+      <file href="mobile/5cLk15Qqb7C_80_DX596_DY596_CX466_CY262.png" />
+      <file href="mobile/5ZqNFo0n3ZA_80_DX592_DY592_CX464_CY261.png" />
+      <file href="mobile/6UWvtg7yVEP_80_DX890_DY890_CX658_CY243.png" />
+      <file href="mobile/5xsiBWY0JKj_80_DX1120_DY1120_CX833_CY381.png" />
+      <file href="mobile/6hwELUYyyEz_80_DX982_DY982_CX640_CY360.png" />
+      <file href="mobile/5XotzMGatR5_80_DX1066_DY1066_CX833_CY381.jpg" />
+      <file href="mobile/6nTuUe3iJK9_80_DX1072_DY1072_CX769_CY543.png" />
+      <file href="mobile/6X3zopiCfVz_80_DX124_DY124_CX91_CY19.png" />
+      <file href="mobile/6gCMeKTvfdP_80_DX190_DY190_CX42_CY44.png" />
+      <file href="mobile/5gX0KwfX1bv_80_DX146_DY146_CX73_CY31.png" />
+      <file href="mobile/6704h6xbyWW_80_DX558_DY558_CX272_CY347.png" />
+      <file href="mobile/5xPFVptg5MY_80_DX1356_DY1356_CX800_CY356.png" />
+      <file href="mobile/6X3zopiCfVz_80_DX290_DY290_CX228_CY49.png" />
+      <file href="mobile/6X3zopiCfVz_80_DX300_DY300_CX236_CY50.png" />
+      <file href="mobile/6gCMeKTvfdP_80_DX190_DY190_CX33_CY34.png" />
+      <file href="mobile/5gX0KwfX1bv_80_DX64_DY64_CX47_CY20.png" />
+      <file href="meta.xml" />
+      <file href="story_content/user.js" />
+      <file href="html5/data/css/output.min.css" />
+      <file href="html5/data/js/5fDwTZSUW0j.js" />
+      <file href="html5/data/js/5fjJA4RCRlE.js" />
+      <file href="html5/data/js/5gRzWzK7dJ3.js" />
+      <file href="html5/data/js/5hvVqQU20gh.js" />
+      <file href="html5/data/js/5olLUznM7q6.js" />
+      <file href="html5/data/js/5uCe4Z9y7r8.js" />
+      <file href="html5/data/js/5V2mEaqPylw.js" />
+      <file href="html5/data/js/5Yq2hVGJbuJ.js" />
+      <file href="html5/data/js/60zOipanTzl.js" />
+      <file href="html5/data/js/63a9HVn14un.js" />
+      <file href="html5/data/js/6987uxA0mSx.js" />
+      <file href="html5/data/js/6BK40wLIRh4.js" />
+      <file href="html5/data/js/6EjDkR6HmKV.js" />
+      <file href="html5/data/js/6FAk0sUjVdg.js" />
+      <file href="html5/data/js/6gnEkxg7TA3.js" />
+      <file href="html5/data/js/6HWiXPLOv1V.js" />
+      <file href="html5/data/js/6iQXIqIAPhk.js" />
+      <file href="html5/data/js/6K1Lrtspi78.js" />
+      <file href="html5/data/js/6qGcomqvKbj.js" />
+      <file href="html5/data/js/6SMfdWUgEOL.js" />
+      <file href="html5/data/js/6XxmTqNSBb3.js" />
+      <file href="html5/data/js/6ZV5XNW7xO6.js" />
+      <file href="html5/data/js/data.js" />
+      <file href="html5/data/js/frame.js" />
+      <file href="html5/data/js/paths.js" />
+      <file href="html5/lib/scripts/app.min.js" />
+      <file href="html5/lib/stylesheets/main.min.css" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-bold.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-light.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-regular.woff" />
+      <file href="story.html" />
+      <file href="story_html5.html" />
+      <file href="analytics-frame.html" />
+      <file href="story_content/blank.html" />
+      <file href="story_content/story.js" />
+      <file href="index_lms.html" />
+      <file href="index_lms_html5.html" />
+      <file href="lms/AICCComm.html" />
+      <file href="lms/AICCFunctions.js" />
+      <file href="lms/API.js" />
+      <file href="lms/APIConstants.js" />
+      <file href="lms/blank.html" />
+      <file href="lms/browsersniff.js" />
+      <file href="lms/Configuration.js" />
+      <file href="lms/goodbye.html" />
+      <file href="lms/lms.js" />
+      <file href="lms/LMSAPI.js" />
+      <file href="lms/NONEFunctions.js" />
+      <file href="lms/SCORM2004Functions.js" />
+      <file href="lms/SCORMFunctions.js" />
+      <file href="lms/UtilityFunctions.js" />
+    </resource>
+  </resources>
+</manifest>

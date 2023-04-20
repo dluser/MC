@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="_6WMENaH75TU_course_id" version="1.0" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+      <general>
+        <title>
+          <langstring xml:lang="x-none">computer hardware (desktop and laptop)</langstring>
+        </title>
+      </general>
+      <lifecycle>
+        <version>
+          <langstring xml:lang="x-none">1</langstring>
+        </version>
+        <status>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">Final</langstring>
+          </value>
+        </status>
+      </lifecycle>
+      <metametadata>
+        <metadatascheme>ADL SCORM 1.2</metadatascheme>
+      </metametadata>
+      <educational>
+        <typicallearningtime>
+          <datetime>PT0H0M0S</datetime>
+        </typicallearningtime>
+      </educational>
+      <rights>
+        <cost>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </cost>
+        <copyrightandotherrestrictions>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </copyrightandotherrestrictions>
+      </rights>
+    </lom>
+  </metadata>
+  <organizations default="computer_hardware_(desktop_and_laptop)_ORG">
+    <organization identifier="computer_hardware_(desktop_and_laptop)_ORG">
+      <title>computer hardware (desktop and laptop)</title>
+      <item identifier="computer_hardware_desktop_SCO" isvisible="true" identifierref="__6WMENaH75TU_course_id_RES">
+        <title>computer hardware (desktop and laptop)</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="__6WMENaH75TU_course_id_RES" type="webcontent" href="index_lms.html" adlcp:scormtype="sco">
+      <file href="story_content/thumbnail.jpg" />
+      <file href="mobile/6iznnNGDncR.png" />
+      <file href="mobile/62Y3TRmR3mA.png" />
+      <file href="mobile/5bnVfq89mdA.png" />
+      <file href="mobile/5rMnt4lIyiG.png" />
+      <file href="mobile/6LZbdgIaGEO.png" />
+      <file href="mobile/5pOestzdl9j.png" />
+      <file href="mobile/5ZOj4EHs3A7.png" />
+      <file href="mobile/6hp3AKGFcAp.png" />
+      <file href="mobile/5vECCPHEl2m.png" />
+      <file href="mobile/6rDUktiNfQe.png" />
+      <file href="mobile/5t5mxVbtcJv.png" />
+      <file href="mobile/6LTXgcgDQwD.png" />
+      <file href="mobile/6Dy16oMbMUA.png" />
+      <file href="mobile/6DAfjzieYXu.png" />
+      <file href="mobile/63zjjtE6P12.png" />
+      <file href="mobile/5nL2hcxtcBv.png" />
+      <file href="mobile/63nuy9RmlFm.png" />
+      <file href="mobile/63jXLGQ436g.png" />
+      <file href="mobile/5wteGz3D04V.png" />
+      <file href="mobile/6TBbg0OPx5d.png" />
+      <file href="mobile/6o3XzUyW8Mr.png" />
+      <file href="mobile/6Xk5k5EwqWG.png" />
+      <file href="mobile/6Z0PcKzmyZt.png" />
+      <file href="mobile/6Cj3AfxSH06.png" />
+      <file href="mobile/61gK2rQzo1d.png" />
+      <file href="mobile/5gbNeRvokTP.png" />
+      <file href="mobile/6hde36o2d8i.png" />
+      <file href="mobile/61fBcIx6FyC.png" />
+      <file href="mobile/6SBHvPjxlGu.png" />
+      <file href="mobile/6mBYxosgwU1.png" />
+      <file href="mobile/6rWeZvhJLxn.png" />
+      <file href="mobile/5aLZxNOXLJi.png" />
+      <file href="mobile/5rIsHUcHxXG.png" />
+      <file href="meta.xml" />
+      <file href="story_content/user.js" />
+      <file href="mobile/Shape5ahKKmiWLl9.png" />
+      <file href="mobile/Shape6a74HcaCMpv.png" />
+      <file href="html5/lib/scripts/slides.min.js" />
+      <file href="html5/lib/scripts/frame.mobile.min.js" />
+      <file href="html5/lib/scripts/bootstrapper.min.js" />
+      <file href="html5/lib/scripts/frame.desktop.min.js" />
+      <file href="html5/lib/stylesheets/mobile.min.css" />
+      <file href="html5/lib/stylesheets/desktop.min.css" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-light.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-bold.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-regular.woff" />
+      <file href="html5/data/css/output.min.css" />
+      <file href="html5/data/js/5gDOVxYq9p9.js" />
+      <file href="html5/data/js/63oln7h9BVM.js" />
+      <file href="html5/data/js/5ZhMJSDKsML.js" />
+      <file href="html5/data/js/6WU6lZHkl0z.js" />
+      <file href="html5/data/js/5u4a0KIAfq3.js" />
+      <file href="html5/data/js/paths.js" />
+      <file href="html5/data/js/5c9grSKMjQo.js" />
+      <file href="html5/data/js/data.js" />
+      <file href="html5/data/js/5ZSXDXzU0xl.js" />
+      <file href="html5/data/js/6JOAaeyX4b4.js" />
+      <file href="html5/data/js/5lzL1mqtoky.js" />
+      <file href="html5/data/js/frame.js" />
+      <file href="analytics-frame.html" />
+      <file href="story.html" />
+      <file href="index_lms.html" />
+      <file href="lms/AICCComm.html" />
+      <file href="lms/blank.html" />
+      <file href="lms/browsersniff.js" />
+      <file href="lms/goodbye.html" />
+      <file href="lms/scormdriver.js" />
+    </resource>
+  </resources>
+</manifest>

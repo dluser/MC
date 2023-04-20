@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="_6YmMyqrq6ho_course_id" version="1.0" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+      <general>
+        <title>
+          <langstring xml:lang="x-none">Excel Quiz</langstring>
+        </title>
+      </general>
+      <lifecycle>
+        <version>
+          <langstring xml:lang="x-none">1</langstring>
+        </version>
+        <status>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">Final</langstring>
+          </value>
+        </status>
+      </lifecycle>
+      <metametadata>
+        <metadatascheme>ADL SCORM 1.2</metadatascheme>
+      </metametadata>
+      <educational>
+        <typicallearningtime>
+          <datetime>PT0H0M0S</datetime>
+        </typicallearningtime>
+      </educational>
+      <rights>
+        <cost>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </cost>
+        <copyrightandotherrestrictions>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </copyrightandotherrestrictions>
+      </rights>
+    </lom>
+  </metadata>
+  <organizations default="Excel_Quiz_ORG">
+    <organization identifier="Excel_Quiz_ORG">
+      <title>Excel Quiz</title>
+      <item identifier="Word_Quiz_(experiment)_SCO" isvisible="true" identifierref="__6YmMyqrq6ho_course_id_RES">
+        <title>Excel Quiz</title>
+        <adlcp:masteryscore>71</adlcp:masteryscore>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="__6YmMyqrq6ho_course_id_RES" type="webcontent" href="index_lms.html" adlcp:scormtype="sco">
+      <file href="story_content/thumbnail.jpg" />
+      <file href="mobile/5c1HRhj8K1I_80_DX688_DY688_CX381_CY225.png" />
+      <file href="mobile/6XCdUshEgI4_80_DX836_DY836_CX650_CY365.gif" />
+      <file href="mobile/6pzz4Ax3sSt_80_DX914_DY914_CX480_CY174.png" />
+      <file href="mobile/5zHuuxJKurA_80_P_0_0_650_319_DX1024_DY1024_CX650_CY319.gif" />
+      <file href="mobile/6Wi9Pyj8EOu_80_DX1262_DY1262_CX800_CY430.png" />
+      <file href="mobile/6Eb2ZzhRxeH_80_DX710_DY710_CX558_CY401.png" />
+      <file href="mobile/6cQLeyLN9ll_80_DX756_DY756_CX523_CY594.png" />
+      <file href="mobile/6X3zopiCfVz_80_DX336_DY336_CX225_CY48.png" />
+      <file href="mobile/6X3zopiCfVz_80_DX336_DY336_CX239_CY51.png" />
+      <file href="mobile/6JQhHCYSG7y_80_DX1262_DY1262_CX993_CY506.png" />
+      <file href="mobile/65FqIRot0Yt_80_DX390_DY390_CX304_CY138.png" />
+      <file href="mobile/6i7vGtwyEpx_80_DX386_DY386_CX303_CY137.png" />
+      <file href="mobile/5nTNMZU9NLi_80_DX390_DY390_CX304_CY138.png" />
+      <file href="meta.xml" />
+      <file href="story_content/user.js" />
+      <file href="html5/data/css/output.min.css" />
+      <file href="html5/data/js/5bLIvgt0o0a.js" />
+      <file href="html5/data/js/5kr97eqPRh4.js" />
+      <file href="html5/data/js/5olLUznM7q6.js" />
+      <file href="html5/data/js/5u9O3SHc3pO.js" />
+      <file href="html5/data/js/5upuTNlsA6N.js" />
+      <file href="html5/data/js/5YxIBKzrlfg.js" />
+      <file href="html5/data/js/60G01gTy7mt.js" />
+      <file href="html5/data/js/60zOipanTzl.js" />
+      <file href="html5/data/js/6dhCIT4ciQK.js" />
+      <file href="html5/data/js/6ExluWnJB9T.js" />
+      <file href="html5/data/js/6FAk0sUjVdg.js" />
+      <file href="html5/data/js/6gnEkxg7TA3.js" />
+      <file href="html5/data/js/6HSBKp9W9y5.js" />
+      <file href="html5/data/js/6iQXIqIAPhk.js" />
+      <file href="html5/data/js/6KbOw6ICMjj.js" />
+      <file href="html5/data/js/6NAFLXUweMc.js" />
+      <file href="html5/data/js/6oX1nwqN5UM.js" />
+      <file href="html5/data/js/6SMfdWUgEOL.js" />
+      <file href="html5/data/js/data.js" />
+      <file href="html5/data/js/frame.js" />
+      <file href="html5/data/js/paths.js" />
+      <file href="html5/lib/scripts/app.min.js" />
+      <file href="html5/lib/stylesheets/main.min.css" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-bold.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-light.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-regular.woff" />
+      <file href="story.html" />
+      <file href="story_html5.html" />
+      <file href="analytics-frame.html" />
+      <file href="story_content/blank.html" />
+      <file href="story_content/story.js" />
+      <file href="index_lms.html" />
+      <file href="index_lms_html5.html" />
+      <file href="lms/AICCComm.html" />
+      <file href="lms/AICCFunctions.js" />
+      <file href="lms/API.js" />
+      <file href="lms/APIConstants.js" />
+      <file href="lms/blank.html" />
+      <file href="lms/browsersniff.js" />
+      <file href="lms/Configuration.js" />
+      <file href="lms/goodbye.html" />
+      <file href="lms/lms.js" />
+      <file href="lms/LMSAPI.js" />
+      <file href="lms/NONEFunctions.js" />
+      <file href="lms/SCORM2004Functions.js" />
+      <file href="lms/SCORMFunctions.js" />
+      <file href="lms/UtilityFunctions.js" />
+    </resource>
+  </resources>
+</manifest>
