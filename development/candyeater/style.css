@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('assets/images/background.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gameTitle {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #E66C2C;
+    font-family: "Pirata One", system-ui;
+  font-weight: 800;
+  font-style: normal;
+    font-size: 120px;
+    text-align: center;
+}
+
+.scoreboard {
+    margin-top: 20px;
+    font-family: "Creepster", system-ui;
+  font-weight: 200;
+  font-style: normal;
+    color: black;
+    background-color: #E66C2C;
+    font-size: 28px;
+    text-align: center;
+}
+
+.scoreboard span {
+    margin-right: 20px;
+}
+
+#gameContainer {
+    position: relative;
+    margin-top: 30px; /* Adjust this value to move the game down */
+}
+
+#gameCanvas {
+    background-color: transparent;
+}
+
+#startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-family: "Pirata One", system-ui;
+  font-weight: 800;
+  font-style: normal;
+  background-color: black;
+  border: none;
+  color: #E66C2C;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.game-over {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #E66C2C;
+    color: #black;
+    font-family: "Creepster", system-ui;
+  font-weight: 800;
+  font-style: normal;
+    font-size: 80px;
+    text-align: center;
+    z-index: 2;
+}
+
+
+
+
