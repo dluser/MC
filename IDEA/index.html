@@ -36,7 +36,7 @@
       <nav class="section-nav" aria-label="Section navigation">
         <div class="wrap nav-links">
           <a href="#about">About</a>
-          <a href="#process">How It Works</a>
+          <a href="#process">How We Work</a>
           <a href="#discover">Discover</a>
           <a href="#create">Create</a>
           <a href="#tour">Virtual Tour</a>
@@ -88,14 +88,12 @@
               </p>
             </div>
 
-            <div class="video-card">
-              <iframe
-                src="https://livecnm.sharepoint.com/teams/LXD/_layouts/15/embed.aspx?UniqueId=115229be-025c-4249-8c05-02925bb24484&amp;embed=%7B%22ust%22%3Afalse%2C%22hv%22%3A%22CopyEmbedCode%22%7D&amp;referrer=StreamWebApp&amp;referrerScenario=EmbedDialog.Create"
-                title="IDEA Studio Promotional Video"
-                loading="lazy"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+            <div class="video-container">
+              <video id="myVideo" preload="metadata" poster="media/IDEApromo.jpg">
+                <source src="media/IDEApromo.mp4" type="video/mp4">
+              </video>
+
+              <div class="play-button" id="playButton"></div>
             </div>
 
         </div>
@@ -103,7 +101,7 @@
 
       <section id="process" class="section alt" aria-labelledby="process-title">
         <div class="wrap">
-          <h2 id="process-title">How It Works</h2>
+          <h2 id="process-title">How We Work</h2>
           <p class="section-label">Working with Learning Experience Designers</p>
 
           <div class="steps-grid">
@@ -174,8 +172,8 @@
             experimentation.
           </p>
 
-          <div class="card-grid three-up">
-            <article class="feature-card">
+          <div class="card-grid four-up compact-cards">
+            <article class="feature-card compact">
               <img src="media/interactivelearningdesign.jpg" alt="Interactive learning" />
               <div class="feature-copy">
                 <h3>Interactive Learning Design</h3>

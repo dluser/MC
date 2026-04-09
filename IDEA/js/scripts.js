@@ -95,3 +95,35 @@ function syncActiveNavigationLink(sectionId, navLinks, linksBySectionId) {
   activeLink.classList.add("active");
   activeLink.setAttribute("aria-current", "true");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const video = document.getElementById("myVideo");
+  const button = document.getElementById("playButton");
+
+  if (!video || !button) {
+    console.log("Video or play button not found.");
+    return;
+  }
+
+  button.addEventListener("click", function () {
+    video.controls = true;
+    video.play();
+    button.style.opacity = "0";
+    button.style.pointerEvents = "none";
+  });
+
+  video.addEventListener("pause", function () {
+    button.style.opacity = "1";
+    button.style.pointerEvents = "auto";
+  });
+
+  video.addEventListener("play", function () {
+    button.style.opacity = "0";
+    button.style.pointerEvents = "none";
+  });
+
+  video.addEventListener("ended", function () {
+    button.style.opacity = "1";
+    button.style.pointerEvents = "auto";
+  });
+});
