@@ -365,7 +365,7 @@ h3 {
   border: 1px solid var(--border);
   border-radius: var(--radius-xl);
   background: var(--surface-solid);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(none);
 }
 
 .panel {
@@ -438,6 +438,7 @@ h3 {
 .embed-wrap iframe {
   width: 100%;
   height: 100%;
+  display: block;
 }
 
 .video-container {
@@ -480,8 +481,10 @@ h3 {
 }
 
 .embed-wrap {
-  min-height: 420px;
+  width: 100%;
   aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: calc(var(--radius-xl) - 8px);
 }
 
 .panel-head {
@@ -490,6 +493,10 @@ h3 {
 
 .single-column {
   margin-top: 1.4rem;
+}
+
+.panel.single-column {
+  overflow: hidden;
 }
 
 .workshop-panel {
