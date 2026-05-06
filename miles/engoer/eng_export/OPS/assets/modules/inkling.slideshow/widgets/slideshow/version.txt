@@ -1,3 +1,0 @@
-com.inkling.widget.slideshow
-1.1.0
-20161004.204553z.20af5dd5
