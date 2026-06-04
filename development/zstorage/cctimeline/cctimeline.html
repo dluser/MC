@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creative Commons Timeline</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="timeline-shell" aria-label="Additional Information">
+  <h1>The Story of Creative Commons: From Copyright Restrictions to a Global Commons</h1>
+  <p><i>This timeline, The Story of Creative Commons: From Copyright Restrictions to a Global Commons, by Zac Travis is licensed under a Creative Commons Attribution 4.0 International License.</i></p>
+</main>
+  <main class="timeline-shell" aria-label="Interactive Creative Commons timeline">
+    <section class="timeline-nav" aria-label="Timeline navigation">
+      <div class="marker-list" id="eventList"></div>
+      <div class="range-wrap">
+        <input id="timelineRange" type="range" aria-label="Move through timeline events">
+      </div>
+    </section>
+
+    <article class="event-card" aria-live="polite">
+      <section class="event-copy">
+        <p class="eyebrow" id="yearLabel"></p>
+        <h1 id="eventHeadline"></h1>
+        <p class="date-range" id="eventDates"></p>
+        <div class="event-body" id="eventBody"></div>
+      </section>
+      <aside class="event-media" id="eventMedia" aria-label="Timeline media"></aside>
+    </article>
+
+    <section class="controls" aria-label="Timeline controls">
+      <p class="progress" id="progressText"></p>
+      <div class="control-buttons">
+        <button class="nav-btn" id="prevBtn" type="button">Previous</button>
+        <button class="nav-btn" id="nextBtn" type="button">Next</button>
+      </div>
+    </section>
+  </main>
+  <main class="timeline-shell" aria-label="Additional Information">
+<p>People can participate in Creative Commons by openly licensing their own work, joining community discussions on Zulip, participating in the CC Global Network, contributing to Open Education and Open Culture initiatives, attending events, and becoming CC Certified. These activities help strengthen the global commons and support a culture of sharing.</p>
+</main>
+  <script src="script.js"></script>
+</body>
+</html>
