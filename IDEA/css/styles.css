@@ -204,8 +204,12 @@ h3 {
 .feature-copy p,
 .step-card p,
 .workshop-copy p,
-.alt-contact-card p, 
 .contact-card p {
+  color: var(--muted);
+  font-size: 1.06rem;
+}
+
+.alt-contact-card p {
   color: var(--muted);
   font-size: 1.06rem;
 }
@@ -382,6 +386,7 @@ h3 {
 
 .about-panel,
 .workshop-panel,
+.alt-contact-card,
 .contact-card {
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(239, 246, 253, 0.92));
 }
@@ -562,6 +567,7 @@ h3 {
 @media (max-width: 1080px) {
   .about-panel,
   .workshop-panel,
+  .alt-contact-card
   .contact-card {
     grid-template-columns: 1fr;
   }
