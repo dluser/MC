@@ -204,6 +204,7 @@ h3 {
 .feature-copy p,
 .step-card p,
 .workshop-copy p,
+.alt-contact-card p, 
 .contact-card p {
   color: var(--muted);
   font-size: 1.06rem;
@@ -372,6 +373,13 @@ h3 {
   padding: 1.5rem;
 }
 
+.alt-contact-card {
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-xl);
+  background: var(--bg);
+  box-shadow: var(none);
+}
+
 .about-panel,
 .workshop-panel,
 .contact-card {
@@ -518,6 +526,14 @@ h3 {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 1.5rem;
+  align-items: center;
+  padding: 1.8rem;
+}
+
+.alt-contact-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0rem;
   align-items: center;
   padding: 1.8rem;
 }
