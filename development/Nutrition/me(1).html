@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- saved from url=(0116)https://id.articulate.com/api/ada/users/me?response_mode=post_message&target_origin=https%3A%2F%2F360.articulate.com -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Signing in...</title>
+        <script type="text/javascript">
+    
+            /**
+             * Check whether this page is loaded in an iframe or a popup.
+             */
+            function isInIframe() {
+                try {
+                    return window.self !== window.top;
+                } catch (e) {
+                    return true;
+                }
+            }
+    
+            /**
+             * Create the message payload to send back to the parent window.
+             */
+            function buildMessageData() {
+                
+                var data = {};
+                data.articulateId = 'AQICAHg6nvMDFnny0oUDxO452y2OYhTyvLYaD5MogtB5DtGlzQGPqRc3+6ookg/k5FD14iSJAAAAfDB6BgkqhkiG9w0BBwagbTBrAgEAMGYGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMHtN8hC9viFkH487JAgEQgDlFRfLr/JGNSy2KNHySZYuE4c6wpwY2o9LRNojLEq8jC2OprZJ1NnUC4O/Hieh0RHwnJTHuHwzEoQ0=';
+                data.artInstanceId = 'ART-278639';
+                data.contactCompany = 'CNM';
+                data.contactEmail = 'ztravis@cnm.edu';
+                data.contactFirstName = 'z';
+                data.contactLastName = 'travis';
+                data.creatorType = 'standard';
+
+                return data;
+
+            }
+    
+            /**
+             * On window load, post the message payload back to the parent window.
+             */
+            function onWindowLoadHandler() {
+                var parentWindow = window.isInIframe() ? window.parent : window.opener;
+                
+                parentWindow.postMessage(buildMessageData(), 'https://360.articulate.com');
+            }
+    
+            // Attach event handler for the 'DOM loaded' or equivalent event on the window
+            if (window.addEventListener) {
+                window.addEventListener('DOMContentLoaded', onWindowLoadHandler, false);
+            } else if (window.attachEvent) {
+                // IE8
+                window.attachEvent('onload', onWindowLoadHandler);
+            }
+        </script>
+    </head>
+    <body>
+    
+    
+    </body></html>
