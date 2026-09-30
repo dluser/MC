@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Course Audio Player</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&amp;display=swap" rel="stylesheet">
+<style>
+  /* ============================================================
+     COURSE AUDIO PLAYER — CNM brand build, Apple-Music-style layout
+
+     ---------------------------------------------------------
+     TO SWAP IN NEW CONTENT: everything you need is in ONE place.
+     Scroll down to the block that starts with
+
+         EDIT ME — this is the only part you need to touch
+
+     inside the <script> near the bottom of this file. Nothing
+     above that point needs to change, ever — not even for other
+     instructors reusing this file for a totally different course.
+     ---------------------------------------------------------
+
+     BRAND NOTES (per CNM Brand Standards)
+     - Colors: Navy #003A70 + Gold #F6BE00 primary, Magenta
+       #E30563 secondary.
+     - The page title is set in Mission Gothic Black (the brand
+       doc's own "Mission Gothic Bold or Black" heading spec).
+       Mission Gothic is a licensed desktop font with no public
+       web-embed source, so it's declared by name — if CNM's
+       licensed webfont files are ever loaded elsewhere on the
+       page (e.g. Brightspace's own site CSS), the browser will
+       pick it up automatically; otherwise it falls back to Arial
+       Black, a close black-gothic match.
+     - Other headings (chapter titles, volume tabs) use Sanchez
+       Bold / Navy, per the brand's Web Typography spec for web
+       headers.
+     - Body copy: Arial Narrow — the brand's own stated fallback,
+       since Mission Gothic's body weights aren't web-embeddable
+       either.
+     - Links follow the brand's link-state spec: Navy-blue
+       #0257A6 active/hover with underline on hover, #2B84D6
+       visited.
+     - Buttons: outlined pill with bold dark text, mirroring
+       CNM's own site buttons (Apply Now / Request Info) rather
+       than a solid color fill.
+     ============================================================ */
+
+  :root{
+    --navy:        #003A70;
+    --navy-ink:    #062744;
+    --gold:        #F6BE00;
+    --magenta:     #E30563;
+    --orange:      #E35205;
+    --link:        #0257A6;
+    --link-visited:#2B84D6;
+
+    --white:       #ffffff;
+    --paper:       #F7F8FA;
+    --line:        #DCE1E8;
+    --text:        #1A2430;
+    --text-dim:    #5B6675;
+
+    --radius-pill: 999px;
+    --radius:      6px;
+    --radius-art:  10px;
+    --title-font:  'Mission Gothic', 'Arial Black', Arial, sans-serif;
+    --heading-font:'Sanchez', Georgia, serif;
+    --body-font:   'Arial Narrow', Arial, -apple-system, Segoe UI, sans-serif;
+    --mono:        'Consolas', 'Courier New', monospace;
+
+    /* Overall widget height. This is what makes the player a
+       fixed-size box (a "widget") instead of a full scrolling
+       page — everything above the track list stays put, and only
+       the track list scrolls inside the space that's left. Make
+       this taller/shorter to fit wherever you're embedding it.
+       If you're embedding via <iframe>, set the iframe's own
+       height attribute to match this number PLUS the top/bottom
+       body padding set further down (40px on desktop, 24px on
+       phones by default) so the page's own cushion isn't clipped. */
+    --widget-height: 760px;
+  }
+
+  *{ box-sizing:border-box; }
+
+  html,body{
+    margin:0; padding:0;
+    background:var(--white);
+    color:var(--text);
+    font-family:var(--body-font);
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* Breathing room above/below the card so it doesn't butt right up
+     against the edges of the Brightspace page it's embedded in.
+     Smaller on phones, where screen space is tighter. If you're
+     embedding via <iframe>, add this same amount (both top and
+     bottom, together) on top of --widget-height when you set the
+     iframe's height attribute — otherwise the page gets its own
+     tiny scrollbar instead of showing the full cushion. */
+  body{
+    padding:20px 0;
+  }
+  @media (max-width:460px){
+    body{ padding:12px 0; }
+  }
+
+  /* The card container around the whole widget. Living here means
+     it comes along automatically wherever this file is embedded —
+     no need to re-wrap it in a <div> each time someone on your
+     team drops this into a different module. */
+  .player{
+    position:relative;
+    max-width:720px;
+    height:var(--widget-height);
+    margin:0 auto;
+    padding:28px 24px 24px;
+    display:flex;
+    flex-direction:column;
+    box-sizing:border-box;
+    overflow:hidden;
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:18px;
+    box-shadow:0 6px 20px rgba(0,58,112,0.12), 0 1px 4px rgba(0,0,0,0.06);
+  }
+
+  /* Thin brand-colored stripe across the top of the card — a
+     quick, wordless "this is CNM" cue before a student reads
+     anything. Clipped to the card's rounded corners automatically
+     by the overflow:hidden + border-radius above. */
+  .player::before{
+    content:"";
+    position:absolute;
+    top:0; left:0; right:0;
+    height:5px;
+    background:linear-gradient(90deg, var(--navy) 0%, var(--navy) 60%, var(--gold) 100%);
+  }
+
+  /* Everything that should stay visible and in place — title,
+     artwork, transport controls, volume tabs — lives in here.
+     It never scrolls. */
+  .player-header{
+    flex:0 0 auto;
+  }
+
+  /* Wraps the scrolling list plus the "more below" fade, so the
+     fade can sit pinned to the bottom edge regardless of scroll
+     position. */
+  .tracklist-wrap{
+    position:relative;
+    flex:1 1 auto;
+    min-height:0;
+    display:flex;
+    flex-direction:column;
+  }
+
+  /* Only the chapter list scrolls, inside whatever vertical space
+     is left over once the header above has taken what it needs. */
+  .tracklist-scroll{
+    flex:1 1 auto;
+    min-height:0;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+    scrollbar-color:var(--line) transparent;
+  }
+  .tracklist-scroll::-webkit-scrollbar{ width:8px; }
+  .tracklist-scroll::-webkit-scrollbar-track{ background:transparent; }
+  .tracklist-scroll::-webkit-scrollbar-thumb{ background:var(--line); border-radius:4px; }
+  .tracklist-scroll::-webkit-scrollbar-thumb:hover{ background:var(--text-dim); }
+
+  /* The visual cue that there's more to scroll to: a soft fade at
+     the bottom edge of the list with a small bouncing chevron.
+     Purely decorative (screen readers already hear "chapter 3 of
+     28" etc. from each row), so it's hidden from assistive tech
+     and never blocks clicks on the row underneath it. JS toggles
+     .is-hidden once the list is scrolled to its end, or if the
+     list is short enough that it never scrolls at all. */
+  .scroll-hint{
+    position:absolute;
+    left:0; right:0; bottom:0;
+    height:52px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    padding-bottom:8px;
+    background:linear-gradient(to bottom, rgba(247,248,250,0) 0%, var(--white) 75%);
+    pointer-events:none;
+    opacity:1;
+    transition:opacity .25s ease;
+  }
+  .scroll-hint.is-hidden{ opacity:0; }
+  .scroll-hint-chip{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:28px; height:28px;
+    border-radius:50%;
+    background:var(--white);
+    border:1px solid var(--line);
+    color:var(--navy);
+    box-shadow:0 1px 4px rgba(0,0,0,0.14);
+    animation:scrollHintBob 1.6s ease-in-out infinite;
+  }
+  @keyframes scrollHintBob{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(3px); }
+  }
+  @media (prefers-reduced-motion:reduce){
+    .scroll-hint-chip{ animation:none; }
+  }
+
+  .sr-only{
+    position:absolute; width:1px; height:1px;
+    padding:0; margin:-1px; overflow:hidden;
+    clip:rect(0,0,0,0); white-space:nowrap; border:0;
+  }
+
+  /* Course title now lives inside the "now playing" card, above
+     the chapter number — see the HTML below. */
+  .course-title{
+    font-family:var(--title-font);
+    font-weight:900;
+    font-size:22px;
+    line-height:1.15;
+    color:var(--navy);
+    margin:0 0 16px;
+    max-width:44ch;
+  }
+  @media (min-width:520px){
+    .course-title{ font-size:26px; }
+  }
+
+  /* ---- footer: brand mark (bottom-left) + transcript (bottom-right) ---- */
+
+  .player-footer{
+    flex:0 0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    padding-top:14px;
+    margin-top:2px;
+    border-top:1px solid var(--line);
+  }
+
+  /* Plain text by default ("CNM COURSE AUDIO"). Set
+     footerLogoUrl in the config to swap this for an actual logo
+     image instead — see EDIT ME below. */
+  .footer-brand{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-family:var(--body-font);
+    font-weight:700;
+    font-size:11px;
+    letter-spacing:.04em;
+    color:var(--navy);
+  }
+  .footer-brand img{
+    display:block;
+    height:24px;
+    width:auto;
+  }
+
+  .transcript-link{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    flex-shrink:0;
+    font-family:var(--body-font);
+    font-weight:700;
+    font-size:13px;
+    color:var(--text);
+    text-decoration:none;
+    border:1.5px solid var(--navy);
+    border-radius:var(--radius-pill);
+    padding:8px 16px;
+    white-space:nowrap;
+  }
+  .transcript-link:hover{ text-decoration:underline; background:var(--paper); }
+  .transcript-link:visited{ color:var(--text); }
+  .transcript-link:focus-visible{ outline:2px solid var(--link); outline-offset:2px; }
+  .transcript-link svg{ flex-shrink:0; }
+
+  /* ---- now playing card ---- */
+
+  .now-playing{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:18px;
+    margin-bottom:20px;
+  }
+
+  .np-top{
+    display:flex;
+    gap:18px;
+    margin-bottom:16px;
+  }
+
+  /* Artwork is the focal point of the player: at least a third of
+     the player's width, scaling with it, capped so it doesn't get
+     comically large on a wide embed and floored so it's never a
+     tiny thumbnail on a narrow one. */
+  .np-art{
+    width:34%;
+    max-width:230px;
+    min-width:104px;
+    aspect-ratio:1/1;
+    flex-shrink:0;
+    border-radius:var(--radius-art);
+    overflow:hidden;
+    background:linear-gradient(155deg, var(--navy) 0%, var(--navy-ink) 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 2px 6px rgba(0,0,0,0.18);
+  }
+  .np-art img{
+    width:100%; height:100%;
+    object-fit:cover;
+    display:block;
+  }
+
+  .np-meta{
+    flex:1;
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+
+  .np-track-number{
+    font-family:var(--body-font);
+    font-weight:700;
+    font-size:12px;
+    letter-spacing:.02em;
+    color:var(--magenta);
+    margin:0 0 3px;
+  }
+
+  .np-title{
+    font-family:var(--heading-font);
+    font-weight:700;
+    font-size:19px;
+    line-height:1.25;
+    margin:0 0 2px;
+    color:var(--navy);
+  }
+
+  .np-subtitle{
+    font-size:13.5px;
+    color:var(--text-dim);
+    margin:0;
+  }
+
+  /* controls block */
+  .controls-row{
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+
+  .transport{
+    display:flex;
+    align-items:center;
+    gap:2px;
+    flex-shrink:0;
+  }
+
+  /* Shared control-button look, used by the prev/next buttons,
+     and (via a.ctrl) the download link so it lines up visually
+     with the rest of the transport row. */
+  button.ctrl, a.ctrl{
+    background:none;
+    border:none;
+    color:var(--navy);
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    width:48px; height:48px;
+    text-decoration:none;
+  }
+  button.ctrl:hover, a.ctrl:hover{ color:var(--magenta); }
+  button.ctrl:focus-visible, a.ctrl:focus-visible{ outline:2px solid var(--link); outline-offset:2px; }
+
+  .play-btn{
+    position:relative;
+    width:60px; height:60px;
+    background:var(--gold);
+    color:var(--navy-ink);
+    border-radius:50%;
+    border:2px solid var(--navy);
+  }
+  .play-btn:hover{ background:#ffd23d; color:var(--navy-ink); }
+  .play-btn svg{ margin-left:3px; }
+  .play-btn.is-playing svg{ margin-left:0; }
+
+  /* Loading / buffering spinner, shown centered over the play
+     button in place of the play/pause icon while audio is
+     fetching data it needs before it can keep playing. */
+  .play-btn .spinner{
+    display:none;
+    position:absolute;
+    top:50%; left:50%;
+    width:22px; height:22px;
+    margin:-11px 0 0 -11px;
+    border-radius:50%;
+    border:2.5px solid rgba(6,39,68,0.25);
+    border-top-color:var(--navy-ink);
+    animation:playerSpin 0.8s linear infinite;
+  }
+  .play-btn.is-loading #playIcon{ visibility:hidden; }
+  .play-btn.is-loading .spinner{ display:block; }
+  @keyframes playerSpin{ to{ transform:rotate(360deg); } }
+  @media (prefers-reduced-motion:reduce){
+    .play-btn .spinner{ animation:none; border-top-color:rgba(6,39,68,0.55); }
+  }
+
+  /* Small spinner shown on the download button while a chapter's
+     mp3 is being fetched into memory so it can be forced to save
+     (see downloadCurrentTrack() in the script). */
+  #downloadLink{ position:relative; }
+  #downloadLink.is-downloading svg{ visibility:hidden; }
+  #downloadLink.is-downloading::after{
+    content:"";
+    position:absolute;
+    top:50%; left:50%;
+    width:16px; height:16px;
+    margin:-8px 0 0 -8px;
+    border-radius:50%;
+    border:2px solid rgba(6,39,68,0.25);
+    border-top-color:var(--navy-ink);
+    animation:playerSpin 0.8s linear infinite;
+  }
+  @media (prefers-reduced-motion:reduce){
+    #downloadLink.is-downloading::after{ animation:none; border-top-color:rgba(6,39,68,0.55); }
+  }
+
+  .scrub-col{
+    flex:1;
+    min-width:0;
+  }
+
+  .scrub-row{
+    display:flex;
+    align-items:center;
+    gap:9px;
+  }
+
+  .time{
+    font-family:var(--mono);
+    font-size:12px;
+    color:var(--text-dim);
+    min-width:40px;
+    flex:0 0 auto;
+    white-space:nowrap;
+    user-select:none;
+  }
+  .time.remaining{ text-align:right; min-width:44px; }
+
+  .scrub-track{
+    position:relative;
+    flex:1;
+    height:18px;
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+  }
+  .scrub-track::before{
+    content:"";
+    position:absolute;
+    left:0; right:0;
+    height:4px;
+    background:var(--line);
+    border-radius:2px;
+  }
+  .scrub-fill{
+    position:absolute;
+    left:0; height:4px;
+    background:var(--gold);
+    border-radius:2px;
+    width:0%;
+    pointer-events:none;
+  }
+  .scrub-handle{
+    position:absolute;
+    width:14px; height:14px;
+    border-radius:50%;
+    background:var(--navy);
+    left:0%;
+    transform:translateX(-50%);
+    box-shadow:0 0 0 3px rgba(0,58,112,0.15);
+    pointer-events:none;
+  }
+  .scrub-track:focus-visible{ outline:2px solid var(--link); outline-offset:4px; }
+
+  .secondary-row{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:14px;
+    margin-top:10px;
+  }
+
+  select.speed{
+    background:var(--white);
+    color:var(--text);
+    border:1.5px solid var(--line);
+    border-radius:var(--radius);
+    font-family:var(--body-font);
+    font-weight:700;
+    font-size:12px;
+    padding:7px 8px;
+    cursor:pointer;
+  }
+  select.speed:focus-visible{ outline:2px solid var(--link); }
+
+  .vol-row{
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  input[type="range"].volume{
+    -webkit-appearance:none;
+    width:64px;
+    height:4px;
+    background:var(--line);
+    border-radius:2px;
+    outline:none;
+  }
+  input[type="range"].volume::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    width:14px; height:14px;
+    border-radius:50%;
+    background:var(--navy);
+    cursor:pointer;
+  }
+  input[type="range"].volume:hover::-webkit-slider-thumb{ background:var(--magenta); }
+  input[type="range"].volume::-moz-range-thumb{
+    width:14px; height:14px; border:none; border-radius:50%;
+    background:var(--navy); cursor:pointer;
+  }
+
+  .resume-note{
+    font-family:var(--body-font);
+    font-size:12px;
+    color:var(--text-dim);
+    margin:10px 0 0;
+  }
+
+  /* Shown in place of the resume note when a chapter's audio file
+     fails to load — a broken link, a typo in the config, a file
+     that was moved or deleted. role="alert" on the element itself
+     (in the HTML) makes screen readers announce it right away. */
+  .audio-error{
+    display:flex;
+    align-items:flex-start;
+    gap:7px;
+    font-family:var(--body-font);
+    font-size:12.5px;
+    line-height:1.4;
+    color:#9A2B0A;
+    background:#FCEEE8;
+    border:1px solid #F0C4AD;
+    border-radius:var(--radius);
+    padding:9px 11px;
+    margin:10px 0 0;
+  }
+  .audio-error svg{ flex-shrink:0; margin-top:1px; }
+
+  /* ---- volume tabs (Volume I / Volume II) ---- */
+
+  .volume-tabs{
+    display:flex;
+    gap:8px;
+    margin-bottom:14px;
+  }
+  button.voltab{
+    flex:1;
+    text-align:left;
+    background:var(--white);
+    border:1.5px solid var(--line);
+    border-radius:10px;
+    padding:11px 14px;
+    cursor:pointer;
+    font-family:var(--body-font);
+  }
+  button.voltab:hover{ border-color:var(--navy); }
+  button.voltab:focus-visible{ outline:2px solid var(--link); outline-offset:2px; }
+  button.voltab .vt-title{
+    display:block;
+    font-weight:700;
+    font-size:14px;
+    color:var(--text);
+    margin-bottom:1px;
+  }
+  button.voltab .vt-sub{
+    display:block;
+    font-size:11.5px;
+    color:var(--text-dim);
+  }
+  button.voltab[aria-pressed="true"]{
+    background:var(--navy);
+    border-color:var(--navy);
+  }
+  button.voltab[aria-pressed="true"] .vt-title{ color:var(--white); }
+  button.voltab[aria-pressed="true"] .vt-sub{ color:#B9CBDD; }
+
+  /* ---- track list ---- */
+
+  ul.tracklist{
+    list-style:none;
+    margin:0; padding:0;
+    border-top:1px solid var(--line);
+  }
+
+  li.track{
+    border-bottom:1px solid var(--line);
+  }
+
+  button.track-row{
+    all:unset;
+    box-sizing:border-box; /* "all:unset" above also resets box-sizing
+      to the browser default (content-box), which was quietly adding
+      the row's left/right padding on top of its 100% width instead
+      of inside it — pushing content like the duration text past the
+      visible right edge. This puts it back to border-box, matching
+      the rest of the page. */
+    display:flex;
+    align-items:center;
+    gap:14px;
+    width:100%;
+    min-width:0;
+    padding:14px 10px;
+    cursor:pointer;
+    border-radius:var(--radius);
+  }
+  button.track-row:focus-visible{ outline:2px solid var(--link); outline-offset:-2px; }
+  button.track-row:hover .track-title{ color:var(--magenta); }
+
+  .track-index{
+    font-family:var(--mono);
+    font-size:13px;
+    font-weight:700;
+    color:var(--text-dim);
+    width:22px;
+    text-align:right;
+    flex-shrink:0;
+  }
+
+  .track-icon{
+    width:24px; height:24px;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--gold);
+  }
+
+  .track-main{
+    flex:1;
+    min-width:0;
+  }
+  .track-title{
+    font-family:var(--body-font);
+    font-weight:700;
+    font-size:15px;
+    color:var(--text);
+    margin:0;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .track-sub{
+    font-size:12.5px;
+    color:var(--text-dim);
+    margin:2px 0 0;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  /* Hidden: on some embeds this was getting clipped by a container
+     narrower than expected, cutting off the last digit. The full
+     time (elapsed / remaining) is already shown in the "now
+     playing" panel once a track is loaded, so rather than keep
+     chasing every host page's exact width, this column is just
+     turned off here. Delete the "display:none;" line below to
+     bring it back if you'd rather troubleshoot the width instead. */
+  .track-duration{
+    display:none;
+    font-family:var(--mono);
+    font-size:12px;
+    color:var(--text-dim);
+    flex-shrink:0;
+    padding-right:2px;
+  }
+
+  li.track.is-active{
+    background:rgba(227,5,99,0.05);
+  }
+  li.track.is-active .track-title{ color:var(--navy); }
+  li.track.is-active .track-index{ color:var(--magenta); }
+
+  .eq{
+    display:flex;
+    align-items:flex-end;
+    gap:2px;
+    height:15px;
+  }
+  .eq span{
+    width:3px;
+    background:var(--magenta);
+    animation:eqbar 0.9s ease-in-out infinite;
+  }
+  .eq span:nth-child(1){ height:40%; animation-delay:-0.6s; }
+  .eq span:nth-child(2){ height:100%; animation-delay:-0.3s; }
+  .eq span:nth-child(3){ height:65%; animation-delay:0s; }
+  @keyframes eqbar{
+    0%,100%{ transform:scaleY(0.4); }
+    50%{ transform:scaleY(1); }
+  }
+  .is-playing-state .eq span{ animation-play-state:running; }
+  .is-paused-state .eq span{ animation-play-state:paused; }
+
+  @media (prefers-reduced-motion:reduce){
+    .eq span{ animation:none !important; }
+  }
+
+  @media (max-width:460px){
+    .np-art{ max-width:130px; min-width:88px; }
+    .np-title{ font-size:17px; }
+    .track-sub{ display:none; }
+    .vol-row{ display:none; } /* save space on narrow embeds; volume still via OS/media keys */
+    .voltab .vt-sub{ display:none; }
+    .footer-brand{ font-size:10px; }
+    /* Four controls (download, prev, play, next) now share this
+       row with the timeline, so trim the small ones slightly to
+       keep the scrub bar from getting squeezed too thin. */
+    button.ctrl, a.ctrl{ width:40px; height:40px; }
+    .play-btn{ width:54px; height:54px; }
+  }
+</style>
+</head><body><div class="player" id="player" role="region" aria-label="Course audio player">
+<div class="player-header"><!-- Announces track changes to screen reader users without moving focus -->
+<div class="sr-only" id="liveRegion" role="status" aria-live="polite"></div>
+<div class="now-playing">
+<h2 class="course-title" id="courseTitle">Course title</h2>
+<div class="np-top">
+<div class="np-art" id="npArt"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="color: var(--gold);" aria-hidden="true"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3H12v16H5.5A2.5 2.5 0 0 0 3 21.5z"></path><path d="M21 5.5A2.5 2.5 0 0 0 18.5 3H12v16h6.5a2.5 2.5 0 0 1 2.5 2.5z"></path></svg></div>
+<div class="np-meta">
+<p class="np-track-number" id="npNumber">TRACK 1 OF 1</p>
+<h3 class="np-title" id="npTitle">Track title</h3>
+<p class="np-subtitle" id="npSubtitle">&nbsp;</p>
+</div>
+</div>
+<div class="controls-row">
+<div class="transport"><a class="ctrl" id="downloadLink" href="#" download="" target="_blank" rel="noopener" title="Download this chapter's audio"> <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v11"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg> </a> <button class="ctrl" id="prevBtn" aria-label="Previous chapter" title="Previous chapter"> <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg> </button> <button class="ctrl play-btn" id="playBtn" aria-label="Play"> <svg xmlns="http://www.w3.org/2000/svg" id="playIcon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg> <span class="spinner" id="playSpinner" aria-hidden="true"></span> </button> <button class="ctrl" id="nextBtn" aria-label="Next chapter" title="Next chapter"> <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="currentColor"><path d="M16 6h2v12h-2zM6 6l8.5 6L6 18z"></path></svg> </button></div>
+<div class="scrub-col">
+<div class="scrub-row"><span class="time" id="curTime">0:00</span>
+<div class="scrub-track" id="scrubTrack" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="0 minutes 0 seconds" tabindex="0">
+<div class="scrub-fill" id="scrubFill"></div>
+<div class="scrub-handle" id="scrubHandle"></div>
+</div>
+<span class="time remaining" id="remTime">-0:00</span></div>
+</div>
+</div>
+<div class="secondary-row"><select class="speed" id="speedSelect" aria-label="Playback speed">
+<option value="0.75">0.75×</option>
+<option value="1" selected="selected">1×</option>
+<option value="1.25">1.25×</option>
+<option value="1.5">1.5×</option>
+<option value="2">2×</option>
+</select>
+<div class="vol-row"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="color: var(--text-dim);" aria-hidden="true"><path d="M3 10v4h4l5 5V5L7 10H3zm13.5 2A4.5 4.5 0 0 0 15 8.29v7.42A4.5 4.5 0 0 0 16.5 12z"></path></svg> <input type="range" class="volume" id="volumeSlider" min="0" max="1" step="0.05" value="1" aria-label="Volume"></div>
+</div>
+<p class="resume-note" id="resumeNote" style="display: none;">Resuming where you left off</p>
+<p class="audio-error" id="audioError" style="display: none;" role="alert"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5M12 16h.01"></path></svg> <span id="audioErrorText">This chapter's audio couldn't load. It may have been moved, or the link may need fixing. Try another chapter, or let your instructor know if this keeps happening.</span></p>
+</div>
+<div class="volume-tabs" id="volumeTabs" style="display: none;"><button class="voltab" id="volTab1" data-volume="1" aria-pressed="true"> <span class="vt-title">Volume I</span> <span class="vt-sub" id="volTab1Sub"></span> </button> <button class="voltab" id="volTab2" data-volume="2" aria-pressed="false"> <span class="vt-title">Volume II</span> <span class="vt-sub" id="volTab2Sub"></span> </button></div>
+</div>
+<!-- /.player-header -->
+<div class="tracklist-wrap">
+<div class="tracklist-scroll" id="tracklistScroll">
+<ul class="tracklist" id="tracklist"></ul>
+</div>
+<div class="scroll-hint" id="scrollHint" aria-hidden="true"><span class="scroll-hint-chip"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"></path></svg> </span></div>
+</div>
+<div class="player-footer">
+<div class="footer-brand" id="footerBrand">CNM COURSE AUDIO</div>
+<a class="transcript-link" id="transcriptLink" href="#" target="_blank" rel="noopener" style="display: none;"> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2h9l5 5v15H6z"></path><path d="M15 2v5h5M9 13h6M9 17h6M9 9h2"></path></svg> <span id="transcriptLinkLabel">Transcript</span> <span class="sr-only">(opens in a new tab)</span> </a></div>
+</div>
+<!-- /.player -->
+<p><audio id="audioEl" preload="metadata"></audio> <script>
+(function(){
+
+  /* ============================================================
+     EDIT ME — this is the only part you need to touch
+     ============================================================
+     Change the values below to reuse this player for any course
+     playlist. Nothing above this line, or below the next big
+     divider, needs to change.
+     ============================================================ */
+
+  var PLAYER_CONFIG = {
+
+    // Main title of the player, shown at the top of the "now
+    // playing" card, above the chapter/track number. Replace the
+    // bracketed placeholder below with your playlist's real title.
+    title: "The American YAWP Chapter Review",
+
+    // Small brand mark shown bottom-left of the player. By
+    // default it's just this text. If you'd rather show CNM's
+    // actual logo there instead, set footerLogoUrl to an image
+    // file (same idea as artworkUrl below — upload it next to
+    // this HTML file and point this at its filename) and it will
+    // replace the text automatically.
+    footerBrandText: "CNM COURSE AUDIO PLAYER",
+    footerLogoUrl: "https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/CNMLogo.png",
+    footerLogoAlt: "Central New Mexico Community College",
+
+    // Shown under each track's title in the "now playing" panel
+    // when that track has no subtitle of its own (see tracks
+    // below). Leave "" to show nothing.
+    defaultSubtitle: "",
+
+    // Square artwork image shown next to the "now playing" info.
+    // Point this at an image file — the easiest setup is to
+    // upload the image to the SAME folder on your server as this
+    // HTML file and just put its filename here, e.g. "cover.jpg".
+    // A full https:// URL works too. Leave "" and a plain branded
+    // icon is shown instead (a fine placeholder on its own).
+    artworkUrl: "https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/American_Progress_(John_Gast_painting).png",
+    artworkAlt: "American_Progress_(John_Gast_painting)",
+
+    // ONE transcript link that covers every track in this
+    // playlist (a single PDF or webpage with all the transcripts
+    // works well). It appears once, next to the title, and stays
+    // the same no matter which track is playing. Leave "" to hide
+    // the button entirely until you have a transcript ready.
+    transcriptUrl: "https://mind.cnm.edu/development/CNM Course Audio Player/YAWP/Media/American_Yawp_Chapter_Review_Transcripts.pdf",
+    transcriptLabel: "Transcript",
+
+    // A download link (bottom-left, next to the play button) lets
+    // a student save whichever track is currently loaded. Set to
+    // false to remove that button entirely. See the note further
+    // down, above the "downloadLink" code, on what this can and
+    // can't guarantee depending on where your mp3s are hosted.
+    allowDownloads: true,
+
+    // Group tracks into two tabs — handy for something like a
+    // two-volume textbook or a two-part series. Set useVolumeTabs
+    // to false (the default here) to just show one flat list
+    // instead, in which case the volume/label settings below are
+    // ignored.
+    useVolumeTabs: true,
+    volume1Label: "Volume I",
+    volume1Sub:   "BEFORE 1877",
+    volume2Label: "Volume II",
+    volume2Sub:   "AFTER 1877",
+
+    // Which track is loaded/highlighted when this page first
+    // opens. Change this ONE number for each different embed of
+    // this same player around your course (e.g. the copy you put
+    // in the Week 3 module vs. the Week 9 module).
+    //
+    // It's also overridden automatically by a ?chapter=N in the
+    // page's URL, so with a single hosted file you can point each
+    // iframe at a different track without duplicating the file:
+    //   course-audio-player.html?chapter=3
+    startChapter: 1,
+
+    // ---- The playlist itself ----
+    // One line per track. Fields:
+    //   volume   1 or 2 — which tab it appears under (ignored if
+    //            useVolumeTabs is false)
+    //   chapter  track number — must be unique; this is what
+    //            ?chapter=N in the URL matches against
+    //   title    shown in the track list and "now playing" panel
+    //   subtitle optional; leave "" to fall back to defaultSubtitle
+    //   src      direct link to the mp3 file
+    //   duration optional, e.g. "14:20" — leave "" and the player
+    //            will read the real length from the file itself
+    //
+    // To add a track: copy a whole line and edit it.
+    // To remove one: delete its line.
+    // To reorder the list shown to students: reorder these lines.
+    //
+    // The three rows below are placeholders — replace them with
+    // your real tracks before publishing this anywhere.
+    tracks: [
+      { volume:1, chapter:1, title:"American Origins", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol1/Chapter1.mp3" },
+      { volume:1, chapter:2, title:"Making an Atlantic World", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol1/Chapter2.mp3" },
+      { volume:1, chapter:3, title:"Colliding Cultures", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol1/chapter3.mp3" },
+      { volume:1, chapter:4, title:"British North America", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol1/chapter4.mp3" },
+      { volume:1, chapter:5, title:"Colonial Society", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol1/chapter5.mp3" },
+      { volume:1, chapter:6, title:"The American Revolution", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol1/chapter6.mp3" },
+      { volume:1, chapter:7, title:"A New Nation", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol1/chapter7.mp3" },
+      { volume:1, chapter:8, title:"The Early Republic", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol1/chapter8.mp3" },
+      { volume:1, chapter:9, title:"Getting Forward", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol1/chapter9.mp3" },
+      { volume:1, chapter:10, title:"American Democracy", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol1/chapter10.mp3" },
+      { volume:1, chapter:11, title:"Growth and Conflict", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol1/chapter11.mp3" },
+      { volume:1, chapter:12, title:"The National Crisis", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol1/chapter12.mp3" },
+      { volume:1, chapter:13, title:"The Civil War", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol1/chapter13.mp3" },
+      { volume:1, chapter:14, title:"Reconstruction", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol1/chapter14.mp3" },
+      { volume:2, chapter:15, title:"Capital and Labor", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol2/chapter15.mp3" },
+      { volume:2, chapter:16, title:"Geographies of Empire", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol2/chapter16.mp3" },
+      { volume:2, chapter:17, title:"New Lives", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol2/chapter17.mp3" },
+      { volume:2, chapter:18, title:"The Progressive Era", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol2/chapter18.mp3" },
+      { volume:2, chapter:19, title:"World War I & Its Aftermath", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol2/chapter19.mp3" },
+      { volume:2, chapter:20, title:"The New Era", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol2/chapter20.mp3" },
+      { volume:2, chapter:21, title:"The Great Depression", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol2/chapter21.mp3" },
+      { volume:2, chapter:22, title:"World War II", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol2/chapter22.mp3" },
+      { volume:2, chapter:23, title:"The Cold War", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol2/chapter23.mp3" },
+      { volume:2, chapter:24, title:"The Affluent Society", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol2/chapter24.mp3" },
+      { volume:2, chapter:25, title:"The Sixties", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol2/chapter25.mp3" },
+      { volume:2, chapter:26, title:"The Unraveling", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol2/chapter26.mp3" },
+      { volume:2, chapter:27, title:"The Triumph of the Right", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol2/chapter27.mp3" },
+      { volume:2, chapter:28, title:"American Carnage", subtitle:"", duration:"", src:"https://mind.cnm.edu/development/CNM%20Course%20Audio%20Player/YAWP/Media/Vol2/chapter28.mp3" }
+    ]
+  };
+
+  /* ============================================================
+     End of the part you edit. Everything below runs the player
+     off of PLAYER_CONFIG above and shouldn't need changes.
+     ============================================================ */
+
+  var TRACKS = PLAYER_CONFIG.tracks;
+
+  // A URL query parameter always wins over startChapter, so the
+  // SAME hosted file can be reused for every embed in the course.
+  var params = new URLSearchParams(window.location.search);
+  var qChapter = parseInt(params.get('chapter'), 10);
+  var startChapter = PLAYER_CONFIG.startChapter;
+  if (!isNaN(qChapter) && TRACKS.some(function(t){ return t.chapter === qChapter; })) {
+    startChapter = qChapter;
+  }
+  var startTrackObj = TRACKS.filter(function(t){ return t.chapter === startChapter; })[0] || TRACKS[0];
+
+  // ---- DOM refs ----
+  var audio           = document.getElementById('audioEl');
+  var footerBrandEl    = document.getElementById('footerBrand');
+  var courseTitleEl    = document.getElementById('courseTitle');
+  var transcriptLink   = document.getElementById('transcriptLink');
+  var transcriptLabel  = document.getElementById('transcriptLinkLabel');
+  var npArt            = document.getElementById('npArt');
+  var npNumber         = document.getElementById('npNumber');
+  var npTitle          = document.getElementById('npTitle');
+  var npSubtitle       = document.getElementById('npSubtitle');
+  var curTimeEl        = document.getElementById('curTime');
+  var remTimeEl        = document.getElementById('remTime');
+  var scrubTrack       = document.getElementById('scrubTrack');
+  var scrubFill        = document.getElementById('scrubFill');
+  var scrubHandle      = document.getElementById('scrubHandle');
+  var playBtn          = document.getElementById('playBtn');
+  var playIcon         = document.getElementById('playIcon');
+  var prevBtn          = document.getElementById('prevBtn');
+  var nextBtn          = document.getElementById('nextBtn');
+  var speedSelect      = document.getElementById('speedSelect');
+  var volumeSlider     = document.getElementById('volumeSlider');
+  var tracklistEl      = document.getElementById('tracklist');
+  var tracklistScrollEl= document.getElementById('tracklistScroll');
+  var scrollHintEl     = document.getElementById('scrollHint');
+  var resumeNote       = document.getElementById('resumeNote');
+  var liveRegion       = document.getElementById('liveRegion');
+  var volumeTabsEl      = document.getElementById('volumeTabs');
+  var volTab1           = document.getElementById('volTab1');
+  var volTab2           = document.getElementById('volTab2');
+  var volTab1Sub         = document.getElementById('volTab1Sub');
+  var volTab2Sub         = document.getElementById('volTab2Sub');
+  var downloadLink      = document.getElementById('downloadLink');
+  var playSpinner       = document.getElementById('playSpinner');
+  var audioErrorEl       = document.getElementById('audioError');
+  var audioErrorTextEl   = document.getElementById('audioErrorText');
+
+  // ---- apply simple text/config settings ----
+  courseTitleEl.textContent = PLAYER_CONFIG.title || 'Course Audio';
+
+  if (PLAYER_CONFIG.footerLogoUrl) {
+    var logoImg = document.createElement('img');
+    logoImg.src = PLAYER_CONFIG.footerLogoUrl;
+    logoImg.alt = PLAYER_CONFIG.footerLogoAlt || '';
+    footerBrandEl.innerHTML = '';
+    footerBrandEl.appendChild(logoImg);
+  } else {
+    footerBrandEl.textContent = PLAYER_CONFIG.footerBrandText || '';
+  }
+
+  if (PLAYER_CONFIG.artworkUrl) {
+    var img = document.createElement('img');
+    img.src = PLAYER_CONFIG.artworkUrl;
+    img.alt = PLAYER_CONFIG.artworkAlt || '';
+    npArt.innerHTML = '';
+    npArt.appendChild(img);
+  }
+
+  if (PLAYER_CONFIG.transcriptUrl) {
+    transcriptLink.href = PLAYER_CONFIG.transcriptUrl;
+    transcriptLabel.textContent = PLAYER_CONFIG.transcriptLabel || 'Transcript';
+    transcriptLink.style.display = 'inline-flex';
+  }
+
+  if (PLAYER_CONFIG.allowDownloads === false) {
+    downloadLink.style.display = 'none';
+  }
+
+  var useVolumeTabs = !!PLAYER_CONFIG.useVolumeTabs;
+  if (useVolumeTabs) {
+    volumeTabsEl.style.display = 'flex';
+    volTab1.querySelector('.vt-title').textContent = PLAYER_CONFIG.volume1Label || 'Volume I';
+    volTab2.querySelector('.vt-title').textContent = PLAYER_CONFIG.volume2Label || 'Volume II';
+    volTab1Sub.textContent = PLAYER_CONFIG.volume1Sub || '';
+    volTab2Sub.textContent = PLAYER_CONFIG.volume2Sub || '';
+  }
+
+  var ICON_PLAY  = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+  var ICON_PAUSE = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>';
+  var ICON_HEADPHONES  = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2" y="14" width="4" height="7" rx="2"/><rect x="18" y="14" width="4" height="7" rx="2"/></svg>';
+
+  var current = TRACKS.indexOf(startTrackObj);
+  var activeVolume = startTrackObj.volume;
+  var storageKeyPrefix = 'course_audio_progress_ch'; // localStorage, scoped to this page's own origin
+
+  function fmtTime(sec){
+    if (!isFinite(sec) || sec < 0) sec = 0;
+    var m = Math.floor(sec / 60);
+    var s = Math.floor(sec % 60);
+    return m + ':' + (s < 10 ? '0' : '') + s;
+  }
+  function fmtTimeVerbose(sec){
+    if (!isFinite(sec) || sec < 0) sec = 0;
+    var m = Math.floor(sec / 60);
+    var s = Math.floor(sec % 60);
+    return m + ' minutes ' + s + ' seconds';
+  }
+
+  // Turns a track into a safe, readable filename for the download
+  // link, e.g. "track-3-the-cold-war.mp3".
+  function slugifyFilename(track){
+    var base = 'track-' + track.chapter + '-' + (track.title || 'audio');
+    var slug = base.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-+|-+$)/g, '');
+    return (slug || 'audio') + '.mp3';
+  }
+
+  // Forces a real "Save As" download for the given track instead of
+  // just opening the mp3 inline. The browser's plain download=""
+  // attribute only forces a save for same-origin files (or when the
+  // server itself sends a Content-Disposition: attachment header) —
+  // most separate media hosts don't send that header, so the link
+  // just plays/opens the file instead.
+  //
+  // This works around that by fetching the mp3 as data (fetch),
+  // wrapping it in a same-origin blob: URL, and downloading THAT —
+  // which always forces a save, regardless of where the real file
+  // lives. The one requirement: the media host must allow
+  // cross-origin requests for the file (an Access-Control-Allow-
+  // Origin header) — true of most CDNs and object-storage hosts
+  // (S3, etc.) by default or with a one-line config change; a plain
+  // web server (IIS, Apache, Nginx) usually needs that header added
+  // for the audio folder. If the fetch is blocked or fails for any
+  // reason (no CORS header, an auth-only host, etc.), this falls
+  // back to simply opening the file in a brand-new browser tab —
+  // never in place of this widget — where it'll most likely just
+  // play inline, which the student can then save from their
+  // browser's own player menu.
+  function downloadCurrentTrack(track){
+    var filename = slugifyFilename(track);
+    var originalLabel = downloadLink.getAttribute('aria-label');
+    downloadLink.classList.add('is-downloading');
+    downloadLink.setAttribute('aria-label', 'Downloading ' + (track.title || 'audio') + '…');
+
+    fetch(track.src, { mode: 'cors' })
+      .then(function(res){
+        if (!res.ok) throw new Error('Download fetch failed: ' + res.status);
+        return res.blob();
+      })
+      .then(function(blob){
+        var blobUrl = URL.createObjectURL(blob);
+        var tempLink = document.createElement('a');
+        tempLink.href = blobUrl;
+        tempLink.download = filename;
+        document.body.appendChild(tempLink);
+        tempLink.click();
+        document.body.removeChild(tempLink);
+        setTimeout(function(){ URL.revokeObjectURL(blobUrl); }, 4000);
+      })
+      .catch(function(){
+        // Cross-origin fetch didn't work (most likely: the media
+        // host isn't sending CORS headers). Open the file as a
+        // genuine new-tab link click rather than window.open() —
+        // some embedding contexts (including certain LMS content
+        // frames) treat a scripted window.open() as "navigate this
+        // same frame" instead of truly opening a new tab, which was
+        // replacing the whole widget with the raw audio player. A
+        // real target="_blank" anchor click is handled the same way
+        // a student's own click on a link would be, so it reliably
+        // opens a separate tab and leaves this widget alone.
+        var tempLink = document.createElement('a');
+        tempLink.href = track.src;
+        tempLink.target = '_blank';
+        tempLink.rel = 'noopener';
+        document.body.appendChild(tempLink);
+        tempLink.click();
+        document.body.removeChild(tempLink);
+      })
+      .then(function(){
+        downloadLink.classList.remove('is-downloading');
+        if (originalLabel) downloadLink.setAttribute('aria-label', originalLabel);
+      });
+  }
+
+  function guessImageType(url){
+    var ext = (url.split('.').pop() || '').split(/[?#]/)[0].toLowerCase();
+    if (ext === 'jpg' || ext === 'jpeg') return 'image/jpeg';
+    if (ext === 'png')  return 'image/png';
+    if (ext === 'webp') return 'image/webp';
+    if (ext === 'gif')  return 'image/gif';
+    return 'image/jpeg';
+  }
+
+  // ---- Lock-screen / notification controls (Media Session API) ----
+  // Lets phones and some desktop OSes show the track title, plus
+  // play/pause/skip controls, outside the browser — on a lock
+  // screen, a notification shade, or a headset. Every call is
+  // wrapped in try/catch and feature-checked: on a browser that
+  // doesn't support this, it simply does nothing, and everything
+  // else in the player still works normally.
+  var hasMediaSession = (typeof navigator !== 'undefined') && ('mediaSession' in navigator);
+
+  function updateMediaSessionMetadata(track){
+    if (!hasMediaSession) return;
+    try{
+      var artwork = [];
+      if (PLAYER_CONFIG.artworkUrl) {
+        artwork.push({ src: PLAYER_CONFIG.artworkUrl, sizes: '512x512', type: guessImageType(PLAYER_CONFIG.artworkUrl) });
+      }
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: track.title,
+        artist: PLAYER_CONFIG.title || '',
+        album: PLAYER_CONFIG.footerBrandText || '',
+        artwork: artwork
+      });
+    }catch(e){ /* unsupported in this browser — ignore */ }
+  }
+
+  function initMediaSessionControls(){
+    if (!hasMediaSession) return;
+    var handlers = {
+      'play':  function(){ audio.play(); },
+      'pause': function(){ audio.pause(); },
+      'previoustrack': function(){ prevBtn.click(); },
+      'nexttrack':     function(){ nextBtn.click(); },
+      'seekbackward':  function(details){
+        var skip = (details && details.seekOffset) || 10;
+        audio.currentTime = Math.max(audio.currentTime - skip, 0);
+      },
+      'seekforward':   function(details){
+        var skip = (details && details.seekOffset) || 10;
+        var max = isFinite(audio.duration) ? audio.duration : audio.currentTime + skip;
+        audio.currentTime = Math.min(audio.currentTime + skip, max);
+      }
+    };
+    Object.keys(handlers).forEach(function(action){
+      try{ navigator.mediaSession.setActionHandler(action, handlers[action]); }
+      catch(e){ /* this particular action isn't supported — skip it */ }
+    });
+  }
+
+  function updateMediaSessionPosition(){
+    if (!hasMediaSession || !('setPositionState' in navigator.mediaSession)) return;
+    if (!isFinite(audio.duration) || audio.duration <= 0) return;
+    try{
+      navigator.mediaSession.setPositionState({
+        duration: audio.duration,
+        playbackRate: audio.playbackRate || 1,
+        position: Math.min(audio.currentTime, audio.duration)
+      });
+    }catch(e){ /* ignore — position state is a nice-to-have */ }
+  }
+
+  function saveProgress(chapter, time){
+    try{
+      localStorage.setItem(storageKeyPrefix + chapter, JSON.stringify({ t: time, at: Date.now() }));
+    }catch(e){ /* storage unavailable — fail silently */ }
+  }
+  function loadProgress(chapter){
+    try{
+      var raw = localStorage.getItem(storageKeyPrefix + chapter);
+      return raw ? JSON.parse(raw) : null;
+    }catch(e){ return null; }
+  }
+
+  function setVolumeTab(vol){
+    activeVolume = vol;
+    if (useVolumeTabs) {
+      volTab1.setAttribute('aria-pressed', vol === 1 ? 'true' : 'false');
+      volTab2.setAttribute('aria-pressed', vol === 2 ? 'true' : 'false');
+    }
+    buildList();
+  }
+  volTab1.addEventListener('click', function(){ setVolumeTab(1); });
+  volTab2.addEventListener('click', function(){ setVolumeTab(2); });
+
+  function buildList(){
+    tracklistEl.innerHTML = '';
+    var visible = useVolumeTabs ? TRACKS.filter(function(t){ return t.volume === activeVolume; }) : TRACKS;
+    visible.forEach(function(track){
+      var i = TRACKS.indexOf(track);
+      var li = document.createElement('li');
+      li.className = 'track';
+      li.id = 'track-li-' + i;
+
+      var btn = document.createElement('button');
+      btn.className = 'track-row';
+      btn.setAttribute('aria-label', 'Play chapter ' + track.chapter + ': ' + track.title);
+
+      var idxSpan = document.createElement('span');
+      idxSpan.className = 'track-index';
+      idxSpan.textContent = track.chapter;
+
+      var iconSpan = document.createElement('span');
+      iconSpan.className = 'track-icon';
+      iconSpan.innerHTML = ICON_HEADPHONES;
+
+      var main = document.createElement('span');
+      main.className = 'track-main';
+      var t = document.createElement('p');
+      t.className = 'track-title';
+      t.textContent = track.title;
+      var s = document.createElement('p');
+      s.className = 'track-sub';
+      s.textContent = track.subtitle || '';
+      main.appendChild(t);
+      main.appendChild(s);
+
+      var dur = document.createElement('span');
+      dur.className = 'track-duration';
+      dur.id = 'dur-' + i;
+      dur.textContent = track.duration || '';
+
+      btn.appendChild(idxSpan);
+      btn.appendChild(iconSpan);
+      btn.appendChild(main);
+      btn.appendChild(dur);
+      li.appendChild(btn);
+
+      tracklistEl.appendChild(li);
+
+      btn.addEventListener('click', function(){ loadTrack(i, { autoplay:true }); });
+    });
+    setActiveListItem(current);
+    updateScrollHint();
+  }
+
+  // Shows the "more chapters below" fade + chevron only when the
+  // list is actually taller than its visible box and hasn't been
+  // scrolled all the way to the bottom yet — so it never lingers
+  // once a student can see everything, or on a short playlist
+  // that never needed to scroll in the first place.
+  function updateScrollHint(){
+    var el = tracklistScrollEl;
+    var hasOverflow = el.scrollHeight - el.clientHeight > 4;
+    var atBottom = el.scrollHeight - el.scrollTop - el.clientHeight < 4;
+    scrollHintEl.classList.toggle('is-hidden', !hasOverflow || atBottom);
+  }
+  tracklistScrollEl.addEventListener('scroll', updateScrollHint);
+  window.addEventListener('resize', updateScrollHint);
+
+  function setActiveListItem(idx){
+    var items = tracklistEl.querySelectorAll('li.track');
+    items.forEach(function(li){
+      var isActive = (li.id === 'track-li-' + idx);
+      li.classList.toggle('is-active', isActive);
+      var iconSpan = li.querySelector('.track-icon');
+      if (isActive){
+        iconSpan.innerHTML = '<span class="eq"><span></span><span></span><span></span></span>';
+      } else {
+        iconSpan.innerHTML = ICON_HEADPHONES;
+      }
+    });
+  }
+
+  function updateEqState(playing){
+    var active = document.getElementById('track-li-' + current);
+    if (!active) return;
+    active.classList.toggle('is-playing-state', playing);
+    active.classList.toggle('is-paused-state', !playing);
+  }
+
+  function loadTrack(idx, opts){
+    opts = opts || {};
+    current = idx;
+    var track = TRACKS[idx];
+
+    if (useVolumeTabs && track.volume !== activeVolume) {
+      activeVolume = track.volume;
+      volTab1.setAttribute('aria-pressed', activeVolume === 1 ? 'true' : 'false');
+      volTab2.setAttribute('aria-pressed', activeVolume === 2 ? 'true' : 'false');
+      buildList();
+    }
+
+    // Clear any error message and loading spinner left over from
+    // whichever track was loaded before this one.
+    audioErrorEl.style.display = 'none';
+    playBtn.classList.remove('is-loading');
+
+    audio.src = track.src;
+    audio.playbackRate = parseFloat(speedSelect.value);
+
+    npNumber.textContent = 'CHAPTER ' + track.chapter + ' OF ' + TRACKS.length;
+    npTitle.textContent = track.title;
+    npSubtitle.textContent = track.subtitle || PLAYER_CONFIG.defaultSubtitle || ' ';
+    curTimeEl.textContent = '0:00';
+    remTimeEl.textContent = track.duration ? ('-' + track.duration) : '-0:00';
+    scrubFill.style.width = '0%';
+    scrubHandle.style.left = '0%';
+    scrubTrack.setAttribute('aria-valuenow', 0);
+    scrubTrack.setAttribute('aria-valuetext', '0 minutes 0 seconds');
+
+    // The download link always points at whichever track is
+    // currently loaded — see the note further down for what this
+    // can and can't guarantee.
+    downloadLink.href = track.src;
+    downloadLink.setAttribute('download', slugifyFilename(track));
+    downloadLink.setAttribute('aria-label', 'Download audio for chapter ' + track.chapter + ': ' + track.title);
+
+    updateMediaSessionMetadata(track);
+
+    setActiveListItem(idx);
+    liveRegion.textContent = 'Now playing: chapter ' + track.chapter + ' of ' + TRACKS.length + ', ' + track.title;
+
+    var saved = loadProgress(track.chapter);
+    resumeNote.style.display = (saved && saved.t > 3) ? 'block' : 'none';
+
+    var startAt = (opts.resumeFrom != null) ? opts.resumeFrom
+                : (saved && saved.t > 3 ? saved.t : 0);
+
+    var onReady = function(){
+      if (startAt > 0 && startAt < audio.duration - 2) {
+        audio.currentTime = startAt;
+      }
+      audio.removeEventListener('loadedmetadata', onReady);
+      if (opts.autoplay) {
+        audio.play().catch(function(){ /* needs a user gesture — fine, button click already is one */ });
+      }
+    };
+    audio.addEventListener('loadedmetadata', onReady);
+
+    var li = document.getElementById('track-li-' + idx);
+    if (li && opts.scrollIntoView !== false) {
+      li.scrollIntoView({ block:'nearest', behavior:'smooth' });
+    }
+  }
+
+  function togglePlay(){
+    if (audio.paused) { audio.play(); } else { audio.pause(); }
+  }
+
+  function setPlayingUI(playing){
+    playIcon.outerHTML = playing ? ICON_PAUSE.replace('<svg', '<svg id="playIcon"') : ICON_PLAY.replace('<svg', '<svg id="playIcon"');
+    playIcon = document.getElementById('playIcon');
+    playBtn.classList.toggle('is-playing', playing);
+    playBtn.setAttribute('aria-label', playing ? 'Pause' : 'Play');
+    updateEqState(playing);
+  }
+
+  audio.addEventListener('play',  function(){
+    setPlayingUI(true);
+    if (hasMediaSession) { try{ navigator.mediaSession.playbackState = 'playing'; }catch(e){} }
+  });
+  audio.addEventListener('pause', function(){
+    setPlayingUI(false);
+    if (hasMediaSession) { try{ navigator.mediaSession.playbackState = 'paused'; }catch(e){} }
+  });
+
+  audio.addEventListener('timeupdate', function(){
+    if (!audio.duration) return;
+    var pct = (audio.currentTime / audio.duration) * 100;
+    scrubFill.style.width = pct + '%';
+    scrubHandle.style.left = pct + '%';
+    curTimeEl.textContent = fmtTime(audio.currentTime);
+    remTimeEl.textContent = '-' + fmtTime(audio.duration - audio.currentTime);
+    scrubTrack.setAttribute('aria-valuenow', Math.round(pct));
+    scrubTrack.setAttribute('aria-valuetext', fmtTimeVerbose(audio.currentTime) + ' of ' + fmtTimeVerbose(audio.duration));
+    saveProgress(TRACKS[current].chapter, audio.currentTime);
+    updateMediaSessionPosition();
+  });
+
+  audio.addEventListener('loadedmetadata', function(){
+    remTimeEl.textContent = '-' + fmtTime(audio.duration - audio.currentTime);
+    var durEl = document.getElementById('dur-' + current);
+    if (durEl && !TRACKS[current].duration) durEl.textContent = fmtTime(audio.duration);
+    updateMediaSessionPosition();
+  });
+
+  audio.addEventListener('ended', function(){
+    saveProgress(TRACKS[current].chapter, 0);
+    if (current < TRACKS.length - 1) {
+      loadTrack(current + 1, { autoplay:true });
+    } else {
+      setPlayingUI(false);
+    }
+  });
+
+  // ---- loading / buffering spinner ----
+  // 'waiting' fires whenever playback stalls for lack of data —
+  // both the first time a track is starting up and any time it
+  // has to rebuffer mid-chapter on a slow connection. 'playing'
+  // and 'canplay' both mean data is flowing again, so either one
+  // clears the spinner.
+  audio.addEventListener('waiting', function(){ playBtn.classList.add('is-loading'); });
+  audio.addEventListener('playing', function(){ playBtn.classList.remove('is-loading'); });
+  audio.addEventListener('canplay', function(){ playBtn.classList.remove('is-loading'); });
+
+  // ---- friendly error message ----
+  // Fires when the browser gives up trying to load the current
+  // track's src — a broken link, a moved/deleted file, a typo in
+  // the config. role="alert" on the element (set in the HTML)
+  // means assistive tech announces it as soon as it appears.
+  audio.addEventListener('error', function(){
+    playBtn.classList.remove('is-loading');
+    setPlayingUI(false); // nothing is actually playing — match the button to reality
+    audioErrorEl.style.display = 'flex';
+    var track = TRACKS[current];
+    liveRegion.textContent = 'This chapter’s audio couldn’t load: ' + (track ? track.title : '');
+  });
+
+  playBtn.addEventListener('click', togglePlay);
+  prevBtn.addEventListener('click', function(){
+    if (current > 0) loadTrack(current - 1, { autoplay: !audio.paused });
+  });
+  nextBtn.addEventListener('click', function(){
+    if (current < TRACKS.length - 1) loadTrack(current + 1, { autoplay: !audio.paused });
+  });
+  downloadLink.addEventListener('click', function(e){
+    var track = TRACKS[current];
+    if (!track) return;
+    e.preventDefault();
+    downloadCurrentTrack(track);
+  });
+
+  speedSelect.addEventListener('change', function(){
+    audio.playbackRate = parseFloat(speedSelect.value);
+  });
+
+  volumeSlider.addEventListener('input', function(){
+    audio.volume = parseFloat(volumeSlider.value);
+  });
+
+  // Scrubbing: click/drag on the seek bar
+  var seeking = false;
+  function seekFromEvent(e){
+    var rect = scrubTrack.getBoundingClientRect();
+    var clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    var pct = Math.min(Math.max((clientX - rect.left) / rect.width, 0), 1);
+    if (audio.duration) {
+      audio.currentTime = pct * audio.duration;
+      scrubFill.style.width = (pct*100) + '%';
+      scrubHandle.style.left = (pct*100) + '%';
+    }
+  }
+  scrubTrack.addEventListener('mousedown', function(e){ seeking = true; seekFromEvent(e); });
+  window.addEventListener('mousemove', function(e){ if (seeking) seekFromEvent(e); });
+  window.addEventListener('mouseup', function(){ seeking = false; });
+  scrubTrack.addEventListener('touchstart', function(e){ seeking = true; seekFromEvent(e); });
+  scrubTrack.addEventListener('touchmove', function(e){ if (seeking) seekFromEvent(e); });
+  scrubTrack.addEventListener('touchend', function(){ seeking = false; });
+  scrubTrack.addEventListener('keydown', function(e){
+    if (!audio.duration) return;
+    var step = audio.duration * 0.02;
+    if (e.key === 'ArrowRight'){ audio.currentTime = Math.min(audio.currentTime + step, audio.duration); }
+    if (e.key === 'ArrowLeft'){ audio.currentTime = Math.max(audio.currentTime - step, 0); }
+  });
+
+  // ---- init ----
+  initMediaSessionControls();
+  setVolumeTab(startTrackObj.volume);
+  loadTrack(current, { autoplay:false, scrollIntoView:true });
+
+})();
+</script></p></body></html>
