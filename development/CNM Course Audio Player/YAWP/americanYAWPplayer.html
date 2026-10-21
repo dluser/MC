@@ -6,6 +6,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&amp;display=swap" rel="stylesheet">
+<script>
+  /* PRESSBOOKS / IFRAME FIT MODE — add ?fit=1 to the iframe's src URL.
+     The player then sizes itself to exactly fill the iframe (no page
+     scrollbar, shadow never clipped). Without ?fit=1 nothing changes,
+     so existing Brightspace embeds keep working as before. */
+  if (/[?&]fit=1\b/.test(location.search)) document.documentElement.className += ' fit';
+</script>
 <style>
   /* ============================================================
      COURSE AUDIO PLAYER — CNM brand build, Apple-Music-style layout
@@ -745,6 +752,27 @@
     button.ctrl, a.ctrl{ width:40px; height:40px; }
     .play-btn{ width:54px; height:54px; }
   }
+
+  /* ---- FIT MODE (?fit=1) — used for the Pressbooks iframe ----
+     The iframe's height attribute becomes the single source of truth:
+     the card fills whatever box the iframe gives it, minus a cushion
+     on every side so the drop shadow is never cut off. Only the track
+     list scrolls; the page itself never can. */
+  html.fit, html.fit body{
+    height:100%;
+    overflow:hidden;
+    background:transparent;
+  }
+  html.fit body{
+    padding:12px 18px 28px;   /* sides + extra bottom = room for the shadow */
+  }
+  html.fit .player{
+    height:100%;
+    min-height:0;
+  }
+  @media (max-width:460px){
+    html.fit body{ padding:8px 10px 20px; }
+  }
 </style>
 </head><body><div class="player" id="player" role="region" aria-label="Course audio player">
 <div class="player-header"><!-- Announces track changes to screen reader users without moving focus -->
@@ -796,7 +824,8 @@
 <a class="transcript-link" id="transcriptLink" href="#" target="_blank" rel="noopener" style="display: none;"> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2h9l5 5v15H6z"></path><path d="M15 2v5h5M9 13h6M9 17h6M9 9h2"></path></svg> <span id="transcriptLinkLabel">Transcript</span> <span class="sr-only">(opens in a new tab)</span> </a></div>
 </div>
 <!-- /.player -->
-<p><audio id="audioEl" preload="metadata"></audio> <script>
+<audio id="audioEl" preload="metadata"></audio>
+<script>
 (function(){
 
   /* ============================================================
@@ -1483,4 +1512,5 @@
   loadTrack(current, { autoplay:false, scrollIntoView:true });
 
 })();
-</script></p></body></html>
+</script>
+</body></html>
