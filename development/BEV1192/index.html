@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Draught System Components: Guided Widgets</title>
+<link rel="preload" href="shared/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="shared/engine.css">
+<style>html,body{overflow:auto!important;height:auto}.segmented{display:flex;gap:4px;padding:4px;background:var(--surface-3);border-radius:12px}.segmented button{border:0;background:transparent;padding:8px 14px;min-height:40px;border-radius:9px;font-size:14px;font-weight:600;color:var(--ink-2);cursor:pointer}.segmented button[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:0 0 0 1px var(--line)}</style>
+<style>
+  body { background: var(--bg); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 32px 20px 64px; }
+  .eyebrow { font-size: 13px; font-weight: 600; color: var(--muted); }
+  h1 { font-size: clamp(26px, 3.6vw, 38px); letter-spacing: -.025em; line-height: 1.1; margin: 4px 0 10px; }
+  .intro-p { color: var(--ink-2); font-size: 17px; max-width: 70ch; margin: 0 0 26px; }
+  .layout { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 20px; align-items: start; }
+  .list { display: grid; gap: 6px; position: sticky; top: 16px; }
+  .item { display: flex; gap: 12px; align-items: center; text-align: left; width: 100%; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--line); background: #fff; cursor: pointer; }
+  .item:hover { border-color: var(--line-2); }
+  .item[aria-current="true"] { border-color: var(--ink); box-shadow: 0 0 0 1px var(--ink); }
+  .item .n { width: 30px; height: 30px; border-radius: 9px; background: var(--surface-3); display: grid; place-items: center; font-weight: 800; font-size: 13px; flex: none; }
+  .item[aria-current="true"] .n { background: var(--ink); color: #fff; }
+  .item b { display: block; font-size: 15px; } .item small { color: var(--muted); font-size: 12.5px; }
+  .panel { background: #fff; border: 1px solid var(--line); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-2); }
+  .bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  .bar .segmented { flex: none; }
+  .viewport { background: repeating-linear-gradient(45deg, #f3f5f8 0 10px, #eef1f5 10px 20px); display: flex; justify-content: center; padding: 18px; }
+  .viewport iframe { width: 100%; height: 900px; border: 0; border-radius: 16px; background: #fff; box-shadow: var(--shadow-2); transition: width .3s var(--ease); }
+  .viewport.phone iframe { width: 390px; height: 760px; border-radius: 28px; outline: 10px solid #0e1726; }
+  .embed { padding: 14px; border-top: 1px solid var(--line); display: grid; gap: 8px; }
+  .embed code { display: block; white-space: pre-wrap; word-break: break-all; font: 12.5px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; color: var(--ink-2); }
+  .embed-row { display: flex; gap: 8px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+  .principles { margin-top: 36px; }
+  .principles h2 { font-size: 24px; letter-spacing: -.02em; margin: 0 0 6px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin-top: 14px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
+  .card h3 { font-size: 15.5px; margin: 0 0 6px; }
+  .card p { margin: 0; color: var(--ink-2); font-size: 14.5px; }
+  .card .k { font-size: 11.5px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--accent-ink); margin-bottom: 6px; display: block; }
+  @media (max-width: 880px) { .layout { grid-template-columns: 1fr; } .list { position: static; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); } .viewport.phone iframe { width: 100%; max-width: 390px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">BEV 1192 · Draught Systems 101</div>
+  <h1>Draught System Components: guided widgets</h1>
+  <p class="intro-p">Seven focused widgets, one per topic in the handout, in the same order. Each one runs <strong>Learn → Try it → Check</strong>, fits its frame with no scrollbars, has a full-screen button, and embeds on its own Brightspace page. Pick a topic to preview it, then copy its embed code.</p>
+
+  <div class="layout">
+    <nav class="list" id="list" aria-label="Topics"></nav>
+    <div class="panel">
+      <div class="bar">
+        <div class="segmented" role="group" aria-label="Preview size">
+          <button type="button" aria-pressed="true" data-v="desk">Desktop</button>
+          <button type="button" aria-pressed="false" data-v="phone">Phone</button>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button class="btn" type="button" id="reset">Reset progress</button>
+          <a class="btn" id="open" href="#" target="_blank" rel="noopener">Open alone ↗</a>
+        </div>
+      </div>
+      <div class="viewport" id="vp"><iframe id="frame" title="Widget preview" allow="fullscreen" allowfullscreen></iframe></div>
+      <div class="embed">
+        <div class="embed-row"><strong style="font-size:14px">Brightspace embed code</strong><button class="btn" type="button" id="copy">Copy</button></div>
+        <code id="code"></code>
+        <span style="font-size:12.5px;color:var(--muted)">Replace <b>YOUR-HOST</b> with wherever the folder is hosted. Keep <b>allowfullscreen</b> so the full-screen button works inside Brightspace. 900px tall is the design height, and widgets scale to fit other sizes.</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="principles" aria-labelledby="ctH">
+    <h2 id="ctH">Why each activity type</h2>
+    <p class="intro-p" style="margin-bottom:0">Each hands-on activity matches how its content works on the job. Learners act directly on the illustration, not on separate buttons.</p>
+    <div class="grid">
+      <div class="card"><span class="k">1 · Gas</span><h3>Cause-and-effect simulation</h3><p>Pressure differential is a cause-and-effect idea, so learners open the regulator shut-off and pull the tap on the drawing and watch what flows.</p></div>
+      <div class="card"><span class="k">2 · Safety</span><h3>Drag-to-place scenario + exploratory sim</h3><p>Storage is a placement decision: drag the cylinder itself from the delivery van into a room, and tap it to tip it over. CO₂ exposure is a progression: open the leak and watch the worker's symptoms build, then ventilate.</p></div>
+      <div class="card"><span class="k">3 · Regulators</span><h3>Control-panel simulation</h3><p>Setting pressure is a hands-on skill, so the regulators have rotary knobs and live gauges. An elevation map makes the altitude rule concrete.</p></div>
+      <div class="card"><span class="k">4 · Tubing</span><h3>Image drag-and-drop (two rounds)</h3><p>Choosing tubing means matching parts to places. A labeled side view makes direct draw and long draw unmistakable. Drag tubes onto the runs, then lines onto cylinders, one round per screen.</p></div>
+      <div class="card"><span class="k">5 · Couplers</span><h3>Predict → observe → explain</h3><p>The check valve is easy to misunderstand, so learners predict first, then pull the lever, cut the gas and remove the valve, and watch the result.</p></div>
+      <div class="card"><span class="k">6 · Kegs</span><h3>Comparison explorer + investigation</h3><p>Sizes are a comparison, with details popping up on the keg you tap. Diagnosing a foamy keg is detective work: a checklist fills in as you gather clues, then you make the call.</p></div>
+      <div class="card"><span class="k">7 · Faucets</span><h3>Exploded view + categorize</h3><p>The handout's own parts diagram becomes an exploded faucet whose numbers show each part's name on hover or tap. The style trade-offs become a true sort into two bins.</p></div>
+      <div class="card"><span class="k">Throughout</span><h3>Built for adults, built for everyone</h3><p>Job-based hooks, one idea per screen, practice before the check, explained feedback with a retry, and a recap. Fully keyboard and screen-reader operable, with no violations in automated WCAG 2.1 AA scans at desktop and phone sizes.</p></div>
+    </div>
+    <h2 style="margin-top:28px">New in v5</h2>
+    <ul class="intro-p" style="margin:0;padding-left:20px;line-height:1.6">
+      <li>Glasses sit under the faucet spouts in every picture.</li>
+      <li>Try it feedback moved to the top of the picture, right under the instructions, and glows when it changes.</li>
+      <li>Checks: after a wrong answer, pick another answer right away or press Try again.</li>
+      <li>Regulators and Couplers callouts: click a number to keep its label on; click again to hide it.</li>
+      <li>The Inter font is bundled with the widgets, so nothing shifts while it loads and no outside font service is needed.</li>
+      <li>Dragging a zoomed picture no longer highlights it.</li>
+    </ul>
+    <h2 style="margin-top:28px">New in v4</h2>
+    <ul class="intro-p" style="margin:0;padding-left:20px;line-height:1.6">
+      <li>Taller design height (900px) with the picture on top and text below.</li>
+      <li>Learner zoom on lesson and question pictures: buttons, drag to pan, or Ctrl/⌘ + scroll.</li>
+      <li>Every picture checked for labels covering labels or parts; overlaps fixed throughout.</li>
+      <li>Kegs redrawn as smooth shapes; cylinders are solid unless their contents matter.</li>
+      <li>Faucet spouts point down; the dragged cylinder in Gas Safety floats above the rooms.</li>
+      <li>Tubing practice is now two drags: direct draw first, then long draw, each with one tube that doesn't belong.</li>
+      <li>Numbered hover markers pulse until explored; overview checkmarks replay every 7 seconds; logos stay put.</li>
+    </ul>
+    <h2 style="margin-top:28px">New in v3</h2>
+    <ul class="intro-p" style="margin:0;padding-left:20px;line-height:1.6">
+      <li>CNM and IDEA Studio logos in every footer.</li>
+      <li>Overview objectives check themselves off; Try it goals use the same checkboxes and tick as you complete each one.</li>
+      <li>Feedback for every Try it appears inside the interaction frame (a caption strip, plus pop-ups beside what you tapped).</li>
+      <li>Check screens: picture on the left, answers and button together on the right.</li>
+      <li>Arrow keys move between screens. Finish also leaves full screen.</li>
+      <li>Wrong drops shake hard and flash red.</li>
+      <li>Every illustration was redrawn or refined: real keg and faucet shapes, a drawn van and boiler room, a worker who shows CO₂ symptoms, cut-aways for the check valve, beer washer, keg valve and corrosion, and animated heat and oxidation stories.</li>
+    </ul>
+  </section>
+</div>
+<script>
+const T = [
+  ["01-gas", "Gas: The Driving Force", "Pressure differential · gases · O₂"],
+  ["02-safety", "Gas Safety", "Heat & pressure · storage · CO₂"],
+  ["03-regulators", "Regulators", "Primary/secondary · CGA · altitude"],
+  ["04-tubing", "Tubing", "Gas & beer lines · color codes"],
+  ["05-couplers", "Couplers", "Sankey · check valve · stainless"],
+  ["06-kegs", "Kegs", "Sizes · seal defect · diagnosis"],
+  ["07-faucets", "Faucets", "Stainless · standard vs. ventless"]
+];
+const list = document.getElementById("list"), frame = document.getElementById("frame"), code = document.getElementById("code"), open = document.getElementById("open");
+let cur = 0;
+T.forEach(([f, t, s], i) => {
+  const b = document.createElement("button"); b.className = "item"; b.type = "button";
+  b.innerHTML = `<span class="n">${i + 1}</span><span><b>${t}</b><small>${s}</small></span>`;
+  b.onclick = () => pick(i); list.append(b);
+});
+function pick(i) {
+  cur = i; const [f, t] = T[i];
+  [...list.children].forEach((b, j) => b.setAttribute("aria-current", String(i === j)));
+  frame.src = `topics/${f}.html`; frame.title = `${t} widget preview`; open.href = `topics/${f}.html`;
+  code.textContent = `<iframe src="https://YOUR-HOST/draught-widgets/topics/${f}.html" title="${t}: interactive lesson" style="width:100%;height:900px;border:0;border-radius:16px" allow="fullscreen" allowfullscreen loading="lazy"></iframe>`;
+}
+document.getElementById("copy").onclick = async (e) => { try { await navigator.clipboard.writeText(code.textContent); e.target.textContent = "Copied ✓"; } catch (_) { e.target.textContent = "Select the code to copy"; } setTimeout(() => (e.target.textContent = "Copy"), 1800); };
+document.getElementById("reset").onclick = () => { try { localStorage.removeItem("g2-" + T[cur][0].slice(3)); } catch (e) {} frame.src = frame.src; };
+document.querySelectorAll("[data-v]").forEach((b) => b.onclick = () => { document.querySelectorAll("[data-v]").forEach((x) => x.setAttribute("aria-pressed", String(x === b))); document.getElementById("vp").classList.toggle("phone", b.dataset.v === "phone"); });
+pick(0);
+</script>
+</body>
+</html>
